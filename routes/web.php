@@ -3,6 +3,7 @@
 use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\SubKategoriController;
+use App\Http\Controllers\TestimonialController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,6 +32,7 @@ Route::get('/dashboard', function () {
 });
 Route::resource('kategori', KategoriController::class);
 Route::resource('subKategori', SubKategoriController::class);
+Route::resource('testimonial', TestimonialController::class);
 Route::resource('produk', ProdukController::class);
 Route::get('produk-grid', [ProdukController::class, 'grid'])->name('produk-grid');
 

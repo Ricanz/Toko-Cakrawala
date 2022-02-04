@@ -91,7 +91,7 @@
                                         <td>{{ $item->nama }}</td>
                                         <td>
                                             <span class="ec-sub-cat-list">
-                                                <span class="ec-sub-cat-count" title="Total Sub Categories">5</span>
+                                                <span class="ec-sub-cat-count" title="Total Sub Categories">{{$item->subkategori->count()}}</span>
                                                 @foreach ($item->subkategori->pluck('nama') as $kategori)
                                                     <span class="ec-sub-cat-tag">{{ $kategori }}</span>
                                                 @endforeach

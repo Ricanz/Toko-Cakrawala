@@ -69,7 +69,7 @@ class ProdukController extends Controller
         $request->validate([
             'nama' => 'required',
             'detail' => 'required',
-            'gambar' => 'file|mimes:jpg,png,jpeg,gif,svg,jfif|max:2048',
+            'gambar1' => 'file|mimes:jpg,png,jpeg,gif,svg,jfif|max:2048',
             'harga' => 'required',
             'kategori_id' => 'required',
             'stok' => 'required',
@@ -77,14 +77,14 @@ class ProdukController extends Controller
 
         $Produk = Produk::findOrFail($id);
 
-        if ($request->has("gambar")) {
+        if ($request->has("gambar1")) {
 
             Storage::delete("public/Produk/$Produk->gambar");
 
             $date = date("his");
-            $extension = $request->file('gambar')->extension();
+            $extension = $request->file('gambar1')->extension();
             $file_name = "Produk_$date.$extension";
-            $path = $request->file('gambar')->storeAs('public/Produk', $file_name);
+            $path = $request->file('gambar1')->storeAs('public/Produk', $file_name);
             
             $Produk->gambar = $file_name;
         }
