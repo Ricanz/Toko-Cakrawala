@@ -7,7 +7,7 @@
             </p>
         </div>
         <div>
-            <a href="product-list.html" class="btn btn-primary"> Add Porduct</a>
+            <a href="{{route('produk.create')}}" class="btn btn-primary"> Add Porduct</a>
         </div>
     </div>
 

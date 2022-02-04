@@ -15,5 +15,7 @@ class Produk extends Model
 
     protected $primaryKey = 'id';
 
-
+    public function kategori(){
+        return $this->belongsTo(Kategori::class,'kategori_id','id');
+    }
 }

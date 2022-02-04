@@ -1,9 +1,9 @@
 <x-app-layout>
     <div class="breadcrumb-wrapper d-flex align-items-center justify-content-between">
         <div>
-            <h1>Product</h1>
+            <h1>Testimonial</h1>
             <p class="breadcrumbs"><span><a href="index.html">Home</a></span>
-                <span><i class="mdi mdi-chevron-right"></i></span>Product
+                <span><i class="mdi mdi-chevron-right"></i></span>Testimonial
             </p>
         </div>
         <div>
@@ -37,7 +37,7 @@
                                         <td>{{$item->perusahaan}}</td>
                                         <td>{{$item->deskripsi}}</td>
                                         <td>ACTIVE</td>
-                                        <td>{{$item->created_at}}</td>
+                                        <td>{{$item->created_at->isoFormat('m/d/Y')}}</td>
                                         <td>
                                             <div class="btn-group mb-1">
                                                 <button type="button" class="btn btn-outline-success">Info</button>

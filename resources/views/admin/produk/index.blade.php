@@ -21,9 +21,9 @@
                                     <th>Product</th>
                                     <th>Name</th>
                                     <th>Price</th>
-                                    <th>Offer</th>
-                                    <th>Purchased</th>
+                                    <th>Detail</th>                                   
                                     <th>Stock</th>
+                                    <th>Kategori</th>
                                     <th>Status</th>
                                     <th>Date</th>
                                     <th>Action</th>
@@ -37,11 +37,11 @@
                                                 alt="Product Image" /></td>
                                         <td>{{$item->nama}}</td>
                                         <td>{{$item->harga}}</td>
-                                        <td>{{$item->stok}}</td>
-                                        <td>{{$item->kategori_id}}</td>
                                         <td>{{$item->detail}}</td>
+                                        <td>{{$item->stok}}</td>
+                                        <td>{{$item->kategori->nama}}</td>
                                         <td>ACTIVE</td>
-                                        <td>{{$item->created_at}}</td>
+                                        <td>{{$item->created_at->isoFormat('m/d/Y')}}</td>
                                         <td>
                                             <div class="btn-group mb-1">
                                                 <button type="button" class="btn btn-outline-success">Info</button>
