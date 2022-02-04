@@ -30,18 +30,18 @@ class ProdukController extends Controller
             'detail' => 'required',
             'stok' => 'required',
             'kategori_id' => 'required',
-            // 'gambar' => 'required', 
+            'gambar1' => 'required', 
         ]);
 
-        // $date = date("his");
-        // $extension = $request->file('gambar')->extension();
-        // $file_name = "Produk_$date.$extension";
-        // $path = $request->file('gambar')->storeAs('public/Produk', $file_name);
+        $date = date("his");
+        $extension = $request->file('gambar1')->extension();
+        $file_name = "Produk_$date.$extension";
+        $path = $request->file('gambar1')->storeAs('public/Produk', $file_name);
 
         Produk::create([
             'nama' => $request->nama,
             'detail' => $request->detail,
-            // 'gambar' => $file_name,
+            'gambar' => $file_name,
             'harga' => $request->harga,
             'stok' => $request->stok,
             'kategori_id' => $request->kategori_id,

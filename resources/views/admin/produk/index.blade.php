@@ -33,7 +33,7 @@
                             <tbody>
                                 @foreach ($produk as $item)
                                     <tr>
-                                        <td><img class="tbl-thumb" src="tadmin/assets/img/products/p1.jpg"
+                                        <td><img class="tbl-thumb" src="{{asset('storage/Produk/'.$item->gambar)}}"
                                                 alt="Product Image" /></td>
                                         <td>{{$item->nama}}</td>
                                         <td>{{$item->harga}}</td>

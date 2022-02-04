@@ -17,7 +17,7 @@ class CreateKategoriProdukTable extends Migration
             $table->id();
             $table->string('nama');
             $table->string('detail');
-            $table->string('gambar');
+            $table->string('gambar')->nullable();
             $table->timestamps();
         });
     }

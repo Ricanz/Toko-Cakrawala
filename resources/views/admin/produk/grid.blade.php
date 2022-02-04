@@ -48,7 +48,7 @@
                                 <div class="card-wrapper">
                                     <div class="card-container">
                                         <div class="card-top">
-                                            <img class="card-image" src="tadmin/assets/img/products/p1.jpg"
+                                            <img class="card-image" src="{{asset('storage/Produk/'.$item->gambar)}}"
                                                 alt="" />
                                         </div>
                                         <div class="card-bottom">

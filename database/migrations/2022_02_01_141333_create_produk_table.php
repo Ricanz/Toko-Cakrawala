@@ -19,7 +19,7 @@ class CreateProdukTable extends Migration
             $table->string('harga');
             $table->text('detail');
             $table->integer('stok');
-            $table->string('gambar');
+            $table->string('gambar')->nullable();
             $table->foreignId("kategori_id")->constrained("kategori")->onDelete("cascade")->onUpdate("cascade");
             $table->timestamps();
         });
