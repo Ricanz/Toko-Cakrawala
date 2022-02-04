@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateProdukTable extends Migration
+class CreateSubKategorisTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,10 @@ class CreateProdukTable extends Migration
      */
     public function up()
     {
-        Schema::create('produk', function (Blueprint $table) {
+        Schema::create('sub_kategori', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            $table->string('harga');
-            $table->text('detail');
-            $table->integer('stok');
+            $table->string('detail');
             $table->string('gambar');
             $table->foreignId("kategori_id")->constrained("kategori")->onDelete("cascade")->onUpdate("cascade");
             $table->timestamps();
@@ -32,6 +30,6 @@ class CreateProdukTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('produk');
+        Schema::dropIfExists('sub_kategori');
     }
 }

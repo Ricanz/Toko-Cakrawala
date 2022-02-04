@@ -24,13 +24,13 @@
                 <li class="dropdown user-menu">
                     <button class="dropdown-toggle nav-link ec-drop" data-bs-toggle="dropdown"
                         aria-expanded="false">
-                        <img src="tadmin/assets/img/user/user.png" class="user-image"
+                        <img src="{{asset('tadmin/assets/img/user/user.png')}}" class="user-image"
                             alt="User Image" />
                     </button>
                     <ul class="dropdown-menu dropdown-menu-right ec-dropdown-menu">
                         <!-- User image -->
                         <li class="dropdown-header">
-                            <img src="tadmin/assets/img/user/user.png" class="img-circle"
+                            <img src="{{asset('tadmin/assets/img/user/user.png')}}" class="img-circle"
                                 alt="User Image" />
                             <div class="d-inline-block">
                                 John Deo <small class="pt-1">john.example@gmail.com</small>
@@ -97,7 +97,7 @@
                                                 class="media media-message media-notification">
                                                 <div class="position-relative mr-3">
                                                     <img class="rounded-circle"
-                                                        src="tadmin/assets/img/user/u2.jpg" alt="Image">
+                                                        src="{{asset('tadmin/assets/img/user/u2.jpg')}}" alt="Image">
                                                     <span class="status away"></span>
                                                 </div>
                                                 <div class="media-body d-flex justify-content-between">
@@ -123,7 +123,7 @@
                                                 class="media media-message media-notification media-active">
                                                 <div class="position-relative mr-3">
                                                     <img class="rounded-circle"
-                                                        src="tadmin/assets/img/user/u1.jpg" alt="Image">
+                                                        src="{{asset('tadmin/assets/img/user/u1.jpg')}}" alt="Image">
                                                     <span class="status active"></span>
                                                 </div>
                                                 <div class="media-body d-flex justify-content-between">
@@ -148,7 +148,7 @@
                                                 class="media media-message media-notification">
                                                 <div class="position-relative mr-3">
                                                     <img class="rounded-circle"
-                                                        src="tadmin/assets/img/user/u5.jpg" alt="Image">
+                                                        src="{{asset('tadmin/assets/img/user/u5.jpg')}}" alt="Image">
                                                     <span class="status away"></span>
                                                 </div>
                                                 <div class="media-body d-flex justify-content-between">
@@ -316,7 +316,7 @@
                                                 class="media media-message media-notification">
                                                 <div class="position-relative mr-3">
                                                     <img class="rounded-circle"
-                                                        src="tadmin/assets/img/user/u6.jpg" alt="Image">
+                                                        src="{{asset('tadmin/assets/img/user/u6.jpg')}}" alt="Image">
                                                     <span class="status away"></span>
                                                 </div>
                                                 <div class="media-body d-flex justify-content-between">
@@ -341,7 +341,7 @@
                                                 class="media media-message media-notification">
                                                 <div class="position-relative mr-3">
                                                     <img class="rounded-circle"
-                                                        src="tadmin/assets/img/user/u7.jpg" alt="Image">
+                                                        src="{{asset('tadmin/assets/img/user/u7.jpg')}}" alt="Image">
                                                     <span class="status away"></span>
                                                 </div>
                                                 <div class="media-body d-flex justify-content-between">
@@ -367,7 +367,7 @@
                                                 class="media media-message media-notification media-active">
                                                 <div class="position-relative mr-3">
                                                     <img class="rounded-circle"
-                                                        src="tadmin/assets/img/user/u1.jpg" alt="Image">
+                                                        src="{{asset('tadmin/assets/img/user/u1.jpg')}}" alt="Image">
                                                     <span class="status active"></span>
                                                 </div>
                                                 <div class="media-body d-flex justify-content-between">
@@ -392,7 +392,7 @@
                                                 class="media media-message media-notification">
                                                 <div class="position-relative mr-3">
                                                     <img class="rounded-circle"
-                                                        src="tadmin/assets/img/user/u2.jpg" alt="Image">
+                                                        src="{{asset('tadmin/assets/img/user/u2.jpg')}}" alt="Image">
                                                     <span class="status away"></span>
                                                 </div>
                                                 <div class="media-body d-flex justify-content-between">
@@ -418,7 +418,7 @@
                                                 class="media media-message media-notification">
                                                 <div class="position-relative mr-3">
                                                     <img class="rounded-circle"
-                                                        src="tadmin/assets/img/user/u5.jpg" alt="Image">
+                                                        src="{{asset('tadmin/assets/img/user/u5.jpg')}}" alt="Image">
                                                     <span class="status away"></span>
                                                 </div>
                                                 <div class="media-body d-flex justify-content-between">
