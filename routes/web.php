@@ -18,7 +18,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('user.index');
+});
+Route::get('/wishlist', function () {
+    return view('user.wishlist');
+});
+Route::get('/contact', function () {
+    return view('user.contact');
 });
 // Route::get('/main-kategori', function () {
 //     return view('admin.kategori.main.index');
