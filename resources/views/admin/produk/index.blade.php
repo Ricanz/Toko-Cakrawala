@@ -54,7 +54,13 @@
 
                                                 <div class="dropdown-menu">
                                                     <a class="dropdown-item" href="{{route('produk.edit',$item->id)}}">Edit</a>
-                                                    <a class="dropdown-item" href="{{route('produk.destroy',$item->id)}}">Delete</a>
+                                                    <a class="dropdown-item">
+                                                        <form action="{{route('produk.destroy', $item->id)}}" method="POST" style="display: inline">
+                                                            @csrf
+                                                            @method("DELETE")
+                                                            <button type="submit" class="btn btn-link text-danger text-gradient px-3 mb-0 show_confirm" data-toggle="tooltip" title='Delete'><i class="fas fa-trash text-secondary"></i></button>
+                                                        </form>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </td>
@@ -67,4 +73,29 @@
             </div>
         </div>
     </div>
+    
+    <!-- Js conf delete-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+    <script>
+
+        $('.show_confirm').click(function(event) {
+            var form =  $(this).closest("form");
+            var name = $(this).data("name");
+            event.preventDefault();
+            swal({
+                title: `Hapus Data?`,
+                text: "Jika data terhapus, data akan hilang selamanya!",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+            .then((willDelete) => {
+              if (willDelete) {
+                form.submit();
+              }
+            });
+        });
+    
+    </script>
 </x-app-layout>

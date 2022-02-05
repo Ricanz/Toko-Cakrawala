@@ -5,6 +5,7 @@
  <script src="{{ asset('tlandingpage/assets/js/vendor/jquery-migrate-3.3.0.min.js') }}"></script>
  <script src="{{ asset('tlandingpage/assets/js/vendor/modernizr-3.11.2.min.js') }}"></script>
 
+
  <!--Plugins JS-->
  <script src="{{ asset('tlandingpage/assets/js/plugins/swiper-bundle.min.js') }}"></script>
  <script src="{{ asset('tlandingpage/assets/js/plugins/countdownTimer.min.js') }}"></script>
