@@ -26,6 +26,12 @@ Route::get('/wishlist', function () {
 Route::get('/contact', function () {
     return view('user.contact');
 });
+Route::get('/detail_produk', function () {
+    return view('user.detail_produk');
+});
+Route::get('/katalog', function () {
+    return view('user.katalog');
+});
 // Route::get('/main-kategori', function () {
 //     return view('admin.kategori.main.index');
 // });
