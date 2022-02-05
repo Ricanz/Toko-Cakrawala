@@ -145,14 +145,15 @@
 
         <!-- Start Right Floating Button-->
         <div class="cc-button cc-right-bottom">
-            <img src="assets/images/icons/call.svg" class="svg_img cc-call-svg" alt="call image" />
+            <img src="{{asset("tlandingPage/assets/images/icons/call.svg")}}" class="svg_img cc-call-svg" alt="call image" />
         </div>
         <!--/ End Right Floating Button-->
 
     </div>
     <!-- Click To Call end -->
 
-    <!-- Newsletter Modal Start -->
+    {{-- PROMOSI DI AWAL WEB --}}
+    {{-- <!-- Newsletter Modal Start -->
     <div id="ec-popnews-bg"></div>
     <div id="ec-popnews-box">
         <div id="ec-popnews-close"><i class="ecicon eci-close"></i></div>
@@ -171,7 +172,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Newsletter Modal end -->
     
     <!-- Footer navigation panel for responsive display -->
@@ -207,7 +208,7 @@
     <!-- Footer navigation panel for responsive display end -->
 
     <!-- Recent Purchase Popup  -->
-    <div class="recent-purchase">
+    {{-- <div class="recent-purchase">
         <img src="assets/images/product-image/111_1.jpg" alt="payment image">
         <div class="detail">
             <p>Someone in new just bought</p>
@@ -215,7 +216,7 @@
             <p>2 Minutes ago</p>
         </div>
         <a href="javascript:void(0)" class="icon-btn recent-close">×</a>
-    </div>
+    </div> --}}
     <!-- Recent Purchase Popup end -->
 
     <!-- Add to Cart successfully toast Start -->

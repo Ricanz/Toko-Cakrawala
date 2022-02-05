@@ -10,7 +10,7 @@
                 <ul class="eccart-pro-items">
                     <li>
                         <a href="product-left-sidebar.html" class="sidecart_pro_img"><img
-                                src="assets/images/product-image/93_1.jpg" alt="product"></a>
+                                src="{{asset("tlandingPage/assets/images/product-image/93_1.jpg")}}" alt="product"></a>
                         <div class="ec-pro-content">
                             <a href="single-product-left-sidebar.html" class="cart_pro_title">Mens Winter Leathers Jackets</a>
                             <span class="cart-price"><span>$49.00</span> x 1</span>
@@ -22,7 +22,7 @@
                     </li>
                     <li>
                         <a href="product-left-sidebar.html" class="sidecart_pro_img"><img
-                                src="assets/images/product-image/96_1.jpg" alt="product"></a>
+                                src="{{asset("tlandingPage/assets/images/product-image/96_1.jpg")}}" alt="product"></a>
                         <div class="ec-pro-content">
                             <a href="product-left-sidebar.html" class="cart_pro_title">Running & Trekking Shoes - White</a>
                             <span class="cart-price"><span>$150.00</span> x 1</span>
@@ -34,7 +34,7 @@
                     </li>
                     <li>
                         <a href="product-left-sidebar.html" class="sidecart_pro_img"><img
-                                src="assets/images/product-image/111_1.jpg" alt="product"></a>
+                                src="{{asset("tlandingPage/assets/images/product-image/111_1.jpg")}}" alt="product"></a>
                         <div class="ec-pro-content">
                             <a href="product-left-sidebar.html" class="cart_pro_title">Rose Gold Peacock Earrings</a>
                             <span class="cart-price"><span>$950.00</span> x 1</span>
@@ -158,7 +158,7 @@
                 <div class="ec_cat_content ec_cat_content_1">
                     <div class="ec_cat_inner ec_cat_inner-1">
                         <div class="ec-category-image">
-                            <img src="assets/images/icons/dress-8.svg" class="svg_img" alt="drink" />
+                            <img src="{{asset("tlandingPage/assets/images/icons/dress-8.svg")}}" class="svg_img" alt="drink" />
                         </div>
                         <div class="ec-category-desc">
                             <h3>dress & frock <span title="Category Items">(53)</span></h3>
@@ -170,7 +170,7 @@
                 <div class="ec_cat_content ec_cat_content_2">
                     <div class="ec_cat_inner ec_cat_inner-2">
                         <div class="ec-category-image">
-                            <img src="assets/images/icons/coat-8.svg" class="svg_img" alt="drink" />
+                            <img src="{{asset("tlandingPage/assets/images/icons/coat-8.svg")}}" class="svg_img" alt="drink" />
                         </div>
                         <div class="ec-category-desc">
                             <h3>Winter wear <span title="Category Items">(58)</span></h3>
@@ -182,7 +182,7 @@
                 <div class="ec_cat_content ec_cat_content_3">
                     <div class="ec_cat_inner ec_cat_inner-3">
                         <div class="ec-category-image">
-                            <img src="assets/images/icons/glasses-8.svg" class="svg_img" alt="drink" />
+                            <img src="{{asset("tlandingPage/assets/images/icons/glasses-8.svg")}}" class="svg_img" alt="drink" />
                         </div>
                         <div class="ec-category-desc">
                             <h3>glasses & lens <span title="Category Items">(76)</span></h3>
@@ -194,7 +194,7 @@
                 <div class="ec_cat_content ec_cat_content_4">
                     <div class="ec_cat_inner ec_cat_inner-4">
                         <div class="ec-category-image">
-                            <img src="assets/images/icons/shorts-8.svg" class="svg_img" alt="drink" />
+                            <img src="{{asset("tlandingPage/assets/images/icons/shorts-8.svg")}}" class="svg_img" alt="drink" />
                         </div>
                         <div class="ec-category-desc">
                             <h3>shorts & jeans<span title="Category Items">(49)</span></h3>
@@ -206,7 +206,7 @@
                 <div class="ec_cat_content ec_cat_content_5">
                     <div class="ec_cat_inner ec_cat_inner-5">
                         <div class="ec-category-image">
-                            <img src="assets/images/icons/tee-8.svg" class="svg_img" alt="drink" />
+                            <img src="{{asset("tlandingPage/assets/images/icons/tee-8.svg")}}" class="svg_img" alt="drink" />
                         </div>
                         <div class="ec-category-desc">
                             <h3>T-shirts<span title="Category Items">(25)</span></h3>
@@ -218,7 +218,7 @@
                 <div class="ec_cat_content ec_cat_content_6">
                     <div class="ec_cat_inner ec_cat_inner-6">
                         <div class="ec-category-image">
-                            <img src="assets/images/icons/jacket-8.svg" class="svg_img" alt="drink" />
+                            <img src="{{asset("tlandingPage/assets/images/icons/jacket-8.svg")}}" class="svg_img" alt="drink" />
                         </div>
                         <div class="ec-category-desc">
                             <h3>jacket<span title="Category Items">(35)</span></h3>
@@ -230,7 +230,7 @@
                 <div class="ec_cat_content ec_cat_content_7">
                     <div class="ec_cat_inner ec_cat_inner-7">
                         <div class="ec-category-image">
-                            <img src="assets/images/icons/watch-8.svg" class="svg_img" alt="drink" />
+                            <img src="{{asset("tlandingPage/assets/images/icons/watch-8.svg")}}" class="svg_img" alt="drink" />
                         </div>
                         <div class="ec-category-desc">
                             <h3>watch<span title="Category Items">(89)</span></h3>
@@ -242,7 +242,7 @@
                 <div class="ec_cat_content ec_cat_content_8">
                     <div class="ec_cat_inner ec_cat_inner-8">
                         <div class="ec-category-image">
-                            <img src="assets/images/icons/hat-8.svg" class="svg_img" alt="drink" />
+                            <img src="{{asset("tlandingPage/assets/images/icons/hat-8.svg")}}" class="svg_img" alt="drink" />
                         </div>
                         <div class="ec-category-desc">
                             <h3>hat & caps <span title="Category Items">(65)</span></h3>
@@ -276,7 +276,7 @@
                                         <div class="ec-sb-block-content">
                                             <ul>
                                                 <li>
-                                                    <div class="ec-sidebar-block-item"><img src="assets/images/icons/dress-8.svg" class="svg_img" alt="drink" />Cothes</div>
+                                                    <div class="ec-sidebar-block-item"><img src="{{asset("tlandingPage/assets/images/icons/dress-8.svg")}}" class="svg_img" alt="drink" />Cothes</div>
                                                     <ul style="display: block;">
                                                         <li>
                                                             <div class="ec-sidebar-sub-item"><a href="shop-left-sidebar-col-3.html">Shirt <span title="Available Stock">- 25</span></a>
@@ -301,7 +301,7 @@
                                         <div class="ec-sb-block-content">
                                             <ul>
                                                 <li>
-                                                    <div class="ec-sidebar-block-item"><img src="assets/images/icons/shoes-8.svg" class="svg_img" alt="drink" />Footwear</div>
+                                                    <div class="ec-sidebar-block-item"><img src="{{asset("tlandingPage/assets/images/icons/shoes-8.svg")}}" class="svg_img" alt="drink" />Footwear</div>
                                                     <ul>
                                                         <li>
                                                             <div class="ec-sidebar-sub-item"><a href="shop-left-sidebar-col-3.html">Sports <span title="Available Stock">- 25</span></a>
@@ -326,7 +326,7 @@
                                         <div class="ec-sb-block-content">
                                             <ul>
                                                 <li>
-                                                    <div class="ec-sidebar-block-item"><img src="assets/images/icons/jewelry-8.svg" class="svg_img" alt="drink" />jewelry</div>
+                                                    <div class="ec-sidebar-block-item"><img src="{{asset("tlandingPage/assets/images/icons/jewelry-8.svg")}}" class="svg_img" alt="drink" />jewelry</div>
                                                     <ul>
                                                         <li>
                                                             <div class="ec-sidebar-sub-item"><a href="shop-left-sidebar-col-3.html">Earrings <span title="Available Stock">- 50</span></a>
@@ -347,7 +347,7 @@
                                         <div class="ec-sb-block-content">
                                             <ul>
                                                 <li>
-                                                    <div class="ec-sidebar-block-item"><img src="assets/images/icons/perfume-8.svg" class="svg_img" alt="drink" />perfume</div>
+                                                    <div class="ec-sidebar-block-item"><img src="{{asset("tlandingPage/assets/images/icons/perfume-8.svg")}}" class="svg_img" alt="drink" />perfume</div>
                                                     <ul>
                                                         <li>
                                                             <div class="ec-sidebar-sub-item"><a href="shop-left-sidebar-col-3.html">Clothes perfume<span title="Available Stock">- 4 pcs</span></a>
@@ -372,7 +372,7 @@
                                         <div class="ec-sb-block-content">
                                             <ul>
                                                 <li>
-                                                    <div class="ec-sidebar-block-item"><img src="assets/images/icons/cosmetics-8.svg" class="svg_img" alt="drink" />cosmetics</div>
+                                                    <div class="ec-sidebar-block-item"><img src="{{asset("tlandingPage/assets/images/icons/cosmetics-8.svg" )}}" class="svg_img" alt="drink" />cosmetics</div>
                                                     <ul>
                                                         <li>
                                                             <div class="ec-sidebar-sub-item"><a href="shop-left-sidebar-col-3.html">shampoo<span title="Available Stock"></span></a>
@@ -397,7 +397,7 @@
                                         <div class="ec-sb-block-content">
                                             <ul>
                                                 <li>
-                                                    <div class="ec-sidebar-block-item"><img src="assets/images/icons/glasses-8.svg" class="svg_img" alt="drink" />glasses</div>
+                                                    <div class="ec-sidebar-block-item"><img src="{{asset("tlandingPage/assets/images/icons/glasses-8.svg")}}" class="svg_img" alt="drink" />glasses</div>
                                                     <ul>
                                                         <li>
                                                             <div class="ec-sidebar-sub-item"><a href="shop-left-sidebar-col-3.html">Sunglasses <span title="Available Stock">- 20</span></a>
@@ -414,7 +414,7 @@
                                         <div class="ec-sb-block-content">
                                             <ul>
                                                 <li>
-                                                    <div class="ec-sidebar-block-item"><img src="assets/images/icons/bag-8.svg" class="svg_img" alt="drink" />bags</div>
+                                                    <div class="ec-sidebar-block-item"><img src="{{asset("tlandingPage/assets/images/icons/bag-8.svg")}}" class="svg_img" alt="drink" />bags</div>
                                                     <ul>
                                                         <li>
                                                             <div class="ec-sidebar-sub-item"><a href="shop-left-sidebar-col-3.html">shopping bag <span title="Available Stock">- 25</span></a>
@@ -465,7 +465,7 @@
                                     <div>
                                         <div class="ec-sb-pro-sl-item">
                                             <a href="product-left-sidebar.html" class="sidekka_pro_img"><img
-                                                    src="assets/images/product-image/1.jpg" alt="product" /></a>
+                                                    src="{{asset("tlandingPage/assets/images/product-image/1.jpg")}}" alt="product" /></a>
                                             <div class="ec-pro-content">
                                                 <h5 class="ec-pro-title"><a href="product-left-sidebar.html">baby fabric shoes</a></h5>
                                                 <div class="ec-pro-rating">
@@ -485,7 +485,7 @@
                                     <div>
                                         <div class="ec-sb-pro-sl-item">
                                             <a href="product-left-sidebar.html" class="sidekka_pro_img"><img
-                                                    src="assets/images/product-image/2.jpg" alt="product" /></a>
+                                                    src="{{asset("tlandingPage/assets/images/product-image/2.jpg")}}" alt="product" /></a>
                                             <div class="ec-pro-content">
                                                 <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Men's hoodies t-shirt</a></h5>
                                                 <div class="ec-pro-rating">
@@ -505,7 +505,7 @@
                                     <div>
                                         <div class="ec-sb-pro-sl-item">
                                             <a href="product-left-sidebar.html" class="sidekka_pro_img"><img
-                                                    src="assets/images/product-image/3.jpg" alt="product" /></a>
+                                                    src="{{asset("tlandingPage/assets/images/product-image/3.jpg")}}" alt="product" /></a>
                                             <div class="ec-pro-content">
                                                 <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Girls t-shirt</a></h5>
                                                 <div class="ec-pro-rating">
@@ -525,7 +525,7 @@
                                     <div>
                                         <div class="ec-sb-pro-sl-item">
                                             <a href="product-left-sidebar.html" class="sidekka_pro_img"><img
-                                                    src="assets/images/product-image/4.jpg" alt="product" /></a>
+                                                    src="{{asset("tlandingPage/assets/images/product-image/4.jpg")}}" alt="product" /></a>
                                             <div class="ec-pro-content">
                                                 <h5 class="ec-pro-title"><a href="product-left-sidebar.html">woolen hat for men</a></h5>
                                                 <div class="ec-pro-rating">
@@ -545,7 +545,7 @@
                                     <div>
                                         <div class="ec-sb-pro-sl-item">
                                             <a href="product-left-sidebar.html" class="sidekka_pro_img"><img
-                                                    src="assets/images/product-image/5.jpg" alt="product" /></a>
+                                                    src="{{asset("tlandingPage/assets/images/product-image/5.jpg")}}" alt="product" /></a>
                                             <div class="ec-pro-content">
                                                 <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Womens purse</a></h5>
                                                 <div class="ec-pro-rating">
@@ -565,7 +565,7 @@
                                     <div>
                                         <div class="ec-sb-pro-sl-item">
                                             <a href="product-left-sidebar.html" class="sidekka_pro_img"><img
-                                                    src="assets/images/product-image/6.jpg" alt="product" /></a>
+                                                    src="{{asset("tlandingPage/assets/images/product-image/6.jpg")}}" alt="product" /></a>
                                             <div class="ec-pro-content">
                                                 <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Baby toy doctor kit</a></h5>
                                                 <div class="ec-pro-rating">
@@ -585,7 +585,7 @@
                                     <div>
                                         <div class="ec-sb-pro-sl-item">
                                             <a href="product-left-sidebar.html" class="sidekka_pro_img"><img
-                                                    src="assets/images/product-image/7.jpg" alt="product" /></a>
+                                                    src="{{asset("tlandingPage/assets/images/product-image/7.jpg")}}" alt="product" /></a>
                                             <div class="ec-pro-content">
                                                 <h5 class="ec-pro-title"><a href="product-left-sidebar.html">teddy bear baby toy</a></h5>
                                                 <div class="ec-pro-rating">
@@ -605,7 +605,7 @@
                                     <div>
                                         <div class="ec-sb-pro-sl-item">
                                             <a href="product-left-sidebar.html" class="sidekka_pro_img"><img
-                                                    src="assets/images/product-image/2.jpg" alt="product" /></a>
+                                                    src="{{asset("tlandingPage/assets/images/product-image/2.jpg")}}" alt="product" /></a>
                                             <div class="ec-pro-content">
                                                 <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Mens hoodies blue</a></h5>
                                                 <div class="ec-pro-rating">
@@ -645,8 +645,7 @@
                                         <div class="ec-pro-image-outer">
                                             <div class="ec-pro-image">
                                                 <a href="product-left-sidebar.html" class="image">
-                                                    <img class="main-image" src="assets/images/product-image/88_1.jpg"
-                                                        alt="Product" />
+                                                    <img class="main-image" src="{{asset("tlandingPage/assets/images/product-image/88_1.jpg")}}"alt="Product" />
                                                 </a>
                                             </div>
                                         </div>
@@ -670,8 +669,7 @@
                                         <div class="ec-pro-image-outer">
                                             <div class="ec-pro-image">
                                                 <a href="product-left-sidebar.html" class="image">
-                                                    <img class="main-image" src="assets/images/product-image/89_1.jpg"
-                                                        alt="Product" />
+                                                    <img class="main-image" src="{{asset("tlandingPage/assets/images/product-image/89_1.jpg")}}"alt="Product" />
                                                 </a>
                                             </div>
                                         </div>
@@ -695,8 +693,7 @@
                                         <div class="ec-pro-image-outer">
                                             <div class="ec-pro-image">
                                                 <a href="product-left-sidebar.html" class="image">
-                                                    <img class="main-image" src="assets/images/product-image/90_1.jpg"
-                                                        alt="Product" />
+                                                    <img class="main-image" src="{{asset("tlandingPage/assets/images/product-image/90_1.jpg")}}"alt="Product" />
                                                 </a>
                                             </div>
                                         </div>
@@ -720,8 +717,7 @@
                                         <div class="ec-pro-image-outer">
                                             <div class="ec-pro-image">
                                                 <a href="product-left-sidebar.html" class="image">
-                                                    <img class="main-image" src="assets/images/product-image/91_1.jpg"
-                                                        alt="Product" />
+                                                    <img class="main-image" src="{{asset("tlandingPage/assets/images/product-image/91_1.jpg")}}"alt="Product" />
                                                 </a>
                                             </div>
                                         </div>
@@ -745,8 +741,7 @@
                                         <div class="ec-pro-image-outer">
                                             <div class="ec-pro-image">
                                                 <a href="product-left-sidebar.html" class="image">
-                                                    <img class="main-image" src="assets/images/product-image/92_1.jpg"
-                                                        alt="Product" />
+                                                    <img class="main-image" src="{{asset("tlandingPage/assets/images/product-image/92_1.jpg")}}"alt="Product" />
                                                 </a>
                                             </div>
                                         </div>
@@ -770,8 +765,7 @@
                                         <div class="ec-pro-image-outer">
                                             <div class="ec-pro-image">
                                                 <a href="product-left-sidebar.html" class="image">
-                                                    <img class="main-image" src="assets/images/product-image/93_1.jpg"
-                                                        alt="Product" />
+                                                    <img class="main-image" src="{{asset("tlandingPage/assets/images/product-image/93_1.jpg")}}"alt="Product" />
                                                 </a>
                                             </div>
                                         </div>
@@ -795,8 +789,7 @@
                                         <div class="ec-pro-image-outer">
                                             <div class="ec-pro-image">
                                                 <a href="product-left-sidebar.html" class="image">
-                                                    <img class="main-image" src="assets/images/product-image/94_1.jpg"
-                                                        alt="Product" />
+                                                    <img class="main-image" src="{{asset("tlandingPage/assets/images/product-image/94_1.jpg")}}"alt="Product" />
                                                 </a>
                                             </div>
                                         </div>
@@ -820,8 +813,7 @@
                                         <div class="ec-pro-image-outer">
                                             <div class="ec-pro-image">
                                                 <a href="product-left-sidebar.html" class="image">
-                                                    <img class="main-image" src="assets/images/product-image/95_1.jpg"
-                                                        alt="Product" />
+                                                    <img class="main-image" src="{{asset("tlandingPage/assets/images/product-image/95_1.jpg")}}"alt="Product" />
                                                 </a>
                                             </div>
                                         </div>
@@ -855,8 +847,7 @@
                                         <div class="ec-pro-image-outer">
                                             <div class="ec-pro-image">
                                                 <a href="product-left-sidebar.html" class="image">
-                                                    <img class="main-image" src="assets/images/product-image/96_1.jpg"
-                                                        alt="Product" />
+                                                    <img class="main-image" src="{{asset("tlandingPage/assets/images/product-image/96_1.jpg")}}" alt="Product" />
                                                 </a>
                                             </div>
                                         </div>
@@ -880,8 +871,7 @@
                                         <div class="ec-pro-image-outer">
                                             <div class="ec-pro-image">
                                                 <a href="product-left-sidebar.html" class="image">
-                                                    <img class="main-image" src="assets/images/product-image/97_1.jpg"
-                                                        alt="Product" />
+                                                    <img class="main-image" src="{{asset("tlandingPage/assets/images/product-image/97_1.jpg")}}" alt="Product" />
                                                 </a>
                                             </div>
                                         </div>
@@ -905,8 +895,7 @@
                                         <div class="ec-pro-image-outer">
                                             <div class="ec-pro-image">
                                                 <a href="product-left-sidebar.html" class="image">
-                                                    <img class="main-image" src="assets/images/product-image/98_1.jpg"
-                                                        alt="Product" />
+                                                    <img class="main-image" src="{{asset("tlandingPage/assets/images/product-image/98_1.jpg")}}" alt="Product" />
                                                 </a>
                                             </div>
                                         </div>
@@ -930,8 +919,7 @@
                                         <div class="ec-pro-image-outer">
                                             <div class="ec-pro-image">
                                                 <a href="product-left-sidebar.html" class="image">
-                                                    <img class="main-image" src="assets/images/product-image/99_1.jpg"
-                                                        alt="Product" />
+                                                    <img class="main-image" src="{{asset("tlandingPage/assets/images/product-image/99_1.jpg")}}" alt="Product" />
                                                 </a>
                                             </div>
                                         </div>
@@ -955,8 +943,7 @@
                                         <div class="ec-pro-image-outer">
                                             <div class="ec-pro-image">
                                                 <a href="product-left-sidebar.html" class="image">
-                                                    <img class="main-image" src="assets/images/product-image/100_1.jpg"
-                                                        alt="Product" />
+                                                    <img class="main-image" src="{{asset("tlandingPage/assets/images/product-image/100_1.jpg")}}" alt="Product" />
                                                 </a>
                                             </div>
                                         </div>
@@ -980,8 +967,7 @@
                                         <div class="ec-pro-image-outer">
                                             <div class="ec-pro-image">
                                                 <a href="product-left-sidebar.html" class="image">
-                                                    <img class="main-image" src="assets/images/product-image/101_1.jpg"
-                                                        alt="Product" />
+                                                    <img class="main-image" src="{{asset("tlandingPage/assets/images/product-image/101_1.jpg")}}" alt="Product" />
                                                 </a>
                                             </div>
                                         </div>
@@ -1005,8 +991,7 @@
                                         <div class="ec-pro-image-outer">
                                             <div class="ec-pro-image">
                                                 <a href="product-left-sidebar.html" class="image">
-                                                    <img class="main-image" src="assets/images/product-image/102_1.jpg"
-                                                        alt="Product" />
+                                                    <img class="main-image" src="{{asset("tlandingPage/assets/images/product-image/102_1.jpg")}}" alt="Product" />
                                                 </a>
                                             </div>
                                         </div>
@@ -1030,8 +1015,7 @@
                                         <div class="ec-pro-image-outer">
                                             <div class="ec-pro-image">
                                                 <a href="product-left-sidebar.html" class="image">
-                                                    <img class="main-image" src="assets/images/product-image/103_1.jpg"
-                                                        alt="Product" />
+                                                    <img class="main-image" src="{{asset("tlandingPage/assets/images/product-image/103_1.jpg")}}" alt="Product" />
                                                 </a>
                                             </div>
                                         </div>
@@ -1065,8 +1049,7 @@
                                         <div class="ec-pro-image-outer">
                                             <div class="ec-pro-image">
                                                 <a href="product-left-sidebar.html" class="image">
-                                                    <img class="main-image" src="assets/images/product-image/112_1.jpg"
-                                                        alt="Product" />
+                                                    <img class="main-image" src="{{asset("tlandingPage/assets/images/product-image/112_1.jpg")}}" alt="Product" />
                                                 </a>
                                             </div>
                                         </div>
@@ -1090,8 +1073,7 @@
                                         <div class="ec-pro-image-outer">
                                             <div class="ec-pro-image">
                                                 <a href="product-left-sidebar.html" class="image">
-                                                    <img class="main-image" src="assets/images/product-image/105_1.jpg"
-                                                        alt="Product" />
+                                                    <img class="main-image" src="{{asset("tlandingPage/assets/images/product-image/105_1.jpg")}}" alt="Product" />
                                                 </a>
                                             </div>
                                         </div>
@@ -1115,8 +1097,7 @@
                                         <div class="ec-pro-image-outer">
                                             <div class="ec-pro-image">
                                                 <a href="product-left-sidebar.html" class="image">
-                                                    <img class="main-image" src="assets/images/product-image/110_1.jpg"
-                                                        alt="Product" />
+                                                    <img class="main-image" src="{{asset("tlandingPage/assets/images/product-image/110_1.jpg")}}" alt="Product" />
                                                 </a>
                                             </div>
                                         </div>
@@ -1140,7 +1121,7 @@
                                         <div class="ec-pro-image-outer">
                                             <div class="ec-pro-image">
                                                 <a href="product-left-sidebar.html" class="image">
-                                                    <img class="main-image" src="assets/images/product-image/111_1.jpg"
+                                                    <img class="main-image" src="{{asset("tlandingPage/assets/images/product-image/111_1.jpg")}}"
                                                         alt="Product" />
                                                 </a>
                                             </div>
@@ -1165,7 +1146,7 @@
                                         <div class="ec-pro-image-outer">
                                             <div class="ec-pro-image">
                                                 <a href="product-left-sidebar.html" class="image">
-                                                    <img class="main-image" src="assets/images/product-image/106_1.jpg"
+                                                    <img class="main-image" src="{{asset("tlandingPage/assets/images/product-image/106_1.jpg")}}"
                                                         alt="Product" />
                                                 </a>
                                             </div>
@@ -1190,7 +1171,7 @@
                                         <div class="ec-pro-image-outer">
                                             <div class="ec-pro-image">
                                                 <a href="product-left-sidebar.html" class="image">
-                                                    <img class="main-image" src="assets/images/product-image/107_1.jpg"
+                                                    <img class="main-image" src="{{asset("tlandingPage/assets/images/product-image/107_1.jpg")}}"
                                                         alt="Product" />
                                                 </a>
                                             </div>
@@ -1215,7 +1196,7 @@
                                         <div class="ec-pro-image-outer">
                                             <div class="ec-pro-image">
                                                 <a href="product-left-sidebar.html" class="image">
-                                                    <img class="main-image" src="assets/images/product-image/108_1.jpg"
+                                                    <img class="main-image" src="{{asset("tlandingPage/assets/images/product-image/108_1.jpg")}}"
                                                         alt="Product" />
                                                 </a>
                                             </div>
@@ -1240,7 +1221,7 @@
                                         <div class="ec-pro-image-outer">
                                             <div class="ec-pro-image">
                                                 <a href="product-left-sidebar.html" class="image">
-                                                    <img class="main-image" src="assets/images/product-image/109_1.jpg"
+                                                    <img class="main-image" src="{{asset("tlandingPage/assets/images/product-image/109_1.jpg")}}"
                                                         alt="Product" />
                                                 </a>
                                             </div>
@@ -1280,7 +1261,7 @@
                                     <div class="ec-spe-pro-inner">
                                         <div class="ec-spe-pro-image-outer col-md-6 col-sm-12">
                                             <div class="ec-spe-pro-image">
-                                                <img class="img-responsive" src="assets/images/product-image/111_1.jpg" alt="">                                                                              
+                                                <img class="img-responsive" src="{{asset("tlandingPage/assets/images/product-image/111_1.jpg")}}" alt="">                                                                              
                                             </div>
                                         </div>
                                         <div class="ec-spe-pro-content col-md-6 col-sm-12">
@@ -1321,7 +1302,7 @@
                                         <div class="ec-spe-pro-image-outer col-md-6 col-sm-12">
                                             <div class="ec-spe-pro-image">
                                                 <img class="img-responsive"
-                                                            src="assets/images/product-image/110_1.jpg" alt="">
+                                                            src="{{asset("tlandingPage/assets/images/product-image/110_1.jpg")}}" alt="">
                                             </div>
                                         </div>
                                         <div class="ec-spe-pro-content col-md-6 col-sm-12">
@@ -1397,25 +1378,25 @@
                                                     <div class="ec-pro-image">
                                                         <a href="product-left-sidebar.html" class="image">
                                                             <img class="main-image"
-                                                                src="assets/images/product-image/88_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/88_1.jpg")}}" alt="Product" />
                                                             <img class="hover-image"
-                                                                src="assets/images/product-image/88_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/88_1.jpg")}}" alt="Product" />
                                                         </a>
                                                         <span class="percentage">20%</span>
                                                         <div class="ec-pro-actions">
                                                             <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="assets/images/icons/pro_wishlist.svg"
+                                                                    src="{{asset("tlandingPage/assets/images/icons/pro_wishlist.svg")}}"
                                                                     class="svg_img pro_svg" alt="" /></a>
                                                             <a href="#" class="ec-btn-group quickview"
                                                                 data-link-action="quickview" title="Quick view"
                                                                 data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="assets/images/icons/quickview.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                    src="{{asset("tlandingPage/assets/images/icons/quickview.svg"
+  )}}"                                                                  class="svg_img pro_svg" alt="" /></a>
                                                             <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="assets/images/icons/compare.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="assets/images/icons/pro_cart.svg"
-                                                                        class="svg_img pro_svg" alt="" /></a>
+                                                                title="Compare"><img src="{{asset("tlandingPage/assets/images/icons/compare.svg"
+    )}}"                                                                class="svg_img pro_svg" alt="" /></a>
+                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset("tlandingPage/assets/images/icons/pro_cart.svg"
+   )}}"                                                                     class="svg_img pro_svg" alt="" /></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1444,24 +1425,24 @@
                                                     <div class="ec-pro-image">
                                                         <a href="product-left-sidebar.html" class="image">
                                                             <img class="main-image"
-                                                                src="assets/images/product-image/97_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/97_1.jpg")}}" alt="Product" />
                                                             <img class="hover-image"
-                                                                src="assets/images/product-image/97_2.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/97_2.jpg")}}" alt="Product" />
                                                         </a>
                                                         <div class="ec-pro-actions">
                                                             <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="assets/images/icons/pro_wishlist.svg"
+                                                                    src="{{asset("tlandingPage/assets/images/icons/pro_wishlist.svg")}}"
                                                                     class="svg_img pro_svg" alt="" /></a>
                                                             <a href="#" class="ec-btn-group quickview"
                                                                 data-link-action="quickview" title="Quick view"
                                                                 data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="assets/images/icons/quickview.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                    src="{{asset("tlandingPage/assets/images/icons/quickview.svg"
+  )}}"                                                                  class="svg_img pro_svg" alt="" /></a>
                                                             <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="assets/images/icons/compare.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="assets/images/icons/pro_cart.svg"
-                                                                        class="svg_img pro_svg" alt="" /></a>
+                                                                title="Compare"><img src="{{asset("tlandingPage/assets/images/icons/compare.svg"
+    )}}"                                                                class="svg_img pro_svg" alt="" /></a>
+                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset("tlandingPage/assets/images/icons/pro_cart.svg"
+   )}}"                                                                     class="svg_img pro_svg" alt="" /></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1490,27 +1471,27 @@
                                                     <div class="ec-pro-image">
                                                         <a href="product-left-sidebar.html" class="image">
                                                             <img class="main-image"
-                                                                src="assets/images/product-image/107_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/107_1.jpg")}}" alt="Product" />
                                                             <img class="hover-image"
-                                                                src="assets/images/product-image/107_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/107_1.jpg")}}" alt="Product" />
                                                         </a>
                                                         <span class="flags">
                                                             <span class="sale">Sale</span>
                                                         </span>
                                                         <div class="ec-pro-actions">
                                                             <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="assets/images/icons/pro_wishlist.svg"
+                                                                    src="{{asset("tlandingPage/assets/images/icons/pro_wishlist.svg")}}"
                                                                     class="svg_img pro_svg" alt="" /></a>
                                                             <a href="#" class="ec-btn-group quickview"
                                                                 data-link-action="quickview" title="Quick view"
                                                                 data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="assets/images/icons/quickview.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                    src="{{asset("tlandingPage/assets/images/icons/quickview.svg"
+  )}}"                                                                  class="svg_img pro_svg" alt="" /></a>
                                                             <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="assets/images/icons/compare.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="assets/images/icons/pro_cart.svg"
-                                                                        class="svg_img pro_svg" alt="" /></a>
+                                                                title="Compare"><img src="{{asset("tlandingPage/assets/images/icons/compare.svg"
+    )}}"                                                                class="svg_img pro_svg" alt="" /></a>
+                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset("tlandingPage/assets/images/icons/pro_cart.svg"
+   )}}"                                                                     class="svg_img pro_svg" alt="" /></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1538,27 +1519,27 @@
                                                     <div class="ec-pro-image">
                                                         <a href="product-left-sidebar.html" class="image">
                                                             <img class="main-image"
-                                                                src="assets/images/product-image/108_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/108_1.jpg")}}" alt="Product" />
                                                             <img class="hover-image"
-                                                                src="assets/images/product-image/108_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/108_1.jpg")}}" alt="Product" />
                                                         </a>
                                                         <span class="flags">
                                                             <span class="new">New</span>
                                                         </span>
                                                         <div class="ec-pro-actions">
                                                             <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="assets/images/icons/pro_wishlist.svg"
+                                                                    src="{{asset("tlandingPage/assets/images/icons/pro_wishlist.svg")}}"
                                                                     class="svg_img pro_svg" alt="" /></a>
                                                             <a href="#" class="ec-btn-group quickview"
                                                                 data-link-action="quickview" title="Quick view"
                                                                 data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="assets/images/icons/quickview.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                    src="{{asset("tlandingPage/assets/images/icons/quickview.svg"
+  )}}"                                                                  class="svg_img pro_svg" alt="" /></a>
                                                             <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="assets/images/icons/compare.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="assets/images/icons/pro_cart.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                title="Compare"><img src="{{asset("tlandingPage/assets/images/icons/compare.svg"
+    )}}"                                                                class="svg_img pro_svg" alt="" /></a>
+                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset("tlandingPage/assets/images/icons/pro_cart.svg"
+   )}}"                                                                 class="svg_img pro_svg" alt="" /></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1587,27 +1568,27 @@
                                                     <div class="ec-pro-image">
                                                         <a href="product-left-sidebar.html" class="image">
                                                             <img class="main-image"
-                                                                src="assets/images/product-image/110_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/110_1.jpg")}}" alt="Product" />
                                                             <img class="hover-image"
-                                                                src="assets/images/product-image/110_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/110_1.jpg")}}" alt="Product" />
                                                         </a>
                                                         <span class="flags">
                                                             <span class="sale">Sale</span>
                                                         </span>
                                                         <div class="ec-pro-actions">
                                                             <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="assets/images/icons/pro_wishlist.svg"
+                                                                    src="{{asset("tlandingPage/assets/images/icons/pro_wishlist.svg")}}"
                                                                     class="svg_img pro_svg" alt="" /></a>
                                                             <a href="#" class="ec-btn-group quickview"
                                                                 data-link-action="quickview" title="Quick view"
                                                                 data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="assets/images/icons/quickview.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                    src="{{asset("tlandingPage/assets/images/icons/quickview.svg"
+  )}}"                                                                  class="svg_img pro_svg" alt="" /></a>
                                                             <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="assets/images/icons/compare.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="assets/images/icons/pro_cart.svg"
-                                                                        class="svg_img pro_svg" alt="" /></a>
+                                                                title="Compare"><img src="{{asset("tlandingPage/assets/images/icons/compare.svg"
+    )}}"                                                                class="svg_img pro_svg" alt="" /></a>
+                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset("tlandingPage/assets/images/icons/pro_cart.svg"
+   )}}"                                                                     class="svg_img pro_svg" alt="" /></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1636,25 +1617,25 @@
                                                     <div class="ec-pro-image">
                                                         <a href="product-left-sidebar.html" class="image">
                                                             <img class="main-image"
-                                                                src="assets/images/product-image/94_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/94_1.jpg")}}" alt="Product" />
                                                             <img class="hover-image"
-                                                                src="assets/images/product-image/94_2.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/94_2.jpg")}}" alt="Product" />
                                                         </a>
                                                         <span class="percentage">15%</span>
                                                         <div class="ec-pro-actions">
                                                             <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="assets/images/icons/pro_wishlist.svg"
+                                                                    src="{{asset("tlandingPage/assets/images/icons/pro_wishlist.svg")}}"
                                                                     class="svg_img pro_svg" alt="" /></a>
                                                             <a href="#" class="ec-btn-group quickview"
                                                                 data-link-action="quickview" title="Quick view"
                                                                 data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="assets/images/icons/quickview.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                    src="{{asset("tlandingPage/assets/images/icons/quickview.svg"
+  )}}"                                                                  class="svg_img pro_svg" alt="" /></a>
                                                             <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="assets/images/icons/compare.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="assets/images/icons/pro_cart.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                title="Compare"><img src="{{asset("tlandingPage/assets/images/icons/compare.svg"
+    )}}"                                                                class="svg_img pro_svg" alt="" /></a>
+                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset("tlandingPage/assets/images/icons/pro_cart.svg"
+   )}}"                                                                 class="svg_img pro_svg" alt="" /></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1683,27 +1664,27 @@
                                                     <div class="ec-pro-image">
                                                         <a href="product-left-sidebar.html" class="image">
                                                             <img class="main-image"
-                                                                src="assets/images/product-image/98_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/98_1.jpg")}}" alt="Product" />
                                                             <img class="hover-image"
-                                                                src="assets/images/product-image/98_2.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/98_2.jpg")}}" alt="Product" />
                                                         </a>
                                                         <span class="flags">
                                                             <span class="sale">Sale</span>
                                                         </span>
                                                         <div class="ec-pro-actions">
                                                             <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="assets/images/icons/pro_wishlist.svg"
+                                                                    src="{{asset("tlandingPage/assets/images/icons/pro_wishlist.svg")}}"
                                                                     class="svg_img pro_svg" alt="" /></a>
                                                             <a href="#" class="ec-btn-group quickview"
                                                                 data-link-action="quickview" title="Quick view"
                                                                 data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="assets/images/icons/quickview.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                    src="{{asset("tlandingPage/assets/images/icons/quickview.svg"
+  )}}"                                                                  class="svg_img pro_svg" alt="" /></a>
                                                             <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="assets/images/icons/compare.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="assets/images/icons/pro_cart.svg"
-                                                                        class="svg_img pro_svg" alt="" /></a>
+                                                                title="Compare"><img src="{{asset("tlandingPage/assets/images/icons/compare.svg"
+    )}}"                                                                class="svg_img pro_svg" alt="" /></a>
+                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset("tlandingPage/assets/images/icons/pro_cart.svg"
+   )}}"                                                                     class="svg_img pro_svg" alt="" /></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1732,24 +1713,24 @@
                                                     <div class="ec-pro-image">
                                                         <a href="product-left-sidebar.html" class="image">
                                                             <img class="main-image"
-                                                                src="assets/images/product-image/111_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/111_1.jpg")}}" alt="Product" />
                                                             <img class="hover-image"
-                                                                src="assets/images/product-image/111_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/111_1.jpg")}}" alt="Product" />
                                                         </a>
                                                         <div class="ec-pro-actions">
                                                             <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="assets/images/icons/pro_wishlist.svg"
+                                                                    src="{{asset("tlandingPage/assets/images/icons/pro_wishlist.svg")}}"
                                                                     class="svg_img pro_svg" alt="" /></a>
                                                             <a href="#" class="ec-btn-group quickview"
                                                                 data-link-action="quickview" title="Quick view"
                                                                 data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="assets/images/icons/quickview.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                    src="{{asset("tlandingPage/assets/images/icons/quickview.svg"
+  )}}"                                                                  class="svg_img pro_svg" alt="" /></a>
                                                             <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="assets/images/icons/compare.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="assets/images/icons/pro_cart.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                title="Compare"><img src="{{asset("tlandingPage/assets/images/icons/compare.svg"
+    )}}"                                                                class="svg_img pro_svg" alt="" /></a>
+                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset("tlandingPage/assets/images/icons/pro_cart.svg"
+   )}}"                                                                 class="svg_img pro_svg" alt="" /></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1784,24 +1765,24 @@
                                                     <div class="ec-pro-image">
                                                         <a href="product-left-sidebar.html" class="image">
                                                             <img class="main-image"
-                                                                src="assets/images/product-image/94_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/94_1.jpg")}}" alt="Product" />
                                                             <img class="hover-image"
-                                                                src="assets/images/product-image/94_2.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/94_2.jpg")}}" alt="Product" />
                                                         </a>
                                                         <div class="ec-pro-actions">
                                                             <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="assets/images/icons/pro_wishlist.svg"
+                                                                    src="{{asset("tlandingPage/assets/images/icons/pro_wishlist.svg")}}"
                                                                     class="svg_img pro_svg" alt="" /></a>
                                                             <a href="#" class="ec-btn-group quickview"
                                                                 data-link-action="quickview" title="Quick view"
                                                                 data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="assets/images/icons/quickview.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                    src="{{asset("tlandingPage/assets/images/icons/quickview.svg"
+  )}}"                                                                  class="svg_img pro_svg" alt="" /></a>
                                                             <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="assets/images/icons/compare.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="assets/images/icons/pro_cart.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                title="Compare"><img src="{{asset("tlandingPage/assets/images/icons/compare.svg"
+    )}}"                                                                class="svg_img pro_svg" alt="" /></a>
+                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset("tlandingPage/assets/images/icons/pro_cart.svg"
+   )}}"                                                                 class="svg_img pro_svg" alt="" /></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1830,27 +1811,27 @@
                                                     <div class="ec-pro-image">
                                                         <a href="product-left-sidebar.html" class="image">
                                                             <img class="main-image"
-                                                                src="assets/images/product-image/95_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/95_1.jpg")}}" alt="Product" />
                                                             <img class="hover-image"
-                                                                src="assets/images/product-image/95_2.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/95_2.jpg")}}" alt="Product" />
                                                         </a>
                                                         <span class="flags">
                                                             <span class="sale">Sale</span>
                                                         </span>
                                                         <div class="ec-pro-actions">
                                                             <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="assets/images/icons/pro_wishlist.svg"
+                                                                    src="{{asset("tlandingPage/assets/images/icons/pro_wishlist.svg")}}"
                                                                     class="svg_img pro_svg" alt="" /></a>
                                                             <a href="#" class="ec-btn-group quickview"
                                                                 data-link-action="quickview" title="Quick view"
                                                                 data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="assets/images/icons/quickview.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                    src="{{asset("tlandingPage/assets/images/icons/quickview.svg"
+  )}}"                                                                  class="svg_img pro_svg" alt="" /></a>
                                                             <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="assets/images/icons/compare.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="assets/images/icons/pro_cart.svg"
-                                                                        class="svg_img pro_svg" alt="" /></a>
+                                                                title="Compare"><img src="{{asset("tlandingPage/assets/images/icons/compare.svg"
+    )}}"                                                                class="svg_img pro_svg" alt="" /></a>
+                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset("tlandingPage/assets/images/icons/pro_cart.svg"
+   )}}"                                                                     class="svg_img pro_svg" alt="" /></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1879,27 +1860,27 @@
                                                     <div class="ec-pro-image">
                                                         <a href="product-left-sidebar.html" class="image">
                                                             <img class="main-image"
-                                                                src="assets/images/product-image/88_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/88_1.jpg")}}" alt="Product" />
                                                             <img class="hover-image"
-                                                                src="assets/images/product-image/88_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/88_1.jpg")}}" alt="Product" />
                                                         </a>
                                                         <span class="flags">
                                                             <span class="sale">Sale</span>
                                                         </span>
                                                         <div class="ec-pro-actions">
                                                             <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="assets/images/icons/pro_wishlist.svg"
+                                                                    src="{{asset("tlandingPage/assets/images/icons/pro_wishlist.svg")}}"
                                                                     class="svg_img pro_svg" alt="" /></a>
                                                             <a href="#" class="ec-btn-group quickview"
                                                                 data-link-action="quickview" title="Quick view"
                                                                 data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="assets/images/icons/quickview.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                    src="{{asset("tlandingPage/assets/images/icons/quickview.svg"
+  )}}"                                                                  class="svg_img pro_svg" alt="" /></a>
                                                             <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="assets/images/icons/compare.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="assets/images/icons/pro_cart.svg"
-                                                                        class="svg_img pro_svg" alt="" /></a>
+                                                                title="Compare"><img src="{{asset("tlandingPage/assets/images/icons/compare.svg"
+    )}}"                                                                class="svg_img pro_svg" alt="" /></a>
+                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset("tlandingPage/assets/images/icons/pro_cart.svg"
+   )}}"                                                                     class="svg_img pro_svg" alt="" /></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1928,27 +1909,27 @@
                                                     <div class="ec-pro-image">
                                                         <a href="product-left-sidebar.html" class="image">
                                                             <img class="main-image"
-                                                                src="assets/images/product-image/89_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/89_1.jpg")}}" alt="Product" />
                                                             <img class="hover-image"
-                                                                src="assets/images/product-image/89_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/89_1.jpg")}}" alt="Product" />
                                                         </a>
                                                         <span class="flags">
                                                             <span class="new">New</span>
                                                         </span>
                                                         <div class="ec-pro-actions">
                                                             <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="assets/images/icons/pro_wishlist.svg"
+                                                                    src="{{asset("tlandingPage/assets/images/icons/pro_wishlist.svg")}}"
                                                                     class="svg_img pro_svg" alt="" /></a>
                                                             <a href="#" class="ec-btn-group quickview"
                                                                 data-link-action="quickview" title="Quick view"
                                                                 data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="assets/images/icons/quickview.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                    src="{{asset("tlandingPage/assets/images/icons/quickview.svg"
+  )}}"                                                                  class="svg_img pro_svg" alt="" /></a>
                                                             <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="assets/images/icons/compare.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="assets/images/icons/pro_cart.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                title="Compare"><img src="{{asset("tlandingPage/assets/images/icons/compare.svg"
+    )}}"                                                                class="svg_img pro_svg" alt="" /></a>
+                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset("tlandingPage/assets/images/icons/pro_cart.svg"
+   )}}"                                                                 class="svg_img pro_svg" alt="" /></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1977,27 +1958,27 @@
                                                     <div class="ec-pro-image">
                                                         <a href="product-left-sidebar.html" class="image">
                                                             <img class="main-image"
-                                                                src="assets/images/product-image/90_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/90_1.jpg")}}" alt="Product" />
                                                             <img class="hover-image"
-                                                                src="assets/images/product-image/90_2.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/90_2.jpg")}}" alt="Product" />
                                                         </a>
                                                         <span class="flags">
                                                             <span class="new">New</span>
                                                         </span>
                                                         <div class="ec-pro-actions">
                                                             <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="assets/images/icons/pro_wishlist.svg"
+                                                                    src="{{asset("tlandingPage/assets/images/icons/pro_wishlist.svg")}}"
                                                                     class="svg_img pro_svg" alt="" /></a>
                                                             <a href="#" class="ec-btn-group quickview"
                                                                 data-link-action="quickview" title="Quick view"
                                                                 data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="assets/images/icons/quickview.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                    src="{{asset("tlandingPage/assets/images/icons/quickview.svg"
+  )}}"                                                                  class="svg_img pro_svg" alt="" /></a>
                                                             <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="assets/images/icons/compare.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="assets/images/icons/pro_cart.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                title="Compare"><img src="{{asset("tlandingPage/assets/images/icons/compare.svg"
+    )}}"                                                                class="svg_img pro_svg" alt="" /></a>
+                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset("tlandingPage/assets/images/icons/pro_cart.svg"
+   )}}"                                                                 class="svg_img pro_svg" alt="" /></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2026,27 +2007,27 @@
                                                     <div class="ec-pro-image">
                                                         <a href="product-left-sidebar.html" class="image">
                                                             <img class="main-image"
-                                                                src="assets/images/product-image/91_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/91_1.jpg")}}" alt="Product" />
                                                             <img class="hover-image"
-                                                                src="assets/images/product-image/91_2.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/91_2.jpg")}}" alt="Product" />
                                                         </a>
                                                         <span class="flags">
                                                             <span class="sale">Sale</span>
                                                         </span>
                                                         <div class="ec-pro-actions">
                                                             <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="assets/images/icons/pro_wishlist.svg"
+                                                                    src="{{asset("tlandingPage/assets/images/icons/pro_wishlist.svg")}}"
                                                                     class="svg_img pro_svg" alt="" /></a>
                                                             <a href="#" class="ec-btn-group quickview"
                                                                 data-link-action="quickview" title="Quick view"
                                                                 data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="assets/images/icons/quickview.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                    src="{{asset("tlandingPage/assets/images/icons/quickview.svg"
+  )}}"                                                                  class="svg_img pro_svg" alt="" /></a>
                                                             <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="assets/images/icons/compare.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="assets/images/icons/pro_cart.svg"
-                                                                        class="svg_img pro_svg" alt="" /></a>
+                                                                title="Compare"><img src="{{asset("tlandingPage/assets/images/icons/compare.svg"
+    )}}"                                                                class="svg_img pro_svg" alt="" /></a>
+                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset("tlandingPage/assets/images/icons/pro_cart.svg"
+   )}}"                                                                     class="svg_img pro_svg" alt="" /></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2075,24 +2056,24 @@
                                                     <div class="ec-pro-image">
                                                         <a href="product-left-sidebar.html" class="image">
                                                             <img class="main-image"
-                                                                src="assets/images/product-image/92_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/92_1.jpg")}}" alt="Product" />
                                                             <img class="hover-image"
-                                                                src="assets/images/product-image/92_2.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/92_2.jpg")}}" alt="Product" />
                                                         </a>
                                                         <div class="ec-pro-actions">
                                                             <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="assets/images/icons/pro_wishlist.svg"
+                                                                    src="{{asset("tlandingPage/assets/images/icons/pro_wishlist.svg")}}"
                                                                     class="svg_img pro_svg" alt="" /></a>
                                                             <a href="#" class="ec-btn-group quickview"
                                                                 data-link-action="quickview" title="Quick view"
                                                                 data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="assets/images/icons/quickview.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                    src="{{asset("tlandingPage/assets/images/icons/quickview.svg"
+  )}}"                                                                  class="svg_img pro_svg" alt="" /></a>
                                                             <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="assets/images/icons/compare.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="assets/images/icons/pro_cart.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                title="Compare"><img src="{{asset("tlandingPage/assets/images/icons/compare.svg"
+    )}}"                                                                class="svg_img pro_svg" alt="" /></a>
+                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset("tlandingPage/assets/images/icons/pro_cart.svg"
+   )}}"                                                                 class="svg_img pro_svg" alt="" /></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2121,24 +2102,24 @@
                                                     <div class="ec-pro-image">
                                                         <a href="product-left-sidebar.html" class="image">
                                                             <img class="main-image"
-                                                                src="assets/images/product-image/93_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/93_1.jpg")}}" alt="Product" />
                                                             <img class="hover-image"
-                                                                src="assets/images/product-image/93_2.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/93_2.jpg")}}" alt="Product" />
                                                         </a>
                                                         <div class="ec-pro-actions">
                                                             <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="assets/images/icons/pro_wishlist.svg"
+                                                                    src="{{asset("tlandingPage/assets/images/icons/pro_wishlist.svg")}}"
                                                                     class="svg_img pro_svg" alt="" /></a>
                                                             <a href="#" class="ec-btn-group quickview"
                                                                 data-link-action="quickview" title="Quick view"
                                                                 data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="assets/images/icons/quickview.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                    src="{{asset("tlandingPage/assets/images/icons/quickview.svg"
+  )}}"                                                                  class="svg_img pro_svg" alt="" /></a>
                                                             <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="assets/images/icons/compare.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="assets/images/icons/pro_cart.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                title="Compare"><img src="{{asset("tlandingPage/assets/images/icons/compare.svg"
+    )}}"                                                                class="svg_img pro_svg" alt="" /></a>
+                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset("tlandingPage/assets/images/icons/pro_cart.svg"
+   )}}"                                                                 class="svg_img pro_svg" alt="" /></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2173,24 +2154,24 @@
                                                     <div class="ec-pro-image">
                                                         <a href="product-left-sidebar.html" class="image">
                                                             <img class="main-image"
-                                                                src="assets/images/product-image/96_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/96_1.jpg")}}" alt="Product" />
                                                             <img class="hover-image"
-                                                                src="assets/images/product-image/96_2.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/96_2.jpg")}}" alt="Product" />
                                                         </a>
                                                         <div class="ec-pro-actions">
                                                             <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="assets/images/icons/pro_wishlist.svg"
+                                                                    src="{{asset("tlandingPage/assets/images/icons/pro_wishlist.svg")}}"
                                                                     class="svg_img pro_svg" alt="" /></a>
                                                             <a href="#" class="ec-btn-group quickview"
                                                                 data-link-action="quickview" title="Quick view"
                                                                 data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="assets/images/icons/quickview.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                    src="{{asset("tlandingPage/assets/images/icons/quickview.svg"
+  )}}"                                                                  class="svg_img pro_svg" alt="" /></a>
                                                             <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="assets/images/icons/compare.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="assets/images/icons/pro_cart.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                title="Compare"><img src="{{asset("tlandingPage/assets/images/icons/compare.svg"
+    )}}"                                                                class="svg_img pro_svg" alt="" /></a>
+                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset("tlandingPage/assets/images/icons/pro_cart.svg"
+   )}}"                                                                 class="svg_img pro_svg" alt="" /></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2219,27 +2200,27 @@
                                                     <div class="ec-pro-image">
                                                         <a href="product-left-sidebar.html" class="image">
                                                             <img class="main-image"
-                                                                src="assets/images/product-image/97_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/97_1.jpg")}}" alt="Product" />
                                                             <img class="hover-image"
-                                                                src="assets/images/product-image/97_2.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/97_2.jpg")}}" alt="Product" />
                                                         </a>
                                                         <span class="flags">
                                                             <span class="sale">Sale</span>
                                                         </span>
                                                         <div class="ec-pro-actions">
                                                             <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="assets/images/icons/pro_wishlist.svg"
+                                                                    src="{{asset("tlandingPage/assets/images/icons/pro_wishlist.svg")}}"
                                                                     class="svg_img pro_svg" alt="" /></a>
                                                             <a href="#" class="ec-btn-group quickview"
                                                                 data-link-action="quickview" title="Quick view"
                                                                 data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="assets/images/icons/quickview.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                    src="{{asset("tlandingPage/assets/images/icons/quickview.svg"
+  )}}"                                                                  class="svg_img pro_svg" alt="" /></a>
                                                             <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="assets/images/icons/compare.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="assets/images/icons/pro_cart.svg"
-                                                                        class="svg_img pro_svg" alt="" /></a>
+                                                                title="Compare"><img src="{{asset("tlandingPage/assets/images/icons/compare.svg"
+    )}}"                                                                class="svg_img pro_svg" alt="" /></a>
+                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset("tlandingPage/assets/images/icons/pro_cart.svg"
+   )}}"                                                                     class="svg_img pro_svg" alt="" /></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2268,27 +2249,27 @@
                                                     <div class="ec-pro-image">
                                                         <a href="product-left-sidebar.html" class="image">
                                                             <img class="main-image"
-                                                                src="assets/images/product-image/98_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/98_1.jpg")}}" alt="Product" />
                                                             <img class="hover-image"
-                                                                src="assets/images/product-image/98_2.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/98_2.jpg")}}" alt="Product" />
                                                         </a>
                                                         <span class="flags">
                                                             <span class="sale">Sale</span>
                                                         </span>
                                                         <div class="ec-pro-actions">
                                                             <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="assets/images/icons/pro_wishlist.svg"
+                                                                    src="{{asset("tlandingPage/assets/images/icons/pro_wishlist.svg")}}"
                                                                     class="svg_img pro_svg" alt="" /></a>
                                                             <a href="#" class="ec-btn-group quickview"
                                                                 data-link-action="quickview" title="Quick view"
                                                                 data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="assets/images/icons/quickview.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                    src="{{asset("tlandingPage/assets/images/icons/quickview.svg"
+  )}}"                                                                  class="svg_img pro_svg" alt="" /></a>
                                                             <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="assets/images/icons/compare.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="assets/images/icons/pro_cart.svg"
-                                                                        class="svg_img pro_svg" alt="" /></a>
+                                                                title="Compare"><img src="{{asset("tlandingPage/assets/images/icons/compare.svg"
+    )}}"                                                                class="svg_img pro_svg" alt="" /></a>
+                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset("tlandingPage/assets/images/icons/pro_cart.svg"
+   )}}"                                                                     class="svg_img pro_svg" alt="" /></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2317,27 +2298,27 @@
                                                     <div class="ec-pro-image">
                                                         <a href="product-left-sidebar.html" class="image">
                                                             <img class="main-image"
-                                                                src="assets/images/product-image/99_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/99_1.jpg")}}" alt="Product" />
                                                             <img class="hover-image"
-                                                                src="assets/images/product-image/99_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/99_1.jpg")}}" alt="Product" />
                                                         </a>
                                                         <span class="flags">
                                                             <span class="new">New</span>
                                                         </span>
                                                         <div class="ec-pro-actions">
                                                             <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="assets/images/icons/pro_wishlist.svg"
+                                                                    src="{{asset("tlandingPage/assets/images/icons/pro_wishlist.svg")}}"
                                                                     class="svg_img pro_svg" alt="" /></a>
                                                             <a href="#" class="ec-btn-group quickview"
                                                                 data-link-action="quickview" title="Quick view"
                                                                 data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="assets/images/icons/quickview.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                    src="{{asset("tlandingPage/assets/images/icons/quickview.svg"
+  )}}"                                                                  class="svg_img pro_svg" alt="" /></a>
                                                             <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="assets/images/icons/compare.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="assets/images/icons/pro_cart.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                title="Compare"><img src="{{asset("tlandingPage/assets/images/icons/compare.svg"
+    )}}"                                                                class="svg_img pro_svg" alt="" /></a>
+                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset("tlandingPage/assets/images/icons/pro_cart.svg"
+   )}}"                                                                 class="svg_img pro_svg" alt="" /></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2366,27 +2347,27 @@
                                                     <div class="ec-pro-image">
                                                         <a href="product-left-sidebar.html" class="image">
                                                             <img class="main-image"
-                                                                src="assets/images/product-image/100_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/100_1.jpg")}}" alt="Product" />
                                                             <img class="hover-image"
-                                                                src="assets/images/product-image/100_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/100_1.jpg")}}" alt="Product" />
                                                         </a>
                                                         <span class="flags">
                                                             <span class="new">New</span>
                                                         </span>
                                                         <div class="ec-pro-actions">
                                                             <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="assets/images/icons/pro_wishlist.svg"
+                                                                    src="{{asset("tlandingPage/assets/images/icons/pro_wishlist.svg")}}"
                                                                     class="svg_img pro_svg" alt="" /></a>
                                                             <a href="#" class="ec-btn-group quickview"
                                                                 data-link-action="quickview" title="Quick view"
                                                                 data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="assets/images/icons/quickview.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                    src="{{asset("tlandingPage/assets/images/icons/quickview.svg"
+  )}}"                                                                  class="svg_img pro_svg" alt="" /></a>
                                                             <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="assets/images/icons/compare.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="assets/images/icons/pro_cart.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                title="Compare"><img src="{{asset("tlandingPage/assets/images/icons/compare.svg"
+    )}}"                                                                class="svg_img pro_svg" alt="" /></a>
+                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset("tlandingPage/assets/images/icons/pro_cart.svg"
+   )}}"                                                                 class="svg_img pro_svg" alt="" /></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2415,24 +2396,24 @@
                                                     <div class="ec-pro-image">
                                                         <a href="product-left-sidebar.html" class="image">
                                                             <img class="main-image"
-                                                                src="assets/images/product-image/104_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/104_1.jpg")}}" alt="Product" />
                                                             <img class="hover-image"
-                                                                src="assets/images/product-image/104_2.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/104_2.jpg")}}" alt="Product" />
                                                         </a>
                                                         <div class="ec-pro-actions">
                                                             <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="assets/images/icons/pro_wishlist.svg"
+                                                                    src="{{asset("tlandingPage/assets/images/icons/pro_wishlist.svg")}}"
                                                                     class="svg_img pro_svg" alt="" /></a>
                                                             <a href="#" class="ec-btn-group quickview"
                                                                 data-link-action="quickview" title="Quick view"
                                                                 data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="assets/images/icons/quickview.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                    src="{{asset("tlandingPage/assets/images/icons/quickview.svg"
+  )}}"                                                                  class="svg_img pro_svg" alt="" /></a>
                                                             <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="assets/images/icons/compare.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="assets/images/icons/pro_cart.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                title="Compare"><img src="{{asset("tlandingPage/assets/images/icons/compare.svg"
+    )}}"                                                                class="svg_img pro_svg" alt="" /></a>
+                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset("tlandingPage/assets/images/icons/pro_cart.svg"
+   )}}"                                                                 class="svg_img pro_svg" alt="" /></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2461,24 +2442,24 @@
                                                     <div class="ec-pro-image">
                                                         <a href="product-left-sidebar.html" class="image">
                                                             <img class="main-image"
-                                                                src="assets/images/product-image/102_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/102_1.jpg")}}" alt="Product" />
                                                             <img class="hover-image"
-                                                                src="assets/images/product-image/102_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/102_1.jpg")}}" alt="Product" />
                                                         </a>
                                                         <div class="ec-pro-actions">
                                                             <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="assets/images/icons/pro_wishlist.svg"
+                                                                    src="{{asset("tlandingPage/assets/images/icons/pro_wishlist.svg")}}"
                                                                     class="svg_img pro_svg" alt="" /></a>
                                                             <a href="#" class="ec-btn-group quickview"
                                                                 data-link-action="quickview" title="Quick view"
                                                                 data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="assets/images/icons/quickview.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                    src="{{asset("tlandingPage/assets/images/icons/quickview.svg"
+  )}}"                                                                  class="svg_img pro_svg" alt="" /></a>
                                                             <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="assets/images/icons/compare.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="assets/images/icons/pro_cart.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                title="Compare"><img src="{{asset("tlandingPage/assets/images/icons/compare.svg"
+    )}}"                                                                class="svg_img pro_svg" alt="" /></a>
+                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset("tlandingPage/assets/images/icons/pro_cart.svg"
+   )}}"                                                                 class="svg_img pro_svg" alt="" /></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2507,24 +2488,24 @@
                                                     <div class="ec-pro-image">
                                                         <a href="product-left-sidebar.html" class="image">
                                                             <img class="main-image"
-                                                                src="assets/images/product-image/103_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/103_1.jpg")}}" alt="Product" />
                                                             <img class="hover-image"
-                                                                src="assets/images/product-image/103_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/103_1.jpg")}}" alt="Product" />
                                                         </a>
                                                         <div class="ec-pro-actions">
                                                             <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="assets/images/icons/pro_wishlist.svg"
+                                                                    src="{{asset("tlandingPage/assets/images/icons/pro_wishlist.svg")}}"
                                                                     class="svg_img pro_svg" alt="" /></a>
                                                             <a href="#" class="ec-btn-group quickview"
                                                                 data-link-action="quickview" title="Quick view"
                                                                 data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="assets/images/icons/quickview.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                    src="{{asset("tlandingPage/assets/images/icons/quickview.svg"
+  )}}"                                                                  class="svg_img pro_svg" alt="" /></a>
                                                             <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="assets/images/icons/compare.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="assets/images/icons/pro_cart.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                title="Compare"><img src="{{asset("tlandingPage/assets/images/icons/compare.svg"
+    )}}"                                                                class="svg_img pro_svg" alt="" /></a>
+                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset("tlandingPage/assets/images/icons/pro_cart.svg"
+   )}}"                                                                 class="svg_img pro_svg" alt="" /></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2559,24 +2540,24 @@
                                                     <div class="ec-pro-image">
                                                         <a href="product-left-sidebar.html" class="image">
                                                             <img class="main-image"
-                                                                src="assets/images/product-image/105_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/105_1.jpg")}}" alt="Product" />
                                                             <img class="hover-image"
-                                                                src="assets/images/product-image/105_2.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/105_2.jpg")}}" alt="Product" />
                                                         </a>
                                                         <div class="ec-pro-actions">
                                                             <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="assets/images/icons/pro_wishlist.svg"
+                                                                    src="{{asset("tlandingPage/assets/images/icons/pro_wishlist.svg")}}"
                                                                     class="svg_img pro_svg" alt="" /></a>
                                                             <a href="#" class="ec-btn-group quickview"
                                                                 data-link-action="quickview" title="Quick view"
                                                                 data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="assets/images/icons/quickview.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                    src="{{asset("tlandingPage/assets/images/icons/quickview.svg"
+  )}}"                                                                  class="svg_img pro_svg" alt="" /></a>
                                                             <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="assets/images/icons/compare.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="assets/images/icons/pro_cart.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                title="Compare"><img src="{{asset("tlandingPage/assets/images/icons/compare.svg"
+    )}}"                                                                class="svg_img pro_svg" alt="" /></a>
+                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset("tlandingPage/assets/images/icons/pro_cart.svg"
+   )}}"                                                                 class="svg_img pro_svg" alt="" /></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2605,27 +2586,27 @@
                                                     <div class="ec-pro-image">
                                                         <a href="product-left-sidebar.html" class="image">
                                                             <img class="main-image"
-                                                                src="assets/images/product-image/106_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/106_1.jpg")}}" alt="Product" />
                                                             <img class="hover-image"
-                                                                src="assets/images/product-image/106_2.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/106_2.jpg")}}" alt="Product" />
                                                         </a>
                                                         <span class="flags">
                                                             <span class="sale">Sale</span>
                                                         </span>
                                                         <div class="ec-pro-actions">
                                                             <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="assets/images/icons/pro_wishlist.svg"
+                                                                    src="{{asset("tlandingPage/assets/images/icons/pro_wishlist.svg")}}"
                                                                     class="svg_img pro_svg" alt="" /></a>
                                                             <a href="#" class="ec-btn-group quickview"
                                                                 data-link-action="quickview" title="Quick view"
                                                                 data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="assets/images/icons/quickview.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                    src="{{asset("tlandingPage/assets/images/icons/quickview.svg"
+  )}}"                                                                  class="svg_img pro_svg" alt="" /></a>
                                                             <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="assets/images/icons/compare.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="assets/images/icons/pro_cart.svg"
-                                                                        class="svg_img pro_svg" alt="" /></a>
+                                                                title="Compare"><img src="{{asset("tlandingPage/assets/images/icons/compare.svg"
+    )}}"                                                                class="svg_img pro_svg" alt="" /></a>
+                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset("tlandingPage/assets/images/icons/pro_cart.svg"
+   )}}"                                                                     class="svg_img pro_svg" alt="" /></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2654,27 +2635,27 @@
                                                     <div class="ec-pro-image">
                                                         <a href="product-left-sidebar.html" class="image">
                                                             <img class="main-image"
-                                                                src="assets/images/product-image/107_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/107_1.jpg")}}" alt="Product" />
                                                             <img class="hover-image"
-                                                                src="assets/images/product-image/107_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/107_1.jpg")}}" alt="Product" />
                                                         </a>
                                                         <span class="flags">
                                                             <span class="sale">Sale</span>
                                                         </span>
                                                         <div class="ec-pro-actions">
                                                             <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="assets/images/icons/pro_wishlist.svg"
+                                                                    src="{{asset("tlandingPage/assets/images/icons/pro_wishlist.svg")}}"
                                                                     class="svg_img pro_svg" alt="" /></a>
                                                             <a href="#" class="ec-btn-group quickview"
                                                                 data-link-action="quickview" title="Quick view"
                                                                 data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="assets/images/icons/quickview.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                    src="{{asset("tlandingPage/assets/images/icons/quickview.svg"
+  )}}"                                                                  class="svg_img pro_svg" alt="" /></a>
                                                             <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="assets/images/icons/compare.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="assets/images/icons/pro_cart.svg"
-                                                                        class="svg_img pro_svg" alt="" /></a>
+                                                                title="Compare"><img src="{{asset("tlandingPage/assets/images/icons/compare.svg"
+    )}}"                                                                class="svg_img pro_svg" alt="" /></a>
+                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset("tlandingPage/assets/images/icons/pro_cart.svg"
+   )}}"                                                                     class="svg_img pro_svg" alt="" /></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2702,27 +2683,27 @@
                                                     <div class="ec-pro-image">
                                                         <a href="product-left-sidebar.html" class="image">
                                                             <img class="main-image"
-                                                                src="assets/images/product-image/108_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/108_1.jpg")}}" alt="Product" />
                                                             <img class="hover-image"
-                                                                src="assets/images/product-image/108_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/108_1.jpg")}}" alt="Product" />
                                                         </a>
                                                         <span class="flags">
                                                             <span class="new">New</span>
                                                         </span>
                                                         <div class="ec-pro-actions">
                                                             <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="assets/images/icons/pro_wishlist.svg"
+                                                                    src="{{asset("tlandingPage/assets/images/icons/pro_wishlist.svg")}}"
                                                                     class="svg_img pro_svg" alt="" /></a>
                                                             <a href="#" class="ec-btn-group quickview"
                                                                 data-link-action="quickview" title="Quick view"
                                                                 data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="assets/images/icons/quickview.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                    src="{{asset("tlandingPage/assets/images/icons/quickview.svg"
+  )}}"                                                                  class="svg_img pro_svg" alt="" /></a>
                                                             <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="assets/images/icons/compare.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="assets/images/icons/pro_cart.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                title="Compare"><img src="{{asset("tlandingPage/assets/images/icons/compare.svg"
+    )}}"                                                                class="svg_img pro_svg" alt="" /></a>
+                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset("tlandingPage/assets/images/icons/pro_cart.svg"
+   )}}"                                                                 class="svg_img pro_svg" alt="" /></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2751,27 +2732,27 @@
                                                     <div class="ec-pro-image">
                                                         <a href="product-left-sidebar.html" class="image">
                                                             <img class="main-image"
-                                                                src="assets/images/product-image/109_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/109_1.jpg")}}" alt="Product" />
                                                             <img class="hover-image"
-                                                                src="assets/images/product-image/109_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/109_1.jpg")}}" alt="Product" />
                                                         </a>
                                                         <span class="flags">
                                                             <span class="new">New</span>
                                                         </span>
                                                         <div class="ec-pro-actions">
                                                             <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="assets/images/icons/pro_wishlist.svg"
+                                                                    src="{{asset("tlandingPage/assets/images/icons/pro_wishlist.svg")}}"
                                                                     class="svg_img pro_svg" alt="" /></a>
                                                             <a href="#" class="ec-btn-group quickview"
                                                                 data-link-action="quickview" title="Quick view"
                                                                 data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="assets/images/icons/quickview.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                    src="{{asset("tlandingPage/assets/images/icons/quickview.svg"
+  )}}"                                                                  class="svg_img pro_svg" alt="" /></a>
                                                             <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="assets/images/icons/compare.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="assets/images/icons/pro_cart.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                title="Compare"><img src="{{asset("tlandingPage/assets/images/icons/compare.svg"
+    )}}"                                                                class="svg_img pro_svg" alt="" /></a>
+                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset("tlandingPage/assets/images/icons/pro_cart.svg"
+   )}}"                                                                 class="svg_img pro_svg" alt="" /></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2800,27 +2781,27 @@
                                                     <div class="ec-pro-image">
                                                         <a href="product-left-sidebar.html" class="image">
                                                             <img class="main-image"
-                                                                src="assets/images/product-image/110_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/110_1.jpg")}}" alt="Product" />
                                                             <img class="hover-image"
-                                                                src="assets/images/product-image/110_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/110_1.jpg")}}" alt="Product" />
                                                         </a>
                                                         <span class="flags">
                                                             <span class="sale">Sale</span>
                                                         </span>
                                                         <div class="ec-pro-actions">
                                                             <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="assets/images/icons/pro_wishlist.svg"
+                                                                    src="{{asset("tlandingPage/assets/images/icons/pro_wishlist.svg")}}"
                                                                     class="svg_img pro_svg" alt="" /></a>
                                                             <a href="#" class="ec-btn-group quickview"
                                                                 data-link-action="quickview" title="Quick view"
                                                                 data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="assets/images/icons/quickview.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                    src="{{asset("tlandingPage/assets/images/icons/quickview.svg"
+  )}}"                                                                  class="svg_img pro_svg" alt="" /></a>
                                                             <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="assets/images/icons/compare.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="assets/images/icons/pro_cart.svg"
-                                                                        class="svg_img pro_svg" alt="" /></a>
+                                                                title="Compare"><img src="{{asset("tlandingPage/assets/images/icons/compare.svg"
+    )}}"                                                                class="svg_img pro_svg" alt="" /></a>
+                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset("tlandingPage/assets/images/icons/pro_cart.svg"
+   )}}"                                                                     class="svg_img pro_svg" alt="" /></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2849,24 +2830,24 @@
                                                     <div class="ec-pro-image">
                                                         <a href="product-left-sidebar.html" class="image">
                                                             <img class="main-image"
-                                                                src="assets/images/product-image/111_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/111_1.jpg")}}" alt="Product" />
                                                             <img class="hover-image"
-                                                                src="assets/images/product-image/111_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/111_1.jpg")}}" alt="Product" />
                                                         </a>
                                                         <div class="ec-pro-actions">
                                                             <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="assets/images/icons/pro_wishlist.svg"
+                                                                    src="{{asset("tlandingPage/assets/images/icons/pro_wishlist.svg")}}"
                                                                     class="svg_img pro_svg" alt="" /></a>
                                                             <a href="#" class="ec-btn-group quickview"
                                                                 data-link-action="quickview" title="Quick view"
                                                                 data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="assets/images/icons/quickview.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                    src="{{asset("tlandingPage/assets/images/icons/quickview.svg"
+  )}}"                                                                  class="svg_img pro_svg" alt="" /></a>
                                                             <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="assets/images/icons/compare.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="assets/images/icons/pro_cart.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                title="Compare"><img src="{{asset("tlandingPage/assets/images/icons/compare.svg"
+    )}}"                                                                class="svg_img pro_svg" alt="" /></a>
+                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset("tlandingPage/assets/images/icons/pro_cart.svg"
+   )}}"                                                                 class="svg_img pro_svg" alt="" /></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2895,24 +2876,24 @@
                                                     <div class="ec-pro-image">
                                                         <a href="product-left-sidebar.html" class="image">
                                                             <img class="main-image"
-                                                                src="assets/images/product-image/112_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/112_1.jpg")}}" alt="Product" />
                                                             <img class="hover-image"
-                                                                src="assets/images/product-image/112_1.jpg" alt="Product" />
+                                                                src="{{asset("tlandingPage/assets/images/product-image/112_1.jpg")}}" alt="Product" />
                                                         </a>
                                                         <div class="ec-pro-actions">
                                                             <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="assets/images/icons/pro_wishlist.svg"
+                                                                    src="{{asset("tlandingPage/assets/images/icons/pro_wishlist.svg")}}"
                                                                     class="svg_img pro_svg" alt="" /></a>
                                                             <a href="#" class="ec-btn-group quickview"
                                                                 data-link-action="quickview" title="Quick view"
                                                                 data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="assets/images/icons/quickview.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                    src="{{asset("tlandingPage/assets/images/icons/quickview.svg"
+  )}}"                                                                  class="svg_img pro_svg" alt="" /></a>
                                                             <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="assets/images/icons/compare.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="assets/images/icons/pro_cart.svg"
-                                                                    class="svg_img pro_svg" alt="" /></a>
+                                                                title="Compare"><img src="{{asset("tlandingPage/assets/images/icons/compare.svg"
+    )}}"                                                                class="svg_img pro_svg" alt="" /></a>
+                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset("tlandingPage/assets/images/icons/pro_cart.svg"
+   )}}"                                                                 class="svg_img pro_svg" alt="" /></a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2964,15 +2945,30 @@
                             <li class="ec-test-item">
                                 <div class="ec-test-inner">
                                     <div class="ec-test-img">
-                                        <img alt="testimonial" title="testimonial"
-                                            src="assets/images/testimonial/1.jpg" />
+                                        <img alt="testimonial" title="testimonial" src="{{asset("tlandingPage/assets/images/testimonial/1.jpg")}}" />
                                     </div>
                                     <div class="ec-test-content">
                                         <div class="ec-test-name">mark jofferson</div>
                                         <div class="ec-test-designation">- CEO & Founder Invision</div>
                                         <div class="ec-test-divider">
-                                            <img src="assets/images/testimonial/quotes.svg" class="svg_img test_svg"
-                                                alt="" />
+                                            <img src="{{asset("tlandingPage/assets/images/testimonial/quotes.svg")}}" class="svg_img test_svg" alt="" />
+                                        </div>
+                                        <div class="ec-test-desc">Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                                            dolor dolor sit amet.
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="ec-test-item">
+                                <div class="ec-test-inner">
+                                    <div class="ec-test-img">
+                                        <img alt="testimonial" title="testimonial" src="{{asset("tlandingPage/assets/images/testimonial/2.jpg")}}" />
+ )}}"                                   </div>
+                                    <div class="ec-test-content">
+                                        <div class="ec-test-name">mark jofferson</div>
+                                        <div class="ec-test-designation">- CEO & Founder Invision</div>
+                                        <div class="ec-test-divider">
+                                            <img src="{{asset("tlandingPage/assets/images/testimonial/quotes.svg")}}" class="svg_img test_svg" alt="" />
                                         </div>
                                         <div class="ec-test-desc">Lorem ipsum dolor sit amet consectetur Lorem ipsum
                                             dolor dolor sit amet.
@@ -2984,33 +2980,13 @@
                                 <div class="ec-test-inner">
                                     <div class="ec-test-img">
                                         <img alt="testimonial" title="testimonial"
-                                            src="assets/images/testimonial/2.jpg" />
-                                    </div>
+                                            src="{{asset("tlandingPage/assets/images/testimonial/3.jpg")}}" />
+ )}}"                                   </div>
                                     <div class="ec-test-content">
                                         <div class="ec-test-name">mark jofferson</div>
                                         <div class="ec-test-designation">- CEO & Founder Invision</div>
                                         <div class="ec-test-divider">
-                                            <img src="assets/images/testimonial/quotes.svg" class="svg_img test_svg"
-                                                alt="" />
-                                        </div>
-                                        <div class="ec-test-desc">Lorem ipsum dolor sit amet consectetur Lorem ipsum
-                                            dolor dolor sit amet.
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="ec-test-item">
-                                <div class="ec-test-inner">
-                                    <div class="ec-test-img">
-                                        <img alt="testimonial" title="testimonial"
-                                            src="assets/images/testimonial/3.jpg" />
-                                    </div>
-                                    <div class="ec-test-content">
-                                        <div class="ec-test-name">mark jofferson</div>
-                                        <div class="ec-test-designation">- CEO & Founder Invision</div>
-                                        <div class="ec-test-divider">
-                                            <img src="assets/images/testimonial/quotes.svg" class="svg_img test_svg"
-                                                alt="" />
+                                            <img src="{{asset("tlandingPage/assets/images/testimonial/quotes.svg")}}" class="svg_img test_svg" alt="" />
                                         </div>
                                         <div class="ec-test-desc">Lorem ipsum dolor sit amet consectetur Lorem ipsum
                                             dolor dolor sit amet.
@@ -3052,7 +3028,7 @@
                         <div class="ec_ser_content ec_ser_content_1 col-sm-12">
                             <div class="ec_ser_inner">
                                 <div class="ec-service-image">
-                                    <img src="assets/images/icons/service_4_1.svg" class="svg_img ser_svg" alt="" />
+                                    <img src="{{asset("tlandingPage/assets/images/icons/service_4_1.svg" )}}" class="svg_img ser_svg" alt="" />
                                 </div>
                                 <div class="ec-service-desc">
                                     <h2>Worldwide Delivery</h2>
@@ -3063,7 +3039,7 @@
                         <div class="ec_ser_content ec_ser_content_2 col-sm-12">
                             <div class="ec_ser_inner">
                                 <div class="ec-service-image">
-                                    <img src="assets/images/icons/service_4_2.svg" class="svg_img ser_svg" alt="" />
+                                    <img src="{{asset("tlandingPage/assets/images/icons/service_4_2.svg" )}}"class="svg_img ser_svg" alt="" />
                                 </div>
                                 <div class="ec-service-desc">
                                     <h2>Next Day delivery</h2>
@@ -3074,7 +3050,7 @@
                         <div class="ec_ser_content ec_ser_content_3 col-sm-12">
                             <div class="ec_ser_inner">
                                 <div class="ec-service-image">
-                                    <img src="assets/images/icons/service_4_3.svg" class="svg_img ser_svg" alt="" />
+                                    <img src="{{asset("tlandingPage/assets/images/icons/service_4_3.svg" )}}"class="svg_img ser_svg" alt="" />
                                 </div>
                                 <div class="ec-service-desc">
                                     <h2>Best Online Support</h2>
@@ -3085,7 +3061,7 @@
                         <div class="ec_ser_content ec_ser_content_4 col-sm-12">
                             <div class="ec_ser_inner">
                                 <div class="ec-service-image">
-                                    <img src="assets/images/icons/service_4_4.svg" class="svg_img ser_svg" alt="" />
+                                    <img src="{{asset("tlandingPage/assets/images/icons/service_4_4.svg" )}}"class="svg_img ser_svg" alt="" />
                                 </div>
                                 <div class="ec-service-desc">
                                     <h2>Return Policy</h2>
@@ -3096,7 +3072,7 @@
                         <div class="ec_ser_content ec_ser_content_5 col-sm-12">
                             <div class="ec_ser_inner">
                                 <div class="ec-service-image">
-                                    <img src="assets/images/icons/service_4_5.svg" class="svg_img ser_svg" alt="" />
+                                    <img src="{{asset("tlandingPage/assets/images/icons/service_4_5.svg" )}}"class="svg_img ser_svg" alt="" />
                                 </div>
                                 <div class="ec-service-desc">
                                     <h2>30% money back</h2>
@@ -3121,8 +3097,8 @@
                         <div class="ec-blog-inner">
                             <div class="ec-blog-image">
                                 <a href="blog-detail-left-sidebar.html">
-                                    <img class="blog-image" src="assets/images/blog-image/2.jpg"
-                                        alt="Blog" />
+                                    <img class="blog-image" src="{{asset("tlandingPage/assets/images/blog-image/2.jpg"
+     )}}"                                   alt="Blog" />
                                 </a>
                             </div>
                             <div class="ec-blog-content">
@@ -3138,8 +3114,8 @@
                         <div class="ec-blog-inner">
                             <div class="ec-blog-image">
                                 <a href="blog-detail-left-sidebar.html">
-                                    <img class="blog-image" src="assets/images/blog-image/3.jpg"
-                                        alt="Blog" />
+                                    <img class="blog-image" src="{{asset("tlandingPage/assets/images/blog-image/3.jpg"
+     )}}"                                   alt="Blog" />
                                 </a>
                             </div>
                             <div class="ec-blog-content">
@@ -3155,8 +3131,8 @@
                         <div class="ec-blog-inner">
                             <div class="ec-blog-image">
                                 <a href="blog-detail-left-sidebar.html">
-                                    <img class="blog-image" src="assets/images/blog-image/4.jpg"
-                                        alt="Blog" />
+                                    <img class="blog-image" src="{{asset("tlandingPage/assets/images/blog-image/4.jpg"
+     )}}"                                   alt="Blog" />
                                 </a>
                             </div>
                             <div class="ec-blog-content">
@@ -3172,8 +3148,8 @@
                         <div class="ec-blog-inner">
                             <div class="ec-blog-image">
                                 <a href="blog-detail-left-sidebar.html">
-                                    <img class="blog-image" src="assets/images/blog-image/5.jpg"
-                                        alt="Blog" />
+                                    <img class="blog-image" src="{{asset("tlandingPage/assets/images/blog-image/5.jpg"
+     )}}"                                   alt="Blog" />
                                 </a>
                             </div>
                             <div class="ec-blog-content">
@@ -3189,8 +3165,8 @@
                         <div class="ec-blog-inner">
                             <div class="ec-blog-image">
                                 <a href="blog-detail-left-sidebar.html">
-                                    <img class="blog-image" src="assets/images/blog-image/6.jpg"
-                                        alt="Blog" />
+                                    <img class="blog-image" src="{{asset("tlandingPage/assets/images/blog-image/6.jpg"
+     )}}"                                   alt="Blog" />
                                 </a>
                             </div>
                             <div class="ec-blog-content">
@@ -3206,8 +3182,8 @@
                         <div class="ec-blog-inner">
                             <div class="ec-blog-image">
                                 <a href="blog-detail-left-sidebar.html">
-                                    <img class="blog-image" src="assets/images/blog-image/7.jpg"
-                                        alt="Blog" />
+                                    <img class="blog-image" src="{{asset("tlandingPage/assets/images/blog-image/7.jpg"
+     )}}"                                   alt="Blog" />
                                 </a>
                             </div>
                             <div class="ec-blog-content">
@@ -3235,7 +3211,7 @@
                         <!-- instagram item -->
                         <div class="ec-insta-item">
                             <div class="ec-insta-inner">
-                                <a href="#" target="_blank"><img src="assets/images/instragram-image/1.jpg" alt="">
+                                <a href="#" target="_blank"><img src="{{asset("tlandingPage/assets/images/instragram-image/1.jpg")}}" alt="">
 
                                 </a>
                             </div>
@@ -3243,7 +3219,7 @@
                         <!-- instagram item -->
                         <div class="ec-insta-item">
                             <div class="ec-insta-inner">
-                                <a href="#" target="_blank"><img src="assets/images/instragram-image/2.jpg" alt="">
+                                <a href="#" target="_blank"><img src="{{asset("tlandingPage/assets/images/instragram-image/2.jpg")}}" alt="">
 
                                 </a>
                             </div>
@@ -3251,7 +3227,7 @@
                         <!-- instagram item -->
                         <div class="ec-insta-item">
                             <div class="ec-insta-inner">
-                                <a href="#" target="_blank"><img src="assets/images/instragram-image/3.jpg" alt="">
+                                <a href="#" target="_blank"><img src="{{asset("tlandingPage/assets/images/instragram-image/3.jpg")}}" alt="">
 
                                 </a>
                             </div>
@@ -3259,7 +3235,7 @@
                         <!-- instagram item -->
                         <div class="ec-insta-item">
                             <div class="ec-insta-inner">
-                                <a href="#" target="_blank"><img src="assets/images/instragram-image/4.jpg" alt="">
+                                <a href="#" target="_blank"><img src="{{asset("tlandingPage/assets/images/instragram-image/4.jpg")}}" alt="">
 
                                 </a>
                             </div>
@@ -3268,7 +3244,7 @@
                         <!-- instagram item -->
                         <div class="ec-insta-item">
                             <div class="ec-insta-inner">
-                                <a href="#" target="_blank"><img src="assets/images/instragram-image/5.jpg" alt="">
+                                <a href="#" target="_blank"><img src="{{asset("tlandingPage/assets/images/instragram-image/5.jpg")}}" alt="">
 
                                 </a>
                             </div>
@@ -3276,7 +3252,7 @@
                         <!-- instagram item -->
                         <div class="ec-insta-item">
                             <div class="ec-insta-inner">
-                                <a href="#" target="_blank"><img src="assets/images/instragram-image/6.jpg" alt="">
+                                <a href="#" target="_blank"><img src="{{asset("tlandingPage/assets/images/instragram-image/6.jpg")}}" alt="">
 
                                 </a>
                             </div>
@@ -3284,7 +3260,7 @@
                         <!-- instagram item -->
                         <div class="ec-insta-item">
                             <div class="ec-insta-inner">
-                                <a href="#" target="_blank"><img src="assets/images/instragram-image/7.jpg" alt="">
+                                <a href="#" target="_blank"><img src="{{asset("tlandingPage/assets/images/instragram-image/7.jpg")}}" alt="">
 
                                 </a>
                             </div>
@@ -3292,7 +3268,7 @@
                         <!-- instagram item -->
                         <div class="ec-insta-item">
                             <div class="ec-insta-inner">
-                                <a href="#" target="_blank"><img src="assets/images/instragram-image/3.jpg" alt="">
+                                <a href="#" target="_blank"><img src="{{asset("tlandingPage/assets/images/instragram-image/3.jpg")}}" alt="">
 
                                 </a>
                             </div>
