@@ -1,101 +1,168 @@
-<footer class="ec-footer section-space-mt">
-    <div class="footer-container">
-        <div class="footer-offer">
-            <div class="container">
-                <div class="row">
-                    <div class="text-center footer-off-msg">
-                        <span>Win a contest! Get this limited-editon</span><a href="#" target="_blank">View
-                            Detail</a>
+<footer class="ec-footer">
+    <div class="footer-newletter section-space-footer-p">
+        <div class="container">
+            <div class="row">
+                <div class="footer-cat-inner">
+                    <div class="footer-cat-block">
+                        <div class="footer-cat-stitle">Brands Directory</div>
+                        <div class="block">
+                            <span class="footer-cat-title">Fashion : </span>
+                            <a href="shop-left-sidebar-col-3.html">T-shirt</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">Shirts</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">shorts & jeans </a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">jacket</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">dress & frock</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">innerwear</a>
+                            <a href="shop-left-sidebar-col-3.html">hosiery</a>
+                        </div>
+                        <div class="block">
+                            <span class="footer-cat-title">footwear : </span>
+                            <a href="shop-left-sidebar-col-3.html">sport</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">formal</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">Boots</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">casual</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">cowboy shoes</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">safety shoes</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">Party wear shoes</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">Branded</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">Firstcopy</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">Long shoes</a>
+                        </div>
+                        <div class="block">
+                            <span class="footer-cat-title">jewellery : </span>
+                            <a href="shop-left-sidebar-col-3.html">Necklace</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">Earrings</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">Couple rings</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">Pendants</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">Crystal</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">Bangles</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">bracelets</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">nosepin</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">chain</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">Earrings</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">Couple rings</a><span> | </span>
+                        </div>
+                        <div class="block">
+                            <span class="footer-cat-title">cosmetics : </span>
+                            <a href="shop-left-sidebar-col-3.html">Shampoo</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">Bodywash</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">Facewash</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">makeup kit</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">liner</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">lipstick</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">prefume</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">Body shop</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">scrub</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">hair gel</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">hair colors</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">hair dye</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">sunscreen</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">skin loson</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">liner</a><span> | </span>
+                            <a href="shop-left-sidebar-col-3.html">lipstick</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="footer-container">
         <div class="footer-top section-space-footer-p">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12 col-lg-3 ec-footer-contact">
+                    <div class="col-sm-12 col-lg-3 ec-footer-cat">
                         <div class="ec-footer-widget">
-                            <div class="ec-footer-logo"><a href="#"><img src="{{asset('tlandingpage/assets/images/logo/footer-logo.png')}}"
-                                        alt=""><img class="dark-footer-logo"
-                                        src="{{asset('tlandingpage/assets/images/logo/dark-logo.png')}}" alt="Site Logo"
-                                        style="display: none;" /></a></div>
-                            <h4 class="ec-footer-heading">Contact us</h4>
+                            <h4 class="ec-footer-heading">Popular Categories</h4>
                             <div class="ec-footer-links">
                                 <ul class="align-items-center">
-                                    <li class="ec-footer-link">71 Pilgrim Avenue Chevy Chase, east california.
-                                    </li>
-                                    <li class="ec-footer-link"><span>Call Us:</span><a
-                                            href="tel:+440123456789">+44
-                                            0123 456 789</a></li>
-                                    <li class="ec-footer-link"><span>Email:</span><a
-                                            href="mailto:example@ec-email.com">+example@ec-email.com</a></li>
+                                    <li class="ec-footer-link"><a href="#">Fashion</a></li>
+                                    <li class="ec-footer-link"><a href="#">Electronic</a></li>
+                                    <li class="ec-footer-link"><a href="#">Cosmetic</a></li>
+                                    <li class="ec-footer-link"><a href="#">Health</a></li>
+                                    <li class="ec-footer-link"><a href="#">Watches</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-lg-2 ec-footer-info">
+                    <div class="col-sm-12 col-lg-3 ec-footer-info">
                         <div class="ec-footer-widget">
-                            <h4 class="ec-footer-heading">Information</h4>
+                            <h4 class="ec-footer-heading">Products</h4>
                             <div class="ec-footer-links">
                                 <ul class="align-items-center">
-                                    <li class="ec-footer-link"><a href="about-us.html">About us</a></li>
-                                    <li class="ec-footer-link"><a href="faq.html">FAQ</a></li>
-                                    <li class="ec-footer-link"><a href="track-order.html">Delivery Information</a>
-                                    </li>
+                                    <li class="ec-footer-link"><a href="#">Prices drop</a></li>
+                                    <li class="ec-footer-link"><a href="#">New products</a></li>
+                                    <li class="ec-footer-link"><a href="#">Best sales</a></li>
                                     <li class="ec-footer-link"><a href="contact-us.html">Contact us</a></li>
+                                    <li class="ec-footer-link"><a href="#">Sitemap</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-lg-2 ec-footer-account">
+                    <div class="col-sm-12 col-lg-3 ec-footer-account">
                         <div class="ec-footer-widget">
-                            <h4 class="ec-footer-heading">Account</h4>
+                            <h4 class="ec-footer-heading">Our Company</h4>
                             <div class="ec-footer-links">
                                 <ul class="align-items-center">
-                                    <li class="ec-footer-link"><a href="user-profile.html">My Account</a></li>
-                                    <li class="ec-footer-link"><a href="track-order.html">Order History</a></li>
-                                    <li class="ec-footer-link"><a href="wishlist.html">Wish List</a></li>
-                                    <li class="ec-footer-link"><a href="offer.html">Specials</a></li>
+                                    <li class="ec-footer-link"><a href="track-order.html">Delivery</a></li>
+                                    <li class="ec-footer-link"><a href="privacy-policy.html">Legal Notice</a></li>
+                                    <li class="ec-footer-link"><a href="terms-condition.html">Terms and conditions</a></li>
+                                    <li class="ec-footer-link"><a href="about-us.html">About us</a></li>
+                                    <li class="ec-footer-link"><a href="checkout.html">Secure payment</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-lg-2 ec-footer-service">
+                    <div class="col-sm-12 col-lg-3 ec-footer-service">
                         <div class="ec-footer-widget">
                             <h4 class="ec-footer-heading">Services</h4>
                             <div class="ec-footer-links">
                                 <ul class="align-items-center">
-                                    <li class="ec-footer-link"><a href="track-order.html">Discount Returns</a>
-                                    </li>
-                                    <li class="ec-footer-link"><a href="privacy-policy.html">Policy & policy </a>
-                                    </li>
-                                    <li class="ec-footer-link"><a href="terms-condition.html">Customer Service</a>
-                                    </li>
-                                    <li class="ec-footer-link"><a href="terms-condition.html">Term & condition</a>
-                                    </li>
+                                    <li class="ec-footer-link"><a href="#">Prices drop</a></li>
+                                    <li class="ec-footer-link"><a href="#">New products</a></li>
+                                    <li class="ec-footer-link"><a href="#">Best sales</a></li>
+                                    <li class="ec-footer-link"><a href="contact-us.html">Contact us</a></li>
+                                    <li class="ec-footer-link"><a href="#">Sitemap</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-lg-3 ec-footer-news">
-                        <div class="ec-footer-widget">
-                            <h4 class="ec-footer-heading">Newsletter</h4>
-                            <div class="ec-footer-links">
-                                <ul class="align-items-center">
-                                    <li class="ec-footer-link">Get instant updates about our new products and
-                                        special promos!</li>
-                                </ul>
-                                <div class="ec-subscribe-form">
-                                    <form id="ec-newsletter-form" name="ec-newsletter-form" method="post"
-                                        action="#">
-                                        <div id="ec_news_signup" class="ec-form">
-                                            <input class="ec-email" type="email" required=""
-                                                placeholder="Enter your email here..." name="ec-email" value="" />
-                                            <button id="ec-news-btn" class="button btn-primary" type="submit"
-                                                name="subscribe" value=""><i class="ecicon eci-paper-plane-o"
-                                                    aria-hidden="true"></i></button>
-                                        </div>
-                                    </form>
+                    <div class="col-sm-12 col-lg-3 ec-footer-cont-social">
+                        <div class="ec-footer-contact">
+                            <div class="ec-footer-widget">
+                                <h4 class="ec-footer-heading">Contact</h4>
+                                <div class="ec-footer-links">
+                                    <ul class="align-items-center">
+                                        <li class="ec-footer-link ec-foo-location"><span><img
+                                                    src="assets/images/icons/foo-location.svg"
+                                                    class="svg_img foo_svg" alt="" /></span>
+                                            <p>2548 Broaddus Maple Court, Madisonville KY 4783, USA</p>
+                                        </li>
+                                        <li class="ec-footer-link ec-foo-call"><span><img
+                                                    src="assets/images/icons/foo-wp.svg" class="svg_img foo_svg"
+                                                    alt="" /></span><a href="tel:+919999999999">+91 999 999 9999</a>
+                                        </li>
+                                        <li class="ec-footer-link ec-foo-mail"><span><img
+                                                    src="assets/images/icons/foo-mail.svg" class="svg_img foo_svg"
+                                                    alt="" /></span><a
+                                                href="mailto:support@demo.email">support@demo.email</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ec-footer-social">
+                            <div class="ec-footer-widget">
+                                <h4 class="ec-footer-heading marg-b-0 s-head">Follow Us</h4>
+                                <div class="ec-footer-links">
+                                    <ul class="align-items-center">
+                                        <li class="ec-footer-link"><a href="#"><i class="ecicon eci-instagram"
+                                                    aria-hidden="true"></i></a></li>
+                                        <li class="ec-footer-link"><a href="#"><i class="ecicon eci-twitter-square"
+                                                    aria-hidden="true"></i></a></li>
+                                        <li class="ec-footer-link"><a href="#"><i class="ecicon eci-facebook-square"
+                                                    aria-hidden="true"></i></a></li>
+                                        <li class="ec-footer-link"><a href="#"><i class="ecicon eci-linkedin-square"
+                                                        aria-hidden="true"></i></a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -105,42 +172,26 @@
         </div>
         <div class="footer-bottom">
             <div class="container">
-                <div class="row align-items-center">
-                    <!-- Footer social Start -->
-                    <div class="col text-left footer-bottom-left">
-                        <div class="footer-bottom-social">
-                            <span class="social-text text-upper">Follow us on:</span>
-                            <ul class="mb-0">
-                                <li class="list-inline-item"><a class="hdr-facebook" href="#"><i
-                                            class="ecicon eci-facebook"></i></a></li>
-                                <li class="list-inline-item"><a class="hdr-twitter" href="#"><i
-                                            class="ecicon eci-twitter"></i></a></li>
-                                <li class="list-inline-item"><a class="hdr-instagram" href="#"><i
-                                            class="ecicon eci-instagram"></i></a></li>
-                                <li class="list-inline-item"><a class="hdr-linkedin" href="#"><i
-                                            class="ecicon eci-linkedin"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Footer social End -->
-                    <!-- Footer Copyright Start -->
-                    <div class="col text-center footer-copy">
-                        <div class="footer-bottom-copy ">
-                            <div class="ec-copy">Copyright © 2021-2022 <a class="site-name text-upper"
-                                    href="#">ekka<span>.</span></a>. All Rights Reserved</div>
-                        </div>
-                    </div>
-                    <!-- Footer Copyright End -->
+                <div class="row">
                     <!-- Footer payment -->
-                    <div class="col footer-bottom-right">
-                        <div class="footer-bottom-payment d-flex justify-content-end">
+                    <div class="footer-bottom-right">
+                        <div class="footer-bottom-payment d-flex justify-content-center">
                             <div class="payment-link">
-                                <img src="{{asset('tlandingpage/assets/images/icons/payment.png')}}" alt="">
+                                <img src="assets/images/icons/payment.png" alt="">
                             </div>
 
                         </div>
                     </div>
                     <!-- Footer payment -->
+                    <!-- Footer Copyright Start -->
+                    <div class="footer-copy">
+                        <div class="footer-bottom-copy ">
+                            <div class="ec-copy">Copyright © <a class="site-name" href="index.html">Ekka</a> all
+                                rights reserved. Powered by Ekka</div>
+                        </div>
+                    </div>
+                    <!-- Footer Copyright End -->
+
                 </div>
             </div>
         </div>
