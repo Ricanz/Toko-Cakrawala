@@ -8,12 +8,12 @@
  <!DOCTYPE html>
  <html lang="en">
  
- @include('user.partials.head')
+ @include('partials.head')
 <body>
     <div id="ec-overlay"><span class="loader_img"></span></div>
 
     <!-- Header start  -->
-    @include('user.partials.header')
+    @include('partials.header')
     <!-- Header End  -->
 
     <!-- Ekka Cart Start -->
@@ -21,7 +21,7 @@
     {{ $slot }}
         
     <!-- Footer Start -->
-    @include('user.partials.footer')
+    @include('partials.footer')
     <!-- Footer Area End -->
 
     <!-- Modal -->
@@ -227,7 +227,7 @@
     </div>
     <!-- Add to Cart successfully toast end -->
 
-    @include('user.partials.scripts')
+    @include('partials.scripts')
 </body>
 
 </html>

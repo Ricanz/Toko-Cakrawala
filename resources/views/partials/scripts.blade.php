@@ -25,13 +25,13 @@
 
 
     <!-- Google translate Js -->
-    <script src="assets/js/vendor/google-translate.js"></script>
+    <script src="{{asset('tlandingPage/assets/js/vendor/google-translate.js')}}"></script>
     <script>
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
         }
     </script>
     <!-- Main Js -->
-    <script src="assets/js/vendor/index.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="{{asset('tlandingPage/assets/js/vendor/index.js')}}"></script>
+    <script src="{{asset('tlandingPage/assets/js/main.js')}}"></script>
 @stack('scripts')
