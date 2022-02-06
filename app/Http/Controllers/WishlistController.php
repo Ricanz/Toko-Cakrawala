@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Wishlist;
+use Illuminate\Support\Facades\Cookie;
 use Illuminate\Http\Request;
 
 class WishlistController extends Controller
@@ -19,17 +20,23 @@ class WishlistController extends Controller
     }
 
     public function store(Request $request)
-    {
-        $request->validate([
-            'produk_id' => 'required',
-            'user_id' => 'required',
-        ]);
-        Wishlist::create([
-            'produk_id' => $request->produk_id,
-            'user_id' => $request->user_id,
-        ]);
-        return redirect()->route('wishlist.index')
-            ->with('success', 'wishlist Berhasil Ditambahkan');
+    {   
+        $id=$request->id; $time=60*24*14; /*60 * 24 * 14 = 14 drays 60=minutes 24=hours 14=days*/
+        $value=0;
+        if( Cookie::get('wishlist')!==null ){
+            $anonim=Cookie::get('wishlist');
+            Wishlist::insert(["anonim"=>$anonim,"product_id"=>$id]);
+            return 0;
+        }else{
+            $value = Wishlist::max("anonim")+1;
+            if(empty($value)){
+                $value=0;
+            }
+            Wishlist::insert(["anonim"=>$value,"product_id"=>$id]);
+            $cookie = cookie('cart', $value, $time);
+            return response()->cookie($cookie);
+        }
+    
     }
 
     public function show($id)
