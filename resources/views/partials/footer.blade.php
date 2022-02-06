@@ -133,16 +133,16 @@
                                 <div class="ec-footer-links">
                                     <ul class="align-items-center">
                                         <li class="ec-footer-link ec-foo-location"><span><img
-                                                    src="{{asset('tlandingPage/assets/images/icons/foo-location.svg')}}"
+                                                    src="assets/images/icons/foo-location.svg"
                                                     class="svg_img foo_svg" alt="" /></span>
                                             <p>2548 Broaddus Maple Court, Madisonville KY 4783, USA</p>
                                         </li>
                                         <li class="ec-footer-link ec-foo-call"><span><img
-                                                    src="{{asset('tlandingPage/assets/images/icons/foo-wp.svg')}}" class="svg_img foo_svg"
+                                                    src="assets/images/icons/foo-wp.svg" class="svg_img foo_svg"
                                                     alt="" /></span><a href="tel:+919999999999">+91 999 999 9999</a>
                                         </li>
                                         <li class="ec-footer-link ec-foo-mail"><span><img
-                                                    src="{{asset('tlandingPage/assets/images/icons/foo-mail.svg')}}" class="svg_img foo_svg"
+                                                    src="assets/images/icons/foo-mail.svg" class="svg_img foo_svg"
                                                     alt="" /></span><a
                                                 href="mailto:support@demo.email">support@demo.email</a></li>
                                     </ul>
@@ -177,7 +177,7 @@
                     <div class="footer-bottom-right">
                         <div class="footer-bottom-payment d-flex justify-content-center">
                             <div class="payment-link">
-                                <img src="{{asset('tlandingPage/assets/images/icons/payment.png')}}" alt="">
+                                <img src="assets/images/icons/payment.png" alt="">
                             </div>
 
                         </div>

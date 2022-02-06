@@ -94,7 +94,7 @@ class KategoriController extends Controller
         $Kategori = Kategori::findOrFail($id);
         Storage::delete("public/Kategori/$Kategori->gambar");
         $Kategori->delete();
-        return redirect()->route('kategori.index')
+        return redirect()->route('Kategori.index')
             ->with('delete', 'Kategori Berhasil Dihapus');
     }
 }
