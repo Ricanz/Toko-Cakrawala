@@ -69,7 +69,7 @@
                         </div>
                         <!-- Header User End -->
                         <!-- Header Cart Start -->
-                        <a href="wishlist.html" class="ec-header-btn ec-header-wishlist">
+                        <a href="/wishlist" class="ec-header-btn ec-header-wishlist">
                             <div class="header-icon"><img src="{{asset('tlandingpage/assets/images/icons/wishlist.svg')}}"
                                     class="svg_img header_svg" alt="" /></div>
                             <span class="ec-header-count">4</span>
@@ -140,7 +140,7 @@
                             </div>
                             <!-- Header User End -->
                             <!-- Header wishlist Start -->
-                            <a href="wishlist.html" class="ec-header-btn ec-header-wishlist">
+                            <a href="/wishlist" class="ec-header-btn ec-header-wishlist">
                                 <div class="header-icon"><img src="{{asset('tlandingpage/assets/images/icons/wishlist.svg')}}"
                                         class="svg_img header_svg" alt="" /></div>
                                 <span class="ec-header-count">4</span>
@@ -386,7 +386,7 @@
                                         <ul class="sub-menu sub-menu-child">
                                             <li><a href="user-profile.html">User Profile</a></li>
                                             <li><a href="user-history.html">History</a></li>
-                                            <li><a href="wishlist.html">Wishlist</a></li>
+                                            <li><a href="/wishlist">Wishlist</a></li>
                                             <li><a href="track-order.html">Track Order</a></li>
                                             <li><a href="user-invoice.html">Invoice</a></li>
                                         </ul>

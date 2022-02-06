@@ -20,6 +20,21 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+Route::get('/wishlist', function () {
+    return view('wishlist');
+});
+Route::get('/checkout', function () {
+    return view('checkout');
+});
+Route::get('/contact', function () {
+    return view('contact');
+});
+Route::get('/detail_produk', function () {
+    return view('detail_produk');
+});
+Route::get('/katalog', function () {
+    return view('katalog');
+});
 // Route::get('/main-kategori', function () {
 //     return view('admin.kategori.main.index');
 // });
