@@ -23,6 +23,9 @@ Route::get('/', function () {
 Route::get('/wishlist', function () {
     return view('wishlist');
 });
+Route::get('/checkout', function () {
+    return view('checkout');
+});
 Route::get('/contact', function () {
     return view('contact');
 });
