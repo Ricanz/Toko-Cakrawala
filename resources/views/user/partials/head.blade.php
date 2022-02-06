@@ -38,5 +38,4 @@
 
     <!-- Background css -->
     <link rel="stylesheet" id="bg-switcher-css" href="{{asset('tlandingPage/assets/css/backgrounds/bg-4.css')}}">
-   
 </head>
