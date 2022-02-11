@@ -10,7 +10,7 @@
  
  @include('partials.head')
 <body>
-    <div id="ec-overlay"><span class="loader_img"></span></div>
+    {{-- <div id="ec-overlay"><span class="loader_img"></span></div> --}}
 
     <!-- Header start  -->
     @include('partials.header')
