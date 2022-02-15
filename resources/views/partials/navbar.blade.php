@@ -85,7 +85,7 @@
                     <!-- Ec Header Logo Start -->
                     <div class="align-self-center">
                         <div class="header-logo">
-                            <a href="index.html"><img src="{{asset('tlandingPage/assets/images/logo/logo-8.png')}}" alt="Toko Cakrawala" /><img
+                            <a href="{{ url('/') }}"><img src="{{asset('tlandingPage/assets/images/logo/logo-8.png')}}" alt="Toko Cakrawala" /><img
                                     class="dark-logo" src="{{asset('tlandingPage/assets/images/logo/dark-logo-8.png')}}" alt="Toko Cakrawala"
                                     style="display: none;" /></a>
                         </div>

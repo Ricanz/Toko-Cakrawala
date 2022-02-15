@@ -18,6 +18,7 @@
     <script src="{{asset('tlandingPage/assets/js/plugins/owl.carousel.min.js')}}"></script>
     <script src="{{asset('tlandingPage/assets/js/plugins/infiniteslidev2.js')}}"></script>
     <script src="{{asset('tlandingPage/assets/js/plugins/click-to-call.js')}}"></script>
+    <script src="{{asset('tlandingPage/assets/js/plugins/swiper-bundle.min.js')}}"></script>
 
     <!-- Main Js -->
     <script src="{{asset('tlandingPage/assets/js/vendor/index.js')}}"></script>
