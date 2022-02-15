@@ -10,7 +10,7 @@
  
  @include('partials.head')
 <body>
-    <div id="ec-overlay"><span class="loader_img"></span></div>
+    {{-- <div id="ec-overlay"><span class="loader_img"></span></div> --}}
 
     <!-- Header start  -->
     @include('partials.header')
@@ -25,7 +25,7 @@
     <!-- Footer Area End -->
 
     <!-- Modal -->
-    <div class="modal fade" id="ec_quickview_modal" tabindex="-1" role="dialog">
+    {{-- <div class="modal fade" id="ec_quickview_modal" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <button type="button" class="btn-close qty_close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -114,7 +114,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Modal end -->
 
     <!-- Click To Call -->
@@ -152,7 +152,7 @@
     </div>
     <!-- Click To Call end -->
 
-    <!-- Newsletter Modal Start -->
+    {{-- <!-- Newsletter Modal Start -->
     <div id="ec-popnews-bg"></div>
     <div id="ec-popnews-box">
         <div id="ec-popnews-close"><i class="ecicon eci-close"></i></div>
@@ -171,11 +171,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Newsletter Modal end -->
     
     <!-- Footer navigation panel for responsive display -->
-    <div class="ec-nav-toolbar">
+    {{-- <div class="ec-nav-toolbar">
         <div class="container">
             <div class="ec-nav-panel">
                 <div class="ec-nav-panel-icons">
@@ -203,7 +203,7 @@
 
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Footer navigation panel for responsive display end -->
 
     <!-- Recent Purchase Popup  -->
