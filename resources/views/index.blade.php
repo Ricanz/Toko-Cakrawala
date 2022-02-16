@@ -199,32 +199,24 @@
                                         <div class="ec-sb-title">
                                             <h3 class="ec-sidebar-title">Category<button class="ec-close">×</button></h3>
                                         </div>
+                                        @foreach($kategori as $k)
                                         <div class="ec-sb-block-content">
                                             <ul>
                                                 <li>
-                                                    <div class="ec-sidebar-block-item"><img src="{{asset('tlandingPage/assets/images/icons/dress-8.svg')}}" class="svg_img" alt="drink" />Cothes</div>
+                                                    <div class="ec-sidebar-block-item"><img src="{{asset('tlandingPage/assets/images/icons/dress-8.svg')}}" class="svg_img" alt="drink" />{{$k->nama}}</div>
                                                     <ul style="display: block;">
+                                                        @foreach($k->subkategori as $i)
                                                         <li>
-                                                            <div class="ec-sidebar-sub-item"><a href="shop-left-sidebar-col-3.html">Shirt <span title="Available Stock">- 25</span></a>
+                                                            <div class="ec-sidebar-sub-item"><a href="shop-left-sidebar-col-3.html">{{$i->nama}}<span title="Available Stock"></span></a>
                                                             </div>
                                                         </li>
-                                                        <li>
-                                                            <div class="ec-sidebar-sub-item"><a href="shop-left-sidebar-col-3.html">shorts & jeans <span title="Available Stock">- 52</span></a>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="ec-sidebar-sub-item"><a href="shop-left-sidebar-col-3.html">jacket<span title="Available Stock">- 500</span></a>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="ec-sidebar-sub-item"><a href="shop-left-sidebar-col-3.html">dress & frock  <span title="Available Stock">- 35</span></a>
-                                                            </div>
-                                                        </li>
+                                                        @endforeach
                                                     </ul>
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div class="ec-sb-block-content">
+                                        @endforeach
+                                        {{-- <div class="ec-sb-block-content">
                                             <ul>
                                                 <li>
                                                     <div class="ec-sidebar-block-item"><img src="{{asset('tlandingPage/assets/images/icons/shoes-8.svg')}}" class="svg_img" alt="drink" />Footwear</div>
@@ -273,7 +265,7 @@
                                                     </ul>
                                                 </li>
                                             </ul>
-                                        </div>
+                                        </div> --}}
                                     </div>
                                     <!-- Sidebar Category Block -->
                                 </div>
@@ -287,7 +279,7 @@
                     <div class="row space-t-50">
                         <div class="col-md-12">
                             <div class="section-title">
-                                <h2 class="ec-title">New Products</h2>
+                                <h2 class="ec-title">Produk</h2>
                             </div>
                         </div>
 
@@ -296,11 +288,13 @@
                             <ul class="ec-pro-tab-nav nav justify-content-end">
                                 <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab"
                                         href="#all">All</a></li>
-                                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#clothes">Clothes</a></li>
-                                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab"
+                                @foreach($kategori as $k)
+                                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#{{$k->nama}}">{{$k->nama}}</a></li>
+                                {{-- <li class="nav-item"><a class="nav-link" data-bs-toggle="tab"
                                         href="#footwear">Footwear</a></li>
                                 <li class="nav-item"><a class="nav-link" data-bs-toggle="tab"
-                                            href="#accessories">accessories</a></li>
+                                            href="#accessories">accessories</a></li> --}}
+                                @endforeach
                             </ul>
                         </div>
                         <!-- Tab End -->
@@ -311,17 +305,18 @@
                                 <!-- 1st Product tab start -->
                                 <div class="tab-pane fade show active" id="all">
                                     <div class="row">
+                                        @foreach($produk as $i)
                                         <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ec-product-content">
                                             <div class="ec-product-inner">
                                                 <div class="ec-pro-image-outer">
                                                     <div class="ec-pro-image">
                                                         <a href="product-left-sidebar.html" class="image">
                                                             <img class="main-image"
-                                                                src="{{asset('tlandingPage/assets/images/product-image/88_1.jpg')}}" alt="Product" />
+                                                                src="{{asset('storage/Produk/'.$i->gambar)}}" alt="Product" />
                                                             <img class="hover-image"
-                                                                src="{{asset('tlandingPage/assets/images/product-image/88_1.jpg')}}" alt="Product" />
+                                                                src="{{asset('storage/Produk/'.$i->gambar)}}" alt="Product" />
                                                         </a>
-                                                        <span class="percentage">20%</span>
+                                                        {{-- <span class="percentage">20%</span> --}}
                                                         <div class="ec-pro-actions">
                                                             <a class="ec-btn-group wishlist" title="Wishlist"><img
                                                                     src="{{asset('tlandingPage/assets/images/icons/pro_wishlist.svg')}}"
@@ -340,131 +335,42 @@
                                                     </div>
                                                 </div>
                                                 <div class="ec-pro-content">
-                                                    <a href="shop-left-sidebar-col-3.html"><h6 class="ec-pro-stitle">T-Shirt</h6></a> 
-                                                    <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Relaxed Short full Sleeve T-Shirt</a></h5>
+                                                    <a href="shop-left-sidebar-col-3.html"><h6 class="ec-pro-stitle">{{$i->kategori->nama}}</h6></a> 
+                                                    <h5 class="ec-pro-title"><a href="product-left-sidebar.html">{{$i->nama}}</a></h5>
                                                     <div class="ec-pro-rat-price">
                                                         <span class="ec-pro-rating">
                                                             <i class="ecicon eci-star fill"></i>
                                                             <i class="ecicon eci-star fill"></i>
                                                             <i class="ecicon eci-star fill"></i>
-                                                            <i class="ecicon eci-star"></i>
-                                                            <i class="ecicon eci-star"></i>
+                                                            <i class="ecicon eci-star fill"></i>
+                                                            <i class="ecicon eci-star fill"></i>
                                                         </span>
                                                         <span class="ec-price">
-                                                            <span class="new-price">$58.00</span>
-                                                            <span class="old-price">$65.00</span>
+                                                            <span class="new-price">Rp.{{$i->harga}},00</span>
+                                                            {{-- <span class="old-price">$65.00</span> --}}
                                                         </span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ec-product-content">
-                                            <div class="ec-product-inner">
-                                                <div class="ec-pro-image-outer">
-                                                    <div class="ec-pro-image">
-                                                        <a href="product-left-sidebar.html" class="image">
-                                                            <img class="main-image"
-                                                                src="{{asset('tlandingPage/assets/images/product-image/111_1.jpg')}}" alt="Product" />
-                                                            <img class="hover-image"
-                                                                src="{{asset('tlandingPage/assets/images/product-image/111_1.jpg')}}" alt="Product" />
-                                                        </a>
-                                                        <div class="ec-pro-actions">
-                                                            <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="{{asset('tlandingPage/assets/images/icons/pro_wishlist.svg')}}"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="#" class="ec-btn-group quickview"
-                                                                data-link-action="quickview" title="Quick view"
-                                                                data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="{{asset('tlandingPage/assets/images/icons/quickview.svg')}}"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="{{asset('tlandingPage/assets/images/icons/compare.svg')}}"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset('tlandingPage/assets/images/icons/pro_cart.svg')}}"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="ec-pro-content">
-                                                    <a href="shop-left-sidebar-col-3.html"><h6 class="ec-pro-stitle">jewellery</h6></a>
-                                                    <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Rose Gold Peacock Earrings</a></h5>
-                                                    <div class="ec-pro-rat-price">
-                                                        <span class="ec-pro-rating">
-                                                            <i class="ecicon eci-star fill"></i>
-                                                            <i class="ecicon eci-star fill"></i>
-                                                            <i class="ecicon eci-star"></i>
-                                                            <i class="ecicon eci-star"></i>
-                                                            <i class="ecicon eci-star"></i>
-                                                        </span>
-                                                        <span class="ec-price">
-                                                            <span class="new-price">$10.00</span>
-                                                            <span class="old-price">$12.00</span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ec-product-content">
-                                            <div class="ec-product-inner">
-                                                <div class="ec-pro-image-outer">
-                                                    <div class="ec-pro-image">
-                                                        <a href="product-left-sidebar.html" class="image">
-                                                            <img class="main-image"
-                                                                src="{{asset('tlandingPage/assets/images/product-image/111_1.jpg')}}" alt="Product" />
-                                                            <img class="hover-image"
-                                                                src="{{asset('tlandingPage/assets/images/product-image/111_1.jpg')}}" alt="Product" />
-                                                        </a>
-                                                        <div class="ec-pro-actions">
-                                                            <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="{{asset('tlandingPage/assets/images/icons/pro_wishlist.svg')}}"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="#" class="ec-btn-group quickview"
-                                                                data-link-action="quickview" title="Quick view"
-                                                                data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="{{asset('tlandingPage/assets/images/icons/quickview.svg')}}"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="{{asset('tlandingPage/assets/images/icons/compare.svg')}}"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset('tlandingPage/assets/images/icons/pro_cart.svg')}}"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="ec-pro-content">
-                                                    <a href="shop-left-sidebar-col-3.html"><h6 class="ec-pro-stitle">jewellery</h6></a>
-                                                    <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Rose Gold Peacock Earrings</a></h5>
-                                                    <div class="ec-pro-rat-price">
-                                                        <span class="ec-pro-rating">
-                                                            <i class="ecicon eci-star fill"></i>
-                                                            <i class="ecicon eci-star fill"></i>
-                                                            <i class="ecicon eci-star"></i>
-                                                            <i class="ecicon eci-star"></i>
-                                                            <i class="ecicon eci-star"></i>
-                                                        </span>
-                                                        <span class="ec-price">
-                                                            <span class="new-price">$10.00</span>
-                                                            <span class="old-price">$12.00</span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        @endforeach
                                     </div>
                                 </div>
                                 <!-- ec 1st Product tab end -->
                                 <!-- ec 2nd Product tab start -->
-                                <div class="tab-pane fade" id="clothes">
+                                @foreach($kategori as $p)
+                                <div class="tab-pane fade" id="{{$p->nama}}">
                                     <div class="row">
+                                        @foreach($p->produk as $i)
                                         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 ec-product-content">
                                             <div class="ec-product-inner">
                                                 <div class="ec-pro-image-outer">
                                                     <div class="ec-pro-image">
                                                         <a href="product-left-sidebar.html" class="image">
                                                             <img class="main-image"
-                                                                src="{{asset('tlandingPage/assets/images/product-image/94_1.jpg')}}" alt="Product" />
+                                                                src="{{asset('storage/Produk/'.$i->gambar)}}" alt="Product" />
                                                             <img class="hover-image"
-                                                                src="{{asset('tlandingPage/assets/images/product-image/94_2.jpg')}}" alt="Product" />
+                                                                src="{{asset('storage/Produk/'.$i->gambar)}}" alt="Product" />
                                                         </a>
                                                         <div class="ec-pro-actions">
                                                             <a class="ec-btn-group wishlist" title="Wishlist"><img
@@ -484,324 +390,29 @@
                                                     </div>
                                                 </div>
                                                 <div class="ec-pro-content">
-                                                    <a href="shop-left-sidebar-col-3.html"><h6 class="ec-pro-stitle">Jackets</h6></a>
-                                                    <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Mens Winter Leathers Jackets</a></h5>
+                                                    <a href="shop-left-sidebar-col-3.html"><h6 class="ec-pro-stitle">{{$i->kategori->nama}}</h6></a>
+                                                    <h5 class="ec-pro-title"><a href="product-left-sidebar.html">{{$i->nama}}</a></h5>
                                                     <div class="ec-pro-rat-price">
                                                         <span class="ec-pro-rating">
                                                             <i class="ecicon eci-star fill"></i>
                                                             <i class="ecicon eci-star fill"></i>
                                                             <i class="ecicon eci-star fill"></i>
                                                             <i class="ecicon eci-star fill"></i>
-                                                            <i class="ecicon eci-star"></i>
+                                                            <i class="ecicon eci-star fill"></i>
                                                         </span>
                                                         <span class="ec-price">
-                                                            <span class="new-price">$59.00</span>
-                                                            <span class="old-price">$87.00</span>
+                                                            <span class="new-price">Rp.{{$i->harga}},00</span>
+                                                            {{-- <span class="old-price">$87.00</span> --}}
                                                         </span>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 ec-product-content">
-                                            <div class="ec-product-inner">
-                                                <div class="ec-pro-image-outer">
-                                                    <div class="ec-pro-image">
-                                                        <a href="product-left-sidebar.html" class="image">
-                                                            <img class="main-image"
-                                                                src="{{asset('tlandingPage/assets/images/product-image/95_1.jpg')}}" alt="Product" />
-                                                            <img class="hover-image"
-                                                                src="{{asset('tlandingPage/assets/images/product-image/95_2.jpg')}}" alt="Product" />
-                                                        </a>
-                                                        <span class="flags">
-                                                            <span class="sale">Sale</span>
-                                                        </span>
-                                                        <div class="ec-pro-actions">
-                                                            <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="{{asset('tlandingPage/assets/images/icons/pro_wishlist.svg')}}"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="#" class="ec-btn-group quickview"
-                                                                data-link-action="quickview" title="Quick view"
-                                                                data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="{{asset('tlandingPage/assets/images/icons/quickview.svg')}}"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="{{asset('tlandingPage/assets/images/icons/compare.svg')}}"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset('tlandingPage/assets/images/icons/pro_cart.svg')}}"
-                                                                        class="svg_img pro_svg" alt="" /></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="ec-pro-content">
-                                                    <a href="shop-left-sidebar-col-3.html"><h6 class="ec-pro-stitle">Shorts</h6></a>
-                                                    <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Better Basics French Terry Sweatshorts</a></h5>
-                                                    <div class="ec-pro-rat-price">
-                                                        <span class="ec-pro-rating">
-                                                            <i class="ecicon eci-star fill"></i>
-                                                            <i class="ecicon eci-star fill"></i>
-                                                            <i class="ecicon eci-star fill"></i>
-                                                            <i class="ecicon eci-star"></i>
-                                                            <i class="ecicon eci-star"></i>
-                                                        </span>
-                                                        <span class="ec-price">
-                                                            <span class="new-price">$78.00</span>
-                                                            <span class="old-price">$85.00</span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 ec-product-content">
-                                            <div class="ec-product-inner">
-                                                <div class="ec-pro-image-outer">
-                                                    <div class="ec-pro-image">
-                                                        <a href="product-left-sidebar.html" class="image">
-                                                            <img class="main-image"
-                                                                src="{{asset('tlandingPage/assets/images/product-image/88_1.jpg')}}" alt="Product" />
-                                                            <img class="hover-image"
-                                                                src="{{asset('tlandingPage/assets/images/product-image/88_1.jpg')}}" alt="Product" />
-                                                        </a>
-                                                        <span class="flags">
-                                                            <span class="sale">Sale</span>
-                                                        </span>
-                                                        <div class="ec-pro-actions">
-                                                            <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="{{asset('tlandingPage/assets/images/icons/pro_wishlist.svg')}}"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="#" class="ec-btn-group quickview"
-                                                                data-link-action="quickview" title="Quick view"
-                                                                data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="{{asset('tlandingPage/assets/images/icons/quickview.svg')}}"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="{{asset('tlandingPage/assets/images/icons/compare.svg')}}"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset('tlandingPage/assets/images/icons/pro_cart.svg')}}"
-                                                                        class="svg_img pro_svg" alt="" /></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="ec-pro-content">
-                                                    <a href="shop-left-sidebar-col-3.html"><h6 class="ec-pro-stitle">T-Shirt</h6></a> 
-                                                    <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Relaxed Short full Sleeve T-Shirt</a></h5>
-                                                    <div class="ec-pro-rat-price">
-                                                        <span class="ec-pro-rating">
-                                                            <i class="ecicon eci-star fill"></i>
-                                                            <i class="ecicon eci-star fill"></i>
-                                                            <i class="ecicon eci-star fill"></i>
-                                                            <i class="ecicon eci-star"></i>
-                                                            <i class="ecicon eci-star"></i>
-                                                        </span>
-                                                        <span class="ec-price">
-                                                            <span class="new-price">$58.00</span>
-                                                            <span class="old-price">$65.00</span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        @endforeach
                                     </div>
                                 </div>
+                                @endforeach
                                 <!-- ec 2nd Product tab end -->
-                                <!-- ec 3rd Product tab start -->
-                                <div class="tab-pane fade" id="footwear">
-                                    <div class="row">
-                                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 ec-product-content">
-                                            <div class="ec-product-inner">
-                                                <div class="ec-pro-image-outer">
-                                                    <div class="ec-pro-image">
-                                                        <a href="product-left-sidebar.html" class="image">
-                                                            <img class="main-image"
-                                                                src="{{asset('tlandingPage/assets/images/product-image/96_1.jpg')}}" alt="Product" />
-                                                            <img class="hover-image"
-                                                                src="{{asset('tlandingPage/assets/images/product-image/96_2.jpg')}}" alt="Product" />
-                                                        </a>
-                                                        <div class="ec-pro-actions">
-                                                            <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="{{asset('tlandingPage/assets/images/icons/pro_wishlist.svg')}}"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="#" class="ec-btn-group quickview"
-                                                                data-link-action="quickview" title="Quick view"
-                                                                data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="{{asset('tlandingPage/assets/images/icons/quickview.svg')}}"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="{{asset('tlandingPage/assets/images/icons/compare.svg')}}"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset('tlandingPage/assets/images/icons/pro_cart.svg')}}"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="ec-pro-content">
-                                                    <a href="shop-left-sidebar-col-3.html"><h6 class="ec-pro-stitle">Sports</h6></a>
-                                                    <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Running & Trekking Shoes - White</a></h5>
-                                                    <div class="ec-pro-rat-price">
-                                                        <span class="ec-pro-rating">
-                                                            <i class="ecicon eci-star fill"></i>
-                                                            <i class="ecicon eci-star fill"></i>
-                                                            <i class="ecicon eci-star fill"></i>
-                                                            <i class="ecicon eci-star fill"></i>
-                                                            <i class="ecicon eci-star"></i>
-                                                        </span>
-                                                        <span class="ec-price">
-                                                            <span class="new-price">$89.00</span>
-                                                            <span class="old-price">$95.00</span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 ec-product-content">
-                                            <div class="ec-product-inner">
-                                                <div class="ec-pro-image-outer">
-                                                    <div class="ec-pro-image">
-                                                        <a href="product-left-sidebar.html" class="image">
-                                                            <img class="main-image"
-                                                                src="{{asset('tlandingPage/assets/images/product-image/104_1.jpg')}}" alt="Product" />
-                                                            <img class="hover-image"
-                                                                src="{{asset('tlandingPage/assets/images/product-image/104_2.jpg')}}" alt="Product" />
-                                                        </a>
-                                                        <div class="ec-pro-actions">
-                                                            <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="{{asset('tlandingPage/assets/images/icons/pro_wishlist.svg')}}"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="#" class="ec-btn-group quickview"
-                                                                data-link-action="quickview" title="Quick view"
-                                                                data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="{{asset('tlandingPage/assets/images/icons/quickview.svg')}}"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="{{asset('tlandingPage/assets/images/icons/compare.svg')}}"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset('tlandingPage/assets/images/icons/pro_cart.svg')}}"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="ec-pro-content">
-                                                    <a href="shop-left-sidebar-col-3.html"><h6 class="ec-pro-stitle">Boots</h6></a>
-                                                    <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Boot With Suede Detail</a></h5>
-                                                    <div class="ec-pro-rat-price">
-                                                        <span class="ec-pro-rating">
-                                                            <i class="ecicon eci-star fill"></i>
-                                                            <i class="ecicon eci-star fill"></i>
-                                                            <i class="ecicon eci-star"></i>
-                                                            <i class="ecicon eci-star"></i>
-                                                            <i class="ecicon eci-star"></i>
-                                                        </span>
-                                                        <span class="ec-price">
-                                                            <span class="new-price">$65.00</span>
-                                                            <span class="old-price">$70.00</span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- ec 3rd Product tab end -->
-                                <!-- ec 3rd Product tab start -->
-                                <div class="tab-pane fade" id="accessories">
-                                    <div class="row">
-                                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 ec-product-content">
-                                            <div class="ec-product-inner">
-                                                <div class="ec-pro-image-outer">
-                                                    <div class="ec-pro-image">
-                                                        <a href="product-left-sidebar.html" class="image">
-                                                            <img class="main-image"
-                                                                src="assets/images/product-image/105_1.jpg" alt="Product" />
-                                                            <img class="hover-image"
-                                                                src="assets/images/product-image/105_2.jpg" alt="Product" />
-                                                        </a>
-                                                        <div class="ec-pro-actions">
-                                                            <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="{{asset('tlandingPage/assets/images/icons/pro_wishlist.svg')}}"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="#" class="ec-btn-group quickview"
-                                                                data-link-action="quickview" title="Quick view"
-                                                                data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="{{asset('tlandingPage/assets/images/icons/quickview.svg')}}"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="{{asset('tlandingPage/assets/images/icons/compare.svg')}}"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset('tlandingPage/assets/images/icons/pro_cart.svg')}}"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="ec-pro-content">
-                                                    <a href="shop-left-sidebar-col-3.html"><h6 class="ec-pro-stitle">watches</h6></a>
-                                                    <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Smart watche Vital Plus</a></h5>
-                                                    <div class="ec-pro-rat-price">
-                                                        <span class="ec-pro-rating">
-                                                            <i class="ecicon eci-star fill"></i>
-                                                            <i class="ecicon eci-star fill"></i>
-                                                            <i class="ecicon eci-star fill"></i>
-                                                            <i class="ecicon eci-star fill"></i>
-                                                            <i class="ecicon eci-star"></i>
-                                                        </span>
-                                                        <span class="ec-price">
-                                                            <span class="new-price">$100.00</span>
-                                                            <span class="old-price">$120.00</span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 ec-product-content">
-                                            <div class="ec-product-inner">
-                                                <div class="ec-pro-image-outer">
-                                                    <div class="ec-pro-image">
-                                                        <a href="product-left-sidebar.html" class="image">
-                                                            <img class="main-image"
-                                                                src="{{asset('tlandingPage/assets/images/product-image/106_1.jpg')}}" alt="Product" />
-                                                            <img class="hover-image"
-                                                                src="{{asset('tlandingPage/assets/images/product-image/106_2.jpg')}}" alt="Product" />
-                                                        </a>
-                                                        <span class="flags">
-                                                            <span class="sale">Sale</span>
-                                                        </span>
-                                                        <div class="ec-pro-actions">
-                                                            <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                    src="{{asset('tlandingPage/assets/images/icons/pro_wishlist.svg')}}"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="#" class="ec-btn-group quickview"
-                                                                data-link-action="quickview" title="Quick view"
-                                                                data-bs-toggle="modal" data-bs-target="#ec_quickview_modal"><img
-                                                                    src="{{asset('tlandingPage/assets/images/icons/quickview.svg')}}"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="compare.html" class="ec-btn-group compare"
-                                                                title="Compare"><img src="{{asset('tlandingPage/assets/images/icons/compare.svg')}}"
-                                                                    class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset('tlandingPage/assets/images/icons/pro_cart.svg')}}"
-                                                                        class="svg_img pro_svg" alt="" /></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="ec-pro-content">
-                                                    <a href="shop-left-sidebar-col-3.html"><h6 class="ec-pro-stitle">Watches</h6></a>
-                                                    <h5 class="ec-pro-title"><a href="product-left-sidebar.html">Pocket Watch Leather Pouch</a></h5>
-                                                    <div class="ec-pro-rat-price">
-                                                        <span class="ec-pro-rating">
-                                                            <i class="ecicon eci-star fill"></i>
-                                                            <i class="ecicon eci-star fill"></i>
-                                                            <i class="ecicon eci-star fill"></i>
-                                                            <i class="ecicon eci-star"></i>
-                                                            <i class="ecicon eci-star"></i>
-                                                        </span>
-                                                        <span class="ec-price">
-                                                            <span class="new-price">$150.00</span>
-                                                            <span class="old-price">$170.00</span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- ec 3rd Product tab end -->
                             </div>
                         </div>
                     </div>
@@ -895,63 +506,26 @@
                     </div>
                     <div class="ec-test-outer">
                         <ul id="ec-testimonial-slider">
+                            @foreach($testimonial as $t)
                             <li class="ec-test-item">
                                 <div class="ec-test-inner">
                                     <div class="ec-test-img">
                                         <img alt="testimonial" title="testimonial"
-                                            src="{{asset('tlandingPage/assets/images/testimonial/1.jpg')}}" />
+                                            src="{{asset('storage/Testimonial/'.$t->gambar)}}" />
                                     </div>
                                     <div class="ec-test-content">
-                                        <div class="ec-test-name">mark jofferson</div>
-                                        <div class="ec-test-designation">- CEO & Founder Invision</div>
+                                        <div class="ec-test-name">{{$t->nama}}</div>
+                                        <div class="ec-test-designation">- {{$i->perusahaan}}</div>
                                         <div class="ec-test-divider">
                                             <img src="{{asset('tlandingPage/assets/images/testimonial/quotes.svg')}}" class="svg_img test_svg"
                                                 alt="" />
                                         </div>
-                                        <div class="ec-test-desc">Lorem ipsum dolor sit amet consectetur Lorem ipsum
-                                            dolor dolor sit amet.
+                                        <div class="ec-test-desc">{{$t->deskripsi}}
                                         </div>
                                     </div>
                                 </div>
                             </li>
-                            <li class="ec-test-item">
-                                <div class="ec-test-inner">
-                                    <div class="ec-test-img">
-                                        <img alt="testimonial" title="testimonial"
-                                            src="{{asset('tlandingPage/assets/images/testimonial/2.jpg')}}" />
-                                    </div>
-                                    <div class="ec-test-content">
-                                        <div class="ec-test-name">mark jofferson</div>
-                                        <div class="ec-test-designation">- CEO & Founder Invision</div>
-                                        <div class="ec-test-divider">
-                                            <img src="{{asset('tlandingPage/assets/images/testimonial/quotes.svg')}}" class="svg_img test_svg"
-                                                alt="" />
-                                        </div>
-                                        <div class="ec-test-desc">Lorem ipsum dolor sit amet consectetur Lorem ipsum
-                                            dolor dolor sit amet.
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="ec-test-item">
-                                <div class="ec-test-inner">
-                                    <div class="ec-test-img">
-                                        <img alt="testimonial" title="testimonial"
-                                            src="{{asset('tlandingPage/assets/images/testimonial/3.jpg')}}" />
-                                    </div>
-                                    <div class="ec-test-content">
-                                        <div class="ec-test-name">mark jofferson</div>
-                                        <div class="ec-test-designation">- CEO & Founder Invision</div>
-                                        <div class="ec-test-divider">
-                                            <img src="{{asset('tlandingPage/assets/images/testimonial/quotes.svg')}}" class="svg_img test_svg"
-                                                alt="" />
-                                        </div>
-                                        <div class="ec-test-desc">Lorem ipsum dolor sit amet consectetur Lorem ipsum
-                                            dolor dolor sit amet.
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>
