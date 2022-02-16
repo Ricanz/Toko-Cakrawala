@@ -1,4 +1,4 @@
-<x-guest-layout>
+<x-navigation-layout>
     <body class="product_page">
             <!-- Ec breadcrumb start -->
     <div class="sticky-header-next-sec  ec-breadcrumb section-space-mb">
@@ -1012,4 +1012,4 @@
     </section>
     <!-- Related Product end -->
     </body>
-</x-guest-layout>
+</x-navigation-layout>

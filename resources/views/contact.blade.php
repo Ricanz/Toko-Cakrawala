@@ -1,4 +1,4 @@
-<x-guest-layout>
+<x-navigation-layout>
 <body class="contact_us_page">
     {{-- <div id="ec-overlay"><span class="loader_img"></span></div> --}}
     <!-- Ec breadcrumb start -->
@@ -104,4 +104,4 @@
     </section>
 </body>
     
-</x-guest-layout>
+</x-navigation-layout>

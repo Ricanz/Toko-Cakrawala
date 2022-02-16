@@ -1,4 +1,4 @@
-<x-guest-layout>
+<x-navigation-layout>
     <body>
     <!-- Ec breadcrumb start -->
     <div class="sticky-header-next-sec  ec-breadcrumb section-space-mb">
@@ -2715,4 +2715,4 @@
         <!-- Vendor list Section End -->
     </div>
     </body>
-</x-guest-layout>
+</x-navigation-layout>
