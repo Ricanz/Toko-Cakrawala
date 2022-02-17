@@ -182,15 +182,15 @@
                 <div class="col-md-12 align-self-center">
                     <div class="ec-main-menu">
                         <ul>
-                            <li><a href="index.html">Beranda</a></li>
-                            <li><a href="index.html">Katalog</a></li>
+                            <li><a href="{{ url('/') }}">Beranda</a></li>
+                            <li><a href="{{ url('/katalog') }}">Katalog</a></li>
                             <li class="dropdown"><a href="javascript:void(0)">Kategori</a>
                                 <ul class="sub-menu">
                                     <li><a href="elemets-products.html">Alumunium</a></li>
                                     <li><a href="elemets-typography.html">Atap</a></li>
                                 </ul>
                             </li>
-                            <li><a href="offer.html">Kontak</a></li>
+                            <li><a href="{{ url('/contact') }}">Kontak</a></li>
                         </ul>
                     </div>
                 </div>
