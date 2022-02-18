@@ -7,13 +7,13 @@
                 <div class="col-12">
                     <div class="row ec_breadcrumb_inner">
                         <div class="col-md-6 col-sm-12">
-                            <h2 class="ec-breadcrumb-title">Multi Vendor</h2>
+                            <h2 class="ec-breadcrumb-title">Katalog</h2>
                         </div>
                         <div class="col-md-6 col-sm-12">
                             <!-- ec-breadcrumb-list start -->
                             <ul class="ec-breadcrumb-list">
-                                <li class="ec-breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li class="ec-breadcrumb-item active">Multi Vendor</li>
+                                <li class="ec-breadcrumb-item"><a href="{{ url('/') }}">Home</a></li>
+                                <li class="ec-breadcrumb-item active">Katalog</li>
                             </ul>
                             <!-- ec-breadcrumb-list end -->
                         </div>
@@ -28,6 +28,9 @@
         <!-- Vendor list Section Start -->
         <section class="section ec-catalog-multi-vendor margin-bottom-30">
             <div class="container">
+                <div class="col-md-6 col-sm-12">
+                    <h2 class="ec-breadcrumb-title">Bagian Ini</h2>
+                </div>
                 <div class="row">
                     <div class="ec-multi-vendor-detail">
                         <div class="ec-page-description ec-page-description-info">

@@ -48,22 +48,17 @@
                     <div class="col-sm-12 col-lg-3 ec-footer-cont-social">
                         <div class="ec-footer-contact">
                             <div class="ec-footer-widget">
-                                <h4 class="ec-footer-heading">Kontak</h4>
+                                <div class="ec-footer-logo"><a href="#"><img src="{{asset('tlandingPage/assets/images/logo/cakrawala-dark.png')}}"
+                                            alt=""><img class="dark-footer-logo" src="{{asset('tlandingPage/assets/images/logo/cakrawala-dark.png')}}"
+                                            alt="Site Logo" style="display: none;" /></a></div>
+                                <h4 class="ec-footer-heading">Contact us</h4>
                                 <div class="ec-footer-links">
                                     <ul class="align-items-center">
-                                        <li class="ec-footer-link ec-foo-location"><span><img
-                                                    src="assets/images/icons/foo-location.svg"
-                                                    class="svg_img foo_svg" alt="" /></span>
-                                            <p>2548 Broaddus Maple Court, Madisonville KY 4783, USA</p>
-                                        </li>
-                                        <li class="ec-footer-link ec-foo-call"><span><img
-                                                    src="assets/images/icons/foo-wp.svg" class="svg_img foo_svg"
-                                                    alt="" /></span><a href="tel:+919999999999">+91 999 999 9999</a>
-                                        </li>
-                                        <li class="ec-footer-link ec-foo-mail"><span><img
-                                                    src="assets/images/icons/foo-mail.svg" class="svg_img foo_svg"
-                                                    alt="" /></span><a
-                                                href="mailto:support@demo.email">support@demo.email</a></li>
+                                        <li class="ec-footer-link">71 Pilgrim Avenue Chevy Chase, east california.</li>
+                                        <li class="ec-footer-link"><span>Call Us:</span><a href="tel:+440123456789">+44
+                                                0123 456 789</a></li>
+                                        <li class="ec-footer-link"><span>Email:</span><a
+                                                href="mailto:example@ec-email.com">+example@ec-email.com</a></li>
                                     </ul>
                                 </div>
                             </div>

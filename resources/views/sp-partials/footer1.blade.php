@@ -18,7 +18,7 @@
                             <div class="ec-footer-logo"><a href="#"><img src="{{asset('tlandingPage/assets/images/logo/footer-logo.png')}}"
                                         alt=""><img class="dark-footer-logo" src="{{asset('tlandingPage/assets/images/logo/dark-logo.png')}}"
                                         alt="Site Logo" style="display: none;" /></a></div>
-                            <h4 class="ec-footer-heading">Contact us</h4>
+                            <h4 class="ec-footer-heading">Kontak Kami</h4>
                             <div class="ec-footer-links">
                                 <ul class="align-items-center">
                                     <li class="ec-footer-link">71 Pilgrim Avenue Chevy Chase, east california.</li>
@@ -32,7 +32,7 @@
                     </div>
                     <div class="col-sm-12 col-lg-2 ec-footer-info">
                         <div class="ec-footer-widget">
-                            <h4 class="ec-footer-heading">Information</h4>
+                            <h4 class="ec-footer-heading">Katalog</h4>
                             <div class="ec-footer-links">
                                 <ul class="align-items-center">
                                     <li class="ec-footer-link"><a href="about-us.html">About us</a></li>
@@ -45,7 +45,7 @@
                     </div>
                     <div class="col-sm-12 col-lg-2 ec-footer-account">
                         <div class="ec-footer-widget">
-                            <h4 class="ec-footer-heading">Account</h4>
+                            <h4 class="ec-footer-heading">Layanan</h4>
                             <div class="ec-footer-links">
                                 <ul class="align-items-center">
                                     <li class="ec-footer-link"><a href="#">My Account</a></li>
@@ -58,7 +58,7 @@
                     </div>
                     <div class="col-sm-12 col-lg-2 ec-footer-service">
                         <div class="ec-footer-widget">
-                            <h4 class="ec-footer-heading">Services</h4>
+                            <h4 class="ec-footer-heading">Kategori</h4>
                             <div class="ec-footer-links">
                                 <ul class="align-items-center">
                                     <li class="ec-footer-link"><a href="#">Discount Returns</a></li>
@@ -72,18 +72,17 @@
                     </div>
                     <div class="col-sm-12 col-lg-3 ec-footer-news">
                         <div class="ec-footer-widget">
-                            <h4 class="ec-footer-heading">Newsletter</h4>
+                            <h4 class="ec-footer-heading">Subscribe</h4>
                             <div class="ec-footer-links">
                                 <ul class="align-items-center">
-                                    <li class="ec-footer-link">Get instant updates about our new products and
-                                        special promos!</li>
+                                    <li class="ec-footer-link">Masukkan email Anda untuk mendapatkan informasi terbaru kami!</li>
                                 </ul>
                                 <div class="ec-subscribe-form">
                                     <form id="ec-newsletter-form" name="ec-newsletter-form" method="post"
                                         action="#">
                                         <div id="ec_news_signup" class="ec-form">
                                             <input class="ec-email" type="email" required=""
-                                                placeholder="Enter your email here..." name="ec-email" value="" />
+                                                placeholder="Masukkan Email..." name="ec-email" value="" />
                                             <button id="ec-news-btn" class="button btn-primary" type="submit"
                                                 name="subscribe" value=""><i class="ecicon eci-paper-plane-o"
                                                     aria-hidden="true"></i></button>

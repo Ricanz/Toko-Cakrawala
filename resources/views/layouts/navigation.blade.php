@@ -10,7 +10,7 @@
  
  @include('sp-partials.head')
 <body class="compare_page">
-    <div id="ec-overlay"><span class="loader_img"></span></div>
+    {{-- <div id="ec-overlay"><span class="loader_img"></span></div> --}}
 
     <!-- Header start  -->
     @include('partials.navbar')
@@ -140,7 +140,7 @@
     <!-- Footer navigation panel for responsive display end -->
 
     <!-- Recent Purchase Popup  -->
-    <div class="recent-purchase">
+    {{-- <div class="recent-purchase">
         <img src="{{('assets/images/product-image/1.jpg')}}" alt="payment image">
         <div class="detail">
             <p>Someone in new just bought</p>
@@ -148,7 +148,7 @@
             <p>10 Minutes ago</p>
         </div>
         <a href="javascript:void(0)" class="icon-btn recent-close">×</a>
-    </div>
+    </div> --}}
     <!-- Recent Purchase Popup end -->
 
     <!-- Cart Floating Button -->

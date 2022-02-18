@@ -53,7 +53,6 @@ class SubKategoriController extends Controller
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
-
     public function edit($id)
     {
         $Kategori = subKategori::find($id);
