@@ -28,6 +28,12 @@ Route::get('/checkout', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+Route::get('/invoice', function () {
+    return view('invoice');
+});
+Route::get('/print-invoice', function () {
+    return view('print-invoice');
+});
 Route::get('/detail_produk', function () {
     return view('detail_produk');
 });
