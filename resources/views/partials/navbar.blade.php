@@ -190,6 +190,7 @@
                                     <li><a href="elemets-typography.html">Atap</a></li>
                                 </ul>
                             </li>
+                            <li><a href="#pemesanan">Cara Pemesanan</a></li>
                             <li><a href="{{ url('/contact') }}">Kontak</a></li>
                         </ul>
                     </div>
