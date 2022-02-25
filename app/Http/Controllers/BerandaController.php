@@ -6,6 +6,7 @@ use App\Models\Kategori;
 use App\Models\subKategori;
 use App\Models\Testimonial;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cookie;
 
 class BerandaController extends Controller
 {
@@ -17,4 +18,6 @@ class BerandaController extends Controller
         $testimonial = Testimonial::all();
         return view('index', compact('produk', 'kategori', 'produkselect', 'testimonial'));
     }
+    
+
 }

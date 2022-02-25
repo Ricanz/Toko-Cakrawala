@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BerandaController;
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\SubKategoriController;
@@ -49,5 +50,10 @@ Route::resource('subKategori', SubKategoriController::class);
 Route::resource('testimonial', TestimonialController::class);
 Route::resource('produk', ProdukController::class);
 Route::get('produk-grid', [ProdukController::class, 'grid'])->name('produk-grid');
+Route::post('addToCart', [CartController::class, 'addToCart']);
+Route::get('Cart', [CartController::class, 'Cart']);
+Route::post('updateToCart', [CartController::class, 'updateToCart']);
+Route::delete('deleteCart', [CartController::class, 'addToCart']);
+Route::get('clearCart', [CartController::class, 'clearCart']);
 
 require __DIR__.'/auth.php';

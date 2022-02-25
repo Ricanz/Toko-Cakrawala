@@ -304,7 +304,7 @@
                             <div class="tab-content">
                                 <!-- 1st Product tab start -->
                                 <div class="tab-pane fade show active" id="all">
-                                    <div class="row">
+                                    <div class="row product_data">
                                         @foreach($produk as $i)
                                         <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 ec-product-content">
                                             <div class="ec-product-inner">
@@ -329,8 +329,12 @@
                                                             <a href="compare.html" class="ec-btn-group compare"
                                                                 title="Compare"><img src="{{asset('tlandingPage/assets/images/icons/compare.svg')}}"
                                                                     class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset('tlandingPage/assets/images/icons/pro_cart.svg')}}"
-                                                                        class="svg_img pro_svg" alt="" /></a>
+                                                            <div>
+                                                                    <input type="hidden" class="produk_id" value="{{$i->id}}"> <!-- Your Product ID -->
+                                                                    <input type="hidden" class="qty-input" value="{{$i->stok}}"> <!-- Your Number of Quantity -->
+                                                            <button  title="Add To Cart" class="add-to-cart-btn"><img src="{{asset('tlandingPage/assets/images/icons/pro_cart.svg')}}"
+                                                                        class="svg_img pro_svg" alt="" /></button>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -349,6 +353,12 @@
                                                             <span class="new-price">Rp.{{$i->harga}},00</span>
                                                             {{-- <span class="old-price">$65.00</span> --}}
                                                         </span>
+                                                        <div>
+                                                            <input type="hidden" class="produk_id" value="{{$i->id}}"> <!-- Your Product ID -->
+                                                            <input type="hidden" class="qty-input" value="{{$i->stok}}"> <!-- Your Number of Quantity -->
+                                                    <button  title="Add To Cart" class="add-to-cart-btn  btn btn-primary"><img src="{{asset('tlandingPage/assets/images/icons/pro_cart.svg')}}"
+                                                                class="svg_img pro_svg" alt="" /></button>
+                                                    </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -360,7 +370,7 @@
                                 <!-- ec 2nd Product tab start -->
                                 @foreach($kategori as $p)
                                 <div class="tab-pane fade" id="{{$p->nama}}">
-                                    <div class="row">
+                                    <div class="row product_data">
                                         @foreach($p->produk as $i)
                                         <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 ec-product-content">
                                             <div class="ec-product-inner">
@@ -384,8 +394,12 @@
                                                             <a href="compare.html" class="ec-btn-group compare"
                                                                 title="Compare"><img src="{{asset('tlandingPage/assets/images/icons/compare.svg')}}"
                                                                     class="svg_img pro_svg" alt="" /></a>
-                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart"><img src="{{asset('tlandingPage/assets/images/icons/pro_cart.svg')}}"
+                                                                    <input type="hidden" class="produk_id" value="{{$i->id}}"> <!-- Your Product ID -->
+                                                                    <input type="text" class="qty-input" value="{{$i->stok}}"> <!-- Your Number of Quantity -->
+                                                            <a href="javascript:void(0)"  title="Add To Cart" class="ec-btn-group add-to-cart-btn btn"><img src="{{asset('tlandingPage/assets/images/icons/pro_cart.svg')}}"
                                                                     class="svg_img pro_svg" alt="" /></a>
+                                                                    {{-- <button  title="Add To Cart" class="addToCart-btn btn"><img src="{{asset('tlandingPage/assets/images/icons/pro_cart.svg')}}"
+                                                                        class="svg_img pro_svg" alt="" /></button> --}}
                                                         </div>
                                                     </div>
                                                 </div>
