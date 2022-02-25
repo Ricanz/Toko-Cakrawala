@@ -18,6 +18,6 @@ class BerandaController extends Controller
         $testimonial = Testimonial::all();
         return view('index', compact('produk', 'kategori', 'produkselect', 'testimonial'));
     }
-    
 
+    
 }
