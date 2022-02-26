@@ -330,8 +330,8 @@
                                                                 title="Compare"><img src="{{asset('tlandingPage/assets/images/icons/compare.svg')}}"
                                                                     class="svg_img pro_svg" alt="" /></a>
                                                             <div>
-                                                                    <input type="hidden" class="produk_id" value="{{$i->id}}"> <!-- Your Product ID -->
-                                                                    <input type="hidden" class="qty-input" value="{{$i->stok}}"> <!-- Your Number of Quantity -->
+                                                                    <input type="hidden" class="produk_id" value="{{$i->id}}"> 
+                                                                    <input type="hidden" class="qty-input" value="{{$i->stok}}"> 
                                                             <button  title="Add To Cart" class="add-to-cart-btn"><img src="{{asset('tlandingPage/assets/images/icons/pro_cart.svg')}}"
                                                                         class="svg_img pro_svg" alt="" /></button>
                                                             </div>
@@ -353,12 +353,6 @@
                                                             <span class="new-price">Rp.{{$i->harga}},00</span>
                                                             {{-- <span class="old-price">$65.00</span> --}}
                                                         </span>
-                                                        <div>
-                                                            <input type="hidden" class="produk_id" value="{{$i->id}}"> <!-- Your Product ID -->
-                                                            <input type="hidden" class="qty-input" value="{{$i->stok}}"> <!-- Your Number of Quantity -->
-                                                    <button  title="Add To Cart" class="add-to-cart-btn  btn btn-primary"><img src="{{asset('tlandingPage/assets/images/icons/pro_cart.svg')}}"
-                                                                class="svg_img pro_svg" alt="" /></button>
-                                                    </div>
                                                     </div>
                                                 </div>
                                             </div>
