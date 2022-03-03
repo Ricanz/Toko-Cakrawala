@@ -41,6 +41,9 @@ Route::get('/detail_produk', function () {
 Route::get('/katalog', function () {
     return view('katalog');
 });
+Route::get('/tentang', function () {
+    return view('tentang');
+});
 // Route::get('/main-kategori', function () {
 //     return view('admin.kategori.main.index');
 // });

@@ -191,6 +191,7 @@
                                 </ul>
                             </li>
                             <li><a href="{{ url('/contact') }}">Kontak</a></li>
+                            <li><a href="{{ url('/tentang') }}">Tentang Kami</a></li>
                         </ul>
                     </div>
                 </div>

@@ -16,44 +16,32 @@ class KategoriSeeder extends Seeder
     {
         Kategori::create([
             'id' => '1',
-            'nama' => 'Besi Beton',
-            'detail' => 'ini kategori besi beton'
-        ]);
-
-        Kategori::create([
-            'id' => '2',
-            'nama' => 'Baja',
-            'detail' => 'ini kategori baja'
-        ]);
-
-        Kategori::create([
-            'id' => '3',
             'nama' => 'Baja Ringan',
             'detail' => 'ini kategori baja ringan'
         ]);
 
         Kategori::create([
+            'id' => '2',
+            'nama' => 'Penutup Atap',
+            'detail' => 'ini kategori penutup atap'
+        ]);
+
+        Kategori::create([
+            'id' => '3',
+            'nama' => 'Alderon',
+            'detail' => 'ini kategori baja alderon'
+        ]);
+
+        Kategori::create([
             'id' => '4',
-            'nama' => 'Paku dan Kawat',
-            'detail' => 'ini kategori paku dan kawat'
+            'nama' => 'Plafon dan Langit-langit',
+            'detail' => 'ini kategori plafon dan langit-langit'
         ]);
 
         Kategori::create([
             'id' => '5',
-            'nama' => 'Atap',
-            'detail' => 'ini kategori atap'
-        ]);
-
-        Kategori::create([
-            'id' => '6',
-            'nama' => 'Technics & Tools',
-            'detail' => 'ini kategori technics & tools'
-        ]);
-
-        Kategori::create([
-            'id' => '7',
-            'nama' => 'Safety Equipment',
-            'detail' => 'ini kategori safety equipment'
+            'nama' => 'Conwood',
+            'detail' => 'ini kategori conwood'
         ]);
     }
 }

@@ -54,11 +54,11 @@
                                 <h4 class="ec-footer-heading">Contact us</h4>
                                 <div class="ec-footer-links">
                                     <ul class="align-items-center">
-                                        <li class="ec-footer-link">71 Pilgrim Avenue Chevy Chase, east california.</li>
-                                        <li class="ec-footer-link"><span>Call Us:</span><a href="tel:+440123456789">+44
-                                                0123 456 789</a></li>
-                                        <li class="ec-footer-link"><span>Email:</span><a
-                                                href="mailto:example@ec-email.com">+example@ec-email.com</a></li>
+                                        <li class="ec-footer-link">Jl. K.H. Sholeh Iskandar No. 10, Kedung Badak, Tanah Sareal, Bogor 1614 (Bekas Kantor BPJS Kesehatan/Bekas Dealer FORD</li>
+                                        <li class="ec-footer-link"><span>Telepon:</span><a href="tel:02518665795">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp0251-8665795</a></li>
+                                        <li class="ec-footer-link"><span>WhatsApp:</span><a href="http://wa.me/+62816225999">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp0816-225999</a></li>
+                                        <li class="ec-footer-link"><span>Email:</span>&nbsp&nbsp&nbsp&nbspcakrawala.info@gmail.com</li>
+                                        <li class="ec-footer-link">* Pembayaran: Customer(Cash On Delivery dan rekening BCA 87202.22931)</li>
                                     </ul>
                                 </div>
                             </div>
@@ -68,14 +68,14 @@
                                 <h4 class="ec-footer-heading marg-b-0 s-head">Follow Us</h4>
                                 <div class="ec-footer-links">
                                     <ul class="align-items-center">
-                                        <li class="ec-footer-link"><a href="#"><i class="ecicon eci-instagram"
+                                        <li class="ec-footer-link"><a href="https://www.instagram.com/tokocakrawala9"><i class="ecicon eci-instagram"
                                                     aria-hidden="true"></i></a></li>
-                                        <li class="ec-footer-link"><a href="#"><i class="ecicon eci-twitter-square"
+                                        {{-- <li class="ec-footer-link"><a href="#"><i class="ecicon eci-twitter-square"
+                                                    aria-hidden="true"></i></a></li> --}}
+                                        <li class="ec-footer-link"><a href="https://www.facebook.com/PTBIRAWA-METAL-KONSTRUKSI-180582271996781/"><i class="ecicon eci-facebook-square"
                                                     aria-hidden="true"></i></a></li>
-                                        <li class="ec-footer-link"><a href="#"><i class="ecicon eci-facebook-square"
-                                                    aria-hidden="true"></i></a></li>
-                                        <li class="ec-footer-link"><a href="#"><i class="ecicon eci-linkedin-square"
-                                                        aria-hidden="true"></i></a></li>
+                                        {{-- <li class="ec-footer-link"><a href="#"><i class="ecicon eci-linkedin-square"
+                                                        aria-hidden="true"></i></a></li> --}}
                                     </ul>
                                 </div>
                             </div>
