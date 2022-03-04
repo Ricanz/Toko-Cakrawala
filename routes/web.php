@@ -59,10 +59,10 @@ Route::resource('subKategori', SubKategoriController::class);
 Route::resource('testimonial', TestimonialController::class);
 Route::resource('produk', ProdukController::class);
 Route::get('produk-grid', [ProdukController::class, 'grid'])->name('produk-grid');
-Route::post('addToCart', [CartController::class, 'addToCart']);
+Route::post('addToCart', [CartController::class, 'addToCart'])->name('addToCart');
 Route::get('Cart', [CartController::class, 'Cart']);
 Route::post('updateToCart', [CartController::class, 'updateToCart']);
-Route::delete('deleteCart', [CartController::class, 'addToCart']);
+Route::delete('deleteCart/{id}', [CartController::class, 'deleteFromCart'])->name('deleteCart');
 Route::get('clearCart', [CartController::class, 'clearCart']);
 
 require __DIR__.'/auth.php';

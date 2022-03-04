@@ -132,7 +132,7 @@
                             <a href="#ec-side-cart" class="ec-header-btn ec-side-toggle">
                                 <div class="header-icon"><img src="{{asset('tlandingPage/assets/images/icons/cart.svg')}}"
                                         class="svg_img header_svg" alt="" /></div>
-                                <span class="ec-header-count ec-cart-count cart-count-lable">0</span>
+                                <span class="ec-header-count ec-cart-count cart-count-lable">{{Helper::countCart()}}</span>
                             </a>
                             <!-- Header Cart End -->
                         </div>
