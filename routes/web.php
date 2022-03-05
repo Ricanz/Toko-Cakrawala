@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\InvoiceController;
 use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\SubKategoriController;
@@ -32,9 +33,7 @@ Route::get('/contact', function () {
 Route::get('/invoice', function () {
     return view('invoice');
 });
-Route::get('/print-invoice', function () {
-    return view('print-invoice');
-});
+
 Route::get('/detail_produk', function () {
     return view('detail_produk');
 });
@@ -64,5 +63,6 @@ Route::get('Cart', [CartController::class, 'Cart']);
 Route::post('updateToCart', [CartController::class, 'updateToCart']);
 Route::delete('deleteCart/{id}', [CartController::class, 'deleteFromCart'])->name('deleteCart');
 Route::get('clearCart', [CartController::class, 'clearCart']);
+Route::get('print-invoice', [InvoiceController::class, 'invoice']);
 
 require __DIR__.'/auth.php';

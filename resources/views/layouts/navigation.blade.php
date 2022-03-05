@@ -13,7 +13,7 @@
     {{-- <div id="ec-overlay"><span class="loader_img"></span></div> --}}
 
     <!-- Header start  -->
-    @include('partials.navbar')
+    {{-- @include('partials.navbar') --}}
     <!-- Header End  -->
 
     <!-- ekka Cart Start -->
@@ -25,7 +25,7 @@
     </main>
 
     <!-- Footer Start -->
-    @include('sp-partials.footer1')
+    {{-- @include('sp-partials.footer1') --}}
     <!-- Footer Area End -->
 
     <!-- Modal -->
