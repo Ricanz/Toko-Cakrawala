@@ -17258,6 +17258,21 @@ body.ec-open:before {
   font-weight: 400;
   line-height: 35px;
 }
+.qty-input-js{
+  background: transparent none repeat scroll 0 0;
+  border: medium none;
+  color: #777;
+  float: left;
+  font-size: 14px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 32px;
+  outline: none;
+  font-weight: 400;
+  line-height: 35px;
+}
 .eccart-pro-items li .ec-pro-content .qty-plus-minus .dec.ec_qtybtn {
   border-right: 1px solid #eeeeee;
 }
