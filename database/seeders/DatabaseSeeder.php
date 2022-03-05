@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
             KategoriSeeder::class,
             ProdukSeeder::class,
             TestimonialSeeder::class,
+            SubKategoriSeeder::class
         ]);
     }
 }

@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use App\Models\subKategori;
 
 class SubKategoriSeeder extends Seeder
 {
@@ -13,6 +14,9 @@ class SubKategoriSeeder extends Seeder
      */
     public function run()
     {
-        //
+        subKategori::create([
+            'id' => '1',
+            
+        ]);
     }
 }
