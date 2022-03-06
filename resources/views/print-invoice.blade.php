@@ -166,9 +166,9 @@
         </div>
     </section>
 
-    <script>
+    {{-- <script>
         window.print()
-    </script>
+    </script> --}}
     <!-- End User invoice section -->
 
     <!-- Vendor JS -->
