@@ -599,7 +599,7 @@
                     <div class="ec-banner-inner">
                         <div class="ec-banner-block ec-banner-block-1">
                             <div class="banner-block">
-                                {{-- <div class="banner-content">
+                                <div class="banner-content">
                                     <div class="banner-text">
                                         <span class="ec-banner-disc">25% discount</span>
                                         <span class="ec-banner-title">Vegetables & Fruits</span>
