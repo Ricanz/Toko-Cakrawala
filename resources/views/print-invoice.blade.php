@@ -139,7 +139,7 @@
                                                                     <td class="border-none m-m15" colspan="3"><span
                                                                             class="note-text-color">Pemesanan dan
                                                                             Informasi pembelian akan langsung dikirimkan
-                                                                            melalui Whatsapp</span>
+                                                                            melalui Whatsapp dan Email</span>
                                                                     </td>
                                                                     <td class="border-color m-m15 text-center text-600 text-90"
                                                                         colspan="1">

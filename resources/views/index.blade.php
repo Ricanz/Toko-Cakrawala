@@ -335,18 +335,11 @@
                                                             </a>
                                                             {{-- <span class="percentage">20%</span> --}}
                                                             <div class="ec-pro-actions">
-                                                                <a class="ec-btn-group wishlist" title="Wishlist"><img
-                                                                        src="{{ asset('tlandingPage/assets/images/icons/pro_wishlist.svg') }}"
-                                                                        class="svg_img pro_svg" alt="" /></a>
                                                                 <a href="#" class="ec-btn-group quickview"
                                                                     data-link-action="quickview" title="Quick view"
                                                                     data-bs-toggle="modal"
                                                                     data-bs-target="#ec_quickview_modal"><img
                                                                         src="{{ asset('tlandingPage/assets/images/icons/quickview.svg') }}"
-                                                                        class="svg_img pro_svg" alt="" /></a>
-                                                                <a href="#" class="ec-btn-group compare"
-                                                                    title="Compare"><img
-                                                                        src="{{ asset('tlandingPage/assets/images/icons/compare.svg') }}"
                                                                         class="svg_img pro_svg" alt="" /></a>
                                                                 <form method="post"
                                                                     action="{{ route('addToCart') }}">

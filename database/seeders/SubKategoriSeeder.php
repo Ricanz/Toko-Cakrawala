@@ -16,6 +16,10 @@ class SubKategoriSeeder extends Seeder
     {
         subKategori::create([
             'id' => '1',
+            'nama' => 'abc',
+            'detail' => 'ini detail',
+            'gambar' => 'abc',
+            'kategori_id' => 1
             
         ]);
     }

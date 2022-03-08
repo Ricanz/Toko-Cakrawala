@@ -136,4 +136,20 @@ class CartController extends Controller
         Cookie::queue(Cookie::forget('shopping_cart'));
         return response()->json(['status' => 'Keranjang Dibersihkan']);
     }
+
+    public function checkout()
+    {
+        if (Cookie::get('shopping_cart')) {
+            $cookie_data = stripslashes(Cookie::get('shopping_cart'));
+            $cart_data = json_decode($cookie_data, true);
+            $totalcart = count($cart_data);
+        } else {
+            $cart_data = null;
+        }
+
+        dd($cart_data);
+
+        return view('checkout', compact('cart_data'));
+
+    }
 }

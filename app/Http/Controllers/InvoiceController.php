@@ -20,6 +20,7 @@ class InvoiceController extends Controller
         // dd($cart_data);
         $invoiceFile = "invoice.pdf";
         $invoicePath = public_path("invoices/".$invoiceFile);
+        dd($cart_data);
         $pdf = PDF::loadView('print-invoice', $cart_data);
         $pdf->save($invoicePath);
         // $twilio = new Client(env('TWILIO_ACCOUNT_SID'), env('TWILIO_AUTH_TOKEN'));

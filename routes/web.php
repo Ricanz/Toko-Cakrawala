@@ -24,9 +24,9 @@ Route::get('/', [BerandaController::class, 'beranda']);
 Route::get('/wishlist', function () {
     return view('wishlist');
 });
-Route::get('/checkout', function () {
-    return view('checkout');
-});
+// Route::get('/checkout', function () {
+//     return view('checkout');
+// });
 Route::get('/contact', function () {
     return view('contact');
 });
@@ -60,6 +60,7 @@ Route::resource('produk', ProdukController::class);
 Route::get('produk-grid', [ProdukController::class, 'grid'])->name('produk-grid');
 Route::post('addToCart', [CartController::class, 'addToCart'])->name('addToCart');
 Route::get('Cart', [CartController::class, 'Cart']);
+Route::get('checkout', [CartController::class, 'checkout'])->name('checkout');
 Route::post('updateToCart', [CartController::class, 'updateToCart']);
 Route::delete('deleteCart/{id}', [CartController::class, 'deleteFromCart'])->name('deleteCart');
 Route::get('clearCart', [CartController::class, 'clearCart']);
