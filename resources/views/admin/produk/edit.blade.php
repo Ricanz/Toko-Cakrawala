@@ -123,7 +123,7 @@
                                     <div class="col-md-6">
                                         <label class="form-label">Select Categories</label>
                                         <select name="kategori_id" id="Categories" class="form-select">
-                                            @foreach ($kategori as $item)
+                                            @foreach ($subkategori as $item)
                                                 <option value="{{ $item->id }}">{{ $item->nama }}</option>
                                             @endforeach
                                         </select>

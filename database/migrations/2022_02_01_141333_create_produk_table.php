@@ -20,7 +20,7 @@ class CreateProdukTable extends Migration
             $table->text('detail');
             $table->integer('stok');
             $table->string('gambar')->nullable();
-            $table->foreignId("kategori_id")->constrained("kategori")->onDelete("cascade")->onUpdate("cascade");
+            $table->foreignId("subkategori_id")->constrained("sub_kategori")->onDelete("cascade")->onUpdate("cascade");
             $table->timestamps();
         });
     }

@@ -39,7 +39,7 @@
                                         <td>{{$item->harga}}</td>
                                         <td>{{$item->detail}}</td>
                                         <td>{{$item->stok}}</td>
-                                        <td>{{$item->kategori->nama}}</td>
+                                        <td>{{$item->subkategori->nama}}</td>
                                         <td>ACTIVE</td>
                                         <td>{{$item->created_at->isoFormat('m/d/Y')}}</td>
                                         <td>
