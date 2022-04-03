@@ -43,15 +43,14 @@
                                                         <span class="text-sm text-grey-m2 align-middle">Nama Pemesan :
                                                         </span>
                                                         <span
-                                                            class="text-600 text-110 text-blue align-middle">Yusuf</span>
+                                                            class="text-600 text-110 text-blue align-middle">{{$data['nama']}}</span>
                                                     </div>
                                                     <div class="text-grey-m2">
                                                         <div class="my-2"><b class="text-600">Alamat :
-                                                            </b>Jl. H Zainudin Gandaria UtaraJl. H Zainudin Gandaria
-                                                            Utara
+                                                            </b>{{$data['alamat']}}
                                                         </div>
                                                         <div class="my-2"><b class="text-600">Nomor HP :
-                                                            </b>082167257017
+                                                            </b>{{$data['no_hp']}}
                                                         </div>
                                                     </div>
                                                 </div>
@@ -67,11 +66,11 @@
                                                             #111-222</div>
                                                         <div class="my-2"><span
                                                                 class="text-600 text-90">Tanggal Pemesanan :
-                                                            </span> 3 Mar 2022</div>
+                                                            </span> {{$tanggal}}</div>
 
                                                         <div class="my-2"><span class="text-600 text-90">Nomor
                                                                 Invoice :
-                                                            </span>6548</div>
+                                                            </span>{{$invoice}}</div>
                                                     </div>
                                                 </div>
                                                 <!-- /.col -->
