@@ -593,7 +593,7 @@
                                 </div>
                                 <div class="ec-blog-content">
                                     <div class="ec-blog-cat"><a href="{{ url("artikel-detail/$item->slug") }}">Artikel</a></div>
-                                    <h5 class="ec-blog-title"><a href="blog-detail-left-sidebar.html">{{ $item->judul }}</a></h5>
+                                    <h5 class="ec-blog-title"><a href="{{ url("artikel-detail/$item->slug") }}">{{ $item->judul }}</a></h5>
 
                                     <div class="ec-blog-date">Oleh<span>Admin</span> / {{ date('d-m-Y', strtotime($item->created_at)) }}</div>
                                 </div>

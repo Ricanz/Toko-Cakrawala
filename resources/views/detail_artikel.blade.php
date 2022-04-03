@@ -3,13 +3,8 @@
 <section class="section ec-product-tab section-space-p">
     <div class="container">
         <div class="row">
-
-            <!-- Sidebar area start -->
-            <div class="ec-side-cat-overlay"></div>
-            
-
             <!-- Product area start -->
-            <div class="col-lg-9 col-md-12">
+            <div class="col-lg-12 col-md-12">
 
                 <!-- Deal of the day Start -->
                 <div class="row space-t-50" data-animation="fadeIn">
@@ -24,7 +19,7 @@
                         <div class="ec-spe-products">
                             <div class="ec-spe-product">
                                 <div class="ec-spe-pro-inner">
-                                    <div class="ec-spe-pro-image-outer col-md-6 col-sm-12">
+                                    <div class="ec-spe-pro-image-outer col-md-4 col-sm-12">
                                         <div class="ec-spe-pro-image">
                                             <img class="img-responsive"
                                                 src="{{ asset('storage/Artikel/'.$artikel->gambar ) }}"
