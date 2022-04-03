@@ -22,12 +22,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [BerandaController::class, 'beranda']);
 Route::get('/katalog', [BerandaController::class, 'katalog'])->name('katalog');
+Route::get('/kategori/{id}', [BerandaController::class, 'produkKategori'])->name('produkKategori');
+Route::get('/produk/{id}', [BerandaController::class, 'detailProduk'])->name('detailProduk');
 Route::get('/wishlist', function () {
     return view('wishlist');
 });
-// Route::get('/checkout', function () {
-//     return view('checkout');
-// });
 Route::get('/contact', function () {
     return view('contact');
 });
@@ -41,12 +40,6 @@ Route::get('/detail_produk', function () {
 Route::get('/tentang', function () {
     return view('tentang');
 });
-// Route::get('/main-kategori', function () {
-//     return view('admin.kategori.main.index');
-// });
-// Route::get('/sub-kategori', function () {
-//     return view('admin.kategori.sub.index');
-// });
 
 Route::get('/dashboard', function () {
     return view('admin.index');

@@ -34,5 +34,20 @@ class BerandaController extends Controller
         return view('katalog', compact('produk', 'kategori', 'produkselect'));
     }
 
+    public function produkKategori(Request $request){
+        $produk = Produk::where('kategori_id', $request->id)->get();
+        $kategori = Kategori::all();
+        $nama_kategori = Kategori::where('id', $request->id)->first();
+
+        return view('produk-kategori', compact('produk', 'kategori', 'nama_kategori'));
+    }
+
+    public function detailProduk(Request $request){
+        $produk = Produk::findOrFail($request->id);
+        $kategori = Kategori::all();
+        $produkselect = Produk::with('kategori')->get();
+
+        return view('detail_produk', compact('produk', 'kategori', 'produkselect'));
+    }
     
 }

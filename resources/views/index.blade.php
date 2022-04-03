@@ -230,10 +230,7 @@
                                                             </a>
                                                             {{-- <span class="percentage">20%</span> --}}
                                                             <div class="ec-pro-actions">
-                                                                <a href="#" class="ec-btn-group quickview"
-                                                                    data-link-action="quickview" title="Quick view"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#ec_quickview_modal"><img
+                                                                <a href="{{ url("/produk/$i->id") }}" class="ec-btn-group quickview"><img
                                                                         src="{{ asset('tlandingPage/assets/images/icons/quickview.svg') }}"
                                                                         class="svg_img pro_svg" alt="" /></a>
                                                                 <form method="post"
@@ -252,7 +249,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="ec-pro-content">
-                                                        <a href="shop-left-sidebar-col-3.html">
+                                                        <a href="{{ url("/produk/$i->id") }}">
                                                             <h6 class="ec-pro-stitle">{{ $i->kategori->nama }}</h6>
                                                         </a>
                                                         <h5 class="ec-pro-title"><a

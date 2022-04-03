@@ -186,8 +186,9 @@
                             <li><a href="{{ route('katalog') }}">Katalog</a></li>
                             <li class="dropdown"><a href="javascript:void(0)">Kategori</a>
                                 <ul class="sub-menu">
-                                    <li><a href="elemets-products.html">Alumunium</a></li>
-                                    <li><a href="elemets-typography.html">Atap</a></li>
+                                    @foreach ($Kategori as $item)
+                                        <li><a href="{{ url("kategori/$item->id") }}">{{ $item->nama }}</a></li>  
+                                    @endforeach
                                 </ul>
                             </li>
                             <li><a href="#pemesanan">Cara Pemesanan</a></li>
