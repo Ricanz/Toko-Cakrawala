@@ -21,6 +21,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [BerandaController::class, 'beranda']);
+Route::get('/katalog', [BerandaController::class, 'katalog'])->name('katalog');
 Route::get('/wishlist', function () {
     return view('wishlist');
 });
@@ -36,9 +37,6 @@ Route::get('/invoice', function () {
 
 Route::get('/detail_produk', function () {
     return view('detail_produk');
-});
-Route::get('/katalog', function () {
-    return view('katalog');
 });
 Route::get('/tentang', function () {
     return view('tentang');

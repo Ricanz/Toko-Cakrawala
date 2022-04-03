@@ -183,7 +183,7 @@
                     <div class="ec-main-menu">
                         <ul>
                             <li><a href="{{ url('/') }}">Beranda</a></li>
-                            <li><a href="{{ url('/katalog') }}">Katalog</a></li>
+                            <li><a href="{{ route('katalog') }}">Katalog</a></li>
                             <li class="dropdown"><a href="javascript:void(0)">Kategori</a>
                                 <ul class="sub-menu">
                                     <li><a href="elemets-products.html">Alumunium</a></li>

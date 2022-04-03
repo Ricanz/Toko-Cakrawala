@@ -116,4 +116,5 @@ class ProdukController extends Controller
         return view('admin.produk.grid', compact('produk','kategori'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
+
 }

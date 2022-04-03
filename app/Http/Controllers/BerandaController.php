@@ -26,5 +26,13 @@ class BerandaController extends Controller
         return view('index', compact('produk', 'kategori', 'produkselect', 'testimonial'));
     }
 
+    public function katalog(){
+        $produk = Produk::all();
+        $produkselect = Produk::with('kategori')->get();
+        $kategori = Kategori::all();
+
+        return view('katalog', compact('produk', 'kategori', 'produkselect'));
+    }
+
     
 }
