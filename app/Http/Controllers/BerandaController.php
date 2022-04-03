@@ -37,11 +37,10 @@ class BerandaController extends Controller
     }
 
     public function produkKategori(Request $request){
-        $id = Kategori::where('slug', $request->slug)->select('id')->first();
-        $produk = Produk::where('kategori_id', $id)->get();
+        $id = Kategori::where('slug', $request->slug)->first();
+        $produk = Produk::where('kategori_id', $id->id)->get();
         $kategori = Kategori::all();
         $select_kategori = Kategori::where('slug', $request->slug)->first();
-        // dd($select_kategori, $request->slug);
 
         return view('produk-kategori', compact('produk', 'kategori', 'select_kategori'));
     }
