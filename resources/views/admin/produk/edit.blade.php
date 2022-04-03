@@ -131,7 +131,7 @@
                                     <div class="col-md-12">
                                         <label for="slug" class="col-12 col-form-label">Slug</label>
                                         <div class="col-12">
-                                            <input id="slug" name="slug" class="form-control here set-slug" type="text">
+                                            <input id="slug" name="slug" value="{{ $produk->slug }}" class="form-control here set-slug" type="text" readonly>
                                         </div>
                                     </div>
                                     {{-- <div class="col-md-12">

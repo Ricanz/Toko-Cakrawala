@@ -22,8 +22,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [BerandaController::class, 'beranda']);
 Route::get('/katalog', [BerandaController::class, 'katalog'])->name('katalog');
-Route::get('/kategori/{id}', [BerandaController::class, 'produkKategori'])->name('produkKategori');
-Route::get('/produk/{id}', [BerandaController::class, 'detailProduk'])->name('detailProduk');
+Route::get('/kategori/{slug}', [BerandaController::class, 'produkKategori'])->name('produkKategori');
+Route::get('/produk-detail/{slug}', [BerandaController::class, 'detailProduk'])->name('detailProduk');
 Route::get('/wishlist', function () {
     return view('wishlist');
 });
@@ -34,8 +34,8 @@ Route::get('/invoice', function () {
     return view('invoice');
 });
 
-Route::get('/detail_produk', function () {
-    return view('detail_produk');
+Route::get('/cart', function () {
+    return view('cart');
 });
 Route::get('/tentang', function () {
     return view('tentang');

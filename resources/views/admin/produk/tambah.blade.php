@@ -115,7 +115,7 @@
 
                                     <div class="col-md-6">
                                         <label for="inputEmail4" class="form-label">Product name</label>
-                                        <input type="text" name="nama" class="form-control slug-title" id="inputEmail4">
+                                        <input type="text" name="nama" class="form-control slug-title" id="inputEmail4" >
                                     </div>
                                     <div class="col-md-6">
                                         <label class="form-label">Select Categories</label>
@@ -128,7 +128,7 @@
                                     <div class="col-md-12">
                                         <label for="slug" class="col-12 col-form-label">Slug</label>
                                         <div class="col-12">
-                                            <input id="slug" name="slug" class="form-control here set-slug" type="text">
+                                            <input id="slug" name="slug" class="form-control here set-slug" type="text" readonly>
                                         </div>
                                     </div>
                                     {{-- <div class="col-md-12">

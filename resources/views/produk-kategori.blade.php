@@ -50,7 +50,7 @@
                     <div class="row space-t-50">
                         <div class="col-md-12">
                             <div class="section-title">
-                                <h2 class="ec-title">Produk pada kategori {{ $nama_kategori->nama }}</h2>
+                                <h2 class="ec-title">Produk pada kategori {{ $select_kategori->nama }}</h2>
                             </div>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
                                                             </a>
                                                             {{-- <span class="percentage">20%</span> --}}
                                                             <div class="ec-pro-actions">
-                                                                <a href="{{ url("/produk/$i->id") }}" class="ec-btn-group quickview"><img
+                                                                <a href="{{ url("/produk-detail/$i->id") }}" class="ec-btn-group quickview"><img
                                                                         src="{{ asset('tlandingPage/assets/images/icons/quickview.svg') }}"
                                                                         class="svg_img pro_svg" alt="" /></a>
                                                                 <form method="post"

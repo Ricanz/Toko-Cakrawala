@@ -64,7 +64,7 @@
                                     <div class="ec-spe-pro-image-outer col-md-6 col-sm-12">
                                         <div class="ec-spe-pro-image">
                                             <img class="img-responsive"
-                                                src="{{ asset( $produk->gambar ) }}"
+                                                src="{{ asset('storage/Produk/'.$produk->gambar ) }}"
                                                 alt="Foto produk {{ $produk->nama }}">
                                         </div>
                                     </div>

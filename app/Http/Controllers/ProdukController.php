@@ -43,7 +43,9 @@ class ProdukController extends Controller
             'detail' => $request->detail,
             'gambar' => $file_name,
             'harga' => $request->harga,
+            'slug' => str_replace(' ', '-', strtolower($request->nama)),
             'stok' => $request->stok,
+            
             'kategori_id' => $request->kategori_id,
         ]);
         return redirect()->route('produk.index')
@@ -94,6 +96,7 @@ class ProdukController extends Controller
         $Produk->harga = $request->harga;
         $Produk->kategori_id = $request->kategori_id;
         $Produk->stok = $request->stok;
+        $Produk->slug = str_replace(' ', '-', strtolower($request->nama));
         $Produk->save();
 
         return redirect()->route('produk.index')

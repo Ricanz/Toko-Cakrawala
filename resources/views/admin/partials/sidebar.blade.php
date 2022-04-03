@@ -5,7 +5,7 @@
         <div class="ec-brand">
             <a href="index.html" title="Ekka">
                 <img class="ec-brand-icon" src="tadmin/assets/img/logo/ec-site-logo.png" alt="" />
-                <span class="ec-brand-name text-truncate">Ekka</span>
+                <span class="ec-brand-name text-truncate">Toko Cakrawala</span>
             </a>
         </div>
 

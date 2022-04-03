@@ -75,7 +75,7 @@
                                                             </a>
                                                             {{-- <span class="percentage">20%</span> --}}
                                                             <div class="ec-pro-actions">
-                                                                <a href="{{ url("/produk/$i->id") }}" class="ec-btn-group quickview" ><img
+                                                                <a href="{{ url("/produk-detail/$i->id") }}" class="ec-btn-group quickview" ><img
                                                                         src="{{ asset('tlandingPage/assets/images/icons/quickview.svg') }}"
                                                                         class="svg_img pro_svg" alt="" /></a>
                                                                 <form method="post"

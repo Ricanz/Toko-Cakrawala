@@ -187,7 +187,7 @@
                             <li class="dropdown"><a href="javascript:void(0)">Kategori</a>
                                 <ul class="sub-menu">
                                     @foreach ($Kategori as $item)
-                                        <li><a href="{{ url("kategori/$item->id") }}">{{ $item->nama }}</a></li>  
+                                        <li><a href="{{ url("kategori/$item->slug") }}">{{ $item->nama }}</a></li>  
                                     @endforeach
                                 </ul>
                             </li>

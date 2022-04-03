@@ -35,15 +35,17 @@ class BerandaController extends Controller
     }
 
     public function produkKategori(Request $request){
-        $produk = Produk::where('kategori_id', $request->id)->get();
+        $id = Kategori::where('slug', $request->slug)->select('id')->first();
+        $produk = Produk::where('kategori_id', $id)->get();
         $kategori = Kategori::all();
-        $nama_kategori = Kategori::where('id', $request->id)->first();
+        $select_kategori = Kategori::where('slug', $request->slug)->first();
+        // dd($select_kategori, $request->slug);
 
-        return view('produk-kategori', compact('produk', 'kategori', 'nama_kategori'));
+        return view('produk-kategori', compact('produk', 'kategori', 'select_kategori'));
     }
 
     public function detailProduk(Request $request){
-        $produk = Produk::findOrFail($request->id);
+        $produk = Produk::where('slug', $request->slug)->first();
         $kategori = Kategori::all();
         $produkselect = Produk::with('kategori')->get();
 
