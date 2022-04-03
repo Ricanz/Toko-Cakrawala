@@ -33,7 +33,7 @@ class InvoiceController extends Controller
         $pdf = PDF::loadView('print-invoice', compact('cart_data'))->save($invoicePath);
         $twilio = new Client(env('TWILIO_ACCOUNT_SID'), env('TWILIO_AUTH_TOKEN'));
         $twilio->messages->create(
-            "whatsapp:"."085735691018", [
+            "whatsapp:"."+6285735691018", [
                 "from" => "whatsapp:".env('TWILIO_SANDBOX_NUMBER'),
                 "body" => "Here's your invoice!",
             "mediaUrl" => [env("NGROK_URL")."/invoices/".$invoiceFile]
