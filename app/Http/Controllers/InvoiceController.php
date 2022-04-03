@@ -45,25 +45,17 @@ class InvoiceController extends Controller
         $pdf = PDF::loadView('print-invoice', compact('cart_data', 'invoice', 'data', 'tanggal'))->save($invoicePath);
 
         Mail::send('email-seller', compact('data'), function ($message) use($pdf, $invoice) {
-            $message->from('nadheva13@gmail.com');
-            $message->to('nadheva17@gmail.com', 'Invoice')
+            $message->from('toko.cakrawala@outlook.com');
+            $message->to('toko.cakrawala@outlook.com', 'Invoice')
             ->subject("Pemesanan ".$invoice)
             ->attachData($pdf->output(), $invoice.".pdf");
         });
         Mail::send('email-buyer', compact('data'), function ($message) use($pdf, $invoice, $request) {
-            $message->from('nadheva13@gmail.com');
+            $message->from('toko.cakrawala@outlook.com');
             $message->to($request->email, 'Invoice')
             ->subject("Pemesanan ".$invoice)
             ->attachData($pdf->output(), $invoice.".pdf");
         });
-        // $twilio = new Client(env('TWILIO_ACCOUNT_SID'), env('TWILIO_AUTH_TOKEN'));
-        // $twilio->messages->create(
-        //     "whatsapp:"."+6282167257017", [
-        //         "from" => "whatsapp:".env('TWILIO_SANDBOX_NUMBER'),
-        //         "body" => "Here's your invoice!",
-        //     "mediaUrl" => [env("NGROK_URL")."/invoices/".$invoiceFile]
-        //     ]
-        // );
         return redirect('/')->with('success', 'Pesanan sedang diproses');
     }
 }
