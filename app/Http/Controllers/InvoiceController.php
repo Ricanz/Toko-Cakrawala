@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Cookie;
 use Twilio\Rest\Client;
+use Illuminate\Support\Facades\Mail;
 use Barryvdh\DomPDF\Facade\Pdf as PDF;
 class InvoiceController extends Controller
 {
@@ -31,14 +32,20 @@ class InvoiceController extends Controller
         $invoiceFile = $invoice.".pdf";
         $invoicePath = public_path("invoices/".$invoiceFile);
         $pdf = PDF::loadView('print-invoice', compact('cart_data'))->save($invoicePath);
-        $twilio = new Client(env('TWILIO_ACCOUNT_SID'), env('TWILIO_AUTH_TOKEN'));
-        $twilio->messages->create(
-            "whatsapp:"."+6282167257017", [
-                "from" => "whatsapp:".env('TWILIO_SANDBOX_NUMBER'),
-                "body" => "Here's your invoice!",
-            "mediaUrl" => [env("NGROK_URL")."/invoices/".$invoiceFile]
-            ]
-        );
+        Mail::send('print-invoice', compact('cart_data'), function ($message) use($pdf, $invoice) {
+            $message->from('nadheva13@gmail.com');
+            $message->to('nadheva17@gmail.com', 'Invoice')
+            ->subject('Pemesanan'.$invoice)
+            ->attachData($pdf->output(), $invoice.".pdf");
+        });
+        // $twilio = new Client(env('TWILIO_ACCOUNT_SID'), env('TWILIO_AUTH_TOKEN'));
+        // $twilio->messages->create(
+        //     "whatsapp:"."+6282167257017", [
+        //         "from" => "whatsapp:".env('TWILIO_SANDBOX_NUMBER'),
+        //         "body" => "Here's your invoice!",
+        //     "mediaUrl" => [env("NGROK_URL")."/invoices/".$invoiceFile]
+        //     ]
+        // );
         return redirect('/')->with('success', 'Pesanan sedang diproses');
     }
 }
