@@ -20,28 +20,28 @@
     <meta name="author" content="nikibweb">
 
     <!-- site Favicon -->
-    <link rel="icon" href="{{ asset('tlandingPage/assets/images/favicon/favicon.png') }}" sizes="32x32" />
-    <link rel="apple-touch-icon" href="{{ asset('tlandingPage/assets/images/favicon/favicon.png') }}" />
-    <meta name="msapplication-TileImage" content="{{ asset('tlandingPage/assets/images/favicon/favicon.png') }}" />
+    {{-- <link rel="icon" href="{{ public_path('tlandingPage/assets/images/favicon/favicon.png') }}" sizes="32x32" />
+    <link rel="apple-touch-icon" href="{{ public_path('tlandingPage/assets/images/favicon/favicon.png') }}" />
+    <meta name="msapplication-TileImage" content="{{ public_path('tlandingPage/assets/images/favicon/favicon.png') }}" /> --}}
 
     <!-- css Icon Font -->
-    <link rel="stylesheet" href="{{ asset('tlandingPage/assets/css/vendor/ecicons.min.css') }}" />
+    {{-- <link rel="stylesheet" href="{{ public_path('tlandingPage/assets/css/vendor/ecicons.min.css') }}" /> --}}
 
     <!-- css All Plugins Files -->
-    <link rel="stylesheet" href="{{ asset('tlandingPage/assets/css/plugins/animate.css') }}" />
-    <link rel="stylesheet" href="{{ asset('tlandingPage/assets/css/plugins/swiper-bundle.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('tlandingPage/assets/css/plugins/jquery-ui.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('tlandingPage/assets/css/plugins/countdownTimer.css') }}" />
-    <link rel="stylesheet" href="{{ asset('tlandingPage/assets/css/plugins/slick.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('tlandingPage/assets/css/plugins/nouislider.css') }}" />
-    <link rel="stylesheet" href="{{ asset('tlandingPage/assets/css/plugins/bootstrap.css') }}" />
+    {{-- <link rel="stylesheet" href="{{ public_path('tlandingPage/assets/css/plugins/animate.css') }}" />
+    <link rel="stylesheet" href="{{ public_path('tlandingPage/assets/css/plugins/swiper-bundle.min.css') }}" />
+    <link rel="stylesheet" href="{{ public_path('tlandingPage/assets/css/plugins/jquery-ui.min.css') }}" />
+    <link rel="stylesheet" href="{{ public_path('tlandingPage/assets/css/plugins/countdownTimer.css') }}" />
+    <link rel="stylesheet" href="{{ public_path('tlandingPage/assets/css/plugins/slick.min.css') }}" />
+    <link rel="stylesheet" href="{{ public_path('tlandingPage/assets/css/plugins/nouislider.css') }}" />
+    <link rel="stylesheet" href="{{ public_path('tlandingPage/assets/css/plugins/bootstrap.css') }}" /> --}}
 
     <!-- Main Style -->
-    <link rel="stylesheet" href="{{ asset('tlandingPage/assets/css/style.css') }}" />
-    <link rel="stylesheet" href="{{ asset('tlandingPage/assets/css/responsive.css') }}" />
+    {{-- <link rel="stylesheet" href="{{ public_path('tlandingPage/assets/css/style.css') }}" />
+    <link rel="stylesheet" href="{{ public_path('tlandingPage/assets/css/responsive.css') }}" /> --}}
 
     <!-- Background css -->
-    <link rel="stylesheet" id="bg-switcher-css" href="{{ asset('tlandingPage/assets/css/backgrounds/bg-4.css') }}">
+    {{-- <link rel="stylesheet" id="bg-switcher-css" href="{{ public_path('tlandingPage/assets/css/backgrounds/bg-4.css') }}"> --}}
 
 </head>
 
@@ -59,7 +59,7 @@
                         <div class="ec-vendor-card-body padding-b-0">
                             <div class="page-content">
                                 <div class="page-header text-blue-d2">
-                                    <img src="{{ asset('tlandingPage/assets/images/logo/cakrawala.png') }}"
+                                    <img src="{{ public_path('tlandingPage/assets/images/logo/cakrawala.png') }}"
                                         alt="Site Logo">
                                 </div>
 
@@ -123,7 +123,7 @@
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
-                                                                @foreach ($cart_data as $item)
+                                                                @foreach ((array)$cart_data as $item)
                                                                     <tr>
                                                                         <th><span>{{$item['item_id']}}</span></th>
                                                                         <td><span>{{$item['nama_produk']}}</span></td>
@@ -172,25 +172,25 @@
     <!-- End User invoice section -->
 
     <!-- Vendor JS -->
-    <script src="{{ asset('tlandingPage/assets/js/vendor/jquery-3.5.1.min.js') }}"></script>
-    <script src="{{ asset('tlandingPage/assets/js/vendor/popper.min.js') }}"></script>
-    <script src="{{ asset('tlandingPage/assets/js/vendor/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('tlandingPage/assets/js/vendor/bootstrap-tagsinput.js') }}"></script>
-    <script src="{{ asset('tlandingPage/assets/js/vendor/jquery-migrate-3.3.0.min.js') }}"></script>
-    <script src="{{ asset('tlandingPage/assets/js/vendor/modernizr-3.11.2.min.js') }}"></script>
-    <script src="{{ asset('tlandingPage/assets/js/vendor/jquery.magnific-popup.min.js') }}"></script>
+    {{-- <script src="{{ public_path('tlandingPage/assets/js/vendor/jquery-3.5.1.min.js') }}"></script>
+    <script src="{{ public_path('tlandingPage/assets/js/vendor/popper.min.js') }}"></script>
+    <script src="{{ public_path('tlandingPage/assets/js/vendor/bootstrap.min.js') }}"></script>
+    <script src="{{ public_path('tlandingPage/assets/js/vendor/bootstrap-tagsinput.js') }}"></script>
+    <script src="{{ public_path('tlandingPage/assets/js/vendor/jquery-migrate-3.3.0.min.js') }}"></script>
+    <script src="{{ public_path('tlandingPage/assets/js/vendor/modernizr-3.11.2.min.js') }}"></script>
+    <script src="{{ public_path('tlandingPage/assets/js/vendor/jquery.magnific-popup.min.js') }}"></script> --}}
 
     <!--Plugins JS-->
-    <script src="{{ asset('tlandingPage/assets/js/plugins/swiper-bundle.min.js') }}"></script>
-    <script src="{{ asset('tlandingPage/assets/js/plugins/nouislider.js') }}"></script>
-    <script src="{{ asset('tlandingPage/assets/js/plugins/countdownTimer.min.js') }}"></script>
-    <script src="{{ asset('tlandingPage/assets/js/plugins/scrollup.js') }}"></script>
-    <script src="{{ asset('tlandingPage/assets/js/plugins/jquery.zoom.min.js') }}"></script>
-    <script src="{{ asset('tlandingPage/assets/js/plugins/slick.min.js') }}"></script>
-    <script src="{{ asset('tlandingPage/assets/js/plugins/infiniteslidev2.js') }}"></script>
-    <script src="{{ asset('tlandingPage/assets/js/plugins/jquery.sticky-sidebar.js') }}"></script>
+    {{-- <script src="{{ public_path('tlandingPage/assets/js/plugins/swiper-bundle.min.js') }}"></script>
+    <script src="{{ public_path('tlandingPage/assets/js/plugins/nouislider.js') }}"></script>
+    <script src="{{ public_path('tlandingPage/assets/js/plugins/countdownTimer.min.js') }}"></script>
+    <script src="{{ public_path('tlandingPage/assets/js/plugins/scrollup.js') }}"></script>
+    <script src="{{ public_path('tlandingPage/assets/js/plugins/jquery.zoom.min.js') }}"></script>
+    <script src="{{ public_path('tlandingPage/assets/js/plugins/slick.min.js') }}"></script>
+    <script src="{{ public_path('tlandingPage/assets/js/plugins/infiniteslidev2.js') }}"></script>
+    <script src="{{ public_path('tlandingPage/assets/js/plugins/jquery.sticky-sidebar.js') }}"></script> --}}
     <!-- Main Js -->
-    <script src="{{ asset('tlandingPage/assets/js/main.js') }}"></script>
+    {{-- <script src="{{ public_path('tlandingPage/assets/js/main.js') }}"></script> --}}
 
 </body>
 
