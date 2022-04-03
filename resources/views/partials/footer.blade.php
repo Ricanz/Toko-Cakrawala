@@ -51,10 +51,10 @@
                                 <div class="ec-footer-logo"><a href="#"><img src="{{asset('tlandingPage/assets/images/logo/cakrawala-dark.png')}}"
                                             alt=""><img class="dark-footer-logo" src="{{asset('tlandingPage/assets/images/logo/cakrawala-dark.png')}}"
                                             alt="Site Logo" style="display: none;" /></a></div>
-                                <h4 class="ec-footer-heading">Contact us</h4>
+                                <h4 class="ec-footer-heading">Kontak Kami</h4>
                                 <div class="ec-footer-links">
                                     <ul class="align-items-center">
-                                        <li class="ec-footer-link">Jl. K.H. Sholeh Iskandar No. 10, Kedung Badak, Tanah Sareal, Bogor 1614 (Bekas Kantor BPJS Kesehatan/Bekas Dealer FORD</li>
+                                        <li class="ec-footer-link">Jl. K.H. Sholeh Iskandar No. 10, Kedung Badak, Tanah Sareal, Bogor 1614 (Bekas Kantor BPJS Kesehatan/Bekas Dealer FORD)</li>
                                         <li class="ec-footer-link"><span>Telepon:</span><a href="tel:02518665795">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp0251-8665795</a></li>
                                         <li class="ec-footer-link"><span>WhatsApp:</span><a href="http://wa.me/+62816225999">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp0816-225999</a></li>
                                         <li class="ec-footer-link"><span>Email:</span>&nbsp&nbsp&nbsp&nbspcakrawala.info@gmail.com</li>
