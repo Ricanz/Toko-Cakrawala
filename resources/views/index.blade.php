@@ -580,42 +580,27 @@
         <div class="container">
             <div class="row">
                 <div class="ec-blog-slider owl-carousel" data-animation="fadeIn">
+                    
+                    @foreach ($artikel as $item)
                     <div class="ec-blog-block">
-                        <div class="ec-blog-inner">
-                            <div class="ec-blog-image">
-                                <a href="blog-detail-left-sidebar.html">
-                                    <img class="blog-image"
-                                        src="{{ asset('tlandingPage/assets/images/blog-image/2.jpg') }}"
-                                        alt="Blog" />
-                                </a>
-                            </div>
-                            <div class="ec-blog-content">
-                                <div class="ec-blog-cat"><a href="blog-left-sidebar.html">Clothes</a></div>
-                                <h5 class="ec-blog-title"><a href="blog-detail-left-sidebar.html">Curbside fashion
-                                        Trends: How to Win the Pickup Battle.</a></h5>
+                            <div class="ec-blog-inner">
+                                <div class="ec-blog-image">
+                                    <a href="blog-detail-left-sidebar.html">
+                                        <img class="blog-image"
+                                            src="{{ asset('storage/Artikel'.$item->gambar) }}"
+                                            alt="Blog" />
+                                    </a>
+                                </div>
+                                <div class="ec-blog-content">
+                                    <div class="ec-blog-cat"><a href="{{ url("artikel-detail/$item->slug") }}">Artikel</a></div>
+                                    <h5 class="ec-blog-title"><a href="blog-detail-left-sidebar.html">{{ $item->judul }}</a></h5>
 
-                                <div class="ec-blog-date">By<span>Mr Robin</span> / Jan 18, 2022</div>
+                                    <div class="ec-blog-date">Oleh<span>Admin</span> / {{ date('d-m-Y', strtotime($item->created_at)) }}</div>
+                                </div>
                             </div>
-                        </div>
                     </div>
-                    <div class="ec-blog-block">
-                        <div class="ec-blog-inner">
-                            <div class="ec-blog-image">
-                                <a href="blog-detail-left-sidebar.html">
-                                    <img class="blog-image"
-                                        src="{{ asset('tlandingPage/assets/images/blog-image/3.jpg') }}"
-                                        alt="Blog" />
-                                </a>
-                            </div>
-                            <div class="ec-blog-content">
-                                <div class="ec-blog-cat"><a href="blog-left-sidebar.html">Fashion</a></div>
-                                <h5 class="ec-blog-title"><a href="blog-detail-left-sidebar.html">Clothes Retail KPIs
-                                        2021 Guide for Clothes Executives.</a></h5>
-
-                                <div class="ec-blog-date">By<span>Mr Admin</span> / Apr 06, 2022</div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
+                    
                 </div>
             </div>
         </div>

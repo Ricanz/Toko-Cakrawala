@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Helpers\Helper;
+use App\Models\Artikel;
 use App\Models\Produk;
 use App\Models\Kategori;
 use App\Models\subKategori;
@@ -18,12 +19,13 @@ class BerandaController extends Controller
         $produkselect = Produk::with('kategori')->get();
         $kategori = Kategori::all();
         $testimonial = Testimonial::all();
+        $artikel = Artikel::all();
         // dd(response()->json(request()->cookie('shopping_cart')));
         // dd(Helper::getCart());  
         // foreach(Helper::getCart() as $key => $item){
         //     dd($item);
         // }
-        return view('index', compact('produk', 'kategori', 'produkselect', 'testimonial'));
+        return view('index', compact('produk', 'kategori', 'produkselect', 'testimonial', 'artikel'));
     }
 
     public function katalog(){
@@ -50,6 +52,13 @@ class BerandaController extends Controller
         $produkselect = Produk::with('kategori')->get();
 
         return view('detail_produk', compact('produk', 'kategori', 'produkselect'));
+    }
+
+    public function detailArtikel(Request $request){
+        $artikel = Artikel::where('slug', $request->slug)->first();
+        // dd($artikel);
+
+        return view('detail_artikel', compact('artikel'));
     }
     
 }

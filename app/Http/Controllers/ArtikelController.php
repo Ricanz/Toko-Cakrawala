@@ -46,7 +46,7 @@ class ArtikelController extends Controller
 
         $date = date("his");
         $extension = $request->file('gambar')->extension();
-        $file_name = "Produk_$date.$extension";
+        $file_name = "Artikel_$date.$extension";
         $path = $request->file('gambar')->storeAs('public/Artikel', $file_name);
 
         Artikel::create([
