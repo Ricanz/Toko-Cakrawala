@@ -131,25 +131,13 @@
                             <div class="ec-sb-block-content">
                                 <div class="ec-check-pay-img-inner">
                                     <div class="ec-check-pay-img">
-                                        <img src="{{asset('tlandingPage/assets/images/icons/payment1.png')}}" alt="">
+                                        <img src="{{asset('tlandingPage/assets/images/payment/bca.png')}}" alt="Bank BCA" width="50%">
                                     </div>
                                     <div class="ec-check-pay-img">
-                                        <img src="{{asset('tlandingPage/assets/images/icons/payment2.png')}}" alt="">
+                                        <img src="{{asset('tlandingPage/assets/images/payment/bni.png')}}" alt="Bank BNI" width="50%">
                                     </div>
                                     <div class="ec-check-pay-img">
-                                        <img src="{{asset('tlandingPage/assets/images/icons/payment3.png')}}" alt="">
-                                    </div>
-                                    <div class="ec-check-pay-img">
-                                        <img src="{{asset('tlandingPage/assets/images/icons/payment4.png')}}" alt="">
-                                    </div>
-                                    <div class="ec-check-pay-img">
-                                        <img src="{{asset('tlandingPage/assets/images/icons/payment5.png')}}" alt="">
-                                    </div>
-                                    <div class="ec-check-pay-img">
-                                        <img src="{{asset('tlandingPage/assets/images/icons/payment6.png')}}" alt="">
-                                    </div>
-                                    <div class="ec-check-pay-img">
-                                        <img src="{{asset('tlandingPage/assets/images/icons/payment7.png')}}" alt="">
+                                        <img src="{{asset('tlandingPage/assets/images/payment/mandiri.png')}}" alt="Bank Mandiri" width="50%">
                                     </div>
                                 </div>
                             </div>
