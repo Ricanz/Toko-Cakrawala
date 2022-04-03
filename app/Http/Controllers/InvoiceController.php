@@ -30,19 +30,15 @@ class InvoiceController extends Controller
         $invoice =  'INV-'.Str::upper($random);
         $invoiceFile = $invoice.".pdf";
         $invoicePath = public_path("invoices/".$invoiceFile);
-        // set_time_limit(2000);
         $pdf = PDF::loadView('print-invoice', compact('cart_data'))->save($invoicePath);
-        // $pdf->save($invoicePath);
-        // $twilio = new Client(env('TWILIO_ACCOUNT_SID'), env('TWILIO_AUTH_TOKEN'));
-        // $twilio->messages->create(
-        //     "whatsapp:"."085735691018", [
-        //         "from" => "whatsapp:".env('TWILIO_SANDBOX_NUMBER'),
-        //         "body" => "Here's your invoice!",
-        //     "mediaUrl" => [env("NGROK_URL")."/invoices/".$invoiceFile]
-        //     ]
-        // );
-        // return view('print-invoice', compact('cart_data'))
-        //     ->with('i', (request()->input('page', 1) - 1) * 5);
+        $twilio = new Client(env('TWILIO_ACCOUNT_SID'), env('TWILIO_AUTH_TOKEN'));
+        $twilio->messages->create(
+            "whatsapp:"."085735691018", [
+                "from" => "whatsapp:".env('TWILIO_SANDBOX_NUMBER'),
+                "body" => "Here's your invoice!",
+            "mediaUrl" => [env("NGROK_URL")."/invoices/".$invoiceFile]
+            ]
+        );
         return redirect('/')->with('success', 'Pesanan sedang diproses');
     }
 }
