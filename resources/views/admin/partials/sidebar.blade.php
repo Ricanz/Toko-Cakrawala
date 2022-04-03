@@ -22,33 +22,7 @@
                     <hr>
                 </li>
 
-                <!-- Vendors -->
-                <li class="has-sub">
-                    <a class="sidenav-item-link" href="javascript:void(0)">
-                        <i class="mdi mdi-account-group-outline"></i>
-                        <span class="nav-text">Vendors</span> <b class="caret"></b>
-                    </a>
-                    <div class="collapse">
-                        <ul class="sub-menu" id="vendors" data-parent="#sidebar-menu">
-                            <li class="">
-                                <a class="sidenav-item-link" href="vendor-card.html">
-                                    <span class="nav-text">Vendor Grid</span>
-                                </a>
-                            </li>
-
-                            <li class="">
-                                <a class="sidenav-item-link" href="vendor-list.html">
-                                    <span class="nav-text">Vendor List</span>
-                                </a>
-                            </li>
-                            <li class="">
-                                <a class="sidenav-item-link" href="vendor-profile.html">
-                                    <span class="nav-text">Vendors Profile</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
+                
 
                 <!-- Users -->
                 <li class="has-sub">
@@ -77,6 +51,27 @@
                         </ul>
                     </div>
                     <hr>
+                </li>
+
+                <li class="has-sub {{ request()->is('artikel*') ? 'active expand' : '' }}">
+                    <a class="sidenav-item-link" href="javascript:void(0)">
+                        <i class="mdi mdi-account-group-outline"></i>
+                        <span class="nav-text">Artikel</span> <b class="caret"></b>
+                    </a>
+                    <div class="collapse {{ request()->is('artikel*') ? 'show' : '' }}">
+                        <ul class="sub-menu" id="products" data-parent="#sidebar-menu">
+                            <li class="{{ request()->is('artikel/create') ? 'active' : '' }}">
+                                <a class="sidenav-item-link" href="{{route('artikel.create')}}">
+                                    <span class="nav-text">Tambah Artikel</span>
+                                </a>
+                            </li>
+                            <li class="{{ request()->is('artikel') ? 'active' : '' }}">
+                                <a class="sidenav-item-link" href="{{route('artikel.index')}}">
+                                    <span class="nav-text">List Artikel</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
 
                 <!-- Category -->
