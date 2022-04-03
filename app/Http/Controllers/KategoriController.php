@@ -11,8 +11,6 @@ class KategoriController extends Controller
     public function index()
     {
         $kategori = Kategori::with(['subkategori'])->get();
-        // dd($kategori);
-        // dd($kategori->subkategori());
         return view('admin.kategori.main.index', compact('kategori'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }

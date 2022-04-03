@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ArtikelController;
 use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\InvoiceController;
@@ -48,6 +49,7 @@ Route::resource('kategori', KategoriController::class);
 Route::resource('subKategori', SubKategoriController::class);
 Route::resource('testimonial', TestimonialController::class);
 Route::resource('produk', ProdukController::class);
+Route::resource('artikel', ArtikelController::class);
 Route::get('produk-grid', [ProdukController::class, 'grid'])->name('produk-grid');
 Route::post('addToCart', [CartController::class, 'addToCart'])->name('addToCart');
 Route::get('Cart', [CartController::class, 'Cart']);

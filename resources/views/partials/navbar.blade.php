@@ -152,7 +152,7 @@
                 <!-- Ec Header Logo Start -->
                 <div class="col">
                     <div class="header-logo">
-                        <a href="index.html"><img src="{{asset('tlandingPage/assets/images/logo/cakrawala.png')}}" alt="Toko Cakrawala" height="500" /><img
+                        <a href="/"><img src="{{asset('tlandingPage/assets/images/logo/cakrawala.png')}}" alt="Toko Cakrawala" height="500" /><img
                                 class="dark-logo" src="{{asset('tlandingPage/assets/images/logo/cakrawala-dark.png')}}" alt="Toko Cakrawala"
                                 style="display: none;" /></a>
                     </div>
@@ -211,8 +211,8 @@
         <div class="ec-menu-inner">
             <div class="ec-menu-content">
                 <ul>
-                    <li><a href="index.html">Beranda</a></li>
-                    <li><a href="index.html">Katalog</a></li>
+                    <li><a href="/">Beranda</a></li>
+                    <li><a href="/">Katalog</a></li>
                     <li class="dropdown"><a href="javascript:void(0)">Kategori</a>
                         <ul class="sub-menu">
                             <li><a href="elemets-products.html">Alumunium</a></li>

@@ -1,13 +1,13 @@
 <x-app-layout>
     <div class="breadcrumb-wrapper d-flex align-items-center justify-content-between">
         <div>
-            <h1>Testimonial</h1>
+            <h1>Artikel</h1>
             <p class="breadcrumbs"><span><a href="/">Home</a></span>
-                <span><i class="mdi mdi-chevron-right"></i></span>Testimonial
+                <span><i class="mdi mdi-chevron-right"></i></span>Artikel
             </p>
         </div>
         <div>
-            <a href="{{ route('testimonial.create') }}" class="btn btn-primary"> Add Testimonial</a>
+            <a href="{{ route('artikel.create') }}" class="btn btn-primary"> Tambah Artikel</a>
         </div>
     </div>
     <div class="row">
@@ -18,26 +18,24 @@
                         <table id="responsive-data-table" class="table" style="width:100%">
                             <thead>
                                 <tr>
-                                    <th>Foto</th>
-                                    <th>Nama</th>
-                                    <th>Perusahaan</th>
-                                    <th>Deskripsi</th>
+                                    <th>No</th>
+                                    <th>Judul</th>
+                                    <th>Gambar</th>
                                     <th>Status</th>
-                                    <th>Date</th>
+                                    <th>Update</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
 
                             <tbody>
-                                @foreach ($testimonial as $item)
+                                @foreach ($artikel as $item)
                                     <tr>
-                                        <td><img class="tbl-thumb" src="{{asset('storage/testimonial/'.$item->gambar)}}"
-                                                alt="Product Image" /></td>
-                                        <td>{{$item->nama}}</td>
-                                        <td>{{$item->perusahaan}}</td>
-                                        <td>{{$item->deskripsi}}</td>
+                                        <td>{{ $loop->iteration }}</td>
+                                        <td>{{$item->judul}}</td>
+                                        <td><img class="tbl-thumb" src="{{asset('storage/Artikel/'.$item->gambar)}}"
+                                                alt="Article Image" /></td>
                                         <td>ACTIVE</td>
-                                        <td>{{$item->created_at->isoFormat('m/d/Y')}}</td>
+                                        <td>{{$item->updated_at->isoFormat('m/d/Y')}}</td>
                                         <td>
                                             <div class="btn-group mb-1">
                                                 <button type="button" class="btn btn-outline-success">Info</button>
@@ -49,12 +47,12 @@
                                                 </button>
 
                                                 <div class="dropdown-menu">
-                                                    <a class="dropdown-item" href="{{route('testimonial.edit',$item->id)}}">Edit</a>
+                                                    <a class="dropdown-item" href="{{route('artikel.edit',$item->id)}}">Edit</a>
                                                     <a class="dropdown-item">
-                                                        <form action="{{route('testimonial.destroy', $item->id)}}" method="POST" style="display: inline">
+                                                        <form action="{{route('artikel.destroy', $item->id)}}" method="POST" style="display: inline">
                                                             @csrf
                                                             @method("DELETE")
-                                                            <button type="submit" class="btn btn-link text-danger text-gradient px-3 mb-0 show_confirm" data-toggle="tooltip" title='Delete'><i class="fas fa-trash text-secondary"></i></button>
+                                                            <button type="submit" class="btn btn-link text-danger text-gradient px-3 mb-0 show_confirm" data-toggle="tooltip" title='Delete'><i class="fas fa-trash text-secondary">Delete</i></button>
                                                         </form>
                                                     </a>
                                                 </div>
@@ -69,6 +67,7 @@
             </div>
         </div>
     </div>
+    
     <!-- Js conf delete-->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>

@@ -100,7 +100,7 @@
                     <!-- Footer Copyright Start -->
                     <div class="footer-copy">
                         <div class="footer-bottom-copy ">
-                            <div class="ec-copy">Copyright © <a class="site-name" href="index.html">Toko Cakrawala</a> all
+                            <div class="ec-copy">Copyright © <a class="site-name" href="/">Toko Cakrawala</a> all
                                 rights reserved.</div>
                         </div>
                     </div>
