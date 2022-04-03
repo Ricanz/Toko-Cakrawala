@@ -39,13 +39,19 @@
 
                                             <div class="row">
                                                 <div class="col-sm-6">
-                                                    <div class="my-2">
+                                                    {{-- <div class="my-2">
                                                         <span class="text-sm text-grey-m2 align-middle">Nama Pemesan :
                                                         </span>
                                                         <span
                                                             class="text-600 text-110 text-blue align-middle">{{$data['nama']}}</span>
-                                                    </div>
+                                                    </div> --}}
                                                     <div class="text-grey-m2">
+                                                        <div class="my-2"><b class="text-600">Nama :
+                                                        </b>{{$data['nama']}}
+                                                    </div>
+                                                    <div class="my-2"><b class="text-600">E-mail :
+                                                            </b>{{$data['email']}}
+                                                        </div>
                                                         <div class="my-2"><b class="text-600">Alamat :
                                                             </b>{{$data['alamat']}}
                                                         </div>
@@ -61,16 +67,12 @@
                                                     <hr class="d-sm-none" />
                                                     <div class="text-grey-m2">
 
-                                                        <div class="my-2"><span class="text-600 text-90">ID :
-                                                            </span>
-                                                            #111-222</div>
+                                                        <div class="my-2"><span class="text-600 text-90">Nomor
+                                                            Invoice :
+                                                        </span>{{$invoice}}</div>
                                                         <div class="my-2"><span
                                                                 class="text-600 text-90">Tanggal Pemesanan :
                                                             </span> {{$tanggal}}</div>
-
-                                                        <div class="my-2"><span class="text-600 text-90">Nomor
-                                                                Invoice :
-                                                            </span>{{$invoice}}</div>
                                                     </div>
                                                 </div>
                                                 <!-- /.col -->
@@ -100,7 +102,6 @@
                                                                         <td class="text-center"><span>{{$item['harga_produk']*$item['jumlah_produk']}}</span>
                                                                         </td>
                                                                     </tr>
-                                                                @endforeach
                                                             </tbody>
                                                             <tfoot>
                                                                 <tr>
@@ -115,8 +116,9 @@
                                                                     </td>
                                                                     <td
                                                                         class="border-color m-m15 text-center text-600 text-90">
-                                                                        <h5>400000</h5>
+                                                                        <h5>{{$item['harga_produk']*$item['jumlah_produk']}}</h5>
                                                                     </td>
+                                                                    @endforeach
                                                                 </tr>
                                                             </tfoot>
                                                         </table>

@@ -1,3 +1,0 @@
-<html>
-    Invoice Pemesanan
-</html>
