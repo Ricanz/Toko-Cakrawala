@@ -37,7 +37,8 @@
                                     <h3 class="ec-checkout-title">Detail Pembelian</h3>
                                     <div class="ec-bl-block-content">
                                         <div class="ec-check-bill-form">
-                                            <form action="#" method="post">
+                                            <form action="{{url('print-invoice')}}" method="POST">
+                                                @csrf
                                                 <span class="ec-bill-wrap ec-bill-half">
                                                     <label>Nama Lengkap*</label>
                                                     <input type="text" name="nama"
@@ -54,7 +55,7 @@
                                                 </span>
                                                 <span class="ec-bill-wrap">
                                                     <label>Nomor Handphone (Whatsapp)</label>
-                                                    <input type="text" name="address" placeholder="Masukkan nomor Handphone/Whatsapp Anda" />
+                                                    <input type="number" name="no_hp" placeholder="Masukkan nomor Handphone/Whatsapp Anda" />
                                                 </span>
                                         </div>
 
@@ -63,10 +64,10 @@
 
                             </div>
                             <span class="ec-check-order-btn">
-                                <a class="btn btn-primary" href="{{url('print-invoice')}}">Buat Pesanan</a>
+                                <button class="btn btn-primary" type="submit">Buat Pesanan</button>
                             </span>
                         </div>
-                        
+
                     </form>
                     </div>
                     <!--cart content End -->

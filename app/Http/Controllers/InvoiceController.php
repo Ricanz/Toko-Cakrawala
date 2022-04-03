@@ -2,16 +2,18 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Cookie;
 use Twilio\Rest\Client;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Barryvdh\DomPDF\Facade\Pdf as PDF;
+use Illuminate\Support\Carbon;
 class InvoiceController extends Controller
 {
-    public function invoice()
+    public function invoice(Request $request)
     {
+
         if (Cookie::get('shopping_cart')) {
             $cookie_data = stripslashes(Cookie::get('shopping_cart'));
             $cart_data = json_decode($cookie_data, true);
@@ -22,6 +24,15 @@ class InvoiceController extends Controller
         // dd($cart_data);
         // $cookie_data = stripslashes(Cookie::get('shopping_cart'));
         // $cart_data = json_decode($cookie_data, true);
+
+        $data = [
+            'nama' => $request->get('nama'),
+            'email' => $request->get('email'),
+            'alamat' => $request->get('alamat'),
+            'no_hp' => $request->get('no_hp')
+        ];
+        $tanggal = Carbon::now()->toDateTimeString();
+
         $length = 10;
         $random = '';
         for ($i = 0; $i < $length; $i++) {
@@ -31,10 +42,17 @@ class InvoiceController extends Controller
         $invoice =  'INV-'.Str::upper($random);
         $invoiceFile = $invoice.".pdf";
         $invoicePath = public_path("invoices/".$invoiceFile);
-        $pdf = PDF::loadView('print-invoice', compact('cart_data'))->save($invoicePath);
-        Mail::send('print-invoice', compact('cart_data'), function ($message) use($pdf, $invoice) {
+        $pdf = PDF::loadView('print-invoice', compact('cart_data', 'invoice', 'data', 'tanggal'))->save($invoicePath);
+
+        Mail::send('email-seller', compact('data'), function ($message) use($pdf, $invoice) {
             $message->from('nadheva13@gmail.com');
             $message->to('nadheva17@gmail.com', 'Invoice')
+            ->subject("Pemesanan ".$invoice)
+            ->attachData($pdf->output(), $invoice.".pdf");
+        });
+        Mail::send('email-buyer', compact('data'), function ($message) use($pdf, $invoice, $request) {
+            $message->from('nadheva13@gmail.com');
+            $message->to($request->email, 'Invoice')
             ->subject("Pemesanan ".$invoice)
             ->attachData($pdf->output(), $invoice.".pdf");
         });
