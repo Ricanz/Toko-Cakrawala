@@ -8,25 +8,20 @@
                             <h4 class="ec-footer-heading">Kategori Produk</h4>
                             <div class="ec-footer-links">
                                 <ul class="align-items-center">
-                                    <li class="ec-footer-link"><a href="#">Fashion</a></li>
-                                    <li class="ec-footer-link"><a href="#">Electronic</a></li>
-                                    <li class="ec-footer-link"><a href="#">Cosmetic</a></li>
-                                    <li class="ec-footer-link"><a href="#">Health</a></li>
-                                    <li class="ec-footer-link"><a href="#">Watches</a></li>
+                                    @foreach ($Kategori as $item)
+                                    <li class="ec-footer-link"><a href="#">{{ $item->nama }}</a></li>
+                                    @endforeach
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-12 col-lg-3 ec-footer-info">
                         <div class="ec-footer-widget">
-                            <h4 class="ec-footer-heading">Products</h4>
+                            <h4 class="ec-footer-heading">Menu</h4>
                             <div class="ec-footer-links">
                                 <ul class="align-items-center">
-                                    <li class="ec-footer-link"><a href="#">Prices drop</a></li>
-                                    <li class="ec-footer-link"><a href="#">New products</a></li>
-                                    <li class="ec-footer-link"><a href="#">Best sales</a></li>
-                                    <li class="ec-footer-link"><a href="contact-us.html">Contact us</a></li>
-                                    <li class="ec-footer-link"><a href="#">Sitemap</a></li>
+                                    <li class="ec-footer-link"><a href="/tentang">Tentang Kami</a></li>
+                                    <li class="ec-footer-link"><a href="/contact">Kontak Kami</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -36,11 +31,11 @@
                             <h4 class="ec-footer-heading">Layanan Kami</h4>
                             <div class="ec-footer-links">
                                 <ul class="align-items-center">
-                                    <li class="ec-footer-link"><a href="#">Prices drop</a></li>
-                                    <li class="ec-footer-link"><a href="#">New products</a></li>
-                                    <li class="ec-footer-link"><a href="#">Best sales</a></li>
-                                    <li class="ec-footer-link"><a href="contact-us.html">Contact us</a></li>
-                                    <li class="ec-footer-link"><a href="#">Sitemap</a></li>
+                                    <li class="ec-footer-link"><a href="#">Kualitas Barang Terbaik</a></li>
+                                    <li class="ec-footer-link"><a href="#">Harga Terjamin</a></li>
+                                    <li class="ec-footer-link"><a href="#">Good</a></li>
+                                    <li class="ec-footer-link"><a href="">Better</a></li>
+                                    <li class="ec-footer-link"><a href="#">Best</a></li>
                                 </ul>
                             </div>
                         </div>
