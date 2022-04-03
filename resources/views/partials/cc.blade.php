@@ -3,7 +3,7 @@
     <div class="cc-panel">			
         <!-- Panel Content -->
         <div class="cc-header">
-            <img src="{{asset('tlandingPage/assets/images/whatsapp/profile_01.jpg')}}" alt="profile image"/>
+            <img src="{{asset('tlandingPage/assets/images/whatsapp/cs.png')}}" alt="profile image"/>
             <h2>Toko Cakrawala</h2>
             <p>Layanan Pelanggan</p>
         </div>

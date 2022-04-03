@@ -118,7 +118,7 @@
                                     <li><a class="dropdown-item" href="login.html">Login</a></li>
                                 </ul>
                             </div> --}}
-                            <!-- Header User End -->
+                            {{-- <!-- Header User End -->
 
                             <!-- Header wishlist Start -->
                             <a href="wishlist.html" class="ec-header-btn ec-header-wishlist">
@@ -126,7 +126,7 @@
                                         class="svg_img header_svg" alt="" /></div>
                                 <span class="ec-header-count">4</span>
                             </a>
-                            <!-- Header wishlist End -->
+                            <!-- Header wishlist End --> --}}
 
                             <!-- Header Cart Start -->
                             <a href="#ec-side-cart" class="ec-header-btn ec-side-toggle">
