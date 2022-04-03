@@ -35,7 +35,7 @@ class InvoiceController extends Controller
         Mail::send('print-invoice', compact('cart_data'), function ($message) use($pdf, $invoice) {
             $message->from('nadheva13@gmail.com');
             $message->to('nadheva17@gmail.com', 'Invoice')
-            ->subject('Pemesanan'.$invoice)
+            ->subject("Pemesanan ".$invoice)
             ->attachData($pdf->output(), $invoice.".pdf");
         });
         // $twilio = new Client(env('TWILIO_ACCOUNT_SID'), env('TWILIO_AUTH_TOKEN'));
