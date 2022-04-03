@@ -1,8 +1,8 @@
 <x-app-layout>
     <div class="breadcrumb-wrapper breadcrumb-wrapper-2 breadcrumb-contacts">
-        <h1>Sub Category</h1>
-        <p class="breadcrumbs"><span><a href="/">Home</a></span>
-            <span><i class="mdi mdi-chevron-right"></i></span>Sub Category
+        <h1>Sub Kategori</h1>
+        <p class="breadcrumbs"><span><a href="/">Dashboard</a></span>
+            <span><i class="mdi mdi-chevron-right"></i></span>Sub Kategori
         </p>
     </div>
     <div class="row">
@@ -10,11 +10,11 @@
             <div class="ec-cat-list card card-default mb-24px">
                 <div class="card-body">
                     <div class="ec-cat-form">
-                        <h4>Add Sub Category</h4>
+                        <h4>Tambah Sub Kategori</h4>
                         <form action="{{ route('subKategori.store') }}" method="post">
                             @csrf
                             <div class="form-group row">
-                                <label for="text" class="col-12 col-form-label">Name</label>
+                                <label for="text" class="col-12 col-form-label">Sub Kategori</label>
                                 <div class="col-12">
                                     <input id="text" name="nama" class="form-control here slug-title" type="text">
                                 </div>
@@ -28,17 +28,10 @@
                                         lowercase and contains only letters, numbers, and hyphens.</small>
                                 </div>
                             </div>
-                            {{-- <div class="form-group row">
-                                <label class="col-12 col-form-label">Sort Description</label>
-                                <div class="col-12">
-                                    <textarea id="sortdescription" name="sortdescription" cols="40" rows="2"
-                                        class="form-control"></textarea>
-                                </div>
-                            </div> --}}
 
 
                             <div class="form-group row">
-                                <label class="col-12 col-form-label">Full Description</label>
+                                <label class="col-12 col-form-label">Deskripsi</label>
                                 <div class="col-12">
                                     <textarea id="fulldescription" name="detail" cols="40" rows="4"
                                         class="form-control"></textarea>
@@ -46,7 +39,7 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="parent-category" class="col-12 col-form-label">Parent Category</label>
+                                <label for="parent-category" class="col-12 col-form-label">Kategori Utama</label>
                                 <div class="col-12">
                                     <select id="parent-category" name="kategori_id" class="custom-select">
                                         @foreach ($kategori as $item)
@@ -55,15 +48,6 @@
                                     </select>
                                 </div>
                             </div>
-
-                            {{-- <div class="form-group row">
-                                <label class="col-12 col-form-label">Product Tags <span>( Type and
-                                        make comma to separate tags )</span></label>
-                                <div class="col-12">
-                                    <input type="text" class="form-control" id="group_tag" name="group_tag" value=""
-                                        placeholder="" data-role="tagsinput">
-                                </div>
-                            </div> --}}
 
                             <div class="row">
                                 <div class="col-12">
@@ -83,10 +67,9 @@
                             <thead>
                                 <tr>
                                     <th>Thumb</th>
-                                    <th>Name</th>
-                                    <th>Main Categories</th>
-                                    <th>Detail</th>
-                                    {{-- <th>Total Sell</th> --}}
+                                    <th>Sub Kategori</th>
+                                    <th>Kategori Utama</th>
+                                    <th>Deskripsi</th>
                                     <th>Status</th>
                                     <th>Trending</th>
                                     <th>Action</th>
@@ -119,7 +102,7 @@
                                                 </button>
 
                                                 <div class="dropdown-menu">
-                                                    <a class="dropdown-item" href="#">Edit</a>
+                                                    <a class="dropdown-item" href="#">Simpan</a>
                                                     <a class="dropdown-item">
                                                         <form action="{{route('subKategori.destroy', $item->id)}}" method="POST" style="display: inline">
                                                             @csrf

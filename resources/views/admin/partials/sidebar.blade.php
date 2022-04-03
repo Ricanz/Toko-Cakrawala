@@ -5,7 +5,7 @@
         <div class="ec-brand">
             <a href="/" title="Ekka">
                 <img class="ec-brand-icon" src="tadmin/assets/img/logo/ec-site-logo.png" alt="" />
-                <span class="ec-brand-name text-truncate">Toko Cakrawala</span>
+                <span class="ec-brand-name text-truncate">Cakrawala</span>
             </a>
         </div>
 
@@ -78,18 +78,18 @@
                 <li class="has-sub {{ request()->is('subKategori*', '||', 'kategori*') ? 'active expand' : '' }} ">
                     <a class="sidenav-item-link" href="javascript:void(0)">
                         <i class="mdi mdi-dns-outline"></i>
-                        <span class="nav-text">Categories</span> <b class="caret"></b>
+                        <span class="nav-text">Kategori</span> <b class="caret"></b>
                     </a>
                     <div class="collapse {{ request()->is('subKategori*' , '||', 'kategori*') ? 'show' : '' }}">
                         <ul class="sub-menu" id="categorys" data-parent="#sidebar-menu">
                             <li class="{{ request()->is('kategori*') ? 'active' : '' }}">
                                 <a class="sidenav-item-link" href="{{route('kategori.index')}}">
-                                    <span class="nav-text">Main Category</span>
+                                    <span class="nav-text">Kategori Utama</span>
                                 </a>
                             </li>
                             <li class="{{ request()->is('subKategori*') ? 'active' : '' }}">
                                 <a class="sidenav-item-link" href="{{route('subKategori.index')}}">
-                                    <span class="nav-text">Sub Category</span>
+                                    <span class="nav-text">Kategori Sub</span>
                                 </a>
                             </li>
                         </ul>
@@ -100,23 +100,23 @@
                 <li class="has-sub {{ request()->is('produk*') ? 'active expand' : '' }}">
                     <a class="sidenav-item-link" href="javascript:void(0)">
                         <i class="mdi mdi-palette-advanced"></i>
-                        <span class="nav-text">Products</span> <b class="caret"></b>
+                        <span class="nav-text">Produk</span> <b class="caret"></b>
                     </a>
                     <div class="collapse {{ request()->is('produk*') ? 'show' : '' }}">
                         <ul class="sub-menu" id="products" data-parent="#sidebar-menu">
                             <li class="{{ request()->is('produk/create') ? 'active' : '' }}">
                                 <a class="sidenav-item-link" href="{{route('produk.create')}}">
-                                    <span class="nav-text">Add Product</span>
+                                    <span class="nav-text">Tambah Produk</span>
                                 </a>
                             </li>
                             <li class="{{ request()->is('produk') ? 'active' : '' }}">
                                 <a class="sidenav-item-link" href="{{route('produk.index')}}">
-                                    <span class="nav-text">List Product</span>
+                                    <span class="nav-text">Produk List</span>
                                 </a>
                             </li>
                             <li class="{{ request()->is('produk-grid') ? 'active' : '' }}">
                                 <a class="sidenav-item-link" href="{{route('produk-grid')}}">
-                                    <span class="nav-text">Grid Product</span>
+                                    <span class="nav-text">Produk Grid</span>
                                 </a>
                             </li>
                         </ul>
@@ -127,18 +127,18 @@
                 <li class="has-sub {{ request()->is('testimonial*') ? 'active expand' : '' }}">
                     <a class="sidenav-item-link" href="javascript:void(0)">
                         <i class="mdi mdi-star-half"></i>
-                        <span class="nav-text">Testimonials</span> <b class="caret"></b>
+                        <span class="nav-text">Testimoni</span> <b class="caret"></b>
                     </a>
                     <div class="collapse {{ request()->is('testimonial*') ? 'show' : '' }}">
                         <ul class="sub-menu" id="products" data-parent="#sidebar-menu">
                             <li class="{{ request()->is('testimonial/create') ? 'active' : '' }}">
                                 <a class="sidenav-item-link" href="{{route('testimonial.create')}}">
-                                    <span class="nav-text">Add Testimonial</span>
+                                    <span class="nav-text">Tambah Testimoni</span>
                                 </a>
                             </li>
                             <li class="{{ request()->is('testimonial') ? 'active' : '' }}">
                                 <a class="sidenav-item-link" href="{{route('testimonial.index')}}">
-                                    <span class="nav-text">List Testimonial</span>
+                                    <span class="nav-text">Testimoni List</span>
                                 </a>
                             </li>
                         </ul>

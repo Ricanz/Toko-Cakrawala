@@ -2,12 +2,12 @@
     <div class="breadcrumb-wrapper d-flex align-items-center justify-content-between">
         <div>
             <h1>Testimonial</h1>
-            <p class="breadcrumbs"><span><a href="/">Home</a></span>
+            <p class="breadcrumbs"><span><a href="/dashboard">Dashboard</a></span>
                 <span><i class="mdi mdi-chevron-right"></i></span>Testimonial
             </p>
         </div>
         <div>
-            <a href="{{ route('testimonial.create') }}" class="btn btn-primary"> Add Testimonial</a>
+            <a href="{{ route('testimonial.create') }}" class="btn btn-primary"> Tambah Testimonial</a>
         </div>
     </div>
     <div class="row">

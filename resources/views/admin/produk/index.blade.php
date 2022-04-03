@@ -1,13 +1,13 @@
 <x-app-layout>
     <div class="breadcrumb-wrapper d-flex align-items-center justify-content-between">
         <div>
-            <h1>Product</h1>
-            <p class="breadcrumbs"><span><a href="/">Home</a></span>
-                <span><i class="mdi mdi-chevron-right"></i></span>Product
+            <h1>Produk</h1>
+            <p class="breadcrumbs"><span><a href="/dashboard">Dashboard</a></span>
+                <span><i class="mdi mdi-chevron-right"></i></span>Produk
             </p>
         </div>
         <div>
-            <a href="{{ route('produk.create') }}" class="btn btn-primary"> Add Porduct</a>
+            <a href="{{ route('produk.create') }}" class="btn btn-primary"> Tambah Produk</a>
         </div>
     </div>
     <div class="row">
@@ -18,11 +18,11 @@
                         <table id="responsive-data-table" class="table" style="width:100%">
                             <thead>
                                 <tr>
-                                    <th>Product</th>
-                                    <th>Name</th>
-                                    <th>Price</th>
-                                    <th>Detail</th>                                   
-                                    <th>Stock</th>
+                                    <th>Gambar</th>
+                                    <th>Produk</th>
+                                    <th>Harga</th>
+                                    <th>Deskripsi</th>                                   
+                                    <th>Stok</th>
                                     <th>Kategori</th>
                                     <th>Status</th>
                                     <th>Date</th>
