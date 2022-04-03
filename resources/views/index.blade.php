@@ -365,6 +365,7 @@
                             <div class="col-md-12">
                                 <div class="section-title">
                                     <h2 class="ec-title">Kelebihan Toko Cakrawala</h2>
+                                    <p>Produk yang kami sediakan mengacu pada prinsip: <strong>Good, Better & Best </strong></p>
                                 </div>
                             </div>
 
@@ -384,15 +385,17 @@
                                                     <i class="ecicon eci-star fill"></i>
                                                     <i class="ecicon eci-star fill"></i>
                                                     <i class="ecicon eci-star fill"></i>
-                                                    <i class="ecicon eci-star"></i>
+                                                    <i class="ecicon eci-star fill"></i>
                                                     <i class="ecicon eci-star"></i>
                                                 </span>
                                             </div>
-                                            <h5 class="ec-spe-pro-title"><a href="product-left-sidebar.html">Kualitas
-                                                    Aluminium Terjamin</a></h5>
-                                            <div class="ec-spe-pro-desc">Lorem ipsum dolor sit amet consectetur Lorem
-                                                ipsum
-                                                dolor dolor sit amet consectetur Lorem ipsum dolor</div>
+                                            <h5 class="ec-spe-pro-title"><a href="product-left-sidebar.html">Kualitas Harga</a></h5>
+                                        {{-- <h5 class="ec-spe-pro-title"><a href="product-left-sidebar.html">Kualitas
+                                            Aluminium Terjamin</a></h5> --}}
+                                            <div class="ec-spe-pro-desc">
+                                                    Untuk proses pelayanan terbaiknya kepada pelanggan, Toko Cakrawala juga dilengkapi dengan sistem komputerisasi dan Quality Control yang ketat sehingga setiap produk yang disajikan adalah dalam status good, better, best.
+                                                Produk bahan bangunan yang disediakan juga langsung dari produsen (manufacturer) sehingga harga yang disajikan kepada konsumen adalah harga rata-rata eceran yang ada di pasar.
+                                            </div>
                                             <div class="ec-spe-pro-btn">
                                                 <a href="#" class="btn btn-lg btn-primary">Lihat Semua Produk</a>
                                             </div>
@@ -404,7 +407,7 @@
                                         <div class="ec-spe-pro-image-outer col-md-6 col-sm-12">
                                             <div class="ec-spe-pro-image">
                                                 <img class="img-responsive"
-                                                    src="{{ asset('tlandingPage/assets/images/product-image/110_1.jpg') }}"
+                                                    src="{{ asset('tlandingPage/assets/images/product-image/111_1.jpg') }}"
                                                     alt="">
                                             </div>
                                         </div>
@@ -414,17 +417,19 @@
                                                     <i class="ecicon eci-star fill"></i>
                                                     <i class="ecicon eci-star fill"></i>
                                                     <i class="ecicon eci-star fill"></i>
-                                                    <i class="ecicon eci-star"></i>
+                                                    <i class="ecicon eci-star fill"></i>
                                                     <i class="ecicon eci-star"></i>
                                                 </span>
                                             </div>
-                                            <h5 class="ec-spe-pro-title"><a href="product-left-sidebar.html">Pelayanan
-                                                    Terbaik dan Ramah</a></h5>
-                                            <div class="ec-spe-pro-desc">Lorem ipsum dolor sit amet consectetur Lorem
-                                                ipsum
-                                                dolor dolor sit amet consectetur Lorem ipsum dolor</div>
+                                            <h5 class="ec-spe-pro-title"><a href="product-left-sidebar.html">Produk</a></h5>
+                                            <div class="ec-spe-pro-desc">
+                                                Produk bahan bangunan atap yang disediakan juga langsung dari produsen (manufacturer) sehingga harga yang disajikan kepada konsumen adalah harga rata-rata eceran yang ada di pasar.
+                                                Untuk melayani kebutuhan pelanggannya, Toko Cakrawala juga menyediakan Attendant terlatih yang siap memberikan pelayanan dan pengarahan teknis atas produk-produk yang tersedia.
+                                                Toko Cakrawala berusaha memenuhi segala kebutuhan masyarakat dari berbagai lapisan dan profesi mulai dari Tukang Bangunan, Kontraktor, Arsitek, Desainer, Real Estate, Developer, dan pemilik rumah.
+                                                
+                                            </div>
                                             <div class="ec-spe-pro-btn">
-                                                <a href="#" class="btn btn-lg btn-primary">Baca Selengkapnya</a>
+                                                <a href="#" class="btn btn-lg btn-primary">Lihat Semua Produk</a>
                                             </div>
                                         </div>
                                     </div>
