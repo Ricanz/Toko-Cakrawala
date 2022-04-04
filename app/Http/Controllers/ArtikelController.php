@@ -44,15 +44,18 @@ class ArtikelController extends Controller
             'gambar' => 'required',
         ]);
 
-        $date = date("his");
-        $extension = $request->file('gambar')->extension();
-        $file_name = "Artikel_$date.$extension";
-        $path = $request->file('gambar')->storeAs('public/Artikel', $file_name);
-
+        if (isset($request->gambar)) {
+            $extention = $request->gambar->extension();
+            $file_name = time() . '.' . $extention;
+            $txt = "storage/artikel/". $file_name;
+            $request->gambar->storeAs('public/artikel', $file_name);
+        } else {
+            $file_name = null;
+        }
         Artikel::create([
             'judul' => $request->judul,
             'isi' => $request->isi,
-            'gambar' => $file_name,
+            'gambar' => $txt,
             'slug' => str_replace(' ', '-', strtolower($request->judul)),
         ]);
         return redirect()->route('artikel.index')
@@ -107,7 +110,7 @@ class ArtikelController extends Controller
             $extension = $request->file('gambar')->extension();
             $file_name = "Artikel_$date.$extension";
             $path = $request->file('gambar')->storeAs('public/Artikel', $file_name);
-            
+
         }
         dd($request->judul, $request->isi);
 

@@ -94,10 +94,10 @@
                                                 <div class="dropdown-menu">
                                                     <a class="dropdown-item" href="#">Edit</a>
                                                     <a class="dropdown-item">
-                                                    <form action="{{route('kategori.destroy', $item->id)}}" method="POST" style="display: inline">
+                                                    <form action="{{route('kategori.destroy', $item->id)}}" method="POST">
                                                         @csrf
                                                         @method("DELETE")
-                                                        <button type="submit" class="btn btn-link text-danger text-gradient px-3 mb-0 show_confirm" data-toggle="tooltip" title='Delete'><i class="fas fa-trash text-secondary"></i></button>
+                                                        <button type="submit" class="btn show_confirm">Hapus</button>
                                                     </form>
                                                 </a>
                                                     </div>
@@ -135,6 +135,6 @@
               }
             });
         });
-    
+
     </script>
 </x-app-layout>

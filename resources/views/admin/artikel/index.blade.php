@@ -32,7 +32,7 @@
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
                                         <td>{{$item->judul}}</td>
-                                        <td><img class="tbl-thumb" src="{{asset('storage/Artikel/'.$item->gambar)}}"
+                                        <td><img class="tbl-thumb" src="{{asset($item->gambar)}}"
                                                 alt="Article Image" /></td>
                                         <td>ACTIVE</td>
                                         <td>{{$item->updated_at->isoFormat('m/d/Y')}}</td>
@@ -49,10 +49,10 @@
                                                 <div class="dropdown-menu">
                                                     <a class="dropdown-item" href="{{route('artikel.edit',$item->id)}}">Edit</a>
                                                     <a class="dropdown-item">
-                                                        <form action="{{route('artikel.destroy', $item->id)}}" method="POST" style="display: inline">
+                                                        <form action="{{route('artikel.destroy', $item->id)}}" method="POST">
                                                             @csrf
                                                             @method("DELETE")
-                                                            <button type="submit" class="btn btn-link text-danger text-gradient px-3 mb-0 show_confirm" data-toggle="tooltip" title='Delete'><i class="fas fa-trash text-secondary">Delete</i></button>
+                                                            <button type="submit" class="btn show_confirm">Hapus</button>
                                                         </form>
                                                     </a>
                                                 </div>
@@ -67,7 +67,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- Js conf delete-->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
@@ -90,6 +90,6 @@
               }
             });
         });
-    
+
     </script>
 </x-app-layout>
