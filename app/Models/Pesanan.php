@@ -15,6 +15,7 @@ class Pesanan extends Model
         'email',
         'alamat',
         'no_hp',
-        'cart_data'
+        'cart_data',
+        'waktu'
     ];
 }

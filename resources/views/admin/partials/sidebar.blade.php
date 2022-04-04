@@ -22,7 +22,7 @@
                     <hr>
                 </li>
 
-                
+
 
                 <!-- Users -->
                 <li class="has-sub">
@@ -52,7 +52,21 @@
                     </div>
                     <hr>
                 </li>
-
+                <li class="has-sub {{ request()->is('pesanan*') ? 'active expand' : '' }}">
+                    <a class="sidenav-item-link" href="javascript:void(0)">
+                        <i class="mdi mdi-account-group-outline"></i>
+                        <span class="nav-text">Pesanan</span> <b class="caret"></b>
+                    </a>
+                    <div class="collapse {{ request()->is('pesanan*') ? 'show' : '' }}">
+                        <ul class="sub-menu" id="products" data-parent="#sidebar-menu">
+                            <li class="{{ request()->is('pesanan') ? 'active' : '' }}">
+                                <a class="sidenav-item-link" href="{{route('pesanan.index')}}">
+                                    <span class="nav-text">Daftar Pesanan</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
                 <li class="has-sub {{ request()->is('artikel*') ? 'active expand' : '' }}">
                     <a class="sidenav-item-link" href="javascript:void(0)">
                         <i class="mdi mdi-account-group-outline"></i>

@@ -32,7 +32,7 @@ class InvoiceController extends Controller
             'alamat' => $request->get('alamat'),
             'no_hp' => $request->get('no_hp')
         ];
-        $tanggal = Carbon::now()->toDateTimeString();
+        $tanggal = Carbon::now()->format('d M Y H:i:s');
 
         $length = 10;
         $random = '';
@@ -64,7 +64,8 @@ class InvoiceController extends Controller
             'email' => $request->get('email'),
             'alamat' => $request->get('alamat'),
             'no_hp' => $request->get('no_hp'),
-            'cart_data' => $cookie_data
+            'cart_data' => $cookie_data,
+            'waktu' => $tanggal
         ]);
 
         File::delete($invoicePath);

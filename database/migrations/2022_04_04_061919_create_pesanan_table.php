@@ -21,6 +21,7 @@ class CreatePesananTable extends Migration
             $table->string('no_hp');
             $table->text('alamat');
             $table->json('cart_data');
+            $table->string('waktu');
             $table->timestamps();
         });
     }
