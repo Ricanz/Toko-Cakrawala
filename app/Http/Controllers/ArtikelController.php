@@ -102,21 +102,19 @@ class ArtikelController extends Controller
 
         $artikel = Artikel::find($id);
 
-        if ($request->has("gambar")) {
-
-            Storage::delete("public/Artikel/$artikel->gambar");
-
-            $date = date("his");
-            $extension = $request->file('gambar')->extension();
-            $file_name = "Artikel_$date.$extension";
-            $path = $request->file('gambar')->storeAs('public/Artikel', $file_name);
-
+        if (isset($request->gambar)) {
+            $extention = $request->gambar->extension();
+            $file_name = time() . '.' . $extention;
+            $txt = "storage/artikel/". $file_name;
+            $request->gambar->storeAs('public/artikel', $file_name);
+        } else {
+            $file_name = null;
         }
-        dd($request->judul, $request->isi);
+        // dd($request->judul, $request->isi);
 
         $artikel->judul = $request->judul;
         $artikel->isi = $request->isi;
-        $artikel->gambar = $file_name;
+        $artikel->gambar = $txt;
         $artikel->slug = str_replace(' ', '-', strtolower($request->judul));
         $artikel->save();
 
