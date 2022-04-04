@@ -38,9 +38,9 @@
                                         <td>{{$item->alamat}}</td>
                                         <td>
                                             <div class="btn-group mb-1">
-                                                <button type="button" class="btn btn-outline-success">Info</button>
-                                                    <span class="sr-only">Info</span>
-                                                </button>
+                                                <a href="{{url('detail-pesanan', $item->id)}}" class="btn btn-outline-success">Info</a>
+                                                    {{-- <a ><span class="sr-only">Info</span></a> --}}
+                                                {{-- </button> --}}
 
                                                 {{-- <div class="dropdown-menu">
                                                     <a class="dropdown-item" href="{{route('artikel.edit',$item->id)}}">Edit</a>

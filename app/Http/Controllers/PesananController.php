@@ -18,7 +18,7 @@ class PesananController extends Controller
         $pesanan = Pesanan::select('cart_data')->where('id', $id)->first();
         $cart_data = json_decode($pesanan, true);
         $totalcart = count($cart_data);
-        dd($cart_data);
+        // dd($cart_data);
         return view('admin.pesanan.detail', compact('pesanan', 'cart_data'));
     }
 }

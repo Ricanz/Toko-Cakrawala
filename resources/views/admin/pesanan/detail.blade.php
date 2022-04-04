@@ -51,7 +51,7 @@
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
-                                                                @foreach ((array)$cart_data as $key => $i)
+                                                                @foreach ($cart_data as $key => $i)
                                                                     <tr>
                                                                         <th><span>{{$i['item_id']}}</span></th>
                                                                         <td><span>{{$i['nama_produk']}}</span></td>
