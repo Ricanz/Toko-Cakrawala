@@ -85,25 +85,26 @@
                                                         <table class="table ec-table">
                                                             <thead>
                                                                 <tr>
-                                                                    <th scope="col">ID</th>
-                                                                    <th scope="col">Nama Produk</th>
-                                                                    <th class="text-center" scope="col">Jumlah</th>
-                                                                    <th class="text-center" scope="col">Harga</th>
-                                                                    <th class="text-center" scope="col">Total</th>
+                                                                    <td scope="col">ID</td>
+                                                                    <td scope="col">Nama Produk</td>
+                                                                    <td class="text-center" scope="col">Jumlah</td>
+                                                                    <td class="text-center" scope="col">Harga</td>
+                                                                    <td class="text-center" scope="col">Total</td>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
                                                                 @foreach ((array)$cart_data as $item)
                                                                     <tr>
-                                                                        <th><span>{{$item['item_id']}}</span></th>
+                                                                        <td><span>{{$item['item_id']}}</span></td>
                                                                         <td><span>{{$item['nama_produk']}}</span></td>
                                                                         <td class="text-center"><span>{{$item['jumlah_produk']}}</span></td>
                                                                         <td class="text-center"><span>{{$item['harga_produk']}}</span></td>
                                                                         <td class="text-center"><span>{{$item['harga_produk']*$item['jumlah_produk']}}</span>
                                                                         </td>
                                                                     </tr>
+                                                                    @endforeach
                                                             </tbody>
-                                                            <tfoot>
+                                                            {{-- <thead>
                                                                 <tr>
                                                                     <td class="border-none m-m15" colspan="3"><span
                                                                             class="note-text-color">Pemesanan dan
@@ -120,7 +121,7 @@
                                                                     </td>
                                                                     @endforeach
                                                                 </tr>
-                                                            </tfoot>
+                                                            </thead> --}}
                                                         </table>
                                                     </div>
                                                 </div>

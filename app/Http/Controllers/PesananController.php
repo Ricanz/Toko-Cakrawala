@@ -16,9 +16,12 @@ class PesananController extends Controller
     public function detail($id)
     {
         $pesanan = Pesanan::select('cart_data')->where('id', $id)->first();
-        $cart_data = json_decode($pesanan, true);
+        $cart_data = json_decode($pesanan->cart_data, true);
         $totalcart = count($cart_data);
-        // dd($cart_data);
+        foreach ($cart_data as $key => $i){
+           $data[] = $i;
+        }
+        // dd($i['nama_produk']);
         return view('admin.pesanan.detail', compact('pesanan', 'cart_data'));
     }
 }
