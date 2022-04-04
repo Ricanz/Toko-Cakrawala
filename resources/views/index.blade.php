@@ -426,7 +426,7 @@
                                                 Produk bahan bangunan atap yang disediakan juga langsung dari produsen (manufacturer) sehingga harga yang disajikan kepada konsumen adalah harga rata-rata eceran yang ada di pasar.
                                                 Untuk melayani kebutuhan pelanggannya, Toko Cakrawala juga menyediakan Attendant terlatih yang siap memberikan pelayanan dan pengarahan teknis atas produk-produk yang tersedia.
                                                 Toko Cakrawala berusaha memenuhi segala kebutuhan masyarakat dari berbagai lapisan dan profesi mulai dari Tukang Bangunan, Kontraktor, Arsitek, Desainer, Real Estate, Developer, dan pemilik rumah.
-                                                
+
                                             </div>
                                             <div class="ec-spe-pro-btn">
                                                 <a href="#" class="btn btn-lg btn-primary">Lihat Semua Produk</a>
@@ -585,14 +585,14 @@
         <div class="container">
             <div class="row">
                 <div class="ec-blog-slider owl-carousel" data-animation="fadeIn">
-                    
+
                     @foreach ($artikel as $item)
                     <div class="ec-blog-block">
                             <div class="ec-blog-inner">
                                 <div class="ec-blog-image">
                                     <a href="blog-detail-left-sidebar.html">
                                         <img class="blog-image"
-                                            src="{{ asset('storage/Artikel'.$item->gambar) }}"
+                                            src="{{ asset($item->gambar) }}"
                                             alt="Blog" />
                                     </a>
                                 </div>
@@ -605,7 +605,7 @@
                             </div>
                     </div>
                     @endforeach
-                    
+
                 </div>
             </div>
         </div>

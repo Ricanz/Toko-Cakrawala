@@ -22,7 +22,7 @@
                                     <div class="ec-spe-pro-image-outer col-md-4 col-sm-12">
                                         <div class="ec-spe-pro-image">
                                             <img class="img-responsive"
-                                                src="{{ asset('storage/Artikel/'.$artikel->gambar ) }}"
+                                                src="{{ asset($artikel->gambar) }}"
                                                 alt="Foto artikel {{ $artikel->judul }}">
                                         </div>
                                     </div>
