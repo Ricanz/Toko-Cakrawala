@@ -2,7 +2,8 @@ function jumlahCart(event) {
     // event.preventDefault();
     var id = $(event).data("id");
     var jumlah = $('#qty-input-'+id).val();
-    console.log('asd',jumlah,  id);
+    var jumlah_produk = $('#harga-produk-'+id).html();
+    console.log('asd',jumlah,  id, jumlah_produk);
     $.ajax({
         headers: { 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') },
         type: 'POST',
@@ -12,7 +13,7 @@ function jumlahCart(event) {
             jumlah: jumlah,
         },       
         success: function (response) {
-            console.log(response);
+            $("#total-" + id).html(jumlah*jumlah_produk);
         }
     });
 }
@@ -61,11 +62,17 @@ $(document).ready(function () {
     $("#total-harga").text(harga_produk)
 });
 
+
 let jumlahClick = 0
 function tambahKurang(event) {
-    var id = $(event).data("id");
+    if (event.target.innerHTML == '+') {
+        var id = $(event.target).prev().data("id");
+    } else {
+        var id = $(event.target).next().data("id");
+    }  
+    console.log(id );
     var jumlah_produk = $('#qty-input-'+id).val();
-    console.log('asd',jumlah_produk,  id);
+    
     $.ajax({
         headers: { 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') },
         type: 'POST',

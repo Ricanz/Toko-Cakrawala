@@ -54,7 +54,8 @@
                                                                         class="ec-cart-pro-img mr-4"
                                                                         src="{{ asset('storage/Produk/' . $item['foto_produk']) }}"
                                                                         alt="" />{{ $item['nama_produk'] }}</a></td>
-                                                            <td data-label="Price" class="ec-cart-pro-price"><span
+                                                            <td data-label="Price"
+                                                                class="ec-cart-pro-price harga-produk"><span
                                                                     class="amount"
                                                                     id="harga-produk-{{ $item['item_id'] }}">{{ $item['harga_produk'] }}</span>
                                                             </td>
@@ -62,12 +63,16 @@
                                                                 style="text-align: center;">
                                                                 {{-- <div data-id="{{ $item['item_id'] }}" onclick="jumlahCart(event.target)"
                                                                     class="cart-qty-plus-minus"> --}}
-                                                                    <input data-id="{{ $item['item_id'] }}" onclick="jumlahCart(event.target)" class="cart-plus-minus" type="number"
-                                                                        name="cartqtybutton" id="qty-input-{{ $item['item_id'] }}"
-                                                                        value="{{ $item['jumlah_produk'] }}" />
+                                                                <input data-id="{{ $item['item_id'] }}"
+                                                                    onclick="jumlahCart(event.target)"
+                                                                    onchange="erza(event.target)" class="qty-input-js"
+                                                                    type="number" name="cartqtybutton "
+                                                                    id="qty-input-{{ $item['item_id'] }}"
+                                                                    value="{{ $item['jumlah_produk'] }}" />
                                                                 {{-- </div> --}}
                                                             </td>
-                                                            <td data-label="Total" class="ec-cart-pro-subtotal">$56.00
+                                                            <td data-label="Total" id="total-{{ $item['item_id'] }}"
+                                                                class="ec-cart-pro-subtotal">{{ $item['jumlah_produk']*$item['harga_produk'] }}
                                                             </td>
                                                             <td data-label="Remove" class="">
 
@@ -115,7 +120,7 @@
                                     <div class="ec-cart-summary">
                                         <div class="ec-cart-summary-total">
                                             <span class="text-left">Total Harga</span>
-                                            <span class="text-right">$80.00</span>
+                                            <span id="total-harga" class="text-right">$80.00</span>
                                         </div>
                                     </div>
 
@@ -132,4 +137,41 @@
 
 {{-- @push('scripts') --}}
 <script src="{{ asset('js/cart.js') }}" type="application/javascript"></script>
+<script>
+    $(document).ready(function() {
+        let harga_produk = 0
+        let jumlah = 0
+        let harga_akhir = 0
+        $('.harga-produk').each(function(i, obj) {
+            $('.qty-input-js').each(function(k, val) {
+                if (i == k) {
+                    harga_akhir = parseInt($(obj).text()) * parseInt($(val).val())
+                }
+                jumlah = parseInt($(obj).val()) + jumlah
+                console.log(harga_akhir)
+            });
+            harga_produk = harga_produk + harga_akhir
+        });
+
+        $("#total-harga").text(harga_produk)
+    });
+</script>
+<script>
+    function erza(event) {
+        let harga_produk = 0
+        let jumlah = 0
+        let harga_akhir = 0
+        $('.harga-produk').each(function(i, obj) {
+            $('.qty-input-js').each(function(k, val) {
+                if (i == k) {
+                    harga_akhir = parseInt($(obj).text()) * parseInt($(val).val())
+                }
+                jumlah = parseInt($(obj).val()) + jumlah
+                console.log(harga_akhir)
+            });
+            harga_produk = harga_produk + harga_akhir
+        });
+        $("#total-harga").text(harga_produk)
+    }
+</script>
 {{-- @endpush --}}
