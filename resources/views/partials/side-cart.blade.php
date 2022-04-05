@@ -20,16 +20,17 @@
                                 <span class="cart-price">
 
                                     {{-- Harga Produk --}}
-                                    <span class="harga-produk" id="harga-produk-{{ $item['item_id'] }}">{{ $item['harga_produk'] }}
+                                    <span class="harga-produk"
+                                        id="harga-produk-{{ $item['item_id'] }}">{{ $item['harga_produk'] }}
                                     </span>x {{ $item['jumlah_produk'] }}</span>
 
-                                <div id="qty-plus-minus" onclick="tambahKurang({{ $item['item_id'] }})"
+                                <div id="qty-plus-minus" onclick="tambahKurang(event.target)"
                                     data-id="{{ $item['item_id'] }}" class="qty-plus-minus">
 
                                     {{-- Jumlah --}}
                                     <input class="qty-input-js" id="qty-input-{{ $item['item_id'] }}"
-                                        data-id="{{ $item['item_id'] }}" onclick="jumlahCart(event.target)"
-                                        type="text" name="ec_qtybtn" value="1" />
+                                        data-id="{{ $item['item_id'] }}" onchange="jumlahCart(event.target)"
+                                        type="text" name="ec_qtybtn" value="{{ $item['jumlah_produk'] }}" />
 
                                 </div>
                                 <a href="javascript:void(0)" data-id="{{ $item['item_id'] }}"
@@ -58,7 +59,7 @@
             </div>
             <div class="cart_btn  ">
                 <a href="/cart" class="btn btn-primary">View Cart</a>
-                <a href="{{route('checkout')}}" class="btn btn-secondary ">Checkout</a>
+                <a href="{{ route('checkout') }}" class="btn btn-secondary ">Checkout</a>
             </div>
         </div>
     </div>

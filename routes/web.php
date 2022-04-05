@@ -58,7 +58,7 @@ Route::get('produk-grid', [ProdukController::class, 'grid'])->name('produk-grid'
 Route::post('addToCart', [CartController::class, 'addToCart'])->name('addToCart');
 Route::get('Cart', [CartController::class, 'Cart']);
 Route::get('checkout', [CartController::class, 'checkout'])->name('checkout');
-Route::post('updateToCart', [CartController::class, 'updateToCart']);
+Route::post('updateToCart', [CartController::class, 'updateToCart'])->name('updateCartku');
 Route::delete('deleteCart/{id}', [CartController::class, 'deleteFromCart'])->name('deleteCart');
 Route::get('clearCart', [CartController::class, 'clearCart']);
 Route::post('print-invoice', [InvoiceController::class, 'invoice']);

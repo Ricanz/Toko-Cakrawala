@@ -82,9 +82,12 @@ class CartController extends Controller
 
     public function updateToCart(Request $request)
     {
+        // dd($request);
 
-        $produk_id = $request->input('produk_id');
-        $jumlah_produk = $request->input('jumlah_produk');
+        $produk_id = $request->id;
+        $jumlah_produk = $request->jumlah;
+        // $produk_id = $request->input('produk_id');
+        // $jumlah_produk = $request->input('jumlah_produk');
 
         if (Cookie::get('shopping_cart')) {
             $cookie_data = stripslashes(Cookie::get('shopping_cart'));
