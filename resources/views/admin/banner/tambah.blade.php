@@ -36,7 +36,7 @@
                                             <div class="avatar-preview ec-preview">
                                                 <div class="imagePreview ec-div-preview">
                                                     <img class="ec-image-preview"
-                                                        src="{{ asset('tadmin/assets/img/products/vender-upload-preview.jpg') }}"
+                                                        src="{{ asset('tadmin/assets/img/banner/1.jpg') }}"
                                                         alt="edit" />
                                                 </div>
                                             </div>
