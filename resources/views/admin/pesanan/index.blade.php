@@ -1,7 +1,7 @@
 <x-app-layout>
     <div class="breadcrumb-wrapper d-flex align-items-center justify-content-between">
         <div>
-            <h1>Artikel</h1>
+            <h1>Daftar Pesanan</h1>
             <p class="breadcrumbs"><span><a href="/">Home</a></span>
                 <span><i class="mdi mdi-chevron-right"></i></span>Pesanan
             </p>

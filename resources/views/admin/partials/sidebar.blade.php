@@ -54,7 +54,7 @@
                 </li>
                 <li class="has-sub {{ request()->is('pesanan*') ? 'active expand' : '' }}">
                     <a class="sidenav-item-link" href="javascript:void(0)">
-                        <i class="mdi mdi-account-group-outline"></i>
+                        <i class="mdi mdi-cart"></i>
                         <span class="nav-text">Pesanan</span> <b class="caret"></b>
                     </a>
                     <div class="collapse {{ request()->is('pesanan*') ? 'show' : '' }}">
@@ -160,7 +160,7 @@
                 </li>
 
                 {{-- Transaksi --}}
-                <li class="has-sub {{ request()->is('') ? 'active expand' : '' }}">
+                {{-- <li class="has-sub {{ request()->is('') ? 'active expand' : '' }}">
                     <a class="sidenav-item-link" href="javascript:void(0)">
                         <i class="mdi mdi-cart"></i>
                         <span class="nav-text">Orders</span> <b class="caret"></b>
@@ -184,7 +184,7 @@
                             </li>
                         </ul>
                     </div>
-                </li>
+                </li> --}}
             </ul>
         </div>
     </div>
