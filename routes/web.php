@@ -8,6 +8,7 @@ use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\SubKategoriController;
 use App\Http\Controllers\TestimonialController;
+use App\Http\Controllers\BannerController;
 use App\Http\Controllers\PesananController;
 use Illuminate\Support\Facades\Route;
 
@@ -52,6 +53,7 @@ Route::resource('subKategori', SubKategoriController::class);
 Route::resource('testimonial', TestimonialController::class);
 Route::resource('produk', ProdukController::class);
 Route::resource('artikel', ArtikelController::class);
+Route::resource('banner', BannerController::class);
 Route::resource('pesanan', PesananController::class)->except('detail');
 Route::get('detail-pesanan/{id}', [PesananController::class, 'detail']);
 Route::get('produk-grid', [ProdukController::class, 'grid'])->name('produk-grid');

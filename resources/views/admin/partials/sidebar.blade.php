@@ -52,6 +52,28 @@
                     </div>
                     <hr>
                 </li>
+                <!-- Banner -->
+                <li class="has-sub {{ request()->is('banner*') ? 'active expand' : '' }}">
+                    <a class="sidenav-item-link" href="javascript:void(0)">
+                        <i class="mdi mdi-palette-advanced"></i>
+                        <span class="nav-text">Banner</span> <b class="caret"></b>
+                    </a>
+                    <div class="collapse {{ request()->is('banner*') ? 'show' : '' }}">
+                        <ul class="sub-menu" id="products" data-parent="#sidebar-menu">
+                            <li class="{{ request()->is('banner/create') ? 'active' : '' }}">
+                                <a class="sidenav-item-link" href="{{route('banner.create')}}">
+                                    <span class="nav-text">Tambah Banner</span>
+                                </a>
+                            </li>
+                            <li class="{{ request()->is('banner') ? 'active' : '' }}">
+                                <a class="sidenav-item-link" href="{{route('banner.index')}}">
+                                    <span class="nav-text">List Banner</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
                 <li class="has-sub {{ request()->is('pesanan*') ? 'active expand' : '' }}">
                     <a class="sidenav-item-link" href="javascript:void(0)">
                         <i class="mdi mdi-cart"></i>
