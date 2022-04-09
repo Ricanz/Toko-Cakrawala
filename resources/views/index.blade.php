@@ -8,7 +8,7 @@
                 <div class="swiper-wrapper">
 
                     @foreach ($banner as $item)
-                    <div class="ec-slide-item swiper-slide d-flex slide-{{ $item->urutan }}">
+                    <div class="ec-slide-item swiper-slide d-flex slide-{{ $item->urutan }}"  style="background-image: url('{{ asset($item->banner)}}');">
                         <div class="container align-self-center">
                             <div class="row">
                                 <div class="col-sm-12 align-self-center">
