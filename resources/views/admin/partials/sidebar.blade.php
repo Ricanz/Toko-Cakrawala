@@ -74,6 +74,28 @@
                     </div>
                 </li>
 
+                <!-- Supplier -->
+                <li class="has-sub {{ request()->is('supplier*') ? 'active expand' : '' }}">
+                    <a class="sidenav-item-link" href="javascript:void(0)">
+                        <i class="mdi mdi-palette-advanced"></i>
+                        <span class="nav-text">supplier</span> <b class="caret"></b>
+                    </a>
+                    <div class="collapse {{ request()->is('supplier*') ? 'show' : '' }}">
+                        <ul class="sub-menu" id="products" data-parent="#sidebar-menu">
+                            <li class="{{ request()->is('supplier/create') ? 'active' : '' }}">
+                                <a class="sidenav-item-link" href="{{route('supplier.create')}}">
+                                    <span class="nav-text">Tambah Supplier</span>
+                                </a>
+                            </li>
+                            <li class="{{ request()->is('supplier') ? 'active' : '' }}">
+                                <a class="sidenav-item-link" href="{{route('supplier.index')}}">
+                                    <span class="nav-text">List Supplier</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
                 <li class="has-sub {{ request()->is('pesanan*') ? 'active expand' : '' }}">
                     <a class="sidenav-item-link" href="javascript:void(0)">
                         <i class="mdi mdi-cart"></i>

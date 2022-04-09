@@ -50,19 +50,11 @@
             </div>
             <div class="row margin-minus-b-15 margin-minus-t-15">
                 <div id="ec-cat-slider" class="ec-cat-slider owl-carousel">
-                    @foreach ($kategori as $k)
+                    @foreach ($supplier as $item)
                         <div class="ec_cat_content ec_cat_content_1">
                             <div class="ec_cat_inner ec_cat_inner-1">
-                                <div class="ec-category-image">
-                                    <img src="{{ asset('tlandingPage/assets/images/icons/glasses-8.svg') }}"
-                                        class="svg_img" alt="drink" />
-                                </div>
-                                <div class="ec-category-desc">
-                                    <h3>{{$k->nama}}</h3>
-                                    {{-- <h3>{{$k->nama}} <span title="Category Items">(53)</span></h3> --}}
-                                    <a href="shop-left-sidebar-col-3.html" class="cat-show-all">Show All <i
-                                            class="ecicon eci-angle-double-right" aria-hidden="true"></i></a>
-                                </div>
+                                <img src="{{ asset($item->gambar) }}"
+                                        class="svg_img" alt="Supplier" height="100px"/>
                             </div>
                         </div>
                     @endforeach
