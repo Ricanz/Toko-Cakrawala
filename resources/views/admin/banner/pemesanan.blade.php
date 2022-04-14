@@ -20,7 +20,7 @@
 
                 <div class="card-body">
                     <div class="row ec-vendor-uploads">
-                        <form class="row g-3" method="post" action="{{ route('updatePemesanan') }}" enctype="multipart/form-data">
+                        <form class="row g-3" method="post" action="{{ route('banner.update', $banner->id) }}" enctype="multipart/form-data">
                             @csrf
                             @method('PUT')
                             <div class="col-lg-4">
@@ -37,7 +37,7 @@
                                             <div class="avatar-preview ec-preview">
                                                 <div class="imagePreview ec-div-preview">
                                                     <img class="ec-image-preview"
-                                                        src="{{ asset($banner->banner) }}"
+                                                        src="{{ $banner->banner == '' ? $banner->banner : asset($banner->banner) }}"
                                                         alt="edit" />
                                                 </div>
                                             </div>
