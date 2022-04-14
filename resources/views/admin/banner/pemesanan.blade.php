@@ -37,7 +37,7 @@
                                             <div class="avatar-preview ec-preview">
                                                 <div class="imagePreview ec-div-preview">
                                                     <img class="ec-image-preview"
-                                                        src="{{ asset($banner->banner) }}"
+                                                        src="{{ $banner->banner == '' ? $banner->banner : asset($banner->banner) }}"
                                                         alt="edit" />
                                                 </div>
                                             </div>
@@ -47,6 +47,7 @@
                             </div>
                             <div class="col-lg-8">
                                 <div class="ec-vendor-upload-detail row g-3">
+
                                     <div class="col-md-12">
                                         <label for="inputEmail4" class="form-label">Judul</label>
                                         <input type="text" name="judul" class="form-control slug-title" id="judul" value="{{ $banner->judul }}">

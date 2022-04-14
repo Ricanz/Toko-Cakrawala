@@ -8,7 +8,16 @@ use Illuminate\Http\Request;
 class GeneralController extends Controller
 {
     public function pemesanan(){
-        $banner = Banner::where('status', 'aktif')->where('role', 'pemesanan')->first();
+        $pemesanan = Banner::where('status', 'aktif')->where('role', 'pemesanan')->first();
+
+        if(!$pemesanan){
+            $banner = Banner::create([
+                'banner' => '',
+                'role' => 'pemesanan'
+            ]);
+        } else {
+            $banner = $pemesanan;
+        };
 
         return view('admin.banner.pemesanan', compact('banner'));
         // return 'Riyanti';

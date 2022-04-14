@@ -15,15 +15,15 @@ class CreateBannerTable extends Migration
     {
         Schema::create('banner', function (Blueprint $table) {
             $table->id();
-            $table->string('judul');
-            $table->string('sub_judul');
+            $table->string('judul')->nullable();
+            $table->string('sub_judul')->nullable();
             $table->string('banner');
-            $table->string('deskripsi');
-            $table->string('tombol');
-            $table->string('link');
+            $table->string('deskripsi')->nullable();
+            $table->string('tombol')->nullable();
+            $table->string('link')->nullable();
             $table->string('role')->nullable();
-            $table->enum('status', ['aktif', 'tidak aktif']);
-            $table->integer('urutan');
+            $table->enum('status', ['aktif', 'tidak aktif'])->default('aktif');
+            $table->integer('urutan')->nullable();
             $table->timestamps();
         });
     }
