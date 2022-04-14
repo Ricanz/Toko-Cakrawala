@@ -70,6 +70,11 @@
                                     <span class="nav-text">List Banner</span>
                                 </a>
                             </li>
+                            <li class="{{ request()->is('admin/cara-pemesanan') ? 'active' : '' }}">
+                                <a class="sidenav-item-link" href="{{route('pemesanan')}}">
+                                    <span class="nav-text">Cara Pemesanan</span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </li>
