@@ -1,13 +1,13 @@
 <x-app-layout>
     <div class="breadcrumb-wrapper d-flex align-items-center justify-content-between">
         <div>
-            <h1>Produk</h1>
-            <p class="breadcrumbs"><span><a href="/dashboard">Dashboard</a></span>
-                <span><i class="mdi mdi-chevron-right"></i></span>Produk
+            <h1>Product</h1>
+            <p class="breadcrumbs"><span><a href="index.html">Home</a></span>
+                <span><i class="mdi mdi-chevron-right"></i></span>Product
             </p>
         </div>
         <div>
-            <a href="{{route('produk.create')}}" class="btn btn-primary"> Tambah Produk</a>
+            <a href="{{route('produk.create')}}" class="btn btn-primary"> Add Porduct</a>
         </div>
     </div>
 
@@ -23,10 +23,19 @@
                         <div class="col-lg-6 col-md-12 sort">
                             <div class="col-lg-4 col-md-6 p-space">
                                 <select class="form-control" id="dropdownCategory">
-                                    <option value="ALL">Kategori</option>
+                                    <option value="ALL">ALL Category</option>
                                     @foreach ($kategori as $item)
                                         <option value="{{$item->id}}">{{$item->nama}}</option>
                                     @endforeach
+                                </select>
+                            </div>
+                            <div class="col-lg-4 col-md-6 p-space">
+                                <select class="form-control" id="dropdownOrderBy">
+                                    <option value="ALL">ORDER BY</option>
+                                    <option value="MEN">Letest</option>
+                                    <option value="WOMAN">Price Low - High</option>
+                                    <option value="KID">Price High - Low</option>
+                                    <option value="OTHER">OTHER</option>
                                 </select>
                             </div>
                         </div>

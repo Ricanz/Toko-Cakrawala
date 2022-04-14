@@ -11,7 +11,7 @@
                         <div class="col-md-6 col-sm-12">
                             <!-- ec-breadcrumb-list start -->
                             <ul class="ec-breadcrumb-list">
-                                <li class="ec-breadcrumb-item"><a href="/">Home</a></li>
+                                <li class="ec-breadcrumb-item"><a href="index.html">Home</a></li>
                                 <li class="ec-breadcrumb-item active">Wishlist</li>
                             </ul>
                             <!-- ec-breadcrumb-list end -->

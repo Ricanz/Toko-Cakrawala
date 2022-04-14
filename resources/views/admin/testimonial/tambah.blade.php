@@ -1,13 +1,13 @@
 <x-app-layout>
     <div class="breadcrumb-wrapper d-flex align-items-center justify-content-between">
         <div>
-            <h1>Tambah Testimonial</h1>
-            <p class="breadcrumbs"><span><a href="/dashboard">Dashboard</a></span>
+            <h1>Add Testimonial</h1>
+            <p class="breadcrumbs"><span><a href="index.html">Home</a></span>
                 <span><i class="mdi mdi-chevron-right"></i></span>Testimonial
             </p>
         </div>
         <div>
-            <a href="{{ route('testimonial.index') }}" class="btn btn-primary"> Lihat Semua
+            <a href="{{ route('testimonial.index') }}" class="btn btn-primary"> View All
             </a>
         </div>
     </div>
@@ -15,7 +15,7 @@
         <div class="col-12">
             <div class="card card-default">
                 <div class="card-header card-header-border-bottom">
-                    <h2>Tambah Testimonial</h2>
+                    <h2>Add Testimonial</h2>
                 </div>
 
                 <div class="card-body">
@@ -62,8 +62,14 @@
                                         <label class="form-label">Deskripsi</label>
                                         <textarea class="form-control" name="deskripsi" rows="4"></textarea>
                                     </div>
+                                    {{-- <div class="col-md-12">
+                                        <label class="form-label">Product Tags <span>( Type and
+                                                make comma to separate tags )</span></label>
+                                        <input type="text" class="form-control" id="group_tag" name="group_tag"
+                                            value="" placeholder="" data-role="tagsinput" />
+                                    </div> --}}
                                     <div class="col-md-12 pt-4">
-                                        <button type="submit" class="btn btn-primary">Simpan</button>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
                                     </div>
 
                                 </div>

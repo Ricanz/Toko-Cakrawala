@@ -20,7 +20,6 @@ class ProdukSeeder extends Seeder
             'harga' => '200000',
             'detail' => 'Ini besi',
             'stok' => '100',
-            'slug' => 'besi-1',
             'gambar' => 'storage/Produk/contoh.jpg',
             'kategori_id' => '1'
         ]);
@@ -31,7 +30,6 @@ class ProdukSeeder extends Seeder
             'harga' => '200000',
             'detail' => 'Ini beton',
             'stok' => '100',
-            'slug' => 'beton',
             'gambar' => 'storage/Produk/contoh.jpg',
             'kategori_id' => '1'
         ]);
@@ -42,7 +40,6 @@ class ProdukSeeder extends Seeder
             'harga' => '200000',
             'detail' => 'Ini baja',
             'stok' => '100',
-            'slug' => 'baja',
             'gambar' => 'storage/Produk/contoh.jpg',
             'kategori_id' => '2'
         ]);
@@ -53,7 +50,6 @@ class ProdukSeeder extends Seeder
             'harga' => '200000',
             'detail' => 'Ini baja',
             'stok' => '100',
-            'slug' => 'baja-2',
             'gambar' => 'storage/Produk/contoh.jpg',
             'kategori_id' => '2'
         ]);
@@ -64,7 +60,6 @@ class ProdukSeeder extends Seeder
             'harga' => '200000',
             'detail' => 'Ini baja ringan',
             'stok' => '100',
-            'slug' => 'baja-ringan',
             'gambar' => 'storage/Produk/contoh.jpg',
             'kategori_id' => '3'
         ]);

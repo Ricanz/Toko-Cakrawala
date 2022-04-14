@@ -2,7 +2,7 @@
     <div class="breadcrumb-wrapper d-flex align-items-center justify-content-between">
         <div>
             <h1>Product Detail</h1>
-            <p class="breadcrumbs"><span><a href="/">Home</a></span>
+            <p class="breadcrumbs"><span><a href="index.html">Home</a></span>
                 <span><i class="mdi mdi-chevron-right"></i></span>Product
             </p>
         </div>

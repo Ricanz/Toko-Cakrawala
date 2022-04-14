@@ -147,7 +147,7 @@ class CartController extends Controller
             $cart_data = null;
         }
 
-        // dd($cart_data);
+        dd($cart_data);
 
         return view('checkout', compact('cart_data'));
 

@@ -3,17 +3,17 @@
     <div class="cc-panel">			
         <!-- Panel Content -->
         <div class="cc-header">
-            <img src="{{asset('tlandingPage/assets/images/whatsapp/cs.png')}}" alt="profile image"/>
-            <h2>Toko Cakrawala</h2>
-            <p>Layanan Pelanggan</p>
+            <img src="{{asset('tlandingPage/assets/images/whatsapp/profile_01.jpg')}}" alt="profile image"/>
+            <h2>John Mark</h2>
+            <p>Tachnical Manager</p>
         </div>
         <div class="cc-body">
-            <p><b>Halo.. &#128515;</b></p>
-            <p>Butuh bantuan? segera hubungi kami</p>
+            <p><b>Hey there &#128515;</b></p>
+            <p>Need help ? just give me a call.</p>
         </div>
         <div class="cc-footer">
-            <a href="https://wa.me/+6285735691018?text=Saya memesan sesuatu, silahkan cek email Anda" class="cc-call-button">
-                <span>Hubungi Kami</span>
+            <a href="tel:+6281332132011" class="cc-call-button">
+                <span>Call me</span>
                 <svg width="13px" height="10px" viewBox="0 0 13 10">
                 <path d="M1,5 L11,5"></path>
                 <polyline points="8 1 12 5 8 9"></polyline>

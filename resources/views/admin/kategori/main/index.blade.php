@@ -1,8 +1,8 @@
 <x-app-layout>
     <div class="breadcrumb-wrapper breadcrumb-wrapper-2 breadcrumb-contacts">
-        <h1>Kategori Utama</h1>
-        <p class="breadcrumbs"><span><a href="/">Dashboard</a></span>
-            <span><i class="mdi mdi-chevron-right"></i></span>Kategori Utama
+        <h1>Main Category</h1>
+        <p class="breadcrumbs"><span><a href="index.html">Home</a></span>
+            <span><i class="mdi mdi-chevron-right"></i></span>Main Category
         </p>
     </div>
     <div class="row">
@@ -10,11 +10,11 @@
             <div class="ec-cat-list card card-default mb-24px">
                 <div class="card-body">
                     <div class="ec-cat-form">
-                        <h4>Tambah Kategori Baru</h4>
+                        <h4>Add New Category</h4>
                         <form method="post" action="{{ route('kategori.store') }}">
                             @csrf
                             <div class="form-group row">
-                                <label for="text" class="col-12 col-form-label">Kategori</label>
+                                <label for="text" class="col-12 col-form-label">Name</label>
                                 <div class="col-12">
                                     <input id="text" name="nama" class="form-control here slug-title" type="text">
                                 </div>
@@ -28,16 +28,35 @@
                                         lowercase and contains only letters, numbers, and hyphens.</small>
                                 </div>
                             </div>
+
+                            {{-- <div class="form-group row">
+                                <label class="col-12 col-form-label">Sort Description</label>
+                                <div class="col-12">
+                                    <textarea id="sortdescription" name="sortdescription" cols="40" rows="2"
+                                        class="form-control"></textarea>
+                                </div>
+                            </div> --}}
+
                             <div class="form-group row">
-                                <label class="col-12 col-form-label">Deskripsi</label>
+                                <label class="col-12 col-form-label">Full Description</label>
                                 <div class="col-12">
                                     <textarea id="fulldescription" name="detail" cols="40" rows="4"
                                         class="form-control"></textarea>
                                 </div>
                             </div>
+
+                            {{-- <div class="form-group row">
+                                <label class="col-12 col-form-label">Product Tags <span>( Type and
+                                        make comma to separate tags )</span></label>
+                                <div class="col-12">
+                                    <input type="text" class="form-control" id="group_tag" name="group_tag" value=""
+                                        placeholder="" data-role="tagsinput">
+                                </div>
+                            </div> --}}
+
                             <div class="row">
                                 <div class="col-12">
-                                    <button name="submit" type="submit" class="btn btn-primary">Simpan</button>
+                                    <button name="submit" type="submit" class="btn btn-primary">Submit</button>
                                 </div>
                             </div>
 
@@ -54,9 +73,10 @@
                             <thead>
                                 <tr>
                                     <th>Thumb</th>
-                                    <th>Kategori</th>
-                                    <th>Sub Kategori</th>
-                                    <th>Deskripsi</th>
+                                    <th>Name</th>
+                                    <th>Sub Categories</th>
+                                    <th>Detail</th>
+                                    {{-- <th>Total Sell</th> --}}
                                     <th>Status</th>
                                     <th>Trending</th>
                                     <th>Action</th>
@@ -94,10 +114,10 @@
                                                 <div class="dropdown-menu">
                                                     <a class="dropdown-item" href="#">Edit</a>
                                                     <a class="dropdown-item">
-                                                    <form action="{{route('kategori.destroy', $item->id)}}" method="POST">
+                                                    <form action="{{route('kategori.destroy', $item->id)}}" method="POST" style="display: inline">
                                                         @csrf
                                                         @method("DELETE")
-                                                        <button type="submit" class="btn show_confirm">Hapus</button>
+                                                        <button type="submit" class="btn btn-link text-danger text-gradient px-3 mb-0 show_confirm" data-toggle="tooltip" title='Delete'><i class="fas fa-trash text-secondary"></i></button>
                                                     </form>
                                                 </a>
                                                     </div>
@@ -135,6 +155,6 @@
               }
             });
         });
-
+    
     </script>
 </x-app-layout>

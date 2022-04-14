@@ -1,13 +1,13 @@
 <x-app-layout>
     <div class="breadcrumb-wrapper d-flex align-items-center justify-content-between">
         <div>
-            <h1>Edit Produk</h1>
-            <p class="breadcrumbs"><span><a href="/dashboard">Dashboard</a></span>
-                <span><i class="mdi mdi-chevron-right"></i></span>Edit Produk
+            <h1>Add Product</h1>
+            <p class="breadcrumbs"><span><a href="index.html">Home</a></span>
+                <span><i class="mdi mdi-chevron-right"></i></span>Product
             </p>
         </div>
         <div>
-            <a href="{{ route('produk.index') }}" class="btn btn-primary"> Lihat Semua
+            <a href="{{ route('produk.index') }}" class="btn btn-primary"> View All
             </a>
         </div>
     </div>
@@ -15,7 +15,7 @@
         <div class="col-12">
             <div class="card card-default">
                 <div class="card-header card-header-border-bottom">
-                    <h2>Edit Produk</h2>
+                    <h2>Add Product</h2>
                 </div>
 
                 <div class="card-body">
@@ -123,7 +123,7 @@
                                     <div class="col-md-6">
                                         <label class="form-label">Select Categories</label>
                                         <select name="kategori_id" id="Categories" class="form-select">
-                                            @foreach ($kategori as $item)
+                                            @foreach ($subkategori as $item)
                                                 <option value="{{ $item->id }}">{{ $item->nama }}</option>
                                             @endforeach
                                         </select>
@@ -131,9 +131,49 @@
                                     <div class="col-md-12">
                                         <label for="slug" class="col-12 col-form-label">Slug</label>
                                         <div class="col-12">
-                                            <input id="slug" name="slug" value="{{ $produk->slug }}" class="form-control here set-slug" type="text" readonly>
+                                            <input id="slug" name="slug" class="form-control here set-slug" type="text">
                                         </div>
                                     </div>
+                                    {{-- <div class="col-md-12">
+                                        <label class="form-label">Sort Description</label>
+                                        <textarea class="form-control" rows="2"></textarea>
+                                    </div>
+                                    <div class="col-md-4 mb-25">
+                                        <label class="form-label">Colors</label>
+                                        <input type="color" class="form-control form-control-color"
+                                            id="exampleColorInput1" value="#ff6191" title="Choose your color">
+                                        <input type="color" class="form-control form-control-color"
+                                            id="exampleColorInput2" value="#33317d" title="Choose your color">
+                                        <input type="color" class="form-control form-control-color"
+                                            id="exampleColorInput3" value="#56d4b7" title="Choose your color">
+                                        <input type="color" class="form-control form-control-color"
+                                            id="exampleColorInput4" value="#009688" title="Choose your color">
+                                    </div>
+                                    <div class="col-md-8 mb-25">
+                                        <label class="form-label">Size</label>
+                                        <div class="form-checkbox-box">
+                                            <div class="form-check form-check-inline">
+                                                <input type="checkbox" name="size1" value="size">
+                                                <label>S</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input type="checkbox" name="size1" value="size">
+                                                <label>M</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input type="checkbox" name="size1" value="size">
+                                                <label>L</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input type="checkbox" name="size1" value="size">
+                                                <label>XL</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input type="checkbox" name="size1" value="size">
+                                                <label>XXL</label>
+                                            </div>
+                                        </div>
+                                    </div> --}}
                                     <div class="col-md-6">
                                         <label class="form-label">Price <span>( In IDR
                                                 )</span></label>
@@ -149,8 +189,14 @@
                                         <label class="form-label">Full Detail</label>
                                         <textarea class="form-control" name="detail" rows="4">{{ $produk->detail }}</textarea>
                                     </div>
-                                    <div class="col-md-12 mt-4">
-                                        <button type="submit" class="btn btn-primary">Simpan</button>
+                                    {{-- <div class="col-md-12">
+                                        <label class="form-label">Product Tags <span>( Type and
+                                                make comma to separate tags )</span></label>
+                                        <input type="text" class="form-control" id="group_tag" name="group_tag"
+                                            value="" placeholder="" data-role="tagsinput" />
+                                    </div> --}}
+                                    <div class="col-md-12">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
                                     </div>
                         </form>
                     </div>
