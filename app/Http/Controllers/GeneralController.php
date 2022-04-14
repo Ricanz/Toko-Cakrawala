@@ -13,13 +13,35 @@ class GeneralController extends Controller
         if(!$pemesanan){
             $banner = Banner::create([
                 'banner' => '',
-                'role' => 'pemesanan'
+                'role' => 'pemesanan',
+                'deskripsi' => 'BANNER CARA PEMESANAN'
             ]);
         } else {
             $banner = $pemesanan;
         };
 
         return view('admin.banner.pemesanan', compact('banner'));
-        // return 'Riyanti';
+    }
+
+    public function updatePemesanan(Request $request){
+        $banner = Banner::where('status', 'aktif')->where('role', 'pemesanan')->first();
+
+        if (isset($request->banner)) {
+            $extention = $request->banner->extension();
+            $file_name = time() . '.' . $extention;
+            $txt = "storage/banner/". $file_name;
+            $request->banner->storeAs('public/banner', $file_name);
+        } else {
+            $file_name = null;
+        }
+        // dd($request->judul, $request->isi);
+
+        $banner->judul = $request->judul;
+        $banner->banner = $txt;
+        $banner->status = 'aktif';
+        $banner->save();
+
+        return redirect()->route('banner.index')
+        ->with('edit', 'Banner Berhasil Diedit');
     }
 }
