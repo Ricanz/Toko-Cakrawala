@@ -18,12 +18,11 @@ class CreateBannerTable extends Migration
             $table->string('judul')->nullable();
             $table->string('sub_judul')->nullable();
             $table->string('banner');
-            $table->string('deskripsi')->nullable();
-            $table->string('tombol')->nullable();
-            $table->string('link')->nullable();
-            $table->string('role')->nullable();
-            $table->enum('status', ['aktif', 'tidak aktif'])->default('aktif');
-            $table->integer('urutan')->nullable();
+            $table->string('deskripsi');
+            $table->string('tombol');
+            $table->string('link');
+            $table->enum('status', ['aktif', 'tidak aktif']);
+            $table->integer('urutan');
             $table->timestamps();
         });
     }

@@ -103,6 +103,56 @@
                                             </ul>
                                         </div>
                                     @endforeach
+                                    {{-- <div class="ec-sb-block-content">
+                                            <ul>
+                                                <li>
+                                                    <div class="ec-sidebar-block-item"><img src="{{asset('tlandingPage/assets/images/icons/shoes-8.svg')}}" class="svg_img" alt="drink" />Footwear</div>
+                                                    <ul>
+                                                        <li>
+                                                            <div class="ec-sidebar-sub-item"><a href="shop-left-sidebar-col-3.html">Sports <span title="Available Stock">- 25</span></a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="ec-sidebar-sub-item"><a href="shop-left-sidebar-col-3.html">Formal <span title="Available Stock">- 52</span></a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="ec-sidebar-sub-item"><a href="shop-left-sidebar-col-3.html">Casual <span title="Available Stock">- 40</span></a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="ec-sidebar-sub-item"><a href="shop-left-sidebar-col-3.html">safety shoes <span title="Available Stock">- 35</span></a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="ec-sb-block-content">
+                                            <ul>
+                                                <li>
+                                                    <div class="ec-sidebar-block-item"><img src="{{asset('tlandingPage/assets/images/icons/perfume-8.svg')}}" class="svg_img" alt="drink" />perfume</div>
+                                                    <ul>
+                                                        <li>
+                                                            <div class="ec-sidebar-sub-item"><a href="shop-left-sidebar-col-3.html">Clothes perfume<span title="Available Stock">- 4 pcs</span></a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="ec-sidebar-sub-item"><a href="shop-left-sidebar-col-3.html">deodorant <span title="Available Stock">- 52 pcs</span></a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="ec-sidebar-sub-item"><a href="shop-left-sidebar-col-3.html">Flower fragrance <span title="Available Stock">- 10 pack</span></a>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="ec-sidebar-sub-item"><a href="shop-left-sidebar-col-3.html">Air Freshener<span title="Available Stock">- 35 pack</span></a>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div> --}}
                                 </div>
                                 <!-- Sidebar Category Block -->
                             </div>
@@ -397,12 +447,20 @@
                 <!-- ec Testimonial end -->
                 <!-- ec Banner Start -->
                 <div class="col-md-6 col-sm-12" data-animation="fadeIn"  id="pemesanan">
-                    
-                    <div class="ec-spe-pro-image-outer">
-                        <div class="ec-spe-pro-image">
-                            <img class="img-responsive"
-                                src="{{ asset('tlandingPage/assets/images/product-image/111_1.jpg') }}"
-                                alt="">
+                    <div class="ec-banner-inner">
+                        <div class="ec-banner-block ec-banner-block-1">
+                            <div class="banner-block">
+                                <div class="banner-content">
+                                    <div class="banner-text">
+                                        <span class="ec-banner-disc">25% discount</span>
+                                        <span class="ec-banner-title">Vegetables & Fruits</span>
+                                        <span class="ec-banner-stitle">Starting @ $10</span>
+                                    </div>
+                                    <span class="ec-banner-btn"><a href="shop-left-sidebar-col-3.html">Shop Now <i
+                                                class="ecicon eci-angle-double-right"
+                                                aria-hidden="true"></i></a></span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
