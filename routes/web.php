@@ -61,6 +61,7 @@ Route::resource('supplier', SupplierController::class);
 Route::resource('pesanan', PesananController::class)->except('detail');
 
 Route::get('cara-pemesanan', [GeneralController::class, 'pemesanan'])->name('pemesanan');
+Route::post('update/cara-pemesanan', [GeneralController::class, 'update_cara_pemesanan'])->name('updatePemesanan');
 Route::get('detail-pesanan/{id}', [PesananController::class, 'detail']);
 Route::get('produk-grid', [ProdukController::class, 'grid'])->name('produk-grid');
 Route::post('addToCart', [CartController::class, 'addToCart'])->name('addToCart');
