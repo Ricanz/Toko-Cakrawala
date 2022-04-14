@@ -50,110 +50,14 @@
             </div>
             <div class="row margin-minus-b-15 margin-minus-t-15">
                 <div id="ec-cat-slider" class="ec-cat-slider owl-carousel">
-                    <div class="ec_cat_content ec_cat_content_1">
-                        <div class="ec_cat_inner ec_cat_inner-1">
-                            <div class="ec-category-image">
-                                <img src="{{ asset('tlandingPage/assets/images/icons/dress-8.svg') }}"
-                                    class="svg_img" alt="drink" />
-                            </div>
-                            <div class="ec-category-desc">
-                                <h3>dress & frock <span title="Category Items">(53)</span></h3>
-                                <a href="shop-left-sidebar-col-3.html" class="cat-show-all">Show All <i
-                                        class="ecicon eci-angle-double-right" aria-hidden="true"></i></a>
+                    @foreach ($supplier as $item)
+                        <div class="ec_cat_content ec_cat_content_1">
+                            <div class="ec_cat_inner ec_cat_inner-1">
+                                <img src="{{ asset($item->gambar) }}"
+                                        class="svg_img" alt="Supplier" height="100px"/>
                             </div>
                         </div>
-                    </div>
-                    <div class="ec_cat_content ec_cat_content_2">
-                        <div class="ec_cat_inner ec_cat_inner-2">
-                            <div class="ec-category-image">
-                                <img src="{{ asset('tlandingPage/assets/images/icons/coat-8.svg') }}"
-                                    class="svg_img" alt="drink" />
-                            </div>
-                            <div class="ec-category-desc">
-                                <h3>Winter wear <span title="Category Items">(58)</span></h3>
-                                <a href="shop-left-sidebar-col-3.html" class="cat-show-all">Show All <i
-                                        class="ecicon eci-angle-double-right" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ec_cat_content ec_cat_content_3">
-                        <div class="ec_cat_inner ec_cat_inner-3">
-                            <div class="ec-category-image">
-                                <img src="{{ asset('tlandingPage/assets/images/icons/glasses-8.svg') }}"
-                                    class="svg_img" alt="drink" />
-                            </div>
-                            <div class="ec-category-desc">
-                                <h3>glasses & lens <span title="Category Items">(76)</span></h3>
-                                <a href="shop-left-sidebar-col-3.html" class="cat-show-all">Show All <i
-                                        class="ecicon eci-angle-double-right" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ec_cat_content ec_cat_content_4">
-                        <div class="ec_cat_inner ec_cat_inner-4">
-                            <div class="ec-category-image">
-                                <img src="{{ asset('tlandingPage/assets/images/icons/shorts-8.svg') }}"
-                                    class="svg_img" alt="drink" />
-                            </div>
-                            <div class="ec-category-desc">
-                                <h3>shorts & jeans<span title="Category Items">(49)</span></h3>
-                                <a href="shop-left-sidebar-col-3.html" class="cat-show-all">Show All <i
-                                        class="ecicon eci-angle-double-right" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ec_cat_content ec_cat_content_5">
-                        <div class="ec_cat_inner ec_cat_inner-5">
-                            <div class="ec-category-image">
-                                <img src="{{ asset('tlandingPage/assets/images/icons/tee-8.svg') }}"
-                                    class="svg_img" alt="drink" />
-                            </div>
-                            <div class="ec-category-desc">
-                                <h3>T-shirts<span title="Category Items">(25)</span></h3>
-                                <a href="shop-left-sidebar-col-3.html" class="cat-show-all">Show All <i
-                                        class="ecicon eci-angle-double-right" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ec_cat_content ec_cat_content_6">
-                        <div class="ec_cat_inner ec_cat_inner-6">
-                            <div class="ec-category-image">
-                                <img src="{{ asset('tlandingPage/assets/images/icons/jacket-8.svg') }}"
-                                    class="svg_img" alt="drink" />
-                            </div>
-                            <div class="ec-category-desc">
-                                <h3>jacket<span title="Category Items">(35)</span></h3>
-                                <a href="shop-left-sidebar-col-3.html" class="cat-show-all">Show All <i
-                                        class="ecicon eci-angle-double-right" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ec_cat_content ec_cat_content_7">
-                        <div class="ec_cat_inner ec_cat_inner-7">
-                            <div class="ec-category-image">
-                                <img src="{{ asset('tlandingPage/assets/images/icons/watch-8.svg') }}"
-                                    class="svg_img" alt="drink" />
-                            </div>
-                            <div class="ec-category-desc">
-                                <h3>watch<span title="Category Items">(89)</span></h3>
-                                <a href="shop-left-sidebar-col-3.html" class="cat-show-all">Show All <i
-                                        class="ecicon eci-angle-double-right" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ec_cat_content ec_cat_content_8">
-                        <div class="ec_cat_inner ec_cat_inner-8">
-                            <div class="ec-category-image">
-                                <img src="{{ asset('tlandingPage/assets/images/icons/hat-8.svg') }}"
-                                    class="svg_img" alt="drink" />
-                            </div>
-                            <div class="ec-category-desc">
-                                <h3>hat & caps <span title="Category Items">(65)</span></h3>
-                                <a href="shop-left-sidebar-col-3.html" class="cat-show-all">Show All <i
-                                        class="ecicon eci-angle-double-right" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -174,7 +78,7 @@
                                 <!-- Sidebar Category Block -->
                                 <div class="ec-sidebar-block">
                                     <div class="ec-sb-title">
-                                        <h3 class="ec-sidebar-title">Category<button class="ec-close">×</button>
+                                        <h3 class="ec-sidebar-title">Kategori<button class="ec-close">×</button>
                                         </h3>
                                     </div>
                                     @foreach ($kategori as $k)
@@ -215,23 +119,6 @@
                                 <h2 class="ec-title">Produk</h2>
                             </div>
                         </div>
-
-                        <!-- Tab Start -->
-                        <div class="col-md-12 ec-pro-tab">
-                            <ul class="ec-pro-tab-nav nav justify-content-end">
-                                <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab"
-                                        href="#all">All</a></li>
-                                @foreach ($kategori as $k)
-                                    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab"
-                                            href="#{{ $k->nama }}">{{ $k->nama }}</a></li>
-                                    {{-- <li class="nav-item"><a class="nav-link" data-bs-toggle="tab"
-                                        href="#footwear">Footwear</a></li>
-                                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab"
-                                            href="#accessories">accessories</a></li> --}}
-                                @endforeach
-                            </ul>
-                        </div>
-                        <!-- Tab End -->
                     </div>
                     <div class="row margin-minus-b-15">
                         <div class="col">
@@ -254,10 +141,7 @@
                                                             </a>
                                                             {{-- <span class="percentage">20%</span> --}}
                                                             <div class="ec-pro-actions">
-                                                                <a href="#" class="ec-btn-group quickview"
-                                                                    data-link-action="quickview" title="Quick view"
-                                                                    data-bs-toggle="modal"
-                                                                    data-bs-target="#ec_quickview_modal"><img
+                                                                <a href="{{ url("/produk-detail/$i->slug") }}" class="ec-btn-group quickview"><img
                                                                         src="{{ asset('tlandingPage/assets/images/icons/quickview.svg') }}"
                                                                         class="svg_img pro_svg" alt="" /></a>
                                                                 <form method="post"
@@ -276,7 +160,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="ec-pro-content">
-                                                        <a href="shop-left-sidebar-col-3.html">
+                                                        <a href="{{ url("/produk/$i->id") }}">
                                                             <h6 class="ec-pro-stitle">{{ $i->kategori->nama }}</h6>
                                                         </a>
                                                         <h5 class="ec-pro-title"><a
@@ -392,6 +276,7 @@
                             <div class="col-md-12">
                                 <div class="section-title">
                                     <h2 class="ec-title">Kelebihan Toko Cakrawala</h2>
+                                    <p>Produk yang kami sediakan mengacu pada prinsip: <strong>Good, Better & Best </strong></p>
                                 </div>
                             </div>
 
@@ -411,15 +296,17 @@
                                                     <i class="ecicon eci-star fill"></i>
                                                     <i class="ecicon eci-star fill"></i>
                                                     <i class="ecicon eci-star fill"></i>
-                                                    <i class="ecicon eci-star"></i>
+                                                    <i class="ecicon eci-star fill"></i>
                                                     <i class="ecicon eci-star"></i>
                                                 </span>
                                             </div>
-                                            <h5 class="ec-spe-pro-title"><a href="product-left-sidebar.html">Kualitas
-                                                    Aluminium Terjamin</a></h5>
-                                            <div class="ec-spe-pro-desc">Lorem ipsum dolor sit amet consectetur Lorem
-                                                ipsum
-                                                dolor dolor sit amet consectetur Lorem ipsum dolor</div>
+                                            <h5 class="ec-spe-pro-title"><a href="product-left-sidebar.html">Kualitas Harga</a></h5>
+                                        {{-- <h5 class="ec-spe-pro-title"><a href="product-left-sidebar.html">Kualitas
+                                            Aluminium Terjamin</a></h5> --}}
+                                            <div class="ec-spe-pro-desc">
+                                                    Untuk proses pelayanan terbaiknya kepada pelanggan, Toko Cakrawala juga dilengkapi dengan sistem komputerisasi dan Quality Control yang ketat sehingga setiap produk yang disajikan adalah dalam status good, better, best.
+                                                Produk bahan bangunan yang disediakan juga langsung dari produsen (manufacturer) sehingga harga yang disajikan kepada konsumen adalah harga rata-rata eceran yang ada di pasar.
+                                            </div>
                                             <div class="ec-spe-pro-btn">
                                                 <a href="#" class="btn btn-lg btn-primary">Lihat Semua Produk</a>
                                             </div>
@@ -431,7 +318,7 @@
                                         <div class="ec-spe-pro-image-outer col-md-6 col-sm-12">
                                             <div class="ec-spe-pro-image">
                                                 <img class="img-responsive"
-                                                    src="{{ asset('tlandingPage/assets/images/product-image/110_1.jpg') }}"
+                                                    src="{{ asset('tlandingPage/assets/images/product-image/111_1.jpg') }}"
                                                     alt="">
                                             </div>
                                         </div>
@@ -441,17 +328,19 @@
                                                     <i class="ecicon eci-star fill"></i>
                                                     <i class="ecicon eci-star fill"></i>
                                                     <i class="ecicon eci-star fill"></i>
-                                                    <i class="ecicon eci-star"></i>
+                                                    <i class="ecicon eci-star fill"></i>
                                                     <i class="ecicon eci-star"></i>
                                                 </span>
                                             </div>
-                                            <h5 class="ec-spe-pro-title"><a href="product-left-sidebar.html">Pelayanan
-                                                    Terbaik dan Ramah</a></h5>
-                                            <div class="ec-spe-pro-desc">Lorem ipsum dolor sit amet consectetur Lorem
-                                                ipsum
-                                                dolor dolor sit amet consectetur Lorem ipsum dolor</div>
+                                            <h5 class="ec-spe-pro-title"><a href="product-left-sidebar.html">Produk</a></h5>
+                                            <div class="ec-spe-pro-desc">
+                                                Produk bahan bangunan atap yang disediakan juga langsung dari produsen (manufacturer) sehingga harga yang disajikan kepada konsumen adalah harga rata-rata eceran yang ada di pasar.
+                                                Untuk melayani kebutuhan pelanggannya, Toko Cakrawala juga menyediakan Attendant terlatih yang siap memberikan pelayanan dan pengarahan teknis atas produk-produk yang tersedia.
+                                                Toko Cakrawala berusaha memenuhi segala kebutuhan masyarakat dari berbagai lapisan dan profesi mulai dari Tukang Bangunan, Kontraktor, Arsitek, Desainer, Real Estate, Developer, dan pemilik rumah.
+
+                                            </div>
                                             <div class="ec-spe-pro-btn">
-                                                <a href="#" class="btn btn-lg btn-primary">Baca Selengkapnya</a>
+                                                <a href="#" class="btn btn-lg btn-primary">Lihat Semua Produk</a>
                                             </div>
                                         </div>
                                     </div>
@@ -508,7 +397,7 @@
                 <!-- ec Testimonial end -->
                 <!-- ec Banner Start -->
                 <div class="col-md-6 col-sm-12" data-animation="fadeIn"  id="pemesanan">
-
+                    
                     <div class="ec-spe-pro-image-outer">
                         <div class="ec-spe-pro-image">
                             <img class="img-responsive"
@@ -599,42 +488,27 @@
         <div class="container">
             <div class="row">
                 <div class="ec-blog-slider owl-carousel" data-animation="fadeIn">
-                    <div class="ec-blog-block">
-                        <div class="ec-blog-inner">
-                            <div class="ec-blog-image">
-                                <a href="blog-detail-left-sidebar.html">
-                                    <img class="blog-image"
-                                        src="{{ asset('tlandingPage/assets/images/blog-image/2.jpg') }}"
-                                        alt="Blog" />
-                                </a>
-                            </div>
-                            <div class="ec-blog-content">
-                                <div class="ec-blog-cat"><a href="blog-left-sidebar.html">Clothes</a></div>
-                                <h5 class="ec-blog-title"><a href="blog-detail-left-sidebar.html">Curbside fashion
-                                        Trends: How to Win the Pickup Battle.</a></h5>
 
-                                <div class="ec-blog-date">By<span>Mr Robin</span> / Jan 18, 2022</div>
-                            </div>
-                        </div>
-                    </div>
+                    @foreach ($artikel as $item)
                     <div class="ec-blog-block">
-                        <div class="ec-blog-inner">
-                            <div class="ec-blog-image">
-                                <a href="blog-detail-left-sidebar.html">
-                                    <img class="blog-image"
-                                        src="{{ asset('tlandingPage/assets/images/blog-image/3.jpg') }}"
-                                        alt="Blog" />
-                                </a>
-                            </div>
-                            <div class="ec-blog-content">
-                                <div class="ec-blog-cat"><a href="blog-left-sidebar.html">Fashion</a></div>
-                                <h5 class="ec-blog-title"><a href="blog-detail-left-sidebar.html">Clothes Retail KPIs
-                                        2021 Guide for Clothes Executives.</a></h5>
+                            <div class="ec-blog-inner">
+                                <div class="ec-blog-image">
+                                    <a href="blog-detail-left-sidebar.html">
+                                        <img class="blog-image"
+                                            src="{{ asset($item->gambar) }}"
+                                            alt="Blog" />
+                                    </a>
+                                </div>
+                                <div class="ec-blog-content">
+                                    <div class="ec-blog-cat"><a href="{{ url("artikel-detail/$item->slug") }}">Artikel</a></div>
+                                    <h5 class="ec-blog-title"><a href="{{ url("artikel-detail/$item->slug") }}">{{ $item->judul }}</a></h5>
 
-                                <div class="ec-blog-date">By<span>Mr Admin</span> / Apr 06, 2022</div>
+                                    <div class="ec-blog-date">Oleh<span>Admin</span> / {{ date('d-m-Y', strtotime($item->created_at)) }}</div>
+                                </div>
                             </div>
-                        </div>
                     </div>
+                    @endforeach
+
                 </div>
             </div>
         </div>

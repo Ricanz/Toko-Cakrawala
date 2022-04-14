@@ -2,12 +2,12 @@
     <div class="breadcrumb-wrapper d-flex align-items-center justify-content-between">
         <div>
             <h1>Testimonial</h1>
-            <p class="breadcrumbs"><span><a href="index.html">Home</a></span>
+            <p class="breadcrumbs"><span><a href="/dashboard">Dashboard</a></span>
                 <span><i class="mdi mdi-chevron-right"></i></span>Testimonial
             </p>
         </div>
         <div>
-            <a href="{{ route('testimonial.create') }}" class="btn btn-primary"> Add Testimonial</a>
+            <a href="{{ route('testimonial.create') }}" class="btn btn-primary"> Tambah Testimonial</a>
         </div>
     </div>
     <div class="row">
@@ -51,10 +51,10 @@
                                                 <div class="dropdown-menu">
                                                     <a class="dropdown-item" href="{{route('testimonial.edit',$item->id)}}">Edit</a>
                                                     <a class="dropdown-item">
-                                                        <form action="{{route('testimonial.destroy', $item->id)}}" method="POST" style="display: inline">
+                                                        <form action="{{route('testimonial.destroy', $item->id)}}" method="POST">
                                                             @csrf
                                                             @method("DELETE")
-                                                            <button type="submit" class="btn btn-link text-danger text-gradient px-3 mb-0 show_confirm" data-toggle="tooltip" title='Delete'><i class="fas fa-trash text-secondary"></i></button>
+                                                            <button type="submit" class="btn show_confirm">Hapus</button>
                                                         </form>
                                                     </a>
                                                 </div>
@@ -91,6 +91,6 @@
               }
             });
         });
-    
+
     </script>
 </x-app-layout>

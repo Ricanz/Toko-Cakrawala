@@ -1,10 +1,3 @@
-<!--=========================================================
-    Item Name: Ekka - Ecommerce HTML Template.
-    Author: ashishmaraviya
-    Version: 3.1
-    Copyright 2021-2022
- Author URI: https://themeforest.net/user/ashishmaraviya
- ============================================================-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,30 +11,6 @@
         content="apparel, catalog, clean, ecommerce, ecommerce HTML, electronics, fashion, html eCommerce, html store, minimal, multipurpose, multipurpose ecommerce, online store, responsive ecommerce template, shops" />
     <meta name="description" content="Best ecommerce html template for single and multi vendor store.">
     <meta name="author" content="nikibweb">
-
-    <!-- site Favicon -->
-    <link rel="icon" href="{{ asset('tlandingPage/assets/images/favicon/favicon.png') }}" sizes="32x32" />
-    <link rel="apple-touch-icon" href="{{ asset('tlandingPage/assets/images/favicon/favicon.png') }}" />
-    <meta name="msapplication-TileImage" content="{{ asset('tlandingPage/assets/images/favicon/favicon.png') }}" />
-
-    <!-- css Icon Font -->
-    <link rel="stylesheet" href="{{ asset('tlandingPage/assets/css/vendor/ecicons.min.css') }}" />
-
-    <!-- css All Plugins Files -->
-    <link rel="stylesheet" href="{{ asset('tlandingPage/assets/css/plugins/animate.css') }}" />
-    <link rel="stylesheet" href="{{ asset('tlandingPage/assets/css/plugins/swiper-bundle.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('tlandingPage/assets/css/plugins/jquery-ui.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('tlandingPage/assets/css/plugins/countdownTimer.css') }}" />
-    <link rel="stylesheet" href="{{ asset('tlandingPage/assets/css/plugins/slick.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('tlandingPage/assets/css/plugins/nouislider.css') }}" />
-    <link rel="stylesheet" href="{{ asset('tlandingPage/assets/css/plugins/bootstrap.css') }}" />
-
-    <!-- Main Style -->
-    <link rel="stylesheet" href="{{ asset('tlandingPage/assets/css/style.css') }}" />
-    <link rel="stylesheet" href="{{ asset('tlandingPage/assets/css/responsive.css') }}" />
-
-    <!-- Background css -->
-    <link rel="stylesheet" id="bg-switcher-css" href="{{ asset('tlandingPage/assets/css/backgrounds/bg-4.css') }}">
 
 </head>
 
@@ -59,7 +28,7 @@
                         <div class="ec-vendor-card-body padding-b-0">
                             <div class="page-content">
                                 <div class="page-header text-blue-d2">
-                                    <img src="{{ asset('tlandingPage/assets/images/logo/cakrawala.png') }}"
+                                    <img src="{{ public_path('tlandingPage/assets/images/logo/cakrawala.png') }}"
                                         alt="Site Logo">
                                 </div>
 
@@ -70,19 +39,24 @@
 
                                             <div class="row">
                                                 <div class="col-sm-6">
-                                                    <div class="my-2">
+                                                    {{-- <div class="my-2">
                                                         <span class="text-sm text-grey-m2 align-middle">Nama Pemesan :
                                                         </span>
                                                         <span
-                                                            class="text-600 text-110 text-blue align-middle">Yusuf</span>
-                                                    </div>
+                                                            class="text-600 text-110 text-blue align-middle">{{$data['nama']}}</span>
+                                                    </div> --}}
                                                     <div class="text-grey-m2">
+                                                        <div class="my-2"><b class="text-600">Nama :
+                                                        </b>{{$data['nama']}}
+                                                    </div>
+                                                    <div class="my-2"><b class="text-600">E-mail :
+                                                            </b>{{$data['email']}}
+                                                        </div>
                                                         <div class="my-2"><b class="text-600">Alamat :
-                                                            </b>Jl. H Zainudin Gandaria UtaraJl. H Zainudin Gandaria
-                                                            Utara
+                                                            </b>{{$data['alamat']}}
                                                         </div>
                                                         <div class="my-2"><b class="text-600">Nomor HP :
-                                                            </b>082167257017
+                                                            </b>{{$data['no_hp']}}
                                                         </div>
                                                     </div>
                                                 </div>
@@ -93,16 +67,12 @@
                                                     <hr class="d-sm-none" />
                                                     <div class="text-grey-m2">
 
-                                                        <div class="my-2"><span class="text-600 text-90">ID :
-                                                            </span>
-                                                            #111-222</div>
+                                                        <div class="my-2"><span class="text-600 text-90">Nomor
+                                                            Invoice :
+                                                        </span>{{$invoice}}</div>
                                                         <div class="my-2"><span
                                                                 class="text-600 text-90">Tanggal Pemesanan :
-                                                            </span> 3 Mar 2022</div>
-
-                                                        <div class="my-2"><span class="text-600 text-90">Nomor
-                                                                Invoice :
-                                                            </span>6548</div>
+                                                            </span> {{$tanggal}}</div>
                                                     </div>
                                                 </div>
                                                 <!-- /.col -->
@@ -115,26 +85,26 @@
                                                         <table class="table ec-table">
                                                             <thead>
                                                                 <tr>
-                                                                    <th scope="col">ID</th>
-                                                                    <th scope="col">Nama Produk</th>
-                                                                    <th class="text-center" scope="col">Jumlah</th>
-                                                                    <th class="text-center" scope="col">Harga</th>
-                                                                    <th class="text-center" scope="col">Total</th>
+                                                                    <td scope="col">ID</td>
+                                                                    <td scope="col">Nama Produk</td>
+                                                                    <td class="text-center" scope="col">Jumlah</td>
+                                                                    <td class="text-center" scope="col">Harga</td>
+                                                                    <td class="text-center" scope="col">Total</td>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
-                                                                @foreach ($cart_data as $item)
+                                                                @foreach ((array)$cart_data as $item)
                                                                     <tr>
-                                                                        <th><span>{{$item['item_id']}}</span></th>
+                                                                        <td><span>{{$item['item_id']}}</span></td>
                                                                         <td><span>{{$item['nama_produk']}}</span></td>
                                                                         <td class="text-center"><span>{{$item['jumlah_produk']}}</span></td>
                                                                         <td class="text-center"><span>{{$item['harga_produk']}}</span></td>
                                                                         <td class="text-center"><span>{{$item['harga_produk']*$item['jumlah_produk']}}</span>
                                                                         </td>
                                                                     </tr>
-                                                                @endforeach
+                                                                    @endforeach
                                                             </tbody>
-                                                            <tfoot>
+                                                            {{-- <thead>
                                                                 <tr>
                                                                     <td class="border-none m-m15" colspan="3"><span
                                                                             class="note-text-color">Pemesanan dan
@@ -147,10 +117,11 @@
                                                                     </td>
                                                                     <td
                                                                         class="border-color m-m15 text-center text-600 text-90">
-                                                                        <h5>400000</h5>
+                                                                        <h5>{{$item['harga_produk']*$item['jumlah_produk']}}</h5>
                                                                     </td>
+                                                                    @endforeach
                                                                 </tr>
-                                                            </tfoot>
+                                                            </thead> --}}
                                                         </table>
                                                     </div>
                                                 </div>
@@ -166,31 +137,6 @@
         </div>
     </section>
 
-    {{-- <script>
-        window.print()
-    </script> --}}
-    <!-- End User invoice section -->
-
-    <!-- Vendor JS -->
-    <script src="{{ asset('tlandingPage/assets/js/vendor/jquery-3.5.1.min.js') }}"></script>
-    <script src="{{ asset('tlandingPage/assets/js/vendor/popper.min.js') }}"></script>
-    <script src="{{ asset('tlandingPage/assets/js/vendor/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('tlandingPage/assets/js/vendor/bootstrap-tagsinput.js') }}"></script>
-    <script src="{{ asset('tlandingPage/assets/js/vendor/jquery-migrate-3.3.0.min.js') }}"></script>
-    <script src="{{ asset('tlandingPage/assets/js/vendor/modernizr-3.11.2.min.js') }}"></script>
-    <script src="{{ asset('tlandingPage/assets/js/vendor/jquery.magnific-popup.min.js') }}"></script>
-
-    <!--Plugins JS-->
-    <script src="{{ asset('tlandingPage/assets/js/plugins/swiper-bundle.min.js') }}"></script>
-    <script src="{{ asset('tlandingPage/assets/js/plugins/nouislider.js') }}"></script>
-    <script src="{{ asset('tlandingPage/assets/js/plugins/countdownTimer.min.js') }}"></script>
-    <script src="{{ asset('tlandingPage/assets/js/plugins/scrollup.js') }}"></script>
-    <script src="{{ asset('tlandingPage/assets/js/plugins/jquery.zoom.min.js') }}"></script>
-    <script src="{{ asset('tlandingPage/assets/js/plugins/slick.min.js') }}"></script>
-    <script src="{{ asset('tlandingPage/assets/js/plugins/infiniteslidev2.js') }}"></script>
-    <script src="{{ asset('tlandingPage/assets/js/plugins/jquery.sticky-sidebar.js') }}"></script>
-    <!-- Main Js -->
-    <script src="{{ asset('tlandingPage/assets/js/main.js') }}"></script>
 
 </body>
 

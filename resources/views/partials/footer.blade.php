@@ -8,25 +8,20 @@
                             <h4 class="ec-footer-heading">Kategori Produk</h4>
                             <div class="ec-footer-links">
                                 <ul class="align-items-center">
-                                    <li class="ec-footer-link"><a href="#">Fashion</a></li>
-                                    <li class="ec-footer-link"><a href="#">Electronic</a></li>
-                                    <li class="ec-footer-link"><a href="#">Cosmetic</a></li>
-                                    <li class="ec-footer-link"><a href="#">Health</a></li>
-                                    <li class="ec-footer-link"><a href="#">Watches</a></li>
+                                    @foreach ($Kategori as $item)
+                                    <li class="ec-footer-link"><a href="#">{{ $item->nama }}</a></li>
+                                    @endforeach
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-12 col-lg-3 ec-footer-info">
                         <div class="ec-footer-widget">
-                            <h4 class="ec-footer-heading">Products</h4>
+                            <h4 class="ec-footer-heading">Menu</h4>
                             <div class="ec-footer-links">
                                 <ul class="align-items-center">
-                                    <li class="ec-footer-link"><a href="#">Prices drop</a></li>
-                                    <li class="ec-footer-link"><a href="#">New products</a></li>
-                                    <li class="ec-footer-link"><a href="#">Best sales</a></li>
-                                    <li class="ec-footer-link"><a href="contact-us.html">Contact us</a></li>
-                                    <li class="ec-footer-link"><a href="#">Sitemap</a></li>
+                                    <li class="ec-footer-link"><a href="/tentang">Tentang Kami</a></li>
+                                    <li class="ec-footer-link"><a href="/contact">Kontak Kami</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -36,11 +31,11 @@
                             <h4 class="ec-footer-heading">Layanan Kami</h4>
                             <div class="ec-footer-links">
                                 <ul class="align-items-center">
-                                    <li class="ec-footer-link"><a href="#">Prices drop</a></li>
-                                    <li class="ec-footer-link"><a href="#">New products</a></li>
-                                    <li class="ec-footer-link"><a href="#">Best sales</a></li>
-                                    <li class="ec-footer-link"><a href="contact-us.html">Contact us</a></li>
-                                    <li class="ec-footer-link"><a href="#">Sitemap</a></li>
+                                    <li class="ec-footer-link"><a href="#">Kualitas Barang Terbaik</a></li>
+                                    <li class="ec-footer-link"><a href="#">Harga Terjamin</a></li>
+                                    <li class="ec-footer-link"><a href="#">Good</a></li>
+                                    <li class="ec-footer-link"><a href="">Better</a></li>
+                                    <li class="ec-footer-link"><a href="#">Best</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -49,12 +44,12 @@
                         <div class="ec-footer-contact">
                             <div class="ec-footer-widget">
                                 <div class="ec-footer-logo"><a href="#"><img src="{{asset('tlandingPage/assets/images/logo/cakrawala-dark.png')}}"
-                                            alt=""><img class="dark-footer-logo" src="{{asset('tlandingPage/assets/images/logo/cakrawala-dark.png')}}"
+                                            alt="Logo Cakrawala" width="75%"><img class="dark-footer-logo" src="{{asset('tlandingPage/assets/images/logo/cakrawala-dark.png')}}"
                                             alt="Site Logo" style="display: none;" /></a></div>
-                                <h4 class="ec-footer-heading">Contact us</h4>
+                                <h4 class="ec-footer-heading">Kontak Kami</h4>
                                 <div class="ec-footer-links">
                                     <ul class="align-items-center">
-                                        <li class="ec-footer-link">Jl. K.H. Sholeh Iskandar No. 10, Kedung Badak, Tanah Sareal, Bogor 1614 (Bekas Kantor BPJS Kesehatan/Bekas Dealer FORD</li>
+                                        <li class="ec-footer-link">Jl. K.H. Sholeh Iskandar No. 10, Kedung Badak, Tanah Sareal, Bogor 1614 (Bekas Kantor BPJS Kesehatan/Bekas Dealer FORD)</li>
                                         <li class="ec-footer-link"><span>Telepon:</span><a href="tel:02518665795">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp0251-8665795</a></li>
                                         <li class="ec-footer-link"><span>WhatsApp:</span><a href="http://wa.me/+62816225999">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp0816-225999</a></li>
                                         <li class="ec-footer-link"><span>Email:</span>&nbsp&nbsp&nbsp&nbspcakrawala.info@gmail.com</li>
@@ -100,7 +95,7 @@
                     <!-- Footer Copyright Start -->
                     <div class="footer-copy">
                         <div class="footer-bottom-copy ">
-                            <div class="ec-copy">Copyright © <a class="site-name" href="index.html">Toko Cakrawala</a> all
+                            <div class="ec-copy">Copyright © <a class="site-name" href="/">Toko Cakrawala</a> all
                                 rights reserved.</div>
                         </div>
                     </div>

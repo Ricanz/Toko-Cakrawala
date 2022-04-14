@@ -1,13 +1,13 @@
 <x-app-layout>
     <div class="breadcrumb-wrapper d-flex align-items-center justify-content-between">
         <div>
-            <h1>Add Product</h1>
-            <p class="breadcrumbs"><span><a href="index.html">Home</a></span>
-                <span><i class="mdi mdi-chevron-right"></i></span>Product
+            <h1>Tambah Produk</h1>
+            <p class="breadcrumbs"><span><a href="/dashboard">Dashboard</a></span>
+                <span><i class="mdi mdi-chevron-right"></i></span>Tambah Produk
             </p>
         </div>
         <div>
-            <a href="{{ route('produk.index') }}" class="btn btn-primary"> View All
+            <a href="{{ route('produk.index') }}" class="btn btn-primary"> Lihat Semua
             </a>
         </div>
     </div>
@@ -15,7 +15,7 @@
         <div class="col-12">
             <div class="card card-default">
                 <div class="card-header card-header-border-bottom">
-                    <h2>Add Product</h2>
+                    <h2>Tambah Produk</h2>
                 </div>
 
                 <div class="card-body">
@@ -114,13 +114,13 @@
                                 <div class="ec-vendor-upload-detail row g-3">
 
                                     <div class="col-md-6">
-                                        <label for="inputEmail4" class="form-label">Product name</label>
-                                        <input type="text" name="nama" class="form-control slug-title" id="inputEmail4">
+                                        <label for="inputEmail4" class="form-label">Produk</label>
+                                        <input type="text" name="nama" class="form-control slug-title" id="inputEmail4" >
                                     </div>
                                     <div class="col-md-6">
-                                        <label class="form-label">Select Categories</label>
+                                        <label class="form-label">Kategori</label>
                                         <select name="kategori_id" id="Categories" class="form-select">
-                                            @foreach ($subkategori as $item)
+                                            @foreach ($kategori as $item)
                                                 <option value="{{ $item->id }}">{{ $item->nama }}</option>
                                             @endforeach
                                         </select>
@@ -128,70 +128,24 @@
                                     <div class="col-md-12">
                                         <label for="slug" class="col-12 col-form-label">Slug</label>
                                         <div class="col-12">
-                                            <input id="slug" name="slug" class="form-control here set-slug" type="text">
+                                            <input id="slug" name="slug" class="form-control here set-slug" type="text" readonly>
                                         </div>
                                     </div>
-                                    {{-- <div class="col-md-12">
-                                        <label class="form-label">Sort Description</label>
-                                        <textarea class="form-control" rows="2"></textarea>
-                                    </div>
-                                    <div class="col-md-4 mb-25">
-                                        <label class="form-label">Colors</label>
-                                        <input type="color" class="form-control form-control-color"
-                                            id="exampleColorInput1" value="#ff6191" title="Choose your color">
-                                        <input type="color" class="form-control form-control-color"
-                                            id="exampleColorInput2" value="#33317d" title="Choose your color">
-                                        <input type="color" class="form-control form-control-color"
-                                            id="exampleColorInput3" value="#56d4b7" title="Choose your color">
-                                        <input type="color" class="form-control form-control-color"
-                                            id="exampleColorInput4" value="#009688" title="Choose your color">
-                                    </div>
-                                    <div class="col-md-8 mb-25">
-                                        <label class="form-label">Size</label>
-                                        <div class="form-checkbox-box">
-                                            <div class="form-check form-check-inline">
-                                                <input type="checkbox" name="size1" value="size">
-                                                <label>S</label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <input type="checkbox" name="size1" value="size">
-                                                <label>M</label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <input type="checkbox" name="size1" value="size">
-                                                <label>L</label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <input type="checkbox" name="size1" value="size">
-                                                <label>XL</label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <input type="checkbox" name="size1" value="size">
-                                                <label>XXL</label>
-                                            </div>
-                                        </div>
-                                    </div> --}}
                                     <div class="col-md-6">
-                                        <label class="form-label">Price <span>( In IDR
+                                        <label class="form-label">Harga <span>( In IDR
                                                 )</span></label>
                                         <input type="number" name="harga" class="form-control" id="price1">
                                     </div>
                                     <div class="col-md-6">
-                                        <label class="form-label">Quantity</label>
+                                        <label class="form-label">Stok</label>
                                         <input type="number" class="form-control" name="stok" id="quantity1">
                                     </div>
                                     <div class="col-md-12">
-                                        <label class="form-label">Full Detail</label>
+                                        <label class="form-label">Deskripsi</label>
                                         <textarea class="form-control" name="detail" rows="4"></textarea>
                                     </div>
-                                    {{-- <div class="col-md-12">
-                                        <label class="form-label">Product Tags <span>( Type and
-                                                make comma to separate tags )</span></label>
-                                        <input type="text" class="form-control" id="group_tag" name="group_tag"
-                                            value="" placeholder="" data-role="tagsinput" />
-                                    </div> --}}
-                                    <div class="col-md-12">
-                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    <div class="col-md-12 mt-4">
+                                        <button type="submit" class="btn btn-primary">Simpan</button>
                                     </div>
                         </form>
                     </div>

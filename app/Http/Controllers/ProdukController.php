@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Kategori;
 use App\Models\Produk;
-use App\Models\subKategori;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
 
@@ -19,8 +18,8 @@ class ProdukController extends Controller
 
     public function create()
     {
-        $subkategori = subKategori::all();
-        return view('admin.produk.tambah', compact('subkategori'));
+        $kategori = Kategori::all();
+        return view('admin.produk.tambah', compact('kategori'));
     }
 
     public function store(Request $request)
@@ -30,7 +29,7 @@ class ProdukController extends Controller
             'harga' => 'required',
             'detail' => 'required',
             'stok' => 'required',
-            'subkategori_id' => 'required',
+            'kategori_id' => 'required',
             'gambar1' => 'required', 
         ]);
 
@@ -44,8 +43,10 @@ class ProdukController extends Controller
             'detail' => $request->detail,
             'gambar' => $file_name,
             'harga' => $request->harga,
+            'slug' => str_replace(' ', '-', strtolower($request->nama)),
             'stok' => $request->stok,
-            'subkategori_id' => $request->subkategori_id,
+            
+            'kategori_id' => $request->kategori_id,
         ]);
         return redirect()->route('produk.index')
             ->with('success', 'Produk Berhasil Ditambahkan');
@@ -61,8 +62,8 @@ class ProdukController extends Controller
     public function edit($id)
     {
         $produk = Produk::find($id);
-        $subkategori = subKategori::all();
-        return view('admin.produk.edit',compact('produk','subkategori'));
+        $kategori = Kategori::all();
+        return view('admin.produk.edit',compact('produk','kategori'));
     }
 
     public function update(Request $request, $id)
@@ -72,7 +73,7 @@ class ProdukController extends Controller
             'detail' => 'required',
             'gambar1' => 'file|mimes:jpg,png,jpeg,gif,svg,jfif|max:2048',
             'harga' => 'required',
-            'subkategori_id' => 'required',
+            'kategori_id' => 'required',
             'stok' => 'required',
         ]);
 
@@ -93,8 +94,9 @@ class ProdukController extends Controller
         $Produk->nama = $request->nama;
         $Produk->detail = $request->detail;
         $Produk->harga = $request->harga;
-        $Produk->subkategori_id = $request->subkategori_id;
+        $Produk->kategori_id = $request->kategori_id;
         $Produk->stok = $request->stok;
+        $Produk->slug = str_replace(' ', '-', strtolower($request->nama));
         $Produk->save();
 
         return redirect()->route('produk.index')
@@ -113,8 +115,9 @@ class ProdukController extends Controller
     public function grid()
     {
         $produk = Produk::all();
-        $subkategori = subKategori::all();
-        return view('admin.produk.grid', compact('produk','subkategori'))
+        $kategori = Kategori::all();
+        return view('admin.produk.grid', compact('produk','kategori'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
+
 }

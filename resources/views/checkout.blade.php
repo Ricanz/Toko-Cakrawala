@@ -37,22 +37,26 @@
                                     <h3 class="ec-checkout-title">Detail Pembelian</h3>
                                     <div class="ec-bl-block-content">
                                         <div class="ec-check-bill-form">
-                                            <form action="#" method="post">
+                                            <form action="{{url('print-invoice')}}" method="POST">
+                                                @csrf
                                                 <span class="ec-bill-wrap ec-bill-half">
                                                     <label>Nama Lengkap*</label>
-                                                    <input type="text" name="firstname"
-                                                        placeholder="Enter your first name" required />
+                                                    <input type="text" name="nama"
+                                                        placeholder="Masukkan nama Anda" required />
                                                 </span>
                                                 <span class="ec-bill-wrap ec-bill-half">
-                                                    <label>email*</label>
-                                                    <input type="email" name="lastname"
-                                                        placeholder="Enter your last name" required />
+                                                    <label>Email*</label>
+                                                    <input type="email" name="email"
+                                                        placeholder="Masukkan email Anda" required />
+                                                </span>
+                                                <span class="ec-bill-wrap">
+                                                    <label>Alamat</label>
+                                                    <input type="text" name="alamat" placeholder="Masukan alamat Anda" />
                                                 </span>
                                                 <span class="ec-bill-wrap">
                                                     <label>Nomor Handphone (Whatsapp)</label>
-                                                    <input type="text" name="address" placeholder="Address Line 1" />
+                                                    <input type="number" name="no_hp" placeholder="Masukkan nomor Handphone/Whatsapp Anda" />
                                                 </span>
-                                            </form>
                                         </div>
 
                                     </div>
@@ -60,9 +64,11 @@
 
                             </div>
                             <span class="ec-check-order-btn">
-                                <a class="btn btn-primary" href="#">Buat Pesanan</a>
+                                <button class="btn btn-primary" type="submit">Buat Pesanan</button>
                             </span>
                         </div>
+
+                    </form>
                     </div>
                     <!--cart content End -->
                 </div>
@@ -86,32 +92,31 @@
                                     </div>
                                 </div>
                                 <div class="ec-checkout-pro">
+                                    @foreach (Helper::getCart() as $item)
                                     <div class="col-sm-12 mb-6">
                                         <div class="ec-product-inner">
                                             <div class="ec-pro-image-outer">
                                                 <div class="ec-pro-image">
                                                     <a href="product-left-sidebar.html" class="image">
                                                         <img class="main-image"
-                                                            src="{{asset('tlandingPage/assets/images/product-image/1_1.jpg')}}"
+                                                            src="{{asset($item['foto_produk'])}}"
                                                             alt="Product" />
                                                     </a>
                                                 </div>
                                             </div>
-                                            @foreach ($cart_data as $item)
                                             <div class="ec-pro-content">
-                                                <h5 class="ec-pro-title"><a href="product-left-sidebar.html">{{ $item->nama_produk }}</a></h5>
+                                                <h5 class="ec-pro-title"><a href="product-left-sidebar.html">{{ $item['nama_produk'] }}</a></h5>
                                                 <div class="ec-pro-rating">
-                                                    <span>Kuantitas: {{ $item->jumlah_produk }}</span> <br>
-                                                    <span>Harga: Rp. {{ $item->harga_produk }}</span>
+                                                    <span>Kuantitas: {{ $item['jumlah_produk'] }}</span> <br>
+                                                    <span>Harga: {{ $item['harga_produk'] }}</span>
                                                 </div>
                                                 <span class="ec-price">
-                                                    <span class="new-price">Total: Rp. 200000</span>
+                                                    <span class="new-price">Total: Rp. {{$item['harga_produk']*$item['jumlah_produk']}}</span>
                                                 </span>
                                             </div>
-                                            @endforeach
-                                            
                                         </div>
                                     </div>
+                                    @endforeach
                                 </div>
                             </div>
                         </div>
@@ -126,25 +131,13 @@
                             <div class="ec-sb-block-content">
                                 <div class="ec-check-pay-img-inner">
                                     <div class="ec-check-pay-img">
-                                        <img src="{{asset('tlandingPage/assets/images/icons/payment1.png')}}" alt="">
+                                        <img src="{{asset('tlandingPage/assets/images/payment/bca.png')}}" alt="Bank BCA" width="50%">
                                     </div>
                                     <div class="ec-check-pay-img">
-                                        <img src="{{asset('tlandingPage/assets/images/icons/payment2.png')}}" alt="">
+                                        <img src="{{asset('tlandingPage/assets/images/payment/bni.png')}}" alt="Bank BNI" width="50%">
                                     </div>
                                     <div class="ec-check-pay-img">
-                                        <img src="{{asset('tlandingPage/assets/images/icons/payment3.png')}}" alt="">
-                                    </div>
-                                    <div class="ec-check-pay-img">
-                                        <img src="{{asset('tlandingPage/assets/images/icons/payment4.png')}}" alt="">
-                                    </div>
-                                    <div class="ec-check-pay-img">
-                                        <img src="{{asset('tlandingPage/assets/images/icons/payment5.png')}}" alt="">
-                                    </div>
-                                    <div class="ec-check-pay-img">
-                                        <img src="{{asset('tlandingPage/assets/images/icons/payment6.png')}}" alt="">
-                                    </div>
-                                    <div class="ec-check-pay-img">
-                                        <img src="{{asset('tlandingPage/assets/images/icons/payment7.png')}}" alt="">
+                                        <img src="{{asset('tlandingPage/assets/images/payment/mandiri.png')}}" alt="Bank Mandiri" width="50%">
                                     </div>
                                 </div>
                             </div>

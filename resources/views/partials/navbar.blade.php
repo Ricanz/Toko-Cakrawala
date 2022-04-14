@@ -118,7 +118,7 @@
                                     <li><a class="dropdown-item" href="login.html">Login</a></li>
                                 </ul>
                             </div> --}}
-                            <!-- Header User End -->
+                            {{-- <!-- Header User End -->
 
                             <!-- Header wishlist Start -->
                             <a href="wishlist.html" class="ec-header-btn ec-header-wishlist">
@@ -126,7 +126,7 @@
                                         class="svg_img header_svg" alt="" /></div>
                                 <span class="ec-header-count">4</span>
                             </a>
-                            <!-- Header wishlist End -->
+                            <!-- Header wishlist End --> --}}
 
                             <!-- Header Cart Start -->
                             <a href="#ec-side-cart" class="ec-header-btn ec-side-toggle">
@@ -152,7 +152,7 @@
                 <!-- Ec Header Logo Start -->
                 <div class="col">
                     <div class="header-logo">
-                        <a href="index.html"><img src="{{asset('tlandingPage/assets/images/logo/cakrawala.png')}}" alt="Toko Cakrawala" height="500" /><img
+                        <a href="/"><img src="{{asset('tlandingPage/assets/images/logo/cakrawala.png')}}" alt="Toko Cakrawala" height="500" /><img
                                 class="dark-logo" src="{{asset('tlandingPage/assets/images/logo/cakrawala-dark.png')}}" alt="Toko Cakrawala"
                                 style="display: none;" /></a>
                     </div>
@@ -183,11 +183,12 @@
                     <div class="ec-main-menu">
                         <ul>
                             <li><a href="{{ url('/') }}">Beranda</a></li>
-                            <li><a href="{{ url('/katalog') }}">Katalog</a></li>
+                            <li><a href="{{ route('katalog') }}">Katalog</a></li>
                             <li class="dropdown"><a href="javascript:void(0)">Kategori</a>
                                 <ul class="sub-menu">
-                                    <li><a href="elemets-products.html">Alumunium</a></li>
-                                    <li><a href="elemets-typography.html">Atap</a></li>
+                                    @foreach ($Kategori as $item)
+                                        <li><a href="{{ url("kategori/$item->slug") }}">{{ $item->nama }}</a></li>  
+                                    @endforeach
                                 </ul>
                             </li>
                             <li><a href="#pemesanan">Cara Pemesanan</a></li>
@@ -210,8 +211,8 @@
         <div class="ec-menu-inner">
             <div class="ec-menu-content">
                 <ul>
-                    <li><a href="index.html">Beranda</a></li>
-                    <li><a href="index.html">Katalog</a></li>
+                    <li><a href="/">Beranda</a></li>
+                    <li><a href="/">Katalog</a></li>
                     <li class="dropdown"><a href="javascript:void(0)">Kategori</a>
                         <ul class="sub-menu">
                             <li><a href="elemets-products.html">Alumunium</a></li>

@@ -32,7 +32,7 @@
                 <div class="card">
                     <div class="card-header bg-primary">
                         <div class="ec-brand">
-                            <a href="index.html" title="Ekka">
+                            <a href="/" title="Ekka">
                                 <img class="ec-brand-icon" src="{{asset('tadmin/assets/img/logo/logo-login.png')}}" alt="" />
                             </a>
                         </div>

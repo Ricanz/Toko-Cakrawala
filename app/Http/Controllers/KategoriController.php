@@ -11,8 +11,6 @@ class KategoriController extends Controller
     public function index()
     {
         $kategori = Kategori::with(['subkategori'])->get();
-        // dd($kategori);
-        // dd($kategori->subkategori());
         return view('admin.kategori.main.index', compact('kategori'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
@@ -39,6 +37,7 @@ class KategoriController extends Controller
         Kategori::create([
             'nama' => $request->nama,
             'detail' => $request->detail,
+            'slug' => str_replace(' ', '-', strtolower($request->nama)),
             // 'gambar' => $file_name,
         ]);
         return redirect()->route('kategori.index')
@@ -82,6 +81,7 @@ class KategoriController extends Controller
 
         $Kategori->nama = $request->nama;
         $Kategori->detail = $request->detail;
+        $Kategori->slug = str_replace(' ', '-', strtolower($request->nama));
         // $Kategori->gambar = $request->gambar;
         $Kategori->save();
 
