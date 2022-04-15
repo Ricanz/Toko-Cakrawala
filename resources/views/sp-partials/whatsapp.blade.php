@@ -9,69 +9,20 @@
         <!-- Panel Content -->
         <div class="ec-body">
             <ul>
-                <!-- Start Single Contact List -->
-                <li>
-                    <a class="ec-list" data-number="918866774266"
-                        data-message="Please help me! I have got wrong product - ORDER ID is : #654321485">
-                        <div class="d-flex bd-highlight">
-                            <!-- Profile Picture -->
-                            <div class="ec-img-cont">
-                                <img src="{{asset('tlandingPage/assets/images/whatsapp/profile_01.jpg')}}" class="ec-user-img"
-                                    alt="Profile image">
-                                <span class="ec-status-icon"></span>
-                            </div>
-                            <!-- Display Name & Last Seen -->
-                            <div class="ec-user-info">
-                                <span>Sahar Darya</span>
-                                <p>Sahar left 7 mins ago</p>
-                            </div>
-                            <!-- Chat iCon -->
-                            <div class="ec-chat-icon">
-                                <i class="fa fa-whatsapp"></i>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <!--/ End Single Contact List -->
-                <!-- Start Single Contact List -->
-                <li>
-                    <a class="ec-list" data-number="918866774266"
-                        data-message="Please help me! I have got wrong product - ORDER ID is : #654321485">
-                        <div class="d-flex bd-highlight">
-                            <!-- Profile Picture -->
-                            <div class="ec-img-cont">
-                                <img src="{{asset('tlandingPage/assets/images/whatsapp/profile_02.jpg')}}" class="ec-user-img"
-                                    alt="Profile image">
-                                <span class="ec-status-icon ec-online"></span>
-                            </div>
-                            <!-- Display Name & Last Seen -->
-                            <div class="ec-user-info">
-                                <span>Yolduz Rafi</span>
-                                <p>Yolduz is online</p>
-                            </div>
-                            <!-- Chat iCon -->
-                            <div class="ec-chat-icon">
-                                <i class="fa fa-whatsapp"></i>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <!--/ End Single Contact List -->
-                <!-- Start Single Contact List -->
-                <li>
-                    <a class="ec-list" data-number="918866774266"
-                        data-message="Please help me! I have got wrong product - ORDER ID is : #654321485">
+                <!-- Start Single Contact List --><li>
+                    <a class="ec-list" data-number="+6285735691018"
+                        data-message="Hallo saya butuh bantuan!!">
                         <div class="d-flex bd-highlight">
                             <!-- Profile Picture -->
                             <div class="ec-img-cont">
                                 <img src="{{asset('tlandingPage/assets/images/whatsapp/profile_03.jpg')}}" class="ec-user-img"
                                     alt="Profile image">
-                                <span class="ec-status-icon ec-offline"></span>
+                                <span class="ec-status-icon ec-online"></span>
                             </div>
                             <!-- Display Name & Last Seen -->
                             <div class="ec-user-info">
-                                <span>Nargis Hawa</span>
-                                <p>Nargis left 30 mins ago</p>
+                                <span>Toko Cakrawala</span>
+                                <p>online now</p>
                             </div>
                             <!-- Chat iCon -->
                             <div class="ec-chat-icon">
@@ -82,7 +33,7 @@
                 </li>
                 <!--/ End Single Contact List -->
                 <!-- Start Single Contact List -->
-                <li>
+                {{-- <li>
                     <a class="ec-list" data-number="918866774266"
                         data-message="Please help me! I have got wrong product - ORDER ID is : #654321485">
                         <div class="d-flex bd-highlight">
@@ -103,7 +54,7 @@
                             </div>
                         </div>
                     </a>
-                </li>
+                </li> --}}
                 <!--/ End Single Contact List -->
             </ul>
         </div>
