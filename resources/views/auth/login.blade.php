@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Ekka - Admin Dashboard HTML Template.">
 
-    <title>Ekka - Admin Dashboard HTML Template.</title>
+    <title>Cakrawala - Admin Dashboard.</title>
 
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -60,14 +60,14 @@
                                             </div>
                                         </div>
 
-                                        <p><a class="text-blue" href="#">Forgot Password?</a></p>
+                                        <p><a class="text-blue" href="/">Toko Cakrawala</a></p>
                                     </div>
 
                                     <button type="submit" class="btn btn-primary btn-block mb-4">Sign In</button>
 
-                                    <p class="sign-upp">Don't have an account yet ?
+                                    {{-- <p class="sign-upp">Don't have an account yet ?
                                         <a class="text-blue" href="sign-up.html">Sign Up</a>
-                                    </p>
+                                    </p> --}}
                                 </div>
                             </div>
                         </form>
