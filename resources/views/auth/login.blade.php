@@ -32,8 +32,8 @@
                 <div class="card">
                     <div class="card-header bg-primary">
                         <div class="ec-brand">
-                            <a href="/" title="Ekka">
-                                <img class="ec-brand-icon" src="{{asset('tadmin/assets/img/logo/logo-login.png')}}" alt="" />
+                            <a href="/" title="Toko Cakrawala">
+                                <img class="ec-brand-icon" src="{{asset('tlandingPage/assets/images/logo/cakrawala-dark.png')}}" alt="Toko Cakrawala" />
                             </a>
                         </div>
                     </div>
