@@ -8,12 +8,11 @@ use Illuminate\Http\Request;
 class GeneralController extends Controller
 {
     public function pemesanan(){
-        $pemesanan = Banner::where('status', 'aktif')->where('role', 'pemesanan')->first();
+        $pemesanan = Banner::where('status', 'aktif')->first();
 
         if(!$pemesanan){
             $banner = Banner::create([
                 'banner' => '',
-                'role' => 'pemesanan',
                 'deskripsi' => 'BANNER CARA PEMESANAN'
             ]);
         } else {
@@ -24,8 +23,8 @@ class GeneralController extends Controller
     }
 
     public function updatePemesanan(Request $request){
-        $banner = Banner::where('status', 'aktif')->where('role', 'pemesanan')->first();
-
+        $banner = Banner::where('status', 'aktif')->first();
+// dd($banner);
         if (isset($request->banner)) {
             $extention = $request->banner->extension();
             $file_name = time() . '.' . $extention;

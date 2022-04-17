@@ -100,28 +100,27 @@ class BannerController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $request->validate([
-            'judul' => 'required',
-            'deskripsi' => 'required',
-            'banner' => 'required',
-        ]);
+        // $request->validate([
+        //     'judul' => 'required',
+        //     'deskripsi' => 'required',
+        //     'banner' => 'required',
+        // ]);
 
         $banner = Banner::find($id);
 
-        if (isset($request->banner)) {
+        if (!$request->banner) {
             $extention = $request->banner->extension();
             $file_name = time() . '.' . $extention;
             $txt = "storage/artikel/". $file_name;
             $request->banner->storeAs('public/artikel', $file_name);
-        } else {
-            $file_name = null;
-        }
+            $banner->banner = $txt;
+        } 
         // dd($request->judul, $request->isi);
 
         $banner->judul = $request->judul;
         $banner->sub_judul = $request->sub_judul;
         $banner->deskripsi = $request->deskripsi;
-        $banner->banner = $txt;
+       
         $banner->tombol = $request->tombol;
         $banner->link = $request->link;
         $banner->urutan = $request->urutan;

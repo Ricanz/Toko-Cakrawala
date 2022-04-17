@@ -22,7 +22,6 @@
                     <div class="row ec-vendor-uploads">
                         <form class="row g-3" method="post" action="{{ route('updatePemesanan') }}" enctype="multipart/form-data">
                             @csrf
-                            @method('PUT')
                             <div class="col-lg-4">
                                 <div class="ec-vendor-img-upload">
                                     <div class="ec-vendor-main-img">
