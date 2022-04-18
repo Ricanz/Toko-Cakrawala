@@ -50,14 +50,18 @@ Route::get('/tentang', function () {
 Route::get('/dashboard', function () {
     return view('admin.index');
 });
-Route::resource('kategori', KategoriController::class);
-Route::resource('subKategori', SubKategoriController::class);
-Route::resource('testimonial', TestimonialController::class);
-Route::resource('produk', ProdukController::class);
-Route::resource('artikel', ArtikelController::class);
-Route::resource('banner', BannerController::class);
-Route::resource('supplier', SupplierController::class);
-Route::resource('pesanan', PesananController::class)->except('detail');
+
+Route::middleware(['auth'])->group(function () {
+    Route::resource('kategori', KategoriController::class);
+    Route::resource('subKategori', SubKategoriController::class);
+    Route::resource('testimonial', TestimonialController::class);
+    Route::resource('produk', ProdukController::class);
+    Route::resource('artikel', ArtikelController::class);
+    Route::resource('banner', BannerController::class);
+    Route::resource('supplier', SupplierController::class);
+    Route::resource('pesanan', PesananController::class)->except('detail');
+});
+
 Route::get('admin/cara-pemesanan', [GeneralController::class, 'pemesanan'])->name('pemesanan');
 Route::post('admin/cara-pemesanan/update', [GeneralController::class, 'updatePemesanan'])->name('updatePemesanan');
 Route::get('detail-pesanan/{id}', [PesananController::class, 'detail']);
@@ -70,4 +74,4 @@ Route::delete('deleteCart/{id}', [CartController::class, 'deleteFromCart'])->nam
 Route::get('clearCart', [CartController::class, 'clearCart']);
 Route::post('print-invoice', [InvoiceController::class, 'invoice']);
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
