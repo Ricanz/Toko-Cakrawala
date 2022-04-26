@@ -7,7 +7,7 @@
             </p>
         </div>
         <div>
-            <a href="{{ route('artikel.index') }}" class="btn btn-primary"> View All
+            <a href="{{ route('artikel.index') }}" class="btn btn-primary"> Lihat Semua
             </a>
         </div>
     </div>
@@ -64,7 +64,7 @@
                                         <textarea class="form-control" name="isi" id="isi" cols="30" rows="10">{{ $artikel->isi }}</textarea>
                                     </div>
                                     <div class="col-md-12">
-                                        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                                        <button type="submit" class="btn btn-primary mt-3">Simpan</button>
                                     </div>
                         </form>
                     </div>
