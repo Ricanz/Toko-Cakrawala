@@ -14,7 +14,7 @@
                                 <!-- ec-breadcrumb-list start -->
                                 <ul class="ec-breadcrumb-list">
                                     <li class="ec-breadcrumb-item"><a href="/">Home</a></li>
-                                    <li class="ec-breadcrumb-item active">Contact Us</li>
+                                    <li class="ec-breadcrumb-item active">Kontak Kami</li>
                                 </ul>
                                 <!-- ec-breadcrumb-list end -->
                             </div>
@@ -74,7 +74,7 @@
                             <div class="ec_contact_map">
                                 <div class="ec_map_canvas">
                                     <iframe id="ec_map_canvas"
-                                        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d71263.65594328841!2d144.93151478652146!3d-37.8734290780509!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1615963387757!5m2!1sen!2sus"></iframe>
+                                        src="https://www.google.com/maps/place/Jl.+Sholeh+Iskandar+No.10,+RT.03%2FRW.05,+Cibadak,+Kec.+Tanah+Sereal,+Kota+Bogor,+Jawa+Barat+16166/@-6.5528256,106.774619,17z/data=!3m1!4b1!4m5!3m4!1s0x2e69c47bf6992205:0x148af05ce333d295!8m2!3d-6.5528309!4d106.7768077"></iframe>
                                     <a href="https://sites.google.com/view/maps-api-v2/mapv2"></a>
                                 </div>
                             </div>
