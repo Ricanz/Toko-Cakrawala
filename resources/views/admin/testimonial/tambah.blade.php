@@ -55,8 +55,7 @@
                                     </div>
                                     <div class="col-md-8">
                                         <label for="inputEmail4" class="form-label">Perusahaan</label>
-                                        <input type="text" name="perusahaan" class="form-control slug-title"
-                                            id="inputEmail4">
+                                        <input type="text" name="perusahaan" class="form-control" id="inputEmail4">
                                     </div>
                                     <div class="col-md-8">
                                         <label class="form-label">Deskripsi</label>

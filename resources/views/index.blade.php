@@ -17,8 +17,8 @@
                                         <h1 class="ec-slide-title">{{ $item->judul }}</h1>
                                         <div class="ec-slide-desc">
                                             <p>{{ $item->deskripsi }}</p>
-                                            <a href="{{ $item->link }}" class="btn btn-lg btn-primary">{{ $item->tombol }}<i
-                                                    class="ecicon eci-angle-double-right" aria-hidden="true"></i></a>
+                                            {{-- <a href="{{ $item->link }}" class="btn btn-lg btn-primary">{{ $item->tombol }}<i
+                                                    class="ecicon eci-angle-double-right" aria-hidden="true"></i></a> --}}
                                         </div>
                                     </div>
                                 </div>
