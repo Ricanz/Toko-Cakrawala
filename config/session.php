@@ -155,7 +155,7 @@ return [
     |
     */
 
-    'domain' => env('SESSION_DOMAIN', 'tokocakrawala.co.id'),
+    'domain' => env('SESSION_DOMAIN', NULL),
 
     /*
     |--------------------------------------------------------------------------
