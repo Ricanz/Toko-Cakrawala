@@ -84,8 +84,7 @@
                                     <li class="ec-contact-item"><i class="ecicon eci-map-marker"
                                             aria-hidden="true"></i><span>Alamat :</span>Jl. K.H. Sholeh Iskandar No. 10, Kedung Badak, Tanah Sareal, Bogor 1614 (Bekas Kantor BPJS Kesehatan/Bekas Dealer FORD)</li>
                                     <li class="ec-contact-item align-items-center"><i class="ecicon eci-phone"
-                                            aria-hidden="true"></i><span>Whatsapp :</span><a href="tel:+440123456789">+44 0123
-                                            456 789</a></li>
+                                            aria-hidden="true"></i><span>Whatsapp :</span><a href="http://wa.me/+62816225999">+62816-225999</a></li>
                                     <li class="ec-contact-item align-items-center"><i class="ecicon eci-envelope"
                                             aria-hidden="true"></i><span>Email :</span><a
                                             href="mailto:cakrawala.info@gmail.com">cakrawala.info@gmail.com</a></li>
@@ -97,5 +96,5 @@
             </div>
         </section>
     </body>
-    
+
 </x-navigation-layout>
