@@ -39,10 +39,10 @@ class InvoiceController extends Controller
         for ($i = 0; $i < $length; $i++) {
             $random .= rand(0, 1) ? rand(0, 9) : chr(rand(ord('a'), ord('z')));
         }
-
+        $host = request()->getHttpHost();
         $invoice =  'INV-'.Str::upper($random);
         $invoiceFile = $invoice.".pdf";
-        $invoicePath = ("invoices/".$invoiceFile);
+        $invoicePath = ($host."/invoices/".$invoiceFile);
         $pdf = PDF::loadView('print-invoice', compact('cart_data', 'invoice', 'data', 'tanggal'))->save($invoicePath);
 
         Mail::send('email-seller', compact('data'), function ($message) use($pdf, $invoice) {
