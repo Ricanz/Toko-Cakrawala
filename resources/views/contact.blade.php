@@ -74,7 +74,7 @@
                             <div class="ec_contact_map">
                                 <div class="ec_map_canvas">
                                     <iframe id="ec_map_canvas"
-                                        src="https://www.google.com/maps/place/Jl.+Sholeh+Iskandar+No.10,+RT.03%2FRW.05,+Cibadak,+Kec.+Tanah+Sereal,+Kota+Bogor,+Jawa+Barat+16166/@-6.5528256,106.774619,17z/data=!3m1!4b1!4m5!3m4!1s0x2e69c47bf6992205:0x148af05ce333d295!8m2!3d-6.5528309!4d106.7768077"></iframe>
+                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4713.723280536681!2d106.77465015472197!3d-6.552835217614672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c47bf6992205%3A0x148af05ce333d295!2sJl.%20Sholeh%20Iskandar%20No.10%2C%20RT.03%2FRW.05%2C%20Cibadak%2C%20Kec.%20Tanah%20Sereal%2C%20Kota%20Bogor%2C%20Jawa%20Barat%2016166!5e0!3m2!1sid!2sid!4v1652076051043!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                     <a href="https://sites.google.com/view/maps-api-v2/mapv2"></a>
                                 </div>
                             </div>
