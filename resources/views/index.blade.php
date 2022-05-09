@@ -196,7 +196,7 @@
                                                                         class="svg_img pro_svg" alt="" /></a>
                                                                 <form method="POST"
                                                                     action="{{ route('addToCart') }}">
-                                                                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                                                    @csrf
                                                                     <input type="hidden" name="produk_id"
                                                                         class="produk_id"
                                                                         value="{{ $i->id }}">
@@ -231,7 +231,7 @@
                                                             </span>
                                                             <form method="post"
                                                             action="{{ route('addToCart') }}">
-                                                            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                                            @csrf
                                                             <input type="hidden" name="produk_id"
                                                                 class="produk_id"
                                                                 value="{{ $i->id }}">
