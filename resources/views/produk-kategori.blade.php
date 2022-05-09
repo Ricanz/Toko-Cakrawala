@@ -78,7 +78,7 @@
                                                                 <a href="{{ url("/produk-detail/$i->id") }}" class="ec-btn-group quickview"><img
                                                                         src="{{ asset('tlandingPage/assets/images/icons/quickview.svg') }}"
                                                                         class="svg_img pro_svg" alt="" /></a>
-                                                                <form method="post"
+                                                                {{-- <form method="post"
                                                                     action="{{ route('addToCart') }}">
                                                                     @csrf
                                                                     <input type="hidden" name="produk_id"
@@ -89,7 +89,7 @@
                                                                     <button title="Add To Cart" type="submit"><img
                                                                             src="{{ asset('tlandingPage/assets/images/icons/pro_cart.svg') }}"
                                                                             class="svg_img pro_svg" alt="" /></button>
-                                                                </form>
+                                                                </form> --}}
                                                             </div>
                                                         </div>
                                                     </div>
