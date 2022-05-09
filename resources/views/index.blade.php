@@ -442,7 +442,7 @@
                                         </div>
                                         <div class="ec-test-content">
                                             <div class="ec-test-name">{{ $t->nama }}</div>
-                                            <div class="ec-test-name">{{ $i->perusahaan }}</div>
+                                            <div class="ec-test-designation">- {{ $t->perusahaan }}</div>
                                             <div class="ec-test-divider">
                                                 <img src="{{ asset('tlandingPage/assets/images/testimonial/quotes.svg') }}"
                                                     class="svg_img test_svg" alt="" />
