@@ -64,7 +64,7 @@
                                             <span class="help-block with-errors"></span>
                                         </span>
                                         <span class="ec-contact-wrap ec-contact-btn">
-                                            <button class="btn btn-primary" type="submit">Submit</button>
+                                            <button class="btn btn-primary" type="submit">Kirim</button>
                                         </span>
                                     </form>
                                 </div>
