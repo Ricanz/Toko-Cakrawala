@@ -194,9 +194,9 @@
                                                                 <a href="{{ url("/produk-detail/$i->slug") }}" class="ec-btn-group quickview"><img
                                                                         src="{{ asset('tlandingPage/assets/images/icons/quickview.svg') }}"
                                                                         class="svg_img pro_svg" alt="" /></a>
-                                                                <form method="post"
+                                                                <form method="POST"
                                                                     action="{{ route('addToCart') }}">
-                                                                    {{ csrf_field() }}
+                                                                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                                                     <input type="hidden" name="produk_id"
                                                                         class="produk_id"
                                                                         value="{{ $i->id }}">
@@ -231,7 +231,7 @@
                                                             </span>
                                                             <form method="post"
                                                             action="{{ route('addToCart') }}">
-                                                            {{ csrf_field() }}
+                                                            <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                                             <input type="hidden" name="produk_id"
                                                                 class="produk_id"
                                                                 value="{{ $i->id }}">
