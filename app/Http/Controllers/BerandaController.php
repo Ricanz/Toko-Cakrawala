@@ -22,10 +22,11 @@ class BerandaController extends Controller
         $kategori = Kategori::all();
         $testimonial = Testimonial::all();
         $artikel = Artikel::all();
-        $banner = Banner::where('status', 'aktif')->get();
+        // $banner = Banner::where('status', 'aktif')->get();
+        $banner = Banner::latest()->take(3)->get();
         $supplier = Supplier::where('status', 'aktif')->get();
         // dd(response()->json(request()->cookie('shopping_cart')));
-        // dd(Helper::getCart());  
+        // dd(Helper::getCart());
         // foreach(Helper::getCart() as $key => $item){
         //     dd($item);
         // }
@@ -63,5 +64,5 @@ class BerandaController extends Controller
 
         return view('detail_artikel', compact('artikel'));
     }
-    
+
 }
