@@ -113,6 +113,18 @@
                                                                     class="new-price">Rp.{{ $i->harga }},00</span>
                                                                 {{-- <span class="old-price">$65.00</span> --}}
                                                             </span>
+                                                            <form method="post"
+                                                            action="{{ route('addToCart') }}">
+                                                            @csrf
+                                                            <input type="hidden" name="produk_id"
+                                                                class="produk_id"
+                                                                value="{{ $i->id }}">
+                                                            <input type="hidden" name="jumlah_produk"
+                                                                class="qty-input" value="1">
+                                                                <div class="ec-check-order-btn col-3">
+                                                                    <button title="Add To Cart" type="submit" class="btn btn-primary">Tambah</button>
+                                                                </div>
+                                                        </form>
                                                         </div>
                                                     </div>
                                                 </div>

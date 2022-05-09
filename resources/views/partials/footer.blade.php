@@ -9,7 +9,7 @@
                             <div class="ec-footer-links">
                                 <ul class="align-items-center">
                                     @foreach ($Kategori as $item)
-                                    <li class="ec-footer-link"><a href="#">{{ $item->nama }}</a></li>
+                                    <li class="ec-footer-link"><a href="{{ url("kategori/$item->slug") }}">{{ $item->nama }}</a></li>
                                     @endforeach
                                 </ul>
                             </div>
@@ -31,11 +31,10 @@
                             <h4 class="ec-footer-heading">Layanan Kami</h4>
                             <div class="ec-footer-links">
                                 <ul class="align-items-center">
-                                    <li class="ec-footer-link"><a href="#">Kualitas Barang Terbaik</a></li>
-                                    <li class="ec-footer-link"><a href="#">Harga Terjamin</a></li>
-                                    <li class="ec-footer-link"><a href="#">Good</a></li>
-                                    <li class="ec-footer-link"><a href="">Better</a></li>
-                                    <li class="ec-footer-link"><a href="#">Best</a></li>
+                                    <li class="ec-footer-link">Menjual material konstruksi atap dan langit-langit</li>
+                                    <li class="ec-footer-link">Belanja via telepon/WhatsApp</li>
+                                    <li class="ec-footer-link">Konsultasi jenis dan kebutuhan material</li>
+                                    <li class="ec-footer-link">Layanan antar JABODETABEK</li>
                                 </ul>
                             </div>
                         </div>
