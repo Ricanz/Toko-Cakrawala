@@ -75,12 +75,12 @@
                                             <input id="link" name="link" class="form-control " type="text" value="{{ $banner->link }}">
                                         </div>
                                     </div>
-                                    <div class="col-md-12">
+                                    {{-- <div class="col-md-12">
                                         <label for="urutan" class="col-12 col-form-label">Urutan</label>
                                         <div class="col-12">
                                             <input id="urutan" name="urutan" class="form-control " type="text" value="{{ $banner->urutan }}">
                                         </div>
-                                    </div>
+                                    </div> --}}
                                     <div class="col-md-12">
                                         <button type="submit" class="btn btn-primary mt-3">Simpan</button>
                                     </div>

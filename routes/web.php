@@ -47,10 +47,10 @@ Route::get('/tentang', function () {
     return view('tentang');
 });
 
-Route::get('/dashboard', function () {
-    return view('admin.index');
-});
 Route::group(['middleware' => 'auth'], function () {
+    Route::get('/dashboard', function () {
+        return view('admin.index');
+    });
     Route::resource('kategori', KategoriController::class);
     Route::resource('subKategori', SubKategoriController::class);
     Route::resource('testimonial', TestimonialController::class);

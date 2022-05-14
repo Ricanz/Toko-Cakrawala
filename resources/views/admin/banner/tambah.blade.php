@@ -49,13 +49,13 @@
 
                                     <div class="col-md-12">
                                         <label for="inputEmail4" class="form-label">Judul</label>
-                                        <input type="text" name="judul" class="form-control slug-title" id="judul" >
+                                        <input type="text" name="judul" class="form-control slug-title" id="judul" placeholder="Masukkan judul banner">
                                         
                                     </div>
                                     <div class="col-md-12">
                                         <label for="sub_judul" class="col-12 col-form-label">Sub Judul</label>
                                         <div class="col-12">
-                                            <input id="sub_judul" name="sub_judul" class="form-control " type="text">
+                                            <input id="sub_judul" name="sub_judul" class="form-control " type="text" placeholder="Masukkan sub judul banner">
                                         </div>
                                     </div>
                                     <div class="col-md-12">
@@ -63,23 +63,23 @@
                                         <textarea class="form-control" name="deskripsi" id="deskripsi" cols="30" rows="10"></textarea>
                                     </div>
                                     <div class="col-md-12">
-                                        <label for="tombol" class="col-12 col-form-label">Tombol</label>
+                                        <label for="tombol" class="col-12 col-form-label">Tombol *opsional</label>
                                         <div class="col-12">
-                                            <input id="tombol" name="tombol" class="form-control " type="text">
+                                            <input id="tombol" name="tombol" class="form-control " type="text" placeholder="Masukkan judul tombol">
                                         </div>
                                     </div>
                                     <div class="col-md-12">
-                                        <label for="link" class="col-12 col-form-label">Link</label>
+                                        <label for="link" class="col-12 col-form-label">Link *opsional</label>
                                         <div class="col-12">
-                                            <input id="link" name="link" class="form-control " type="text">
+                                            <input id="link" name="link" class="form-control " type="text" placeholder="Masukkan link untuk tombol">
                                         </div>
                                     </div>
-                                    <div class="col-md-12">
+                                    {{-- <div class="col-md-12">
                                         <label for="urutan" class="col-12 col-form-label">Urutan</label>
                                         <div class="col-12">
-                                            <input id="urutan" name="urutan" class="form-control " type="text">
+                                            <input id="urutan" name="urutan" class="form-control " type="text" placeholder="Masukkan ">
                                         </div>
-                                    </div>
+                                    </div> --}}
                                     <div class="col-md-12">
                                         <button type="submit" class="btn btn-primary mt-3">Simpan</button>
                                     </div>
