@@ -12,6 +12,7 @@ use App\Http\Controllers\BannerController;
 use App\Http\Controllers\GeneralController;
 use App\Http\Controllers\SupplierController;
 use App\Http\Controllers\PesananController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -58,6 +59,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('artikel', ArtikelController::class);
     Route::resource('banner', BannerController::class);
     Route::resource('supplier', SupplierController::class);
+    Route::resource('user', UserController::class);
     Route::resource('pesanan', PesananController::class)->except('detail');
 });
 Route::get('admin/cara-pemesanan', [GeneralController::class, 'pemesanan'])->name('pemesanan');

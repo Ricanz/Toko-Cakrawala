@@ -1,7 +1,7 @@
 <x-app-layout>
     <div class="breadcrumb-wrapper d-flex align-items-center justify-content-between">
         <div>
-            <h1>Product Detail 1</h1>
+            <h1>Product Detail</h1>
             <p class="breadcrumbs"><span><a href="/">Dashboard</a></span>
                 <span><i class="mdi mdi-chevron-right"></i></span>Produk
             </p>

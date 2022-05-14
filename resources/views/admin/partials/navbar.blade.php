@@ -33,14 +33,14 @@
                             <img src="{{asset('tadmin/assets/img/user/user.png')}}" class="img-circle"
                                 alt="User Image" />
                             <div class="d-inline-block">
-                                John Deo <small class="pt-1">john.example@gmail.com</small>
+                                {{auth()->user()->name}} <small class="pt-1">{{auth()->user()->email}}</small>
                             </div>
                         </li>
-                        {{-- <li>
-                            <a href="user-profile.html">
+                        <li>
+                            <a href="{{route('user.edit',auth()->user()->id)}}">
                                 <i class="mdi mdi-account"></i> My Profile
                             </a>
-                        </li> --}}
+                        </li>
                         <li class="right-sidebar-in">
                             <a href="javascript:0"> <i class="mdi mdi-settings-outline"></i> Setting </a>
                         </li>

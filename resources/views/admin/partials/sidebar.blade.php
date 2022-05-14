@@ -25,33 +25,22 @@
 
 
                 <!-- Users -->
-                <li class="has-sub">
+                <li class="has-sub {{ request()->is('user*') ? 'active expand' : '' }}">
                     <a class="sidenav-item-link" href="javascript:void(0)">
-                        <i class="mdi mdi-account-group"></i>
+                        <i class="mdi mdi mdi-account-group"></i>
                         <span class="nav-text">Users</span> <b class="caret"></b>
                     </a>
-                    <div class="collapse">
-                        <ul class="sub-menu" id="users" data-parent="#sidebar-menu">
-                            <li>
-                                <a class="sidenav-item-link" href="user-card.html">
-                                    <span class="nav-text">User Grid</span>
-                                </a>
-                            </li>
-
-                            <li class="">
-                                <a class="sidenav-item-link" href="user-list.html">
+                    <div class="collapse {{ request()->is('user*') ? 'show' : '' }}">
+                        <ul class="sub-menu" id="products" data-parent="#sidebar-menu">
+                            <li class="{{ request()->is('user') ? 'active' : '' }}">
+                                <a class="sidenav-item-link" href="{{url('user')}}">
                                     <span class="nav-text">User List</span>
-                                </a>
-                            </li>
-                            <li class="">
-                                <a class="sidenav-item-link" href="user-profile.html">
-                                    <span class="nav-text">Users Profile</span>
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    <hr>
                 </li>
+                
                 <!-- Banner -->
                 <li class="has-sub {{ request()->is('banner*') ? 'active expand' : '' }}">
                     <a class="sidenav-item-link" href="javascript:void(0)">
