@@ -95,7 +95,7 @@ class SubKategoriController extends Controller
         $Kategori = subKategori::findOrFail($id);
         Storage::delete("public/Kategori/$Kategori->gambar");
         $Kategori->delete();
-        return redirect()->route('Kategori.index')
+        return redirect()->route('kategori.index')
             ->with('delete', 'Kategori Berhasil Dihapus');
     }
 }

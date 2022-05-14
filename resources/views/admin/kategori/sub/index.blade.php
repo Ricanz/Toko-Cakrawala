@@ -24,8 +24,6 @@
                                 <label for="slug" class="col-12 col-form-label">Slug</label>
                                 <div class="col-12">
                                     <input id="slug" name="slug" class="form-control here set-slug" type="text">
-                                    <small>The “slug” is the URL-friendly version of the name. It is usually all
-                                        lowercase and contains only letters, numbers, and hyphens.</small>
                                 </div>
                             </div>
 
@@ -51,7 +49,7 @@
 
                             <div class="row">
                                 <div class="col-12">
-                                    <button name="submit" type="submit" class="btn btn-primary">Submit</button>
+                                    <button name="submit" type="submit" class="btn btn-primary">Simpan</button>
                                 </div>
                             </div>
                         </form>
@@ -102,7 +100,6 @@
                                                 </button>
 
                                                 <div class="dropdown-menu">
-                                                    <a class="dropdown-item" href="#">Simpan</a>
                                                     <a class="dropdown-item">
                                                         <form action="{{route('subKategori.destroy', $item->id)}}" method="POST">
                                                             @csrf

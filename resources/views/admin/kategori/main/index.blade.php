@@ -24,8 +24,6 @@
                                 <label for="slug" class="col-12 col-form-label">Slug</label>
                                 <div class="col-12">
                                     <input id="slug" name="slug" class="form-control here set-slug" type="text">
-                                    <small>The “slug” is the URL-friendly version of the name. It is usually all
-                                        lowercase and contains only letters, numbers, and hyphens.</small>
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -92,14 +90,13 @@
                                                 </button>
 
                                                 <div class="dropdown-menu">
-                                                    <a class="dropdown-item" href="#">Edit</a>
                                                     <a class="dropdown-item">
-                                                    <form action="{{route('kategori.destroy', $item->id)}}" method="POST">
-                                                        @csrf
-                                                        @method("DELETE")
-                                                        <button type="submit" class="btn show_confirm">Hapus</button>
-                                                    </form>
-                                                </a>
+                                                        <form action="{{route('kategori.destroy', $item->id)}}" method="POST">
+                                                            @csrf
+                                                            @method("DELETE")
+                                                            <button type="submit" class="btn show_confirm">Hapus</button>
+                                                        </form>
+                                                    </a>
                                                     </div>
                                                 </div>
                                             </div>
