@@ -31,7 +31,7 @@ class GeneralController extends Controller
             $txt = "storage/banner/". $file_name;
             $request->banner->storeAs('public/banner', $file_name);
         } else {
-            $file_name = null;
+            $txt = $banner->banner;
         }
         // dd($request->judul, $request->isi);
 
@@ -40,7 +40,7 @@ class GeneralController extends Controller
         $banner->status = 'aktif';
         $banner->save();
 
-        return redirect()->route('banner.index')
+        return redirect()->route('pemesanan')
         ->with('edit', 'Banner Berhasil Diedit');
     }
 }
