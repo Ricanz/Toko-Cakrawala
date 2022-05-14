@@ -194,7 +194,7 @@
                                                                 <a href="{{ url("/produk-detail/$i->slug") }}" class="ec-btn-group quickview"><img
                                                                         src="{{ asset('tlandingPage/assets/images/icons/quickview.svg') }}"
                                                                         class="svg_img pro_svg" alt="" /></a>
-                                                                {{-- <form method="POST"
+                                                                <form method="POST"
                                                                     action="{{ route('addToCart') }}">
                                                                     @csrf
                                                                     <input type="hidden" name="produk_id"
@@ -205,7 +205,7 @@
                                                                     <button title="Add To Cart" type="submit"><img
                                                                             src="{{ asset('tlandingPage/assets/images/icons/pro_cart.svg') }}"
                                                                             class="svg_img pro_svg" alt="" /></button>
-                                                                </form> --}}
+                                                                </form>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -227,7 +227,6 @@
                                                             <span class="ec-price">
                                                                 <span
                                                                     class="new-price">Rp.{{ $i->harga }},00</span>
-                                                                {{-- <span class="old-price">$65.00</span> --}}
                                                             </span>
                                                             <form method="post"
                                                             action="{{ route('addToCart') }}">
@@ -238,7 +237,7 @@
                                                             <input type="hidden" name="jumlah_produk"
                                                                 class="qty-input" value="1">
                                                                 <div class="ec-check-order-btn col-3">
-                                                                    <button title="Add To Cart" type="submit" class="btn btn-primary">Beli</button>
+                                                                    <button title="Add To Cart" type="submit" class="btn btn-primary">tambah_keranjang</button>
                                                                 </div>
                                                         </form>
                                                         </div>
