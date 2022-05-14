@@ -32,13 +32,13 @@
                         <li class="dropdown-header">
                             <img src="{{asset('tadmin/assets/img/user/user.png')}}" class="img-circle"
                                 alt="User Image" />
-                            @if (auth())
+                            @if (Auth::check())
                                 <div class="d-inline-block">
                                     {{auth()->user()->name}} <small class="pt-1">{{auth()->user()->email}}</small>
                                 </div>
                             @endif
                         </li>
-                        @if (auth())
+                        @if (Auth::check())
                             <li>
                                 <a href="{{route('user.edit',auth()->user()->id)}}">
                                     <i class="mdi mdi-account"></i> My Profile
