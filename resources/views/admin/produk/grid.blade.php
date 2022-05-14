@@ -1,7 +1,7 @@
 <x-app-layout>
     <div class="breadcrumb-wrapper d-flex align-items-center justify-content-between">
         <div>
-            <h1>Produk</h1>
+            <h1>Produk Grid</h1>
             <p class="breadcrumbs"><span><a href="/dashboard">Dashboard</a></span>
                 <span><i class="mdi mdi-chevron-right"></i></span>Produk
             </p>
@@ -54,9 +54,15 @@
                                             <a href="{{ route('produk.show', $item->id) }}" class="card-preview"><i
                                                     class="mdi mdi-eye-outline"></i>
                                             </a>
-                                            <a href="{{ route('produk.destroy', $item->id) }}" class="card-remove"><i
+                                            <form action="{{route('produk.destroy', $item->id)}}" method="POST">
+                                                @csrf
+                                                @method("DELETE")
+                                                <button type="submit" class="card-remove"><i
+                                                    class="mdi mdi mdi-delete-outline"></i></button>
+                                            </form>
+                                            {{-- <a href="{{ route('produk.destroy', $item->id) }}" class="card-remove"><i
                                                     class="mdi mdi mdi-delete-outline"></i>
-                                            </a>
+                                            </a> --}}
                                         </div>
                                     </div>
                                 </div>

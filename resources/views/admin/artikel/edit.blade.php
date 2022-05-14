@@ -53,12 +53,6 @@
                                         <input type="text" name="judul" class="form-control slug-title" id="judul" value="{{ $artikel->judul }}">
                                         
                                     </div>
-                                    <div class="col-md-12">
-                                        <label for="slug" class="col-12 col-form-label">Slug</label>
-                                        <div class="col-12">
-                                            <input id="slug" name="slug" class="form-control here set-slug" type="text" value="{{ $artikel->slug }}" readonly>
-                                        </div>
-                                    </div>
                                     <div class="col-md-12 mt-2">
                                         <label for="inputEmail4" class="form-label">Isi</label>
                                         <textarea class="form-control" name="isi" id="isi" cols="30" rows="10">{{ $artikel->isi }}</textarea>

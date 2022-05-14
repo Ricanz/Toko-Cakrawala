@@ -128,21 +128,15 @@
                                             @endforeach
                                         </select>
                                     </div>
-                                    <div class="col-md-12">
-                                        <label for="slug" class="col-12 col-form-label">Slug</label>
-                                        <div class="col-12">
-                                            <input id="slug" name="slug" value="{{ $produk->slug }}" class="form-control here set-slug" type="text" readonly>
-                                        </div>
-                                    </div>
                                     <div class="col-md-6">
                                         <label class="form-label">Price <span>( In IDR
                                                 )</span></label>
-                                        <input type="number" value="{{ $produk->harga }}" name="harga"
+                                        <input type="number" min="0" value="{{ $produk->harga }}" name="harga"
                                             class="form-control" id="price1">
                                     </div>
                                     <div class="col-md-6">
                                         <label class="form-label">Quantity</label>
-                                        <input type="number" value="{{ $produk->stok }}" class="form-control"
+                                        <input type="number" min="0" value="{{ $produk->stok }}" class="form-control"
                                             name="stok" id="quantity1">
                                     </div>
                                     <div class="col-md-12">

@@ -125,20 +125,14 @@
                                             @endforeach
                                         </select>
                                     </div>
-                                    <div class="col-md-12">
-                                        <label for="slug" class="col-12 col-form-label">Slug</label>
-                                        <div class="col-12">
-                                            <input id="slug" name="slug" class="form-control here set-slug" type="text" readonly>
-                                        </div>
-                                    </div>
                                     <div class="col-md-6">
                                         <label class="form-label">Harga <span>( In IDR
                                                 )</span></label>
-                                        <input type="number" name="harga" class="form-control" id="price1">
+                                        <input type="number" min="0" name="harga" class="form-control" id="price1">
                                     </div>
                                     <div class="col-md-6">
                                         <label class="form-label">Stok</label>
-                                        <input type="number" class="form-control" name="stok" id="quantity1">
+                                        <input type="number" min="0" class="form-control" name="stok" id="quantity1">
                                     </div>
                                     <div class="col-md-12">
                                         <label class="form-label">Deskripsi</label>

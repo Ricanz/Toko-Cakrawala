@@ -21,14 +21,6 @@
                             </div>
 
                             <div class="form-group row">
-                                <label for="slug" class="col-12 col-form-label">Slug</label>
-                                <div class="col-12">
-                                    <input id="slug" name="slug" class="form-control here set-slug" type="text">
-                                </div>
-                            </div>
-
-
-                            <div class="form-group row">
                                 <label class="col-12 col-form-label">Deskripsi</label>
                                 <div class="col-12">
                                     <textarea id="fulldescription" name="detail" cols="40" rows="4"
