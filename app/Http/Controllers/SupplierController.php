@@ -94,11 +94,6 @@ class SupplierController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $request->validate([
-            'supplier' => 'required',
-            'gambar' => 'required',
-        ]);
-
         $supplier = Supplier::find($id);
 
         if (isset($request->gambar)) {
@@ -107,7 +102,7 @@ class SupplierController extends Controller
             $txt = "storage/supplier/". $file_name;
             $request->gambar->storeAs('public/supplier', $file_name);
         } else {
-            $file_name = null;
+            $txt = $supplier->gambar;
         }
 
         $supplier->supplier = $request->supplier;

@@ -38,7 +38,7 @@
                                                 <div class="imagePreview ec-div-preview">
                                                     <img class="ec-image-preview"
                                                         src="{{ asset($supplier->gambar) }}"
-                                                        alt="edit" />
+                                                        alt="edit" />  
                                                 </div>
                                             </div>
                                         </div>
