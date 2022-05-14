@@ -36,24 +36,16 @@
                                 John Deo <small class="pt-1">john.example@gmail.com</small>
                             </div>
                         </li>
-                        <li>
+                        {{-- <li>
                             <a href="user-profile.html">
                                 <i class="mdi mdi-account"></i> My Profile
                             </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="mdi mdi-email"></i> Message
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"> <i class="mdi mdi-diamond-stone"></i> Projects </a>
-                        </li>
+                        </li> --}}
                         <li class="right-sidebar-in">
                             <a href="javascript:0"> <i class="mdi mdi-settings-outline"></i> Setting </a>
                         </li>
                         <li class="dropdown-footer">
-                            <a href="/"> <i class="mdi mdi-logout"></i> Log Out </a>
+                            <a href="/logout"> <i class="mdi mdi-logout"></i> Log Out </a>
                         </li>
                     </ul>
                 </li>
