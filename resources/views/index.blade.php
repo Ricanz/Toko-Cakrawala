@@ -210,7 +210,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="ec-pro-content">
-                                                        <a href="{{ url("/produk/$i->id") }}">
+                                                        <a href="{{ url("/produk-detail/$i->slug") }}">
                                                             <h6 class="ec-pro-stitle">{{ $i->kategori->nama }}</h6>
                                                         </a>
                                                         <h5 class="ec-pro-title"><a
