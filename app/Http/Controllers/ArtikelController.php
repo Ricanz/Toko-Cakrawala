@@ -94,12 +94,6 @@ class ArtikelController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $request->validate([
-            'judul' => 'required',
-            'isi' => 'required',
-            'gambar' => 'required',
-        ]);
-
         $artikel = Artikel::find($id);
 
         if (isset($request->gambar)) {
@@ -108,7 +102,7 @@ class ArtikelController extends Controller
             $txt = "storage/artikel/". $file_name;
             $request->gambar->storeAs('public/artikel', $file_name);
         } else {
-            $file_name = null;
+            $txt = $artikel->gambar;
         }
         // dd($request->judul, $request->isi);
 
