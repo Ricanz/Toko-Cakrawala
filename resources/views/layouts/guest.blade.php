@@ -1,4 +1,4 @@
-<!--========================================================= 
+<!--=========================================================
     Item Name: Ekka - Ecommerce HTML Template.
     Author: ashishmaraviya
     Version: 3.1
@@ -7,7 +7,7 @@
  ============================================================-->
  <!DOCTYPE html>
  <html lang="en">
- 
+
  @include('partials.head')
 <body>
     {{-- <div id="ec-overlay"><span class="loader_img"></span></div> --}}
@@ -23,7 +23,7 @@
     <main>
         {{ $slot }}
     </main>
-    
+
     <!-- Footer Start -->
     @include('partials.footer')
     <!-- Footer Area End -->
@@ -128,9 +128,9 @@
     <!-- Newsletter Modal Start -->
     {{-- @include('partials.newsletter') --}}
     <!-- Newsletter Modal end -->
-    
+
     <!-- Footer navigation panel for responsive display -->
-    <div class="ec-nav-toolbar">
+    {{-- <div class="ec-nav-toolbar">
         <div class="container">
             <div class="ec-nav-panel">
                 <div class="ec-nav-panel-icons">
@@ -158,7 +158,7 @@
 
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Footer navigation panel for responsive display end -->
 
     <!-- Recent Purchase Popup  -->
