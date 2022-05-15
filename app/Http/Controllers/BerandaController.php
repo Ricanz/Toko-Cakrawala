@@ -60,9 +60,14 @@ class BerandaController extends Controller
 
     public function detailArtikel(Request $request){
         $artikel = Artikel::where('slug', $request->slug)->first();
-        // dd($artikel);
 
         return view('detail_artikel', compact('artikel'));
+    }
+
+    public function caraPemesanan(){
+        $banner = Banner::where('role', 'pemesanan')->where('status', 'aktif')->first();
+        $kategori = Kategori::all();
+        return view('cara-pemesanan', compact('banner', 'kategori'));
     }
 
 }

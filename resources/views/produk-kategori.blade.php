@@ -27,7 +27,7 @@
                                                         @foreach ($k->subkategori as $i)
                                                             <li>
                                                                 <div class="ec-sidebar-sub-item"><a
-                                                                        href="shop-left-sidebar-col-3.html">{{ $i->nama }}<span
+                                                                        href="#">{{ $i->nama }}<span
                                                                             title="Available Stock"></span></a>
                                                                 </div>
                                                             </li>
@@ -182,7 +182,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="ec-pro-content">
-                                                            <a href="shop-left-sidebar-col-3.html">
+                                                            <a href="#">
                                                                 <h6 class="ec-pro-stitle">{{ $i->kategori->nama }}
                                                                 </h6>
                                                             </a>
