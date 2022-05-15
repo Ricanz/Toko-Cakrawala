@@ -20,7 +20,7 @@
                             <div class="ec-spe-pro-image">
                                 <img class="img-responsive"
                                     src="{{ asset($banner->banner ) }}"
-                                    alt="Gambar Cara Pemesanan">
+                                    alt="Gambar Cara Pemesanan" style="align-items: center">
                             </div>
                         </div>
                     </div>
