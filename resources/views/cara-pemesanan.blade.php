@@ -8,7 +8,7 @@
             <div class="col-lg-9 col-md-12">
 
                 <!-- Deal of the day Start -->
-                <div class="row space-t-50" data-animation="fadeIn">
+                <div class="row space-t-100" data-animation="fadeIn">
                     <!--  Special Section Start -->
                     <div class="ec-spe-section col-lg-12 col-md-12 col-sm-12 sectopn-spc-mb">
                         <div class="col-md-12">
