@@ -64,23 +64,17 @@
                                         <textarea class="form-control" name="deskripsi" id="deskripsi" cols="30" rows="10">{{ $banner->deskripsi }}</textarea>
                                     </div>
                                     <div class="col-md-12">
-                                        <label for="tombol" class="col-12 col-form-label">Tombol</label>
+                                        <label for="tombol" class="col-12 col-form-label">Tombol *opsional</label>
                                         <div class="col-12">
                                             <input id="tombol" name="tombol" class="form-control " type="text" value="{{ $banner->tombol }}">
                                         </div>
                                     </div>
                                     <div class="col-md-12">
-                                        <label for="link" class="col-12 col-form-label">Link</label>
+                                        <label for="link" class="col-12 col-form-label">Link *opsional</label>
                                         <div class="col-12">
                                             <input id="link" name="link" class="form-control " type="text" value="{{ $banner->link }}">
                                         </div>
                                     </div>
-                                    {{-- <div class="col-md-12">
-                                        <label for="urutan" class="col-12 col-form-label">Urutan</label>
-                                        <div class="col-12">
-                                            <input id="urutan" name="urutan" class="form-control " type="text" value="{{ $banner->urutan }}">
-                                        </div>
-                                    </div> --}}
                                     <div class="col-md-12">
                                         <button type="submit" class="btn btn-primary mt-3">Simpan</button>
                                     </div>

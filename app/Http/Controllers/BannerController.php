@@ -15,7 +15,7 @@ class BannerController extends Controller
      */
     public function index()
     {
-        $banner = Banner::all();
+        $banner = Banner::where('role', 'banner')->get();
         return view('admin.banner.index', compact('banner'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
@@ -61,6 +61,7 @@ class BannerController extends Controller
             'tombol' => $request->tombol,
             'link' => $request->link,
             'urutan' => $request->urutan,
+            'role' => 'banner'
         ]);
 
         // dd($banner);
@@ -100,12 +101,6 @@ class BannerController extends Controller
      */
     public function update(Request $request, $id)
     {
-        // $request->validate([
-        //     'judul' => 'required',
-        //     'deskripsi' => 'required',
-        //     'banner' => 'required',
-        // ]);
-
         $banner = Banner::find($id);
 
         if (!$request->banner) {

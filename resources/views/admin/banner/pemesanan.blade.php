@@ -1,9 +1,9 @@
 <x-app-layout>
     <div class="breadcrumb-wrapper d-flex align-items-center justify-content-between">
         <div>
-            <h1>Edit Banner</h1>
+            <h1>Banner Cara Pemesanan</h1>
             <p class="breadcrumbs"><span><a href="/dashboard">Dashboard</a></span>
-                <span><i class="mdi mdi-chevron-right"></i></span>Edit Banner
+                <span><i class="mdi mdi-chevron-right"></i></span>Banner Cara Pemesanan
             </p>
         </div>
         <div>
@@ -15,7 +15,7 @@
         <div class="col-12">
             <div class="card card-default">
                 <div class="card-header card-header-border-bottom">
-                    <h2>Edit Banner</h2>
+                    <h2>Cara Pemesanan</h2>
                 </div>
 
                 <div class="card-body">
