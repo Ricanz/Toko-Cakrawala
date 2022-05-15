@@ -37,7 +37,7 @@
                                         {{-- <td><img class="tbl-thumb" src="{{asset($item->gambar)}}"
                                                 alt="Article Image" /></td> --}}
                                         <td>Admin</td>
-                                        <td>{{$item->created_at->format('Y-m-d')}}</td>
+                                        <td>{{$item->created_at->format('d-m-Y')}}</td>
                                         <td>
                                             <a href="{{route('user.edit',$item->id)}}" class="btn btn-outline-success">Info</a>
                                         </td>

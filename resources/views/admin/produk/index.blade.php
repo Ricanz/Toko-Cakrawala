@@ -41,7 +41,7 @@
                                         <td>{{$item->stok}}</td>
                                         <td>{{$item->kategori->nama}}</td>
                                         <td>ACTIVE</td>
-                                        <td>{{$item->created_at->format('Y-m-d')}}</td>
+                                        <td>{{$item->created_at->format('d-m-Y')}}</td>
                                         <td>
                                             <div class="btn-group mb-1">
                                                 <button type="button" class="btn btn-outline-success">Info</button>

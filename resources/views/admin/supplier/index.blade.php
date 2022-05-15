@@ -36,7 +36,7 @@
                                         </td>
                                         <td>{{$item->supplier}}</td>
                                         <td>{{$item->status}}</td>
-                                        <td>{{$item->created_at->isoFormat('m/d/Y')}}</td>
+                                        <td>{{$item->created_at->format('d-m-Y')}}</td>
                                         <td>
                                             <div class="btn-group mb-1">
                                                 <button type="button" class="btn btn-outline-success">Info</button>

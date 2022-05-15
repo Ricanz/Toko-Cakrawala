@@ -35,7 +35,7 @@
                                         <td><img class="tbl-thumb" src="{{asset($item->gambar)}}"
                                                 alt="Article Image" /></td>
                                         <td>ACTIVE</td>
-                                        <td>{{$item->updated_at->isoFormat('m/d/Y')}}</td>
+                                        <td>{{$item->updated_at->format('d-m-Y')}}</td>
                                         <td>
                                             <div class="btn-group mb-1">
                                                 <button type="button" class="btn btn-outline-success">Info</button>
