@@ -28,6 +28,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [BerandaController::class, 'beranda']);
 Route::get('/katalog', [BerandaController::class, 'katalog'])->name('katalog');
+Route::get('/cara-pemesanan', [BerandaController::class, 'caraPemesanan'])->name('caraPemesanan');
 Route::get('/kategori/{slug}', [BerandaController::class, 'produkKategori'])->name('produkKategori');
 Route::get('/produk-detail/{slug}', [BerandaController::class, 'detailProduk'])->name('detailProduk');
 Route::get('/artikel-detail/{slug}', [BerandaController::class, 'detailArtikel'])->name('detailArtikel');
