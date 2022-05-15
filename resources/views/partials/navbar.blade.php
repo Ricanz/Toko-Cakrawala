@@ -50,11 +50,11 @@
                         <!-- Header User End -->
 
                         <!-- Header Cart Start -->
-                        <a href="wishlist.html" class="ec-header-btn ec-header-wishlist">
+                        {{-- <a href="wishlist.html" class="ec-header-btn ec-header-wishlist">
                             <div class="header-icon"><img src="{{asset('tlandingPage/assets/images/icons/wishlist.svg')}}"
                                     class="svg_img header_svg" alt="" /></div>
                             <span class="ec-header-count">4</span>
-                        </a>
+                        </a> --}}
                         <!-- Header Cart End -->
 
                         <!-- Header Cart Start -->
