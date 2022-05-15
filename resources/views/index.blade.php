@@ -18,9 +18,9 @@
                                         <div class="ec-slide-desc">
                                             <p>{{ $item->deskripsi }}</p>
                                         </div>
-                                        @isset($item->tombol)
+                                        @if (!$item->tombol == '' or null)
                                             <a href="{{ $item->link }}" class="btn btn-primary">{{ $item->tombol }}</a>
-                                        @endisset
+                                        @endif
                                     </div>
                                 </div>
                             </div>
