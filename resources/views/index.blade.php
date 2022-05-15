@@ -227,7 +227,7 @@
                                                             </span>
                                                             <span class="ec-price">
                                                                 <span
-                                                                    class="new-price">Rp.{{ $i->harga }},00</span>
+                                                                    class="new-price">Rp. @money($i->harga) </span>
                                                             </span>
                                                             <form method="post"
                                                             action="{{ route('addToCart') }}">
@@ -315,7 +315,7 @@
                                                                 </span>
                                                                 <span class="ec-price">
                                                                     <span
-                                                                        class="new-price">Rp.{{ $i->harga }},00</span>
+                                                                        class="new-price">Rp. @money($i->harga) </span>
                                                                     {{-- <span class="old-price">$87.00</span> --}}
                                                                 </span>
                                                             </div>

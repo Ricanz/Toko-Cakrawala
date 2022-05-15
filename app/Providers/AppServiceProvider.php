@@ -6,6 +6,7 @@ use App\Models\Kategori;
 use Illuminate\Support\Facades\View;
 use Carbon\Carbon;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Blade;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -30,5 +31,8 @@ class AppServiceProvider extends ServiceProvider
         Carbon::setLocale('id');
         date_default_timezone_set('Asia/Jakarta');
         View::share('Kategori', Kategori::all());
+        Blade::directive('money', function ($money) {
+            return "<?php echo number_format($money, 2); ?>";
+        });
     }
 }

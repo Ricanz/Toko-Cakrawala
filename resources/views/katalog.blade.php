@@ -74,7 +74,7 @@
                                                                     alt="Product" />
                                                             </a>
                                                             {{-- <span class="percentage">20%</span> --}}
-                                                            <div class="ec-pro-actions">
+                                                            {{-- <div class="ec-pro-actions">
                                                                 <a href="{{ url("/produk-detail/$i->id") }}" class="ec-btn-group quickview" ><img
                                                                         src="{{ asset('tlandingPage/assets/images/icons/quickview.svg') }}"
                                                                         class="svg_img pro_svg" alt="" /></a>
@@ -90,7 +90,7 @@
                                                                             src="{{ asset('tlandingPage/assets/images/icons/pro_cart.svg') }}"
                                                                             class="svg_img pro_svg" alt="" /></button>
                                                                 </form>
-                                                            </div>
+                                                            </div> --}}
                                                         </div>
                                                     </div>
                                                     <div class="ec-pro-content">
@@ -110,9 +110,21 @@
                                                             </span>
                                                             <span class="ec-price">
                                                                 <span
-                                                                    class="new-price">Rp.{{ $i->harga }},00</span>
+                                                                    class="new-price">Rp. @money($i->harga) </span>
                                                                 {{-- <span class="old-price">$65.00</span> --}}
                                                             </span>
+                                                            <form method="post"
+                                                            action="{{ route('addToCart') }}">
+                                                            @csrf
+                                                            <input type="hidden" name="produk_id"
+                                                                class="produk_id"
+                                                                value="{{ $i->id }}">
+                                                            <input type="hidden" name="jumlah_produk"
+                                                                class="qty-input" value="1">
+                                                                <div class="ec-check-order-btn col-3">
+                                                                    <button title="Add To Cart" type="submit" class="btn btn-primary">Beli</button>
+                                                                </div>
+                                                        </form>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -187,7 +199,7 @@
                                                                 </span>
                                                                 <span class="ec-price">
                                                                     <span
-                                                                        class="new-price">Rp.{{ $i->harga }},00</span>
+                                                                        class="new-price">Rp. @money($i->harga) </span>
                                                                     {{-- <span class="old-price">$87.00</span> --}}
                                                                 </span>
                                                             </div>
