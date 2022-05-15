@@ -109,13 +109,13 @@ class BannerController extends Controller
             $txt = "storage/artikel/". $file_name;
             $request->banner->storeAs('public/artikel', $file_name);
             $banner->banner = $txt;
-        } 
+        }
         // dd($request->judul, $request->isi);
 
         $banner->judul = $request->judul;
         $banner->sub_judul = $request->sub_judul;
         $banner->deskripsi = $request->deskripsi;
-       
+
         $banner->tombol = $request->tombol;
         $banner->link = $request->link;
         $banner->urutan = $request->urutan;

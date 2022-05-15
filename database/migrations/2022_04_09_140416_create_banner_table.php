@@ -22,6 +22,7 @@ class CreateBannerTable extends Migration
             $table->string('tombol')->nullable();
             $table->string('link')->nullable();
             $table->enum('status', ['aktif', 'tidak aktif'])->default('aktif');
+            $table->string('role');
             $table->integer('urutan')->nullable();
             $table->timestamps();
         });

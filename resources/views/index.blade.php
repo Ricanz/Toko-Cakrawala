@@ -238,7 +238,7 @@
                                                             <input type="hidden" name="jumlah_produk"
                                                                 class="qty-input" value="1">
                                                                 <div class="ec-check-order-btn col-3">
-                                                                    <button title="Add To Cart" type="submit" class="btn btn-primary">tambah_keranjang</button>
+                                                                    <button title="Add To Cart" type="submit" class="btn btn-primary">Tambah ke Keranjang</button>
                                                                 </div>
                                                         </form>
                                                         </div>
