@@ -1,41 +1,39 @@
 <x-guest-layout>
-
     <!-- Main Slider Start -->
     <div class="ec-main-slider section section-space-pb">
         <div class="container">
             <div class="ec-slider swiper-container main-slider-nav main-slider-dot">
-                <!-- Main slider -->
-                <div class="swiper-wrapper">
-
-                    @foreach ($banner as $item)
-                    <div class="ec-slide-item swiper-slide d-flex slide-{{ $item->urutan }}"  style="background-image: url('{{ asset($item->banner)}}');">
-                        <div class="container align-self-center">
-                            <div class="row">
-                                <div class="col-sm-12 align-self-center">
-                                    <div class="ec-slide-content slider-animation">
-                                        <h2 class="ec-slide-stitle">{{ $item->sub_judul }}</h2>
-                                        <h1 class="ec-slide-title">{{ $item->judul }}</h1>
-                                        <div class="ec-slide-desc">
-                                            <p>{{ $item->deskripsi }}</p>
-                                        </div>
-                                        @if (!$item->tombol == '' or null)
-                                            <a href="{{ $item->link }}" class="btn btn-primary">{{ $item->tombol }}</a>
-                                        @endif
+            <!-- Main slider -->
+            <div class="swiper-wrapper">
+                @foreach ($banner as $item)
+                <div class="ec-slide-item swiper-slide d-flex slide-1" style="background-image: url('{{ asset($item->banner)}}');">
+                    <div class="container align-self-center">
+                        <div class="row">
+                            <div class="col-sm-12 align-self-center">
+                                <div class="ec-slide-content slider-animation">
+                                    <h2 class="ec-slide-stitle">{{ $item->sub_judul }}</h2>
+                                    <h1 class="ec-slide-title">{{ $item->judul }}</h1>
+                                    <div class="ec-slide-desc">
+                                        <p>{{ $item->deskripsi }}</p>
                                     </div>
+                                    @if (!$item->tombol == '' or null)
+                                        <a href="{{ $item->link }}" class="btn btn-primary">{{ $item->tombol }}</a>
+                                    @endif
                                 </div>
                             </div>
                         </div>
                     </div>
-                    @endforeach
                 </div>
-                <div class="swiper-pagination swiper-pagination-white"></div>
-                <div class="swiper-buttons">
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
+                @endforeach
             </div>
-        </div>
+            <div class="swiper-pagination swiper-pagination-white"></div>
+            <div class="swiper-buttons">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            </div>
     </div>
+    </div>  
     <!-- Main Slider End -->
 
     <!--  category Section Start -->
@@ -104,56 +102,6 @@
                                             </ul>
                                         </div>
                                     @endforeach
-                                    {{-- <div class="ec-sb-block-content">
-                                            <ul>
-                                                <li>
-                                                    <div class="ec-sidebar-block-item"><img src="{{asset('tlandingPage/assets/images/icons/shoes-8.svg')}}" class="svg_img" alt="drink" />Footwear</div>
-                                                    <ul>
-                                                        <li>
-                                                            <div class="ec-sidebar-sub-item"><a href="shop-left-sidebar-col-3.html">Sports <span title="Available Stock">- 25</span></a>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="ec-sidebar-sub-item"><a href="shop-left-sidebar-col-3.html">Formal <span title="Available Stock">- 52</span></a>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="ec-sidebar-sub-item"><a href="shop-left-sidebar-col-3.html">Casual <span title="Available Stock">- 40</span></a>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="ec-sidebar-sub-item"><a href="shop-left-sidebar-col-3.html">safety shoes <span title="Available Stock">- 35</span></a>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="ec-sb-block-content">
-                                            <ul>
-                                                <li>
-                                                    <div class="ec-sidebar-block-item"><img src="{{asset('tlandingPage/assets/images/icons/perfume-8.svg')}}" class="svg_img" alt="drink" />perfume</div>
-                                                    <ul>
-                                                        <li>
-                                                            <div class="ec-sidebar-sub-item"><a href="shop-left-sidebar-col-3.html">Clothes perfume<span title="Available Stock">- 4 pcs</span></a>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="ec-sidebar-sub-item"><a href="shop-left-sidebar-col-3.html">deodorant <span title="Available Stock">- 52 pcs</span></a>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="ec-sidebar-sub-item"><a href="shop-left-sidebar-col-3.html">Flower fragrance <span title="Available Stock">- 10 pack</span></a>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="ec-sidebar-sub-item"><a href="shop-left-sidebar-col-3.html">Air Freshener<span title="Available Stock">- 35 pack</span></a>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div> --}}
                                 </div>
                                 <!-- Sidebar Category Block -->
                             </div>
