@@ -205,21 +205,24 @@
     <!-- ekka Mobile Menu Start -->
     <div id="ec-mobile-menu" class="ec-side-cart ec-mobile-menu">
         <div class="ec-menu-title">
-            <span class="menu_title">My Saya</span>
+            <span class="menu_title">Menu</span>
             <button class="ec-close">×</button>
         </div>
         <div class="ec-menu-inner">
             <div class="ec-menu-content">
                 <ul>
-                    <li><a href="/">Beranda</a></li>
-                    <li><a href="/">Katalog</a></li>
+                    <li><a href="{{ url('/') }}">Beranda</a></li>
+                    <li><a href="{{ route('katalog') }}">Katalog</a></li>
                     <li class="dropdown"><a href="javascript:void(0)">Kategori</a>
                         <ul class="sub-menu">
-                            <li><a href="elemets-products.html">Alumunium</a></li>
-                            <li><a href="elemets-typography.html">Atap</a></li>
+                            @foreach ($Kategori as $item)
+                                <li><a href="{{ url("kategori/$item->slug") }}">{{ $item->nama }}</a></li>
+                            @endforeach
                         </ul>
                     </li>
-                    <li><a href="offer.html">Kontak</a></li>
+                    <li><a href="{{ url('cara-pemesanan') }}">Cara Pemesanan</a></li>
+                    <li><a href="{{ url('/contact') }}">Kontak</a></li>
+                    <li><a href="{{ url('/tentang') }}">Tentang Kami</a></li>
                 </ul>
             </div>
             <div class="header-res-lan-curr">

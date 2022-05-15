@@ -75,7 +75,7 @@ class KategoriController extends Controller
         //     $extension = $request->file('gambar')->extension();
         //     $file_name = "Kategori_$date.$extension";
         //     $path = $request->file('gambar')->storeAs('public/Kategori', $file_name);
-            
+
         //     $Kategori->gambar = $file_name;
         // }
 
@@ -96,5 +96,11 @@ class KategoriController extends Controller
         $Kategori->delete();
         return redirect()->route('kategori.index')
             ->with('delete', 'Kategori Berhasil Dihapus');
+    }
+
+    public function listKategori()
+    {
+        $kategori = Kategori::latest()->get();
+        return $kategori;
     }
 }
