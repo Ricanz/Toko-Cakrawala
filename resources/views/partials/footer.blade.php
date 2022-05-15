@@ -43,7 +43,7 @@
                         <div class="ec-footer-contact">
                             <div class="ec-footer-widget">
                                 <div class="ec-footer-logo"><a href="#"><img src="{{asset('tlandingPage/assets/images/logo/cakrawala-dark.png')}}"
-                                            alt="Logo Cakrawala" width="75%"><img class="dark-footer-logo" src="{{asset('tlandingPage/assets/images/logo/cakrawala-dark.png')}}"
+                                            alt="Logo Cakrawala" width="100" height="auto"><img class="dark-footer-logo" src="{{asset('tlandingPage/assets/images/logo/cakrawala-dark.png')}}"
                                             alt="Site Logo" style="display: none;" /></a></div>
                                 <h4 class="ec-footer-heading">Kontak Kami</h4>
                                 <div class="ec-footer-links">

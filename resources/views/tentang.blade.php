@@ -61,7 +61,7 @@
                 </div>
                 <div class="col-md-6 text-center">
                     {{-- <div class="section-title">
-                        <h2 class="ec-bg-title">Misi</h2>
+                        <h2 class="ec-bg-title">Misi</h2e
                     </div>
                     <div class="ec-cms-block-inner">
                         <p align="justify">Menjadi One Stop Shopping bahan bangunan atap yang Lengkap, Nyaman, dan Murah yang dilengkapi fasilitas pendukung seperti jasa pemasangan, servis antar dan online order. Serta membuka lebih banyak lagi gerai di kota-kota besar yang berpotensi di seluruh Indonesia.</p>

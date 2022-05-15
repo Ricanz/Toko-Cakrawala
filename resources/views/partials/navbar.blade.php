@@ -137,7 +137,7 @@
                             <!-- Header Cart End -->
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -152,7 +152,7 @@
                 <!-- Ec Header Logo Start -->
                 <div class="col">
                     <div class="header-logo">
-                        <a href="/"><img src="{{asset('tlandingPage/assets/images/logo/cakrawala.png')}}" alt="Toko Cakrawala" height="500" /><img
+                        <a href="/"><img src="{{asset('tlandingPage/assets/images/logo/cakrawala.png')}}" alt="Toko Cakrawala" height="auto" /><img
                                 class="dark-logo" src="{{asset('tlandingPage/assets/images/logo/cakrawala-dark.png')}}" alt="Toko Cakrawala"
                                 style="display: none;" /></a>
                     </div>
@@ -187,7 +187,7 @@
                             <li class="dropdown"><a href="javascript:void(0)">Kategori</a>
                                 <ul class="sub-menu">
                                     @foreach ($Kategori as $item)
-                                        <li><a href="{{ url("kategori/$item->slug") }}">{{ $item->nama }}</a></li>  
+                                        <li><a href="{{ url("kategori/$item->slug") }}">{{ $item->nama }}</a></li>
                                     @endforeach
                                 </ul>
                             </li>
