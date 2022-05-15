@@ -23,7 +23,7 @@ class BerandaController extends Controller
         $testimonial = Testimonial::all();
         $artikel = Artikel::all();
         // $banner = Banner::where('status', 'aktif')->get();
-        $banner = Banner::latest()->take(3)->get();
+        $banner = Banner::where('status', 'aktif')->where('role', 'banner')->latest()->take(3)->get();
         $supplier = Supplier::where('status', 'aktif')->get();
         // dd(response()->json(request()->cookie('shopping_cart')));
         // dd(Helper::getCart());
