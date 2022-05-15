@@ -485,6 +485,18 @@
                         </div>
                     </div>
                     <div class="ec_ser_block">
+                        <div class="ec_ser_content ec_ser_content_5 col-sm-12">
+                            <div class="ec_ser_inner">
+                                <div class="ec-service-image">
+                                    <img src="{{ asset('tlandingPage/assets/images/icons/service_4_5.svg') }}"
+                                        class="svg_img ser_svg" alt="" />
+                                </div>
+                                <div class="ec-service-desc">
+                                    <h2>Material</h2>
+                                    <p>Menjual material konstruksi atap dan langit-langit</p>
+                                </div>
+                            </div>
+                        </div>
                         <div class="ec_ser_content ec_ser_content_1 col-sm-12">
                             <div class="ec_ser_inner">
                                 <div class="ec-service-image">
@@ -492,8 +504,8 @@
                                         class="svg_img ser_svg" alt="" />
                                 </div>
                                 <div class="ec-service-desc">
-                                    <h2>Worldwide Delivery</h2>
-                                    <p>For Order Over $100</p>
+                                    <h2>Pengiriman</h2>
+                                    <p>Layanan antar JABODETABEK</p>
                                 </div>
                             </div>
                         </div>
@@ -504,8 +516,8 @@
                                         class="svg_img ser_svg" alt="" />
                                 </div>
                                 <div class="ec-service-desc">
-                                    <h2>Next Day delivery</h2>
-                                    <p>UK Orders Only</p>
+                                    <h2>Konsultasi</h2>
+                                    <p>Menjual material konstruksi atap dan langit-langit</p>
                                 </div>
                             </div>
                         </div>
@@ -516,8 +528,8 @@
                                         class="svg_img ser_svg" alt="" />
                                 </div>
                                 <div class="ec-service-desc">
-                                    <h2>Best Online Support</h2>
-                                    <p>Hours: 8AM -11PM</p>
+                                    <h2>Online Support</h2>
+                                    <p>Belanja via telp/WA</p>
                                 </div>
                             </div>
                         </div>
@@ -528,20 +540,8 @@
                                         class="svg_img ser_svg" alt="" />
                                 </div>
                                 <div class="ec-service-desc">
-                                    <h2>Return Policy</h2>
-                                    <p>Easy & Free Return</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ec_ser_content ec_ser_content_5 col-sm-12">
-                            <div class="ec_ser_inner">
-                                <div class="ec-service-image">
-                                    <img src="{{ asset('tlandingPage/assets/images/icons/service_4_5.svg') }}"
-                                        class="svg_img ser_svg" alt="" />
-                                </div>
-                                <div class="ec-service-desc">
-                                    <h2>30% money back</h2>
-                                    <p>For Order Over $100</p>
+                                    <h2>Konsultasi</h2>
+                                    <p>Konsultasi jenis dan kebutuhan material</p>
                                 </div>
                             </div>
                         </div>
