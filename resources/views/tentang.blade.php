@@ -43,24 +43,32 @@
                 </div>
             </div>
             <div class="row pt-4">
-                <div class="col-md-6 text-center">
+                <div class="col-md-12 text-center">
                     <div class="section-title">
                         <h2 class="ec-bg-title">Visi</h2>
                     </div>
                     <div class="ec-cms-block-inner">
-                        <p align="justify">Menjadi salah satu toko bahan bangunan atap terpercaya di Indonesia</p>
+                        <p align="center">Menjadi salah satu toko bahan bangunan atap terpercaya di Indonesia</p>
                     </div>
-                </div>
-                <div class="col-md-6 text-center">
+                    <div class="my-3">
                     <div class="section-title">
                         <h2 class="ec-bg-title">Misi</h2>
                     </div>
                     <div class="ec-cms-block-inner">
-                        <p align="justify">Menjadi One Stop Shopping bahan bangunan atap yang Lengkap, Nyaman, dan Murah yang dilengkapi fasilitas pendukung seperti jasa pemasangan, servis antar dan online order. Serta membuka lebih banyak lagi gerai di kota-kota besar yang berpotensi di seluruh Indonesia.</p>
+                        <p align="center">Menjadi One Stop Shopping bahan bangunan atap yang Lengkap, Nyaman, dan Murah yang dilengkapi fasilitas pendukung seperti jasa pemasangan, servis antar dan online order. Serta membuka lebih banyak lagi gerai di kota-kota besar yang berpotensi di seluruh Indonesia.</p>
+                    </div>
                     </div>
                 </div>
+                <div class="col-md-6 text-center">
+                    {{-- <div class="section-title">
+                        <h2 class="ec-bg-title">Misi</h2>
+                    </div>
+                    <div class="ec-cms-block-inner">
+                        <p align="justify">Menjadi One Stop Shopping bahan bangunan atap yang Lengkap, Nyaman, dan Murah yang dilengkapi fasilitas pendukung seperti jasa pemasangan, servis antar dan online order. Serta membuka lebih banyak lagi gerai di kota-kota besar yang berpotensi di seluruh Indonesia.</p>
+                    </div> --}}
+                </div>
             </div>
-            
+
         </div>
     </section>
 </x-guest-layout>
