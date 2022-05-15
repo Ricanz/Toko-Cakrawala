@@ -562,7 +562,7 @@
                     <div class="ec-blog-block">
                             <div class="ec-blog-inner">
                                 <div class="ec-blog-image">
-                                    <a href="blog-detail-left-sidebar.html">
+                                    <a href="">
                                         <img class="blog-image"
                                             src="{{ asset($item->gambar) }}"
                                             alt="Blog" />
