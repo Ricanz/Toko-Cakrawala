@@ -14,6 +14,17 @@
                         <form action="{{ route('subKategori.store') }}" method="post">
                             @csrf
                             <div class="form-group row">
+                                <label for="parent-category" class="col-12 col-form-label">Kategori Utama</label>
+                                <div class="col-12">
+                                    <select id="parent-category" name="kategori_id" class="custom-select">
+                                        @foreach ($kategori as $item)
+                                            <option value="{{ $item->id }}">{{ $item->nama }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
                                 <label for="text" class="col-12 col-form-label">Sub Kategori</label>
                                 <div class="col-12">
                                     <input id="text" name="nama" class="form-control here slug-title" type="text">
@@ -25,17 +36,6 @@
                                 <div class="col-12">
                                     <textarea id="fulldescription" name="detail" cols="40" rows="4"
                                         class="form-control"></textarea>
-                                </div>
-                            </div>
-
-                            <div class="form-group row">
-                                <label for="parent-category" class="col-12 col-form-label">Kategori Utama</label>
-                                <div class="col-12">
-                                    <select id="parent-category" name="kategori_id" class="custom-select">
-                                        @foreach ($kategori as $item)
-                                            <option value="{{ $item->id }}">{{ $item->nama }}</option>
-                                        @endforeach
-                                    </select>
                                 </div>
                             </div>
 
