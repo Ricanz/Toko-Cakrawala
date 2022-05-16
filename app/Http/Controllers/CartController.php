@@ -143,14 +143,13 @@ class CartController extends Controller
             $cookie_data = stripslashes(Cookie::get('shopping_cart'));
             $cart_data = json_decode($cookie_data, true);
             $totalcart = count($cart_data);
-            $total = $cart_data->sum('harga_produk' * 'jumlah_produk');
         } else {
             $cart_data = null;
         }
 
         // dd($cart_data);
 
-        return view('checkout', compact('cart_data', 'total'));
+        return view('checkout', compact('cart_data'));
 
     }
 }
