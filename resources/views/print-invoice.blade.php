@@ -24260,13 +24260,19 @@ i.ecicon.eci-star.fill {
                                                                         {{-- <td><span>{{$item['item_id']}}</span></td> --}}
                                                                         <td class="text-center"><span>{{$item['nama_produk']}}</span></td>
                                                                         <td class="text-center"><span>{{$item['jumlah_produk']}}</span></td>
-                                                                        <td class="text-center"><span>{{$item['harga_produk']}}</span></td>
-                                                                        <td class="text-center"><span>{{$item['harga_produk']*$item['jumlah_produk']}}</span>
+                                                                        <td class="text-center"><span> @money($item['harga_produk']) </span></td>
+                                                                        <td class="text-center"><span> @money($subtotal = $item['harga_produk']*$item['jumlah_produk']) </span>
                                                                         </td>
                                                                     </tr>
-                                                                    @endforeach
                                                             </tbody>
                                                             <tfoot>
+                                                                <tr>
+                                                                    <td class="border-none m-m15" colspan="3"><span
+                                                                    class="note-text-color">
+                                                                    Total yang harus dibayar adalah Rp. @money(SUM($subtotal))
+                                                                    </td>
+                                                                </tr>
+                                                                @endforeach
                                                                 <tr>
                                                                     <td class="border-none m-m15" colspan="3"><span
                                                                             class="note-text-color">Pemesanan dan
