@@ -24270,7 +24270,7 @@ i.ecicon.eci-star.fill {
                                                                 <tr>
                                                                     <th class="border-none m-m15" colspan="3"><span
                                                                     class="note-text-color">
-                                                                    Total yang harus dibayar adalah Rp. @money($total = sum($subtotal))
+                                                                    Total yang harus dibayar adalah Rp. @money($total)
                                                                     </span>
                                                                     </th>
                                                                 </tr>
