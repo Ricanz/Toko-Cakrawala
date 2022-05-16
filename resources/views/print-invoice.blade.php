@@ -24247,11 +24247,11 @@ i.ecicon.eci-star.fill {
                                                         <table class="table ec-table">
                                                             <thead>
                                                                 <tr>
-                                                                    <td scope="col">ID</td>
-                                                                    <td scope="col">Nama Produk</td>
-                                                                    <td class="text-center" scope="col">Jumlah</td>
-                                                                    <td class="text-center" scope="col">Harga</td>
-                                                                    <td class="text-center" scope="col">Total</td>
+                                                                    <th scope="col">ID</th>
+                                                                    <th scope="col">Nama Produk</th>
+                                                                    <th class="text-center" scope="col">Jumlah</th>
+                                                                    <th class="text-center" scope="col">Harga</th>
+                                                                    <th class="text-center" scope="col">Subtotal</th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
@@ -24264,7 +24264,7 @@ i.ecicon.eci-star.fill {
                                                                         <td class="text-center"><span>{{$item['harga_produk']*$item['jumlah_produk']}}</span>
                                                                         </td>
                                                                     </tr>
-                                                                    {{-- @endforeach --}}
+                                                                    @endforeach
                                                             </tbody>
                                                             <tfoot>
                                                                 <tr>
@@ -24273,7 +24273,7 @@ i.ecicon.eci-star.fill {
                                                                             Informasi pembelian akan langsung dikirimkan
                                                                             melalui Whatsapp dan Email</span>
                                                                     </td>
-                                                                    <td class="border-color m-m15 text-center text-600 text-90"
+                                                                    {{-- <td class="border-color m-m15 text-center text-600 text-90"
                                                                         colspan="1">
                                                                         <h5><strong>Total</strong></h5>
                                                                     </td>
@@ -24281,7 +24281,7 @@ i.ecicon.eci-star.fill {
                                                                         class="border-color m-m15 text-center text-600 text-90">
                                                                         <h5>{{$item['harga_produk']*$item['jumlah_produk']}}</h5>
                                                                     </td>
-                                                                    @endforeach
+                                                                    @endforeach --}}
                                                                 </tr>
                                                             </tfoot>
                                                         </table>
