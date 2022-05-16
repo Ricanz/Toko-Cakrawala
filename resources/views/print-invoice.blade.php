@@ -15,6 +15,14 @@
 </head>
 
 <body class="shop_page">
+    <style type="text/css">
+    thead::before, thead::after{
+        display: none;
+    }
+    tbody::before, tbody::after{
+        display: none;
+    }
+    </style>
 
     <!-- User invoice section -->
     <section class="ec-page-content ec-vendor-uploads ec-user-account section-space-p">
