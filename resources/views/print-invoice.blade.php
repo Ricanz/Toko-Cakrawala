@@ -24191,7 +24191,7 @@ i.ecicon.eci-star.fill {
                             <div class="page-content">
                                 <div class="page-header text-blue-d2">
                                     <img src="{{ public_path('tlandingPage/assets/images/logo/cakrawala.png') }}"
-                                        alt="Site Logo">
+                                        alt="Site Logo" width="50%">
                                 </div>
 
                                 <div class="container px-0">
@@ -24264,9 +24264,9 @@ i.ecicon.eci-star.fill {
                                                                         <td class="text-center"><span>{{$item['harga_produk']*$item['jumlah_produk']}}</span>
                                                                         </td>
                                                                     </tr>
-                                                                    @endforeach
+                                                                    {{-- @endforeach --}}
                                                             </tbody>
-                                                            {{-- <thead>
+                                                            <tfoot>
                                                                 <tr>
                                                                     <td class="border-none m-m15" colspan="3"><span
                                                                             class="note-text-color">Pemesanan dan
@@ -24283,7 +24283,7 @@ i.ecicon.eci-star.fill {
                                                                     </td>
                                                                     @endforeach
                                                                 </tr>
-                                                            </thead> --}}
+                                                            </tfoot>
                                                         </table>
                                                     </div>
                                                 </div>
