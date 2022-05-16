@@ -24264,15 +24264,15 @@ i.ecicon.eci-star.fill {
                                                                         <td class="text-center"><span> @money($subtotal = $item['harga_produk']*$item['jumlah_produk']) </span>
                                                                         </td>
                                                                     </tr>
+                                                                    @endforeach
                                                             </tbody>
                                                             <tfoot>
                                                                 <tr>
-                                                                    <td class="border-none m-m15" colspan="3"><span
+                                                                    <th class="border-none m-m15" colspan="3"><span
                                                                     class="note-text-color">
                                                                     Total yang harus dibayar adalah Rp. 1000000
-                                                                    </td>
+                                                                    </th>
                                                                 </tr>
-                                                                @endforeach
                                                                 <tr>
                                                                     <td class="border-none m-m15" colspan="3"><span
                                                                             class="note-text-color">Pemesanan dan
