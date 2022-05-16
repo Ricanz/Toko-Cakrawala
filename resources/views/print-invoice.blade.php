@@ -24247,7 +24247,7 @@ i.ecicon.eci-star.fill {
                                                         <table class="table ec-table">
                                                             <thead>
                                                                 <tr>
-                                                                    {{-- <th scope="col">ID</th> --}}
+                                                                    <th class="text-center" scope="col">No.</th>
                                                                     <th class="text-center" scope="col">Nama Produk</th>
                                                                     <th class="text-center" scope="col">Jumlah</th>
                                                                     <th class="text-center" scope="col">Harga</th>
@@ -24257,11 +24257,11 @@ i.ecicon.eci-star.fill {
                                                             <tbody>
                                                                 @foreach ((array)$cart_data as $item)
                                                                     <tr>
-                                                                        {{-- <td><span>{{$item['item_id']}}</span></td> --}}
+                                                                        <td class="text-center"><span>{{$loop->iteration}}</span></td>
                                                                         <td class="text-center"><span>{{$item['nama_produk']}}</span></td>
                                                                         <td class="text-center"><span>{{$item['jumlah_produk']}}</span></td>
-                                                                        <td class="text-center"><span> @money($item['harga_produk']) </span></td>
-                                                                        <td class="text-center"><span> @money($subtotal = $item['harga_produk']*$item['jumlah_produk']) </span>
+                                                                        <td class="text-center"><span> Rp. @money($item['harga_produk']) </span></td>
+                                                                        <td class="text-center"><span> Rp. @money($subtotal = $item['harga_produk']*$item['jumlah_produk']) </span>
                                                                         </td>
                                                                     </tr>
                                                                     @endforeach
@@ -24270,7 +24270,7 @@ i.ecicon.eci-star.fill {
                                                                 <tr>
                                                                     <th class="border-none m-m15" colspan="3"><span
                                                                     class="note-text-color">
-                                                                    Total yang harus dibayar adalah Rp. 1000000
+                                                                    Total yang harus dibayar adalah Rp. @money($total = sum($subtotal))
                                                                     </th>
                                                                 </tr>
                                                                 <tr>
