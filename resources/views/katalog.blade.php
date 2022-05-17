@@ -65,7 +65,7 @@
                                                 <div class="ec-product-inner">
                                                     <div class="ec-pro-image-outer">
                                                         <div class="ec-pro-image">
-                                                            <a href="product-left-sidebar.html" class="image">
+                                                            <a href="{{ url("/produk-detail/$i->slug") }}" class="image">
                                                                 <img class="main-image"
                                                                     src="{{ asset('storage/Produk/' . $i->gambar) }}"
                                                                     alt="Product" />
@@ -73,28 +73,10 @@
                                                                     src="{{ asset('storage/Produk/' . $i->gambar) }}"
                                                                     alt="Product" />
                                                             </a>
-                                                            {{-- <span class="percentage">20%</span> --}}
-                                                            {{-- <div class="ec-pro-actions">
-                                                                <a href="{{ url("/produk-detail/$i->id") }}" class="ec-btn-group quickview" ><img
-                                                                        src="{{ asset('tlandingPage/assets/images/icons/quickview.svg') }}"
-                                                                        class="svg_img pro_svg" alt="" /></a>
-                                                                <form method="post"
-                                                                    action="{{ route('addToCart') }}">
-                                                                    @csrf
-                                                                    <input type="hidden" name="produk_id"
-                                                                        class="produk_id"
-                                                                        value="{{ $i->id }}">
-                                                                    <input type="hidden" name="jumlah_produk"
-                                                                        class="qty-input" value="1">
-                                                                    <button title="Add To Cart" type="submit"><img
-                                                                            src="{{ asset('tlandingPage/assets/images/icons/pro_cart.svg') }}"
-                                                                            class="svg_img pro_svg" alt="" /></button>
-                                                                </form>
-                                                            </div> --}}
                                                         </div>
                                                     </div>
                                                     <div class="ec-pro-content">
-                                                        <a href="{{ url("/produk/$i->id") }}">
+                                                        <a href="{{ url("/produk-detail/$i->slug") }}">
                                                             <h6 class="ec-pro-stitle">{{ $i->kategori->nama }}</h6>
                                                         </a>
                                                         <h5 class="ec-pro-title"><a
@@ -187,7 +169,7 @@
                                                                 </h6>
                                                             </a>
                                                             <h5 class="ec-pro-title"><a
-                                                                    href="product-left-sidebar.html">{{ $i->nama }}</a>
+                                                                    href="#">{{ $i->nama }}</a>
                                                             </h5>
                                                             <div class="ec-pro-rat-price">
                                                                 <span class="ec-pro-rating">
