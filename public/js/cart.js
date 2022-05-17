@@ -11,6 +11,7 @@ function deleteCart(event) {
     });
 }
 function tambahCart(event) {
+    console.log('erza');
     var id = $(event).data("id");
     $.ajax({
         headers: { 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') },
@@ -23,6 +24,7 @@ function tambahCart(event) {
     });
 }
 $(document).ready(function () {
+    console.log('erza');
     let harga_produk = 0
     let jumlah = 0
     let harga_akhir = 0

@@ -25,7 +25,7 @@
 
 
                 <!-- Users -->
-                <li class="has-sub {{ request()->is('user*') ? 'active expand' : '' }}">
+                {{-- <li class="has-sub {{ request()->is('user*') ? 'active expand' : '' }}">
                     <a class="sidenav-item-link" href="javascript:void(0)">
                         <i class="mdi mdi mdi-account-group"></i>
                         <span class="nav-text">Users</span> <b class="caret"></b>
@@ -39,7 +39,7 @@
                             </li>
                         </ul>
                     </div>
-                </li>
+                </li> --}}
                 
                 <!-- Banner -->
                 <li class="has-sub {{ request()->is('banner*') ? 'active expand' : '' }}">
