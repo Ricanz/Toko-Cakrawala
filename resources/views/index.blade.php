@@ -166,13 +166,6 @@
                                                                 href="product-left-sidebar.html">{{ $i->nama }}</a>
                                                         </h5>
                                                         <div class="ec-pro-rat-price">
-                                                            <span class="ec-pro-rating">
-                                                                <i class="ecicon eci-star fill"></i>
-                                                                <i class="ecicon eci-star fill"></i>
-                                                                <i class="ecicon eci-star fill"></i>
-                                                                <i class="ecicon eci-star fill"></i>
-                                                                <i class="ecicon eci-star fill"></i>
-                                                            </span>
                                                             <span class="ec-price">
                                                                 <span
                                                                     class="new-price">Rp. @money($i->harga) </span>
@@ -254,13 +247,6 @@
                                                                     href="product-left-sidebar.html">{{ $i->nama }}</a>
                                                             </h5>
                                                             <div class="ec-pro-rat-price">
-                                                                <span class="ec-pro-rating">
-                                                                    <i class="ecicon eci-star fill"></i>
-                                                                    <i class="ecicon eci-star fill"></i>
-                                                                    <i class="ecicon eci-star fill"></i>
-                                                                    <i class="ecicon eci-star fill"></i>
-                                                                    <i class="ecicon eci-star fill"></i>
-                                                                </span>
                                                                 <span class="ec-price">
                                                                     <span
                                                                         class="new-price">Rp. @money($i->harga) </span>

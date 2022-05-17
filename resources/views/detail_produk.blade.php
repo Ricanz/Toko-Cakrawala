@@ -69,15 +69,6 @@
                                         </div>
                                     </div>
                                     <div class="ec-spe-pro-content col-md-6 col-sm-12">
-                                        <div class="ec-spe-pro-rating">
-                                            <span class="ec-spe-rating-icon">
-                                                <i class="ecicon eci-star fill"></i>
-                                                <i class="ecicon eci-star fill"></i>
-                                                <i class="ecicon eci-star fill"></i>
-                                                <i class="ecicon eci-star"></i>
-                                                <i class="ecicon eci-star"></i>
-                                            </span>
-                                        </div>
                                         <h5 class="ec-spe-pro-title"><a href="product-left-sidebar.html">{{ $produk->nama }}</a></h5>
                                         <div class="ec-spe-pro-desc">{{ $produk->detail }}</div>
                                         <div class="ec-spe-price">
