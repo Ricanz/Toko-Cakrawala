@@ -19,7 +19,7 @@ class InvoiceController extends Controller
             $cookie_data = stripslashes(Cookie::get('shopping_cart'));
             $cart_data = json_decode($cookie_data, true);
             $totalcart = count($cart_data);
-            $total = $cart_data->array_sum('harga_produk' * 'jumlah_produk');
+            // $total = $cart_data->array_sum('harga_produk' * 'jumlah_produk');
         } else {
             $cart_data = null;
         }
@@ -44,7 +44,7 @@ class InvoiceController extends Controller
         $invoice =  'INV-'.Str::upper($random);
         $invoiceFile = $invoice.".pdf";
         $invoicePath = ("public/invoices/".$invoiceFile);
-        $pdf = PDF::loadView('print-invoice', compact('cart_data', 'invoice', 'data', 'tanggal', 'total'))->save($invoicePath);
+        $pdf = PDF::loadView('print-invoice', compact('cart_data', 'invoice', 'data', 'tanggal'))->save($invoicePath);
 
         Mail::send('email-seller', compact('data'), function ($message) use($pdf, $invoice) {
             $message->from('tokodotcakrawala@gmail.com');
