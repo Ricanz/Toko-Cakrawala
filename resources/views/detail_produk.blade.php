@@ -72,7 +72,7 @@
                                         <h5 class="ec-spe-pro-title"><a href="product-left-sidebar.html">{{ $produk->nama }}</a></h5>
                                         <div class="ec-spe-pro-desc">{{ $produk->detail }}</div>
                                         <div class="ec-spe-price">
-                                            <span class="new-price">Rp. {{ $produk->harga }}</span>
+                                            <span class="new-price">{{ Helper::mata_uang($produk->harga) }}</span>
                                         </div>
                                         <form method="post"
                                             action="{{ route('addToCart') }}">

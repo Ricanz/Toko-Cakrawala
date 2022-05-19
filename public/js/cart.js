@@ -73,17 +73,6 @@ function tambahKurang(id) {
 
     $("#total-harga").text(harga_produk)
 
-    // var jumlah = $("#qty-input-" + id).val();
-    // var harga_produk = $("#harga-produk-" + id).text()
-    // var total = jumlah * harga_produk
-    // if (jumlahClick == 0) {
-    //     var currentTotal = total
-    //     $("#total-harga").text(currentTotal)
-    //     jumlahClick = 1
-    // } else {
-    //     var currentTotal = parseInt($("#total-harga").text()) + total
-    //     $("#total-harga").text(currentTotal)
-    // }
 
 
 }

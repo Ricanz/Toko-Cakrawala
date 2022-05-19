@@ -56,7 +56,7 @@
                                                                         alt="" />{{ $item['nama_produk'] }}</a></td>
                                                             <td data-label="Price" class="ec-cart-pro-price"><span
                                                                     class="amount"
-                                                                    id="harga-produk-{{ $item['item_id'] }}">{{ $item['harga_produk'] }}</span>
+                                                                    id="harga-produk-{{ $item['item_id'] }}">{{ Helper::mata_uang($item['harga_produk']) }}</span>
                                                             </td>
                                                             <td data-label="Quantity" class="ec-cart-pro-qty"
                                                                 style="text-align: center;">
@@ -67,8 +67,8 @@
                                                                 </div> --}}
                                                                 {{ $item['jumlah_produk'] }}
                                                             </td>
-                                                            <td data-label="Total" class="ec-cart-pro-subtotal">Rp.
-                                                                {{ $item['jumlah_produk'] * $item['harga_produk'] }}
+                                                            <td data-label="Total" class="ec-cart-pro-subtotal">
+                                                                {{ Helper::mata_uang($item['jumlah_produk'] * $item['harga_produk']) }}
                                                             </td>
                                                             <td data-label="Remove" class="ec-cart-pro-remove">
                                                                 <a data-id="{{ $item['item_id'] }}"
@@ -115,7 +115,7 @@
                                     <div class="ec-cart-summary">
                                         <div class="ec-cart-summary-total">
                                             <span class="text-left">Total Harga</span>
-                                            <span class="text-right">Rp. {{ Helper::totalHarga() }}</span>
+                                            <span class="text-right">{{ Helper::mata_uang(Helper::totalHarga()) }}</span>
                                         </div>
                                     </div>
 

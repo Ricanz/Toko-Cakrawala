@@ -34,7 +34,7 @@
                                     <p class="product-desc">
                                         {{$produk->detail}}
                                     </p>
-                                    <p class="product-price">Harga: Rp. {{$produk->harga}}</p>
+                                    <p class="product-price">Harga: {{Helper::mata_uang($produk->harga)}}</p>
                                     <p class="product-sku">Stok: {{$produk->stok}}</p>
                                 </div>
                             </div>
@@ -67,7 +67,7 @@
 
                                 <div class="tab-pane pt-3 fade" id="productinformation" role="tabpanel">
                                     <ul>
-                                        <li><span>Harga</span> Rp. {{$produk->harga}} </li>
+                                        <li><span>Harga</span> {{Helper::mata_uang($produk->harga)}} </li>
                                         <li><span>Stok</span> {{$produk->stok}}</li>
                                     </ul>
                                 </div>

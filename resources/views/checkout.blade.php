@@ -88,7 +88,7 @@
                                     </div>
                                     <div class="ec-checkout-summary-total">
                                         <span class="text-left">Total Harga</span>
-                                        <span class="text-right">Rp. {{Helper::totalHarga()}}</span>
+                                        <span class="text-right">{{Helper::mata_uang(Helper::totalHarga())}}</span>
                                     </div>
                                 </div>
                                 <div class="ec-checkout-pro">
@@ -111,7 +111,7 @@
                                                     <span>Harga: {{ $item['harga_produk'] }}</span>
                                                 </div>
                                                 <span class="ec-price">
-                                                    <span class="new-price">Total: Rp. {{$item['harga_produk']*$item['jumlah_produk']}}</span>
+                                                    <span class="new-price">Total: {{Helper::mata_uang($item['harga_produk']*$item['jumlah_produk'])}}</span>
                                                 </span>
                                             </div>
                                         </div>

@@ -7,7 +7,10 @@ use Illuminate\Support\Facades\Request;
 
 class Helper
 {
-
+    public static function mata_uang($jumlah){
+        $data =  'Rp '.number_format($jumlah,0, ',' , '.');
+        return $data;
+    }
     public static function getCart()
     {
         if (Cookie::get('shopping_cart')) {
