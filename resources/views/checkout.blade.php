@@ -84,11 +84,11 @@
                                 <div class="ec-checkout-summary">
                                     <div>
                                         <span class="text-left">Total Pesanan</span>
-                                        <span class="text-right">3</span>
+                                        <span class="text-right">{{Helper::totalPesanan()}}</span>
                                     </div>
                                     <div class="ec-checkout-summary-total">
                                         <span class="text-left">Total Harga</span>
-                                        <span class="text-right">$80.00</span>
+                                        <span class="text-right">Rp. {{Helper::totalHarga()}}</span>
                                     </div>
                                 </div>
                                 <div class="ec-checkout-pro">

@@ -1,5 +1,5 @@
 <x-navigation-layout>
-    
+
     <!-- Ec breadcrumb start -->
     <div class="sticky-header-next-sec  ec-breadcrumb section-space-mb">
         <div class="container">
@@ -45,31 +45,39 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                
-                                            @if (Helper::getCart() != null)
-                                                @foreach (Helper::getCart() as $key => $item)
-                                                <tr id="data_{{ $item['item_id'] }}">
-                                                    <td data-label="Product" class="ec-cart-pro-name"><a
-                                                            href="product-left-sidebar.html"><img class="ec-cart-pro-img mr-4"
-                                                            src="{{ asset('storage/Produk/' . $item['foto_produk']) }}"
-                                                                alt="" />{{ $item['nama_produk'] }}</a></td>
-                                                    <td data-label="Price" class="ec-cart-pro-price"><span
-                                                            class="amount" id="harga-produk-{{ $item['item_id'] }}">{{ $item['harga_produk'] }}</span></td>
-                                                    <td data-label="Quantity" class="ec-cart-pro-qty"
-                                                        style="text-align: center;">
-                                                        <div class="cart-qty-plus-minus">
-                                                            <input class="cart-plus-minus" type="text"
-                                                                name="cartqtybutton" value="{{ $item['jumlah_produk'] }}" />
-                                                        </div>
-                                                    </td>
-                                                    <td data-label="Total" class="ec-cart-pro-subtotal">$56.00</td>
-                                                    <td data-label="Remove" class="ec-cart-pro-remove">
-                                                        <a data-id="{{ $item['item_id'] }}"
-                                                        onclick="deleteCart(event.target)"><i class="ecicon eci-trash-o"></i></a>
-                                                    </td>
-                                                </tr>
-                                                @endforeach
-                                            @endif
+
+                                                @if (Helper::getCart() != null)
+                                                    @foreach (Helper::getCart() as $key => $item)
+                                                        <tr id="data_{{ $item['item_id'] }}">
+                                                            <td data-label="Product" class="ec-cart-pro-name"><a
+                                                                    href="product-left-sidebar.html"><img
+                                                                        class="ec-cart-pro-img mr-4"
+                                                                        src="{{ asset('storage/Produk/' . $item['foto_produk']) }}"
+                                                                        alt="" />{{ $item['nama_produk'] }}</a></td>
+                                                            <td data-label="Price" class="ec-cart-pro-price"><span
+                                                                    class="amount"
+                                                                    id="harga-produk-{{ $item['item_id'] }}">{{ $item['harga_produk'] }}</span>
+                                                            </td>
+                                                            <td data-label="Quantity" class="ec-cart-pro-qty"
+                                                                style="text-align: center;">
+                                                                {{-- <div class="cart-qty-plus-minus">
+                                                                    <input disabled class="cart-plus-minus" type="text"
+                                                                        name="cartqtybutton"
+                                                                        value="{{ $item['jumlah_produk'] }}" />
+                                                                </div> --}}
+                                                                {{ $item['jumlah_produk'] }}
+                                                            </td>
+                                                            <td data-label="Total" class="ec-cart-pro-subtotal">Rp.
+                                                                {{ $item['jumlah_produk'] * $item['harga_produk'] }}
+                                                            </td>
+                                                            <td data-label="Remove" class="ec-cart-pro-remove">
+                                                                <a data-id="{{ $item['item_id'] }}"
+                                                                    onclick="deleteCart(event.target)"><i
+                                                                        class="ecicon eci-trash-o"></i></a>
+                                                            </td>
+                                                        </tr>
+                                                    @endforeach
+                                                @endif
                                             </tbody>
                                         </table>
                                     </div>
@@ -78,7 +86,8 @@
                                             <div class="ec-cart-update-bottom">
                                                 <a href="/katalog">Lanjutkan Belanja</a>
                                                 <span class="ec-contact-wrap ec-contact-btn">
-                                                    <a href="{{route('checkout')}}" class="btn btn-primary" type="submit">Checkout</a>
+                                                    <a href="{{ route('checkout') }}" class="btn btn-primary"
+                                                        type="submit">Checkout</a>
                                                 </span>
                                             </div>
                                         </div>
@@ -106,7 +115,7 @@
                                     <div class="ec-cart-summary">
                                         <div class="ec-cart-summary-total">
                                             <span class="text-left">Total Harga</span>
-                                            <span class="text-right">$80.00</span>
+                                            <span class="text-right">Rp. {{ Helper::totalHarga() }}</span>
                                         </div>
                                     </div>
 

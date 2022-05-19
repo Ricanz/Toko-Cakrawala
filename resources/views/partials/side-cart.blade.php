@@ -21,7 +21,7 @@
 
                                     {{-- Harga Produk --}}
                                     <span class="harga-produk" id="harga-produk-{{ $item['item_id'] }}">{{ $item['harga_produk'] }}
-                                    </span>x {{ $item['jumlah_produk'] }}</span>
+                                    {{-- </span>x {{ $item['jumlah_produk'] }}</span> --}}
 
                                 <div id="qty-plus-minus" onclick="tambahKurang({{ $item['item_id'] }})"
                                     data-id="{{ $item['item_id'] }}" class="qty-plus-minus">

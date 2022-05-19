@@ -74,5 +74,5 @@ Route::post('updateToCart', [CartController::class, 'updateToCart']);
 Route::delete('deleteCart/{id}', [CartController::class, 'deleteFromCart'])->name('deleteCart');
 Route::get('clearCart', [CartController::class, 'clearCart']);
 Route::post('print-invoice', [InvoiceController::class, 'invoice']);
-
+Route::get('getCart', [CartController::class, 'Cart']);
 require __DIR__ . '/auth.php';
