@@ -130,7 +130,7 @@
                                                 <div class="ec-product-inner">
                                                     <div class="ec-pro-image-outer">
                                                         <div class="ec-pro-image">
-                                                            <a href="product-left-sidebar.html" class="image">
+                                                            <a href="{{ url("/produk-detail/$i->slug") }}" class="image">
                                                                 <img class="main-image"
                                                                     src="{{ asset('storage/Produk/' . $i->gambar) }}"
                                                                     alt="Product" />
@@ -163,7 +163,7 @@
                                                             <h6 class="ec-pro-stitle">{{ $i->kategori->nama }}</h6>
                                                         </a>
                                                         <h5 class="ec-pro-title"><a
-                                                                href="product-left-sidebar.html">{{ $i->nama }}</a>
+                                                                href="{{ url("/produk-detail/$i->slug") }}">{{ $i->nama }}</a>
                                                         </h5>
                                                         <div class="ec-pro-rat-price">
                                                             <span class="ec-price">
@@ -395,7 +395,7 @@
                 <div class="col-md-6 col-sm-12" data-animation="fadeIn"  id="pemesanan">
                     <div class="ec-banner-inner">
                         <img class="img-responsive"
-                            src="{{ asset($bannerFront->banner) }}"
+                            src="{{ $bannerFront->banner == '' ? asset('tlandingPage/assets/images/product-image/111_1.jpg') : asset($bannerFront->banner) }}"
                             alt="">
                     </div>
                 </div>
@@ -486,7 +486,7 @@
                     <div class="ec-blog-block">
                             <div class="ec-blog-inner">
                                 <div class="ec-blog-image">
-                                    <a href="">
+                                    <a href="{{ url("artikel-detail/$item->slug") }}">
                                         <img class="blog-image"
                                             src="{{ asset($item->gambar) }}"
                                             alt="Blog" />
