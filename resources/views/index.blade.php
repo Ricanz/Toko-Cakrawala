@@ -394,20 +394,9 @@
                 <!-- ec Banner Start -->
                 <div class="col-md-6 col-sm-12" data-animation="fadeIn"  id="pemesanan">
                     <div class="ec-banner-inner">
-                        <div class="ec-banner-block ec-banner-block-1">
-                            <div class="banner-block">
-                                {{-- <div class="banner-content">
-                                    <div class="banner-text">
-                                        <span class="ec-banner-disc">25% discount</span>
-                                        <span class="ec-banner-title">Vegetables & Fruits</span>
-                                        <span class="ec-banner-stitle">Starting @ $10</span>
-                                    </div>
-                                    <span class="ec-banner-btn"><a href="shop-left-sidebar-col-3.html">Shop Now <i
-                                                class="ecicon eci-angle-double-right"
-                                                aria-hidden="true"></i></a></span>
-                                </div> --}}
-                            </div>
-                        </div>
+                        <img class="img-responsive"
+                            src="{{ asset($bannerFront->banner) }}"
+                            alt="">
                     </div>
                 </div>
                 <!-- ec Banner End -->

@@ -22,7 +22,7 @@ class BerandaController extends Controller
         $kategori = Kategori::all();
         $testimonial = Testimonial::all();
         $artikel = Artikel::all();
-        // $banner = Banner::where('status', 'aktif')->get();
+        $bannerFront = Banner::where('status', 'aktif')->where('role', 'pemesanan')->first();
         $banner = Banner::where('status', 'aktif')->where('role', 'banner')->latest()->take(3)->get();
         $supplier = Supplier::where('status', 'aktif')->get();
         // dd(response()->json(request()->cookie('shopping_cart')));
@@ -30,7 +30,7 @@ class BerandaController extends Controller
         // foreach(Helper::getCart() as $key => $item){
         //     dd($item);
         // }
-        return view('index', compact('produk', 'kategori', 'produkselect', 'testimonial', 'artikel', 'banner', 'supplier'));
+        return view('index', compact('produk', 'kategori', 'produkselect', 'testimonial', 'artikel', 'banner', 'bannerFront', 'supplier'));
     }
 
     public function katalog(){
