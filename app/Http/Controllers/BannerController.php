@@ -64,7 +64,6 @@ class BannerController extends Controller
             'role' => 'banner'
         ]);
 
-        // dd($banner);
         return redirect()->route('banner.index')
             ->with('success', 'Banner Berhasil Ditambahkan');
     }
