@@ -10,6 +10,7 @@ use Barryvdh\DomPDF\Facade\Pdf as PDF;
 use Illuminate\Support\Carbon;
 use App\Models\Pesanan;
 use Illuminate\Support\Facades\File;
+use RealRashid\SweetAlert\Facades\Alert;
 class InvoiceController extends Controller
 {
     public function invoice(Request $request)
@@ -70,7 +71,7 @@ class InvoiceController extends Controller
         ]);
 
         File::delete($invoicePath);
-
+        Alert::success('Success', 'Checkout berhasil, silahkan cek email anda!');
         return redirect('/')->with('success', 'Pesanan sedang diproses');
     }
 }
