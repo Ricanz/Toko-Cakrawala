@@ -24255,7 +24255,7 @@ i.ecicon.eci-star.fill {
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
-                                                                @foreach ((array)$cart_data as $item)
+                                                                @foreach ($cart_data as $item)
                                                                     <tr>
                                                                         <td class="text-center"><span>{{$loop->iteration}}</span></td>
                                                                         <td class="text-center"><span>{{$item['nama_produk']}}</span></td>
@@ -24267,13 +24267,13 @@ i.ecicon.eci-star.fill {
                                                                     @endforeach
                                                             </tbody>
                                                             <tfoot>
-                                                                <tr>
+                                                                {{-- <tr>
                                                                     <th class="border-none m-m15" colspan="3"><span
                                                                     class="note-text-color">
-                                                                    Total yang harus dibayar adalah Rp.
+                                                                    Total yang harus dibayar adalah {{Helper::mata_uang($item['harga_produk']*$item['jumlah_produk'])}}
                                                                     </span>
                                                                     </th>
-                                                                </tr>
+                                                                </tr> --}}
                                                                 <tr>
                                                                     <td class="border-none m-m15" colspan="3"><span
                                                                             class="note-text-color">Pemesanan dan
