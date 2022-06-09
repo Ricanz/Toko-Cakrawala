@@ -28,7 +28,7 @@
                                     </div>
                                     <div class="ec-spe-pro-content col-md-6 col-sm-12">
                                         <h5 class="ec-spe-pro-title"><a href="product-left-sidebar.html">{{ $artikel->judul }}</a></h5>
-                                        <div class="ec-spe-pro-desc">{{ $artikel->isi }}</div>
+                                        <div class="ec-spe-pro-desc text-justify">{{ $artikel->isi }}</div>
                                     </div>
                                 </div>
                             </div>

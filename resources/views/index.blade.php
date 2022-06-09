@@ -85,7 +85,7 @@
                                             <ul>
                                                 <li>
                                                     <div class="ec-sidebar-block-item"><img
-                                                            src="{{ asset('tlandingPage/assets/images/icons/dress-8.svg') }}"
+                                                            src="{{ asset('tlandingPage/assets/images/icons/favorites.png') }}"
                                                             class="svg_img" alt="drink" />{{ $k->nama }}
                                                     </div>
                                                     <ul style="display: block;">
