@@ -12,7 +12,7 @@
             <p>Butuh bantuan? segera hubungi kami</p>
         </div>
         <div class="cc-footer">
-            <a href="https://wa.me/+6285735691018?text=Saya memesan sesuatu, silahkan cek email Anda" class="cc-call-button">
+            <a href="https://wa.me/+62816225999?text=Saya memesan sesuatu, silahkan cek email Anda" class="cc-call-button">
                 <span>Hubungi Kami</span>
                 <svg width="13px" height="10px" viewBox="0 0 13 10">
                 <path d="M1,5 L11,5"></path>

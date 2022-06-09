@@ -10,7 +10,7 @@
         <div class="ec-body">
             <ul>
                 <!-- Start Single Contact List --><li>
-                    <a class="ec-list" data-number="+6285735691018"
+                    <a class="ec-list" data-number="+62816225999"
                         data-message="Hallo saya butuh bantuan!!">
                         <div class="d-flex bd-highlight">
                             <!-- Profile Picture -->
