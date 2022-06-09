@@ -29,7 +29,7 @@
                                             <h5 class="ec-spe-pro-title"><a
                                                     href="product-left-sidebar.html">{{ $artikel->judul }}</a></h5>
                                             <div class="ec-spe-pro-desc ">
-                                                <p class="text-justify"> {{ $artikel->isi }}
+                                                <p align="justify"> {{ $artikel->isi }}
                                                 </p>
                                             </div>
                                         </div>
