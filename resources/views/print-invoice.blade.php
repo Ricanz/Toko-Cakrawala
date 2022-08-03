@@ -24257,11 +24257,11 @@ i.ecicon.eci-star.fill {
                                                             <tbody>
                                                                 @foreach ($cart_data as $item)
                                                                     <tr>
-                                                                        <td><span>{{$loop->iteration}}</span></td>
-                                                                        <td><span>{{$item['nama_produk']}}</span></td>
-                                                                        <td><span>{{$item['jumlah_produk']}}</span></td>
-                                                                        <td><span> Rp. @money($item['harga_produk']) </span></td>
-                                                                        <td ><span> Rp. @money($subtotal = $item['harga_produk']*$item['jumlah_produk'])</span></td>
+                                                                        <td>{{$loop->iteration}}</td>
+                                                                        <td>{{$item['nama_produk']}}</td>
+                                                                        <td>{{$item['jumlah_produk']}}</td>
+                                                                        <td>Rp. @money($item['harga_produk'])</td>
+                                                                        <td>Rp. @money($subtotal = $item['harga_produk']*$item['jumlah_produk'])</td>
                                                                     </tr>
                                                                     @endforeach
                                                             </tbody>
