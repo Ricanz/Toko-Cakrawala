@@ -132,12 +132,12 @@
                                 <div class="ec-check-pay-img-inner">
                                     <div class="ec-check-pay-img">
                                         <img src="{{asset('tlandingPage/assets/images/payment/bca.png')}}" alt="Bank BCA" width="50%">
-                                    </div>
-                                    <div class="ec-check-pay-img">
+                                        <img src="{{asset('tlandingPage/assets/images/payment/mandiri.png')}}" alt="Bank Mandiri" width="50%">
                                         <img src="{{asset('tlandingPage/assets/images/payment/bni.png')}}" alt="Bank BNI" width="50%">
                                     </div>
                                     <div class="ec-check-pay-img">
-                                        <img src="{{asset('tlandingPage/assets/images/payment/mandiri.png')}}" alt="Bank Mandiri" width="50%">
+                                    </div>
+                                    <div class="ec-check-pay-img">
                                     </div>
                                 </div>
                             </div>
