@@ -24247,11 +24247,11 @@ i.ecicon.eci-star.fill {
                                                         <table>
                                                             <thead>
                                                                 <tr>
-                                                                    <th>No.</th>
-                                                                    <th>Nama Produk</th>
-                                                                    <th>Jumlah</th>
-                                                                    <th>Harga</th>
-                                                                    <th>Subtotal</th>
+                                                                    <th class="text-start">No.</th>
+                                                                    <th class="text-start">Nama Produk</th>
+                                                                    <th class="text-start">Jumlah</th>
+                                                                    <th class="text-start">Harga</th>
+                                                                    <th class="text-start">Subtotal</th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
