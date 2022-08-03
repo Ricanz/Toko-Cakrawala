@@ -35,8 +35,8 @@
                                                                         <th><span>{{$i['item_id']}}</span></th>
                                                                         <td><span>{{$i['nama_produk']}}</span></td>
                                                                         <td class="text-center"><span>{{$i['jumlah_produk']}}</span></td>
-                                                                        <td class="text-center"><span>{{$i['harga_produk']}}</span></td>
-                                                                        <td class="text-center"><span>{{$i['harga_produk']*$i['jumlah_produk']}}</span>
+                                                                        <td class="text-center"><span>Rp. @money($i['harga_produk'])</span></td>
+                                                                        <td class="text-center"><span>Rp. @money($i['harga_produk']*$i['jumlah_produk'])</span>
                                                                         </td>
                                                                     </tr>
                                                                 @endforeach
