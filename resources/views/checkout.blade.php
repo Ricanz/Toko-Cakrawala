@@ -42,16 +42,16 @@
                                                 <span class="ec-bill-wrap ec-bill-half">
                                                     <label>Nama Lengkap*</label>
                                                     <input type="text" name="nama"
-                                                        placeholder="Masukkan nama Anda" required />
+                                                        placeholder="*Nama Lengkap" required />
                                                 </span>
                                                 <span class="ec-bill-wrap ec-bill-half">
                                                     <label>Email*</label>
-                                                    <input type="email" name="email"
-                                                        placeholder="Masukkan email Anda" required />
+                                                    <input type="text" name="email"
+                                                        placeholder="*Email" required />
                                                 </span>
                                                 <span class="ec-bill-wrap">
                                                     <label>Alamat</label>
-                                                    <input type="text" name="alamat" placeholder="Masukan alamat Anda" />
+                                                    <textarea type="text" name="alamat" placeholder="*Alamat" />
                                                 </span>
                                                 <span class="ec-bill-wrap">
                                                     <label>Nomor Handphone (Whatsapp)</label>
@@ -132,12 +132,12 @@
                                 <div class="ec-check-pay-img-inner">
                                     <div class="ec-check-pay-img">
                                         <img src="{{asset('tlandingPage/assets/images/payment/bca.png')}}" alt="Bank BCA" width="50%">
-                                        <img src="{{asset('tlandingPage/assets/images/payment/mandiri.png')}}" alt="Bank Mandiri" width="50%">
+                                    </div>
+                                    <div class="ec-check-pay-img">
                                         <img src="{{asset('tlandingPage/assets/images/payment/bni.png')}}" alt="Bank BNI" width="50%">
                                     </div>
                                     <div class="ec-check-pay-img">
-                                    </div>
-                                    <div class="ec-check-pay-img">
+                                        <img src="{{asset('tlandingPage/assets/images/payment/mandiri.png')}}" alt="Bank Mandiri" width="50%">
                                     </div>
                                 </div>
                             </div>
