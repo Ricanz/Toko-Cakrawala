@@ -24189,9 +24189,8 @@ i.ecicon.eci-star.fill {
                         </div>
                         <div class="ec-vendor-card-body padding-b-0">
                             <div class="page-content">
-                                <div class="page-header text-blue-d2">
-                                    <img src="{{ public_path('tlandingPage/assets/images/logo/cakrawala.png') }}"
-                                        alt="Site Logo" width="50%">
+                                <div>
+                                    <img src="{{ public_path('tlandingPage/assets/images/logo/cakrawala.png') }}" width="10%">
                                 </div>
 
                                 <div class="container px-0">
