@@ -87,11 +87,11 @@
                                                             <tbody>
                                                                 @foreach ($cart_data as $item)
                                                                     <tr>
-                                                                        <td>{{$loop->iteration}}</td>
-                                                                        <td>{{$item['nama_produk']}}</td>
-                                                                        <td>{{$item['jumlah_produk']}}</td>
-                                                                        <td>Rp. @money($item['harga_produk'])</td>
-                                                                        <td>Rp. @money($subtotal = $item['harga_produk']*$item['jumlah_produk'])</td>
+                                                                        <td class="text-center">{{$loop->iteration}}</td>
+                                                                        <td class="text-center">{{$item['nama_produk']}}</td>
+                                                                        <td class="text-center">{{$item['jumlah_produk']}}</td>
+                                                                        <td class="text-center">Rp. @money($item['harga_produk'])</td>
+                                                                        <td class="text-center">Rp. @money($subtotal = $item['harga_produk']*$item['jumlah_produk'])</td>
                                                                     </tr>
                                                                     @endforeach
                                                             </tbody>
