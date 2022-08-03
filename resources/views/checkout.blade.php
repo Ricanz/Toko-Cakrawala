@@ -40,12 +40,12 @@
                                             <form action="{{url('print-invoice')}}" method="POST">
                                                 @csrf
                                                 <span class="ec-bill-wrap ec-bill-half">
-                                                    <label>Nama Lengkap*</label>
+                                                    <label>Nama Lengkap</label>
                                                     <input type="text" name="nama"
                                                         placeholder="*Nama Lengkap" required />
                                                 </span>
                                                 <span class="ec-bill-wrap ec-bill-half">
-                                                    <label>Email*</label>
+                                                    <label>Email</label>
                                                     <input type="text" name="email"
                                                         placeholder="*Email" required />
                                                 </span>
