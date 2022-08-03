@@ -48,12 +48,12 @@ class InvoiceController extends Controller
         $invoicePath = ("invoices/".$invoiceFile);
         $pdf = PDF::loadView('print-invoice', compact('cart_data', 'invoice', 'data', 'tanggal'))->setPaper('a4', 'landscape')->save($invoicePath);
 
-        // Mail::send('email-seller', compact('data'), function ($message) use($pdf, $invoice) {
-        //     $message->from('tokodotcakrawala@gmail.com');
-        //     $message->to('tokodotcakrawala@gmail.com', 'Invoice')
-        //     ->subject("Pemesanan ".$invoice)
-        //     ->attachData($pdf->output(), $invoice.".pdf");
-        // });
+        Mail::send('email-seller', compact('data'), function ($message) use($pdf, $invoice) {
+            $message->from('tokodotcakrawala@gmail.com');
+            $message->to('tokodotcakrawala@gmail.com', 'Invoice')
+            ->subject("Pemesanan ".$invoice)
+            ->attachData($pdf->output(), $invoice.".pdf");
+        });
         Mail::send('email-buyer', compact('data'), function ($message) use($pdf, $invoice, $request) {
             $message->from('tokodotcakrawala@gmail.com');
             $message->to($request->email, 'Invoice')
