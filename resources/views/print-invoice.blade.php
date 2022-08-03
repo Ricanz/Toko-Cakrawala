@@ -24247,22 +24247,21 @@ i.ecicon.eci-star.fill {
                                                         <table class="table ec-table">
                                                             <thead>
                                                                 <tr>
-                                                                    <th class="text-right" scope="col">No.</th>
-                                                                    <th class="text-right" scope="col">Nama Produk</th>
-                                                                    <th class="text-right" scope="col">Jumlah</th>
-                                                                    <th class="text-right" scope="col">Harga</th>
-                                                                    <th class="text-right" scope="col">Subtotal</th>
+                                                                    <th>No.</th>
+                                                                    <th>Nama Produk</th>
+                                                                    <th>Jumlah</th>
+                                                                    <th>Harga</th>
+                                                                    <th>Subtotal</th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
                                                                 @foreach ($cart_data as $item)
                                                                     <tr>
-                                                                        <td class="text-right"><span>{{$loop->iteration}}</span></td>
-                                                                        <td class="text-right"><span>{{$item['nama_produk']}}</span></td>
-                                                                        <td class="text-right"><span>{{$item['jumlah_produk']}}</span></td>
-                                                                        <td class="text-right"><span> Rp. @money($item['harga_produk']) </span></td>
-                                                                        <td class="text-right"><span> Rp. @money($subtotal = $item['harga_produk']*$item['jumlah_produk']) </span>
-                                                                        </td>
+                                                                        <td><span>{{$loop->iteration}}</span></td>
+                                                                        <td><span>{{$item['nama_produk']}}</span></td>
+                                                                        <td><span>{{$item['jumlah_produk']}}</span></td>
+                                                                        <td><span> Rp. @money($item['harga_produk']) </span></td>
+                                                                        <td ><span> Rp. @money($subtotal = $item['harga_produk']*$item['jumlah_produk'])</span></td>
                                                                     </tr>
                                                                     @endforeach
                                                             </tbody>
