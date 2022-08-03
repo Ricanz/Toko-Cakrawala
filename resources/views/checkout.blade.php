@@ -51,7 +51,7 @@
                                                 </span>
                                                 <span class="ec-bill-wrap">
                                                     <label>Alamat</label>
-                                                    <textarea type="text" name="alamat" placeholder="*Alamat" />
+                                                    <textarea type="text" name="alamat" placeholder="*Alamat"></textarea>
                                                 </span>
                                                 <span class="ec-bill-wrap">
                                                     <label>Nomor Handphone (Whatsapp)</label>
