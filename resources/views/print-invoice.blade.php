@@ -24259,19 +24259,18 @@ i.ecicon.eci-star.fill {
                                                                         <td class="text-center"><span>{{$loop->iteration}}</span></td>
                                                                         <td class="text-center"><span>{{$item['nama_produk']}}</span></td>
                                                                         <td class="text-center"><span>{{$item['jumlah_produk']}}</span></td>
-                                                                        <td class="text-center"><span> Rp. @money($item['harga_produk']) </span></td>
-                                                                        <td class="text-center"><span> Rp. @money($subtotal = $item['harga_produk']*$item['jumlah_produk']) </span>
-                                                                        </td>
+                                                                        <td class="text-center"><span> Rp. @money($item['harga_produk'])</span></td>
+                                                                        <td class="text-center"><span> Rp. @money($subtotal = $item['harga_produk']*$item['jumlah_produk'])</span></td>
                                                                     </tr>
                                                                     @endforeach
                                                             </tbody>
                                                             <tfoot>
                                                                 <tr>
-                                                                    <th class="border-none m-m15" colspan="3"><span
+                                                                    <td class="border-none m-m15" colspan="3"><span
                                                                     class="note-text-color">
                                                                     Total yang harus dibayar adalah {{Helper::mata_uang(Helper::totalHarga())}}
                                                                     </span>
-                                                                    </th>
+                                                                    </td>
                                                                 </tr>
                                                                 <tr>
                                                                     <td class="border-none m-m15" colspan="3"><span
