@@ -51,11 +51,11 @@
                                                 </span>
                                                 <span class="ec-bill-wrap">
                                                     <label>Alamat</label>
-                                                    <textarea type="text" name="alamat" placeholder="*Alamat"></textarea>
+                                                    <input type="text" name="alamat" placeholder="*Alamat" required />
                                                 </span>
                                                 <span class="ec-bill-wrap">
                                                     <label>Nomor Handphone (Whatsapp)</label>
-                                                    <input type="number" name="no_hp" placeholder="Masukkan nomor Handphone/Whatsapp Anda" />
+                                                    <input type="number" name="no_hp" placeholder="Masukkan nomor Handphone/Whatsapp Anda" required />
                                                 </span>
                                         </div>
 
