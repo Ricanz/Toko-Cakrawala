@@ -24270,7 +24270,7 @@ i.ecicon.eci-star.fill {
                                                                 <tr>
                                                                     <th class="border-none m-m15" colspan="3"><span
                                                                     class="note-text-color">
-                                                                    Total yang harus dibayar adalah @money($cart_data->sum('harga_produk'*'jumlah_produk'))
+                                                                    Total yang harus dibayar adalah {{Helper::mata_uang(Helper::totalHarga())}}
                                                                     </span>
                                                                     </th>
                                                                 </tr>
