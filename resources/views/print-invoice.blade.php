@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    {{-- <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"> --}}
 
     <title>Toko Cakrawala - Invoice</title>
     <meta name="keywords"
@@ -24305,8 +24305,6 @@ i.ecicon.eci-star.fill {
             </div>
         </div>
     </section>
-
-
 </body>
 
 </html>
