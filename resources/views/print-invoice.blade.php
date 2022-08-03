@@ -24240,11 +24240,11 @@ i.ecicon.eci-star.fill {
                                                 <!-- /.col -->
                                             </div>
 
-                                            <div class="mt-4">
+                                            <div>
 
-                                                <div class="text-95 text-secondary-d3">
-                                                    <div class="ec-vendor-card-table">
-                                                        <table class="table ec-table">
+                                                <div>
+                                                    <div>
+                                                        <table>
                                                             <thead>
                                                                 <tr>
                                                                     <th>No.</th>
