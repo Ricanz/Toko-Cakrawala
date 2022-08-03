@@ -99,7 +99,7 @@
                                                 <div class="ec-pro-image">
                                                     <a href="product-left-sidebar.html" class="image">
                                                         <img class="main-image"
-                                                            src="{{asset($item['foto_produk'])}}"
+                                                            src="{{asset('storage/Produk/' . $item['foto_produk'])}}"
                                                             alt="Product" />
                                                     </a>
                                                 </div>
