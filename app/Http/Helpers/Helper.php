@@ -30,8 +30,8 @@ class Helper
         $total = 0;
         foreach (Helper::getCart() as $item) {
             // dd($item->jumlah_produk);
-            $harga = (int)$item['jumlah_produk'] + (int)$item['harga_produk'];
-            $total = (int)$harga + (int)$harga;
+            $harga = (int)$item['jumlah_produk'] * (int)$item['harga_produk'];
+            $total = (int)$total + (int)$harga;
         }
         return $total;
     }
