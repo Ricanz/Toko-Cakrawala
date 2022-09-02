@@ -21,6 +21,7 @@
     <!-- Ekka Cart End -->
 
     <main>
+        @include('sweetalert::alert')
         {{ $slot }}
     </main>
 
