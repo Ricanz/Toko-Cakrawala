@@ -33,7 +33,7 @@
             </div>
             </div>
     </div>
-    </div>  
+    </div>
     <!-- Main Slider End -->
 
     <!--  category Section Start -->
@@ -392,13 +392,13 @@
                 </div>
                 <!-- ec Testimonial end -->
                 <!-- ec Banner Start -->
-                <div class="col-md-6 col-sm-12" data-animation="fadeIn"  id="pemesanan">
+                {{-- <div class="col-md-6 col-sm-12" data-animation="fadeIn"  id="pemesanan">
                     <div class="ec-banner-inner">
                         <img class="img-responsive"
                             src="{{ $bannerFront->banner == '' ? asset('tlandingPage/assets/images/product-image/111_1.jpg') : asset($bannerFront->banner) }}"
                             alt="">
                     </div>
-                </div>
+                </div> --}}
                 <!-- ec Banner End -->
                 <!--  Service Section Start -->
                 <div class="ec-services-section col-lg-3 col-md-3 col-sm-3" data-animation="slideInLeft">
